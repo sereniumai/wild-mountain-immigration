@@ -45,7 +45,7 @@ export function YouTubeEmbed({
             <img
               src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`}
               alt=""
-              className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
+              className="size-full object-cover"
               loading="lazy"
             />
           ) : (

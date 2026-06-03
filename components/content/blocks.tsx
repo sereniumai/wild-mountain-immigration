@@ -75,9 +75,6 @@ export function Byline({ updated = "May 2026" }: { updated?: string }) {
       </span>
       <span className="hidden h-3 w-px bg-line sm:block" />
       <span>Last updated {updated}</span>
-      <a href={site.ciccRegisterUrl} target="_blank" rel="noopener noreferrer" className="text-brand underline-offset-2 hover:underline">
-        Verify on CICC register
-      </a>
     </div>
   );
 }

@@ -98,16 +98,12 @@ function NavItem({
         {!panel && active && <span className="absolute left-0 top-1/2 h-5 w-[3px] -translate-y-1/2 rounded-r bg-brand" />}
         <Link
           href={node.href}
-          onClick={(e) => {
-            // First click on a collapsed parent reveals its children instead of
-            // navigating, so people can see what's inside; a second click (now
-            // expanded) opens the section's own page.
-            if (kids.length > 0 && !open) {
-              e.preventDefault();
-              setOpenKey(node.href);
-            } else {
-              onNavigate?.();
-            }
+          onClick={() => {
+            // Clicking a parent navigates to its page AND opens its dropdown, so you
+            // land on (e.g.) Express Entry and immediately see CEC/FSW/FST beneath it.
+            // The +/- button toggles children in place without navigating.
+            if (kids.length > 0) setOpenKey(node.href);
+            onNavigate?.();
           }}
           aria-current={active ? "page" : undefined}
           title={node.label}

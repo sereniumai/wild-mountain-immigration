@@ -17,6 +17,10 @@ export function pageMeta(opts: {
 }): Metadata {
   const url = opts.path === "/" ? site.url : `${site.url}${opts.path}`;
   const ogTitle = opts.titleAbsolute ?? `${opts.title} | ${site.name}`;
+  // Setting an explicit openGraph object below replaces the inherited
+  // app/opengraph-image, so we must point the social image back at it here (or an
+  // override) — otherwise these pages ship with no share image.
+  const ogImage = opts.ogImage ?? `${site.url}/opengraph-image`;
   return {
     title: opts.titleAbsolute ? { absolute: opts.titleAbsolute } : opts.title,
     description: opts.description,
@@ -29,8 +33,9 @@ export function pageMeta(opts: {
       url,
       siteName: site.name,
       locale: "en_CA",
+      images: [{ url: ogImage, width: 1200, height: 630, alt: site.name }],
     },
-    twitter: { card: "summary_large_image", title: ogTitle, description: opts.description },
+    twitter: { card: "summary_large_image", title: ogTitle, description: opts.description, images: [ogImage] },
     robots: { index: true, follow: true },
   };
 }

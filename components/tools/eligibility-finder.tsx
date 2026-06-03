@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
 import {
@@ -42,6 +42,16 @@ export function EligibilityFinder() {
   const [result, setResult] = useState<EvalResult | null>(null);
   const [token, setToken] = useState(""); // Turnstile challenge token
   const turnstileRef = useRef<TurnstileInstance>(null);
+  const rootRef = useRef<HTMLDivElement>(null);
+  const firstRender = useRef(true);
+
+  // When the step changes, bring the top of the form into view so people aren't
+  // left scrolled halfway down the previous (often longer) section. Instant (not
+  // smooth) so it can't overshoot while the section-swap animation shifts layout.
+  useEffect(() => {
+    if (firstRender.current) { firstRender.current = false; return; }
+    rootRef.current?.scrollIntoView({ block: "start" });
+  }, [stage, sectionIdx]);
 
   const path = pathId ? PATH_BY_ID[pathId] : null;
   const sections = path?.sections ?? [];
@@ -160,7 +170,7 @@ export function EligibilityFinder() {
   }
 
   return (
-    <div className="rounded-[1.75rem] border border-brand/15 bg-blush p-4 shadow-soft sm:p-6 lg:p-8">
+    <div ref={rootRef} className="scroll-mt-28 rounded-[1.75rem] border border-brand/15 bg-blush p-4 shadow-soft sm:p-6 lg:p-8">
       {/* progress */}
       {stage !== "pick" && (
         <div className="mb-6 flex items-center gap-4">
