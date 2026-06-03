@@ -5,6 +5,7 @@ import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import { AppShell } from "@/components/site/app-shell";
 import { ScrollToTop } from "@/components/site/scroll-to-top";
+import { EligibilityNudge } from "@/components/site/eligibility-nudge";
 import { Analytics } from "@/components/site/analytics";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { buildGraph } from "@/lib/schema";
@@ -88,6 +89,7 @@ export default function RootLayout({
           <AppShell>{children}</AppShell>
         </main>
         <Footer />
+        <EligibilityNudge />
       </body>
     </html>
   );
