@@ -225,6 +225,31 @@ const redirectPairs: [string, string][] = [
   ["/blog/:slug*", "/immigrate"],
 ];
 
+/* Content-Security-Policy. The site uses Google Tag Manager as a marketing hub
+   (it loads GA4, Google Ads conversion/remarketing, Hotjar and more, and new tags
+   are added without code changes), so a script/connect/img allow-list would
+   silently break paid conversion tracking the moment a tag changes. We therefore
+   apply only the directives that harden without fighting GTM: frame-ancestors and
+   X-Frame-Options stop clickjacking (the actual audit finding), object-src blocks
+   plugin/embed injection, base-uri blocks <base> hijacking, and form-action keeps
+   form posts same-origin. These have no impact on third-party script loading. */
+const csp = [
+  "object-src 'none'",
+  "base-uri 'self'",
+  "frame-ancestors 'none'",
+  "form-action 'self'",
+  "upgrade-insecure-requests",
+].join("; ");
+
+const securityHeaders = [
+  { key: "Content-Security-Policy", value: csp },
+  { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" },
+  { key: "X-Frame-Options", value: "DENY" },
+  { key: "X-Content-Type-Options", value: "nosniff" },
+  { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()" },
+];
+
 const nextConfig: NextConfig = {
   // Pin the workspace root (multiple lockfiles exist higher up the tree)
   turbopack: {
@@ -260,6 +285,9 @@ const nextConfig: NextConfig = {
         statusCode: 301,
       })),
     ];
+  },
+  async headers() {
+    return [{ source: "/:path*", headers: securityHeaders }];
   },
 };
 

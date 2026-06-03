@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "Does this website use cookies and tracking?",
-    a: "Yes. We use cookies and similar technologies for basic site functionality and for analytics that help us understand how the site is used (such as Google Analytics) and, where applicable, advertising or conversion measurement tools. These collect information like pages viewed, device type and approximate region. You can control or block cookies through your browser settings, and where required we ask for your consent.",
+    a: "Yes. We use cookies and similar technologies for basic site functionality and for analytics that help us understand how the site is used (such as Google Analytics) and, where applicable, advertising or conversion measurement tools. These collect information like pages viewed, device type and approximate region. These analytics load when you use the site (we do not show a separate cookie banner), which Canadian privacy law permits for non-identifying analytics, and you can control or block cookies at any time through your browser settings or the provider's opt-out tools.",
   },
   {
     q: "What analytics and third-party tools do you use?",
@@ -105,14 +105,15 @@ export default function PrivacyPolicyPage() {
               <li>assess your eligibility and prepare, review or submit immigration applications on your instructions;</li>
               <li>communicate with you about your file and meet our professional, regulatory and legal obligations;</li>
               <li>operate, secure and improve the website and understand how visitors use it; and</li>
-              <li>measure the performance of our marketing and, where you have consented, show relevant ads.</li>
+              <li>measure the performance of our marketing and, where permitted, show relevant ads.</li>
             </ul>
 
             <h2>4. Cookies and tracking technologies</h2>
             <p>
               This website uses cookies, pixels, tags and similar technologies. Some are strictly necessary for the site
-              to function. Others support analytics and marketing, and we rely on them only where permitted or with
-              your consent. We may use:
+              to function. Others support analytics and marketing: these load when you use the site, which Canadian
+              privacy law permits for non-identifying analytics, and we do not show a separate cookie banner. You can opt
+              out at any time using the controls below. We may use:
             </p>
             <ul>
               <li><strong>Essential cookies</strong>, required for security and core functionality.</li>
@@ -127,10 +128,12 @@ export default function PrivacyPolicyPage() {
             <h2>5. Consent</h2>
             <p>
               We collect, use and disclose your personal information with your consent. By contacting us or submitting a
-              form, you agree to us using your details to respond. For analytics and marketing technologies, we rely on
-              consent where the law requires it. For active files, we obtain your informed consent before we act on your
-              matter or submit anything to IRCC or another government body. You may withdraw consent at any time, subject
-              to legal and contractual limits, by contacting us.
+              form, you agree to us using your details to respond. For website analytics and marketing technologies, we
+              rely on your implied consent through your continued use of the site, as permitted under PIPEDA and Alberta&apos;s
+              PIPA for non-identifying analytics, rather than a cookie banner; you can opt out at any time using your
+              browser settings or the provider&apos;s own tools. For active files, we obtain your informed consent before we
+              act on your matter or submit anything to IRCC or another government body. You may withdraw consent at any
+              time, subject to legal and contractual limits, by contacting us.
             </p>
 
             <h2>6. How we share information</h2>

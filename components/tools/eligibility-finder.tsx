@@ -39,10 +39,8 @@ export function EligibilityFinder() {
   const [company, setCompany] = useState(""); // honeypot
   const [error, setError] = useState("");
   const [submitting, setSubmitting] = useState(false);
-  const [partialSent, setPartialSent] = useState(false);
   const [result, setResult] = useState<EvalResult | null>(null);
   const [token, setToken] = useState(""); // Turnstile challenge token
-  const partialTimer = useRef<number | null>(null);
   const turnstileRef = useRef<TurnstileInstance>(null);
 
   const path = pathId ? PATH_BY_ID[pathId] : null;
@@ -117,38 +115,26 @@ export function EligibilityFinder() {
     return out;
   }, [path, answers]);
 
-  async function ping(stageName: "partial" | "complete", res?: EvalResult) {
+  // Lead capture fires only on a completed, consented submission (see submit).
+  async function sendLead(res: EvalResult) {
     try {
       await fetch("/api/eligibility-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          stage: stageName,
           path: path?.label,
           name, email, consent, company,
-          turnstileToken: stageName === "complete" ? token : undefined,
-          answers: stageName === "complete" ? qaPairs : undefined,
-          results: res ? { headline: res.headline, groups: res.groups, flags: res.flags, provinceNote: res.provinceNote } : undefined,
+          turnstileToken: token,
+          answers: qaPairs,
+          results: { headline: res.headline, groups: res.groups, flags: res.flags, provinceNote: res.provinceNote },
         }),
       });
     } catch { /* background, non-blocking */ }
   }
 
-  function onEmailBlur() {
-    // Capture abandoners: if they enter a valid email but don't submit within a
-    // few seconds, send a "started" lead. Completing cancels this (see submit).
-    if (partialSent || !EMAIL_RE.test(email.trim())) return;
-    if (partialTimer.current) window.clearTimeout(partialTimer.current);
-    partialTimer.current = window.setTimeout(() => {
-      setPartialSent(true);
-      void ping("partial");
-    }, 5000);
-  }
-
   function submit(e: React.FormEvent) {
     e.preventDefault();
     if (submitting) return;
-    if (partialTimer.current) window.clearTimeout(partialTimer.current); // they finished, no "started" email
     if (!name.trim() || !EMAIL_RE.test(email.trim()) || !consent) {
       setError("Please add your name, a valid email, and agree to be contacted.");
       return;
@@ -161,16 +147,15 @@ export function EligibilityFinder() {
     setSubmitting(true);
     const res = evaluate(pathId!, answers);
     setResult(res);
-    void ping("complete", res);
+    void sendLead(res);
     setStage("results");
     setSubmitting(false);
   }
 
   function restart() {
-    if (partialTimer.current) window.clearTimeout(partialTimer.current);
     setStage("pick"); setPathId(null); setSectionIdx(0); setAnswers({});
     setName(""); setEmail(""); setConsent(false);
-    setPartialSent(false); setResult(null); setError("");
+    setResult(null); setError("");
     setToken(""); turnstileRef.current?.reset();
   }
 
@@ -303,7 +288,7 @@ export function EligibilityFinder() {
               </label>
               <label className="block">
                 <span className="block text-sm font-medium text-ink">Email address <span className="text-brand">*</span></span>
-                <input value={email} onChange={(e) => setEmail(e.target.value)} onBlur={onEmailBlur} type="email" required autoComplete="email" inputMode="email" placeholder="you@email.com"
+                <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" required autoComplete="email" inputMode="email" placeholder="you@email.com"
                   className="mt-1.5 w-full rounded-xl border border-line bg-white px-3.5 py-2.5 text-ink shadow-soft outline-none transition-colors placeholder:text-ink-faint focus:border-brand focus:ring-2 focus:ring-brand/15" />
               </label>
               <label className="flex items-start gap-2.5 text-[13px] leading-relaxed text-ink-soft">

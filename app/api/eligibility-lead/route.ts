@@ -2,16 +2,15 @@ import { Resend } from "resend";
 import { site } from "@/lib/site";
 import { POLICY, FRESHNESS_NOTE } from "@/lib/eligibility/constants";
 
-/* Lead capture for the eligibility checker.
-   stage "partial"  -> fired when a valid email is entered on the final step but
-                       the person hasn't submitted yet (abandoner capture).
-   stage "complete" -> fired on submit, with the full answers + recommended routes. */
+/* Lead capture for the eligibility checker. Fires only on a completed, consented
+   submission: sends the business an internal lead email and the user a copy of
+   their results. (There is deliberately no "abandoner"/partial capture: emailing
+   identifiable details before consent would breach PIPEDA/CASL.) */
 
 type QA = { q: string; a: string };
 type Item = { title: string; tier: string; why: string };
 type Group = { heading: string; items: Item[] };
 type Body = {
-  stage?: "partial" | "complete";
   path?: string;          // human label, e.g. "Immigrate permanently"
   name?: string;
   email?: string;
@@ -19,8 +18,34 @@ type Body = {
   answers?: QA[];
   results?: { headline?: string; groups?: Group[]; flags?: string[]; provinceNote?: string };
   company?: string;       // honeypot
-  turnstileToken?: string; // Cloudflare Turnstile challenge token (complete stage only)
+  turnstileToken?: string; // Cloudflare Turnstile challenge token
 };
+
+/* Clamp untrusted input before it is rendered into emails: bounds array lengths
+   and string sizes so a malicious/oversized body cannot inflate the outbound
+   email or function memory. Values are also HTML-escaped at render time. */
+const cut = (s: unknown, n: number) => String(s ?? "").slice(0, n);
+function clampBody(b: Body): Body {
+  const r = b.results ?? {};
+  return {
+    path: cut(b.path, 120),
+    name: cut(b.name, 120),
+    email: cut(b.email, 200),
+    consent: b.consent === true,
+    company: b.company,
+    turnstileToken: b.turnstileToken,
+    answers: (b.answers ?? []).slice(0, 60).map((qa) => ({ q: cut(qa?.q, 300), a: cut(qa?.a, 300) })),
+    results: {
+      headline: cut(r.headline, 400),
+      provinceNote: cut(r.provinceNote, 600),
+      flags: (r.flags ?? []).slice(0, 20).map((f) => cut(f, 600)),
+      groups: (r.groups ?? []).slice(0, 12).map((g) => ({
+        heading: cut(g?.heading, 200),
+        items: (g?.items ?? []).slice(0, 20).map((i) => ({ title: cut(i?.title, 200), tier: cut(i?.tier, 20), why: cut(i?.why, 500) })),
+      })),
+    },
+  };
+}
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const esc = (s: unknown) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -63,7 +88,7 @@ function renderFlags(flags: string[], heading = "Important notes"): string {
     </div>`;
 }
 
-function buildHtml(b: Body, partial: boolean): string {
+function buildHtml(b: Body): string {
   const rows = (b.answers ?? [])
     .map(
       (qa) => `<tr><td style="padding:9px 16px;border-bottom:1px solid #f4ecea;font-size:13px;color:${muted};width:46%;vertical-align:top;">${esc(qa.q)}</td>
@@ -74,8 +99,8 @@ function buildHtml(b: Body, partial: boolean): string {
   const groupsHtml = renderGroups(b.results?.groups ?? []);
   const flagsHtml = renderFlags(b.results?.flags ?? []);
 
-  const banner = partial ? "Started, not finished" : "Eligibility results";
-  const bannerColor = partial ? "#9a6b00" : "#e00400";
+  const banner = "Eligibility results";
+  const bannerColor = "#e00400";
 
   return `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"></head>
 <body style="margin:0;padding:0;background:#f4f1ef;">
@@ -88,10 +113,8 @@ function buildHtml(b: Body, partial: boolean): string {
       </tr></table>
     </td></tr>
     <tr><td style="padding:24px 26px 4px;">
-      <h1 style="margin:0 0 4px;font-size:19px;color:#32373c;">${partial ? "Someone started the eligibility checker" : "New eligibility checker result"}</h1>
-      <p style="margin:0;font-size:13.5px;color:#6b7280;line-height:1.6;">${partial
-        ? "They entered their email but hadn't submitted when this was sent. You may want to follow up."
-        : "A full result from the eligibility checker. Reply to this email to reach them directly."}</p>
+      <h1 style="margin:0 0 4px;font-size:19px;color:#32373c;">New eligibility checker result</h1>
+      <p style="margin:0;font-size:13.5px;color:#6b7280;line-height:1.6;">A full result from the eligibility checker. Reply to this email to reach them directly.</p>
     </td></tr>
     <tr><td style="padding:16px 26px 4px;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #f0e6e4;border-radius:10px;">
@@ -207,22 +230,18 @@ export async function POST(request: Request) {
 
   if (body.company && body.company.trim()) return Response.json({ ok: true }); // honeypot
 
+  body = clampBody(body);
   const name = (body.name ?? "").trim();
   const email = (body.email ?? "").trim();
-  const partial = body.stage === "partial";
 
   if (!EMAIL_RE.test(email)) {
     return Response.json({ ok: false, error: "A valid email is required." }, { status: 422 });
   }
-  // Completion requires consent; partial pings don't (we email ourselves only).
-  if (!partial && (!name || body.consent !== true)) {
+  if (!name || body.consent !== true) {
     return Response.json({ ok: false, error: "Please add your name and agree to be contacted." }, { status: 422 });
   }
-
-  // Bot protection on the expensive path only: a completion sends two emails.
-  // Partial pings stay honeypot-only because they fire on email blur, before the
-  // user reaches the verification widget.
-  if (!partial && !(await turnstileOk((body.turnstileToken ?? "").trim(), request))) {
+  // Bot protection: a submission sends two emails via Resend.
+  if (!(await turnstileOk((body.turnstileToken ?? "").trim(), request))) {
     return Response.json({ ok: false, error: "Verification failed. Please refresh and try again." }, { status: 403 });
   }
 
@@ -235,12 +254,8 @@ export async function POST(request: Request) {
 
   const to = process.env.CONTACT_TO_EMAIL || site.email;
   const from = process.env.CONTACT_FROM_EMAIL || "Wild Mountain Immigration <onboarding@resend.dev>";
-  const subject = partial
-    ? `Eligibility checker started (not finished): ${name || email}`
-    : `Eligibility result: ${name} (${body.path || "Eligibility"})`;
 
   const textLines = [
-    `Stage: ${partial ? "PARTIAL (not submitted)" : "COMPLETE"}`,
     `Path: ${body.path || "Eligibility"}`,
     `Name: ${name || "(not given)"}`,
     `Email: ${email}`,
@@ -259,48 +274,45 @@ export async function POST(request: Request) {
       from,
       to,
       replyTo: email,
-      subject,
+      subject: `Eligibility result: ${name} (${body.path || "Eligibility"})`,
       text: textLines.join("\n"),
-      html: buildHtml(body, partial),
+      html: buildHtml(body),
     });
-    if (error) console.error("[eligibility-lead] Resend error (internal)", error);
+    if (error) console.error("[eligibility-lead] Resend error (internal):", error.message);
   } catch (err) {
-    console.error("[eligibility-lead] Resend threw (internal)", err);
+    console.error("[eligibility-lead] Resend threw (internal):", err instanceof Error ? err.message : err);
   }
 
-  // 2) Results email to the user (only when they completed the checker). Replies
-  //    go to the business inbox so they can take it forward.
-  if (!partial) {
-    const userText = [
-      `Hi ${name.split(/\s+/)[0] || "there"},`,
-      "",
-      "Thanks for using our eligibility checker. Here's an automated first read of the routes that may fit what you told us. It's a starting point, not a decision.",
-      "",
-      body.results?.headline ? `Summary: ${body.results.headline}` : "",
-      ...(body.results?.groups ?? []).flatMap((gr) => [`# ${gr.heading}`, ...gr.items.map((i) => `  [${i.tier}] ${i.title} - ${i.why}`)]),
-      ...(body.results?.flags?.length ? ["", "Important to know:", ...body.results.flags.map((f) => `  - ${f}`)] : []),
-      ...(body.results?.provinceNote ? ["", `Provincial programs: ${body.results.provinceNote}`] : []),
-      "",
-      FRESHNESS_NOTE,
-      "",
-      `Ready for a proper review? Book a consultation: ${site.url}/contact`,
-      "",
-      `${site.name} - CICC-regulated RCIC (#R706497). Not affiliated with the Government of Canada. Quebec not covered. Details last verified ${POLICY.lastVerified}.`,
-    ].filter(Boolean);
+  // 2) Results email to the user. Replies go to the business inbox.
+  const userText = [
+    `Hi ${name.split(/\s+/)[0] || "there"},`,
+    "",
+    "Thanks for using our eligibility checker. Here's an automated first read of the routes that may fit what you told us. It's a starting point, not a decision.",
+    "",
+    body.results?.headline ? `Summary: ${body.results.headline}` : "",
+    ...(body.results?.groups ?? []).flatMap((gr) => [`# ${gr.heading}`, ...gr.items.map((i) => `  [${i.tier}] ${i.title} - ${i.why}`)]),
+    ...(body.results?.flags?.length ? ["", "Important to know:", ...body.results.flags.map((f) => `  - ${f}`)] : []),
+    ...(body.results?.provinceNote ? ["", `Provincial programs: ${body.results.provinceNote}`] : []),
+    "",
+    FRESHNESS_NOTE,
+    "",
+    `Ready for a proper review? Book a consultation: ${site.url}/contact`,
+    "",
+    `${site.name} - CICC-regulated RCIC (#R706497). Not affiliated with the Government of Canada. Quebec not covered. Details last verified ${POLICY.lastVerified}.`,
+  ].filter(Boolean);
 
-    try {
-      const { error } = await resend.emails.send({
-        from,
-        to: email,
-        replyTo: to,
-        subject: "Your Canadian immigration pathway results",
-        text: userText.join("\n"),
-        html: buildUserHtml(body),
-      });
-      if (error) console.error("[eligibility-lead] Resend error (user)", error);
-    } catch (err) {
-      console.error("[eligibility-lead] Resend threw (user)", err);
-    }
+  try {
+    const { error } = await resend.emails.send({
+      from,
+      to: email,
+      replyTo: to,
+      subject: "Your Canadian immigration pathway results",
+      text: userText.join("\n"),
+      html: buildUserHtml(body),
+    });
+    if (error) console.error("[eligibility-lead] Resend error (user):", error.message);
+  } catch (err) {
+    console.error("[eligibility-lead] Resend threw (user):", err instanceof Error ? err.message : err);
   }
 
   return Response.json({ ok: true });

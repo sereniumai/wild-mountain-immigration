@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/ui/reveal";
 import { YouTubeEmbed } from "@/components/content/youtube-embed";
 import { site } from "@/lib/site";
+import { jsonLd } from "@/lib/jsonld";
 
 /**
  * Short films from real people who moved to Canada.
@@ -55,7 +56,7 @@ export function VideoTestimonials() {
   return (
     <section className="py-20 lg:py-28">
       {schema.length > 0 && (
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(schema) }} />
       )}
       <Container>
         <Reveal className="mx-auto max-w-2xl text-center">

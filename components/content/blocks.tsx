@@ -10,6 +10,7 @@ import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import { site, consult } from "@/lib/site";
 import { breadcrumbLd, faqLd, type Crumb } from "@/lib/seo";
+import { jsonLd } from "@/lib/jsonld";
 
 /* ------------------------------------------------------------------ JSON-LD */
 export function JsonLd({ data }: { data: object | object[] }) {
@@ -17,7 +18,7 @@ export function JsonLd({ data }: { data: object | object[] }) {
   return (
     <>
       {arr.map((d, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(d) }} />
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(d) }} />
       ))}
     </>
   );

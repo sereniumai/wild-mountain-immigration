@@ -16,6 +16,7 @@ import { Reviews } from "@/components/content/reviews";
 import { VideoTestimonials } from "@/components/home/video-testimonials";
 import { faqs, site, consult } from "@/lib/site";
 import { img } from "@/lib/images";
+import { jsonLd } from "@/lib/jsonld";
 
 /* ---------------------------------------------------------------- label */
 function Label({ children, center, light }: { children: React.ReactNode; center?: boolean; light?: boolean }) {
@@ -575,7 +576,7 @@ export default function HomePage() {
   };
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqLd) }} />
       <Hero />
       <Stats />
       <PathwayChooser />

@@ -9,6 +9,7 @@ import { EligibilityNudge } from "@/components/site/eligibility-nudge";
 import { Analytics } from "@/components/site/analytics";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { buildGraph } from "@/lib/schema";
+import { jsonLd } from "@/lib/jsonld";
 import { site } from "@/lib/site";
 
 const jost = Jost({
@@ -80,7 +81,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-white">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(buildGraph()) }}
+          dangerouslySetInnerHTML={{ __html: jsonLd(buildGraph()) }}
         />
         <ScrollToTop />
         <Analytics />
