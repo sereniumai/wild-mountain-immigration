@@ -19,6 +19,7 @@ type Body = {
   answers?: QA[];
   results?: { headline?: string; groups?: Group[]; flags?: string[]; provinceNote?: string };
   company?: string;       // honeypot
+  turnstileToken?: string; // Cloudflare Turnstile challenge token (complete stage only)
 };
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -169,6 +170,33 @@ function buildUserHtml(b: Body): string {
 </td></tr></table></body></html>`;
 }
 
+/* Verify a Cloudflare Turnstile token server-side. Returns true when the secret
+   isn't configured (so the form keeps working before keys are added). */
+async function turnstileOk(token: string, request: Request): Promise<boolean> {
+  const secret = process.env.TURNSTILE_SECRET_KEY;
+  if (!secret) return true;
+  if (!token) return false;
+  try {
+    const ip =
+      request.headers.get("CF-Connecting-IP") ||
+      request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+      "";
+    const params = new URLSearchParams({ secret, response: token });
+    if (ip) params.set("remoteip", ip);
+    const verify = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: params,
+      signal: AbortSignal.timeout(10000),
+    });
+    const outcome = (await verify.json()) as { success?: boolean };
+    return outcome.success === true;
+  } catch (err) {
+    console.error("[eligibility-lead] Turnstile verify failed", err);
+    return false;
+  }
+}
+
 export async function POST(request: Request) {
   let body: Body;
   try {
@@ -189,6 +217,13 @@ export async function POST(request: Request) {
   // Completion requires consent; partial pings don't (we email ourselves only).
   if (!partial && (!name || body.consent !== true)) {
     return Response.json({ ok: false, error: "Please add your name and agree to be contacted." }, { status: 422 });
+  }
+
+  // Bot protection on the expensive path only: a completion sends two emails.
+  // Partial pings stay honeypot-only because they fire on email blur, before the
+  // user reaches the verification widget.
+  if (!partial && !(await turnstileOk((body.turnstileToken ?? "").trim(), request))) {
+    return Response.json({ ok: false, error: "Verification failed. Please refresh and try again." }, { status: 403 });
   }
 
   const apiKey = process.env.RESEND_API_KEY;

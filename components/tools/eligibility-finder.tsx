@@ -7,6 +7,7 @@ import {
   ArrowRight, ArrowLeft, RotateCcw, Check, Sparkles, Info, ShieldAlert,
   Compass, Briefcase, Heart, Building2, GraduationCap, Send, BadgeCheck, ChevronDown,
 } from "lucide-react";
+import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import {
   PATHS, PATH_BY_ID, visibleFields, val, arr,
   type PathId, type Field, type Answers,
@@ -16,6 +17,9 @@ import { POLICY, FRESHNESS_NOTE } from "@/lib/eligibility/constants";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// Cloudflare Turnstile site key (public). When unset, the widget is hidden and
+// the form still works, so it's safe to ship before keys are configured.
+const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
 
 const PATH_ICON: Record<PathId, typeof Compass> = {
   immigrate: Compass, work: Briefcase, sponsor: Heart, business: Building2, study: GraduationCap,
@@ -37,7 +41,9 @@ export function EligibilityFinder() {
   const [submitting, setSubmitting] = useState(false);
   const [partialSent, setPartialSent] = useState(false);
   const [result, setResult] = useState<EvalResult | null>(null);
+  const [token, setToken] = useState(""); // Turnstile challenge token
   const partialTimer = useRef<number | null>(null);
+  const turnstileRef = useRef<TurnstileInstance>(null);
 
   const path = pathId ? PATH_BY_ID[pathId] : null;
   const sections = path?.sections ?? [];
@@ -120,6 +126,7 @@ export function EligibilityFinder() {
           stage: stageName,
           path: path?.label,
           name, email, consent, company,
+          turnstileToken: stageName === "complete" ? token : undefined,
           answers: stageName === "complete" ? qaPairs : undefined,
           results: res ? { headline: res.headline, groups: res.groups, flags: res.flags, provinceNote: res.provinceNote } : undefined,
         }),
@@ -146,6 +153,10 @@ export function EligibilityFinder() {
       setError("Please add your name, a valid email, and agree to be contacted.");
       return;
     }
+    if (TURNSTILE_SITE_KEY && !token) {
+      setError("Please complete the human verification below.");
+      return;
+    }
     setError("");
     setSubmitting(true);
     const res = evaluate(pathId!, answers);
@@ -160,6 +171,7 @@ export function EligibilityFinder() {
     setStage("pick"); setPathId(null); setSectionIdx(0); setAnswers({});
     setName(""); setEmail(""); setConsent(false);
     setPartialSent(false); setResult(null); setError("");
+    setToken(""); turnstileRef.current?.reset();
   }
 
   return (
@@ -301,13 +313,24 @@ export function EligibilityFinder() {
                   <a href="/terms" className="font-medium text-brand hover:underline">Terms</a>.</span>
               </label>
 
+              {TURNSTILE_SITE_KEY && (
+                <Turnstile
+                  ref={turnstileRef}
+                  siteKey={TURNSTILE_SITE_KEY}
+                  onSuccess={setToken}
+                  onExpire={() => setToken("")}
+                  onError={() => setToken("")}
+                  options={{ theme: "light", size: "flexible" }}
+                />
+              )}
+
               {error && <p role="alert" className="rounded-lg bg-brand-soft/60 px-3.5 py-2.5 text-[13px] font-medium text-brand ring-1 ring-inset ring-brand/15">{error}</p>}
 
-              <button type="submit" disabled={submitting}
-                className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-linear-to-b from-[#ee100c] to-brand px-6 font-heading text-[15px] font-medium text-white shadow-(--shadow-brand) ring-1 ring-inset ring-white/15 transition-transform hover:-translate-y-0.5 disabled:opacity-70">
+              <button type="submit" disabled={submitting || (!!TURNSTILE_SITE_KEY && !token)}
+                className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-linear-to-b from-[#ee100c] to-brand px-6 font-heading text-[15px] font-medium text-white shadow-(--shadow-brand) ring-1 ring-inset ring-white/15 transition-transform hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:translate-y-0">
                 <Send className="size-4" /> See my results
               </button>
-              <button type="button" onClick={() => { setError(""); setStage("quiz"); }} className="mx-auto block text-[13px] font-medium text-ink-soft hover:text-brand">
+              <button type="button" onClick={() => { setError(""); setToken(""); setStage("quiz"); }} className="mx-auto block text-[13px] font-medium text-ink-soft hover:text-brand">
                 Back to questions
               </button>
             </div>
