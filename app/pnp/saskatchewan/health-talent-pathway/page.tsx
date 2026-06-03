@@ -277,7 +277,7 @@ export default function HealthTalentPathwayPage() {
             credential assessment or examinations. Starting both early, and in parallel with the immigration file, is usually the single biggest lever on your overall timeline.
           </p>
 
-          <h2>How Wild Mountain helps with the Health Talent Pathway</h2>
+          <h2>How Wild Mountain Immigration helps with the Health Talent Pathway</h2>
           <p>
             We assess whether your occupation and offer fit Saskatchewan&apos;s current Health Talent Pathway, sequence
             your licensure and immigration steps so neither stalls the other, and prepare a nomination and federal

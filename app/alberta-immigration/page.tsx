@@ -340,7 +340,7 @@ export default function AlbertaImmigrationPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps you immigrate to Alberta</h2>
+          <h2>How Wild Mountain Immigration helps you immigrate to Alberta</h2>
           <p>
             Alberta is our home province, we are based in Canmore, in the Bow Valley, and the AAIP is the program we work
             with most. Working under a licensed RCIC (CICC #R706497), our team helps you choose the stream that genuinely

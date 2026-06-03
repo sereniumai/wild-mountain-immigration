@@ -262,7 +262,7 @@ export default function TfwpPage() {
             <a href="/tools/eligibility">eligibility checker</a> is a good place to start.
           </p>
 
-          <h2>How Wild Mountain helps with the Temporary Foreign Worker Program</h2>
+          <h2>How Wild Mountain Immigration helps with the Temporary Foreign Worker Program</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team supports the worker side of an LMIA-based hire and
             coordinates with employers so the job offer, wage and stream line up with the work permit application. We

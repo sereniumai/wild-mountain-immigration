@@ -256,7 +256,7 @@ export default function BcInternationalGraduatePage() {
             though the streams that once linked graduation directly to a nomination have closed.
           </p>
 
-          <h2>How Wild Mountain helps BC graduates</h2>
+          <h2>How Wild Mountain Immigration helps BC graduates</h2>
           <p>
             We assess your credential, your status and your work history against BC&apos;s current priorities and steer you
             toward the route with the strongest realistic chance, usually the Skilled Worker stream or federal Express Entry

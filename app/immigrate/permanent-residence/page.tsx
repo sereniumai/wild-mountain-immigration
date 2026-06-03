@@ -256,7 +256,7 @@ export default function PermanentResidencePage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps with permanent residence</h2>
+          <h2>How Wild Mountain Immigration helps with permanent residence</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team assesses your profile honestly, chooses the route
             where you are most competitive, and builds a complete, accurate application for IRCC. We represent clients

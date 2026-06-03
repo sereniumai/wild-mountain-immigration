@@ -261,7 +261,7 @@ export default function GlobalTalentStreamPage() {
             route in mind.
           </p>
 
-          <h2>How Wild Mountain helps with Global Talent Stream hires</h2>
+          <h2>How Wild Mountain Immigration helps with Global Talent Stream hires</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team supports the work-permit side of a Global Talent
             Stream hire. We help

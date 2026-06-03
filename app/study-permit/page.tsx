@@ -296,7 +296,7 @@ export default function StudyPermitPage() {
             of your stay, all areas we strengthen before you submit.
           </p>
 
-          <h2>How Wild Mountain helps with study permits</h2>
+          <h2>How Wild Mountain Immigration helps with study permits</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team reviews your DLI choice, confirms whether you need a
             Provincial Attestation Letter, and makes sure your proof of funds is structured the way officers expect, the

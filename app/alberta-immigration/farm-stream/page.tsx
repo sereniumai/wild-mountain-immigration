@@ -261,7 +261,7 @@ export default function FarmStreamPage() {
             the AAIP actually requires.
           </Callout>
 
-          <h2>How Wild Mountain helps with your Farm Stream application</h2>
+          <h2>How Wild Mountain Immigration helps with your Farm Stream application</h2>
           <p>
             Alberta is our home province, we are based in Canmore, in the Bow Valley, and the{" "}
             <a href="/alberta-immigration">AAIP</a> is the program we work with most. Working under a licensed RCIC

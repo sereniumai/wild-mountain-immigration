@@ -306,7 +306,7 @@ export default function ImpPage() {
             <a href="/tools/eligibility">eligibility checker</a>.
           </p>
 
-          <h2>How Wild Mountain helps with the International Mobility Program</h2>
+          <h2>How Wild Mountain Immigration helps with the International Mobility Program</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team treats the International Mobility Program as a system
             of exemptions to be matched, not a single form. We start by confirming whether your role is genuinely

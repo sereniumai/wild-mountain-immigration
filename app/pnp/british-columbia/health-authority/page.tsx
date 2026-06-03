@@ -269,7 +269,7 @@ export default function BcPnpHealthAuthorityPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps BC health-care workers</h2>
+          <h2>How Wild Mountain Immigration helps BC health-care workers</h2>
           <p>
             Health care is British Columbia&apos;s leading immigration priority, and the Health Authority stream is one of
             the clearest routes for clinicians to permanent residence. As a CICC-regulated practice led by a licensed

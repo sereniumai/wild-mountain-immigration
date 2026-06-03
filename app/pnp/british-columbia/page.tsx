@@ -313,7 +313,7 @@ export default function BritishColumbiaPnpPage() {
             applicants should plan for the better part of a year from registration to permanent residence, sometimes more.
           </p>
 
-          <h2>How Wild Mountain helps with the BC PNP</h2>
+          <h2>How Wild Mountain Immigration helps with the BC PNP</h2>
           <p>
             Wild Mountain Immigration assesses your profile against BC&apos;s current priorities, models your SIRS score,
             and steers you toward the stream, whether that is{" "}

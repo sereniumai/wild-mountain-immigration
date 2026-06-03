@@ -287,7 +287,7 @@ export default function CitizenshipByDescentPage() {
             caption="Citizenship by descent vs by grant (general overview). Confirm current rules on canada.ca."
           />
 
-          <h2>How Wild Mountain helps with citizenship by descent</h2>
+          <h2>How Wild Mountain Immigration helps with citizenship by descent</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team assesses whether your family&apos;s facts likely
             make you a <strong>Canadian citizen by descent</strong> under the current rules, explains how the{" "}

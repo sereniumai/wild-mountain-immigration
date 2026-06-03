@@ -300,7 +300,7 @@ export default function SaskatchewanPnpPage() {
             generally takes longer. Most applicants should plan for several months to the better part of a year overall.
           </p>
 
-          <h2>How Wild Mountain helps with the SINP</h2>
+          <h2>How Wild Mountain Immigration helps with the SINP</h2>
           <p>
             Wild Mountain Immigration assesses your profile against Saskatchewan&apos;s current priorities, calculates
             your EOI points, and steers you toward the route, whether that is the{" "}

@@ -220,7 +220,7 @@ export default function PrCardRenewalPage() {
             fly home on an expired card.
           </Callout>
 
-          <h2>How Wild Mountain helps with your renewal</h2>
+          <h2>How Wild Mountain Immigration helps with your renewal</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team helps you count your days against the residency
             obligation, builds a tailored document checklist, and prepares a complete PR card renewal so it is not

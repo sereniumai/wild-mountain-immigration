@@ -293,7 +293,7 @@ export default function ManitobaInternationalEducationStreamPage() {
             permanent residence, and both provincial and federal timelines move with demand.
           </p>
 
-          <h2>How Wild Mountain helps with your International Education Stream application</h2>
+          <h2>How Wild Mountain Immigration helps with your International Education Stream application</h2>
           <p>
             Wild Mountain Immigration matches your graduate profile to the right IES pathway, confirms your
             designated-institution status, and checks the alignment points that cause refusals, an occupation off the

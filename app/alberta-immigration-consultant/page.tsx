@@ -17,7 +17,7 @@ export const metadata: Metadata = pageMeta({
   title: "Immigration Consultant Alberta",
   titleAbsolute: "Immigration Consultant Alberta | Licensed RCIC",
   description:
-    "Immigration consultant in Alberta: Wild Mountain is a licensed RCIC practice (CICC #R706497) helping with the AAIP and federal PR. Book a consultation.",
+    "Immigration consultant in Alberta: Wild Mountain Immigration is a licensed RCIC practice (CICC #R706497) helping with the AAIP and federal PR. Book a consultation.",
   path: PATH,
   keywords: [
     "immigration consultant Alberta",

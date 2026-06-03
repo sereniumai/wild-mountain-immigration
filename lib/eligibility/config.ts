@@ -15,7 +15,14 @@ import { countryOptions } from "./countries";
 
 export type PathId = "immigrate" | "work" | "sponsor" | "business" | "study";
 
-export type Option = { value: string; label: string; hint?: string };
+export type Option = {
+  value: string;
+  label: string;
+  hint?: string;
+  /** In a "multi" field, choosing this clears every other option (and choosing
+   *  any other option clears this). Use for a mutually-exclusive "None" choice. */
+  exclusive?: boolean;
+};
 
 export type Field = {
   id: string;
@@ -294,12 +301,13 @@ export const PATHS: PathDef[] = [
             { value: "abroad", label: "Outside Canada" },
           ] },
           { id: "socialAssistance", label: "Is the sponsor receiving social assistance (other than for a disability)?", type: "single", options: YESNO },
-          { id: "sponsorBars", label: "Do any of these currently apply to the sponsor?", help: "These can legally prevent someone from sponsoring even if they're a citizen or PR. Select any that apply, or none.", type: "multi", optional: true, options: [
+          { id: "sponsorBars", label: "Do any of these currently apply to the sponsor?", help: "These can legally prevent someone from sponsoring even if they're a citizen or PR. Select any that apply, or choose None of these.", type: "multi", options: [
             { value: "default", label: "Defaulted on a previous sponsorship undertaking" },
             { value: "loan", label: "Owes an overdue immigration loan or performance bond" },
             { value: "bankruptcy", label: "Is an undischarged bankrupt" },
             { value: "removal", label: "Is under a removal order" },
             { value: "criminal", label: "Has a serious criminal conviction" },
+            { value: "none", label: "None of these apply", exclusive: true },
           ] },
         ],
       },

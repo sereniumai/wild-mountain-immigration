@@ -237,7 +237,7 @@ export default function NovaScotiaPhysicianPage() {
             interest already in the system remain valid.
           </Callout>
 
-          <h2>How Wild Mountain helps physicians immigrate to Nova Scotia</h2>
+          <h2>How Wild Mountain Immigration helps physicians immigrate to Nova Scotia</h2>
           <p>
             Our team is led by a licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC
             #R706497); we help physicians confirm that a Nova Scotia Health or IWK offer meets NSNP requirements,

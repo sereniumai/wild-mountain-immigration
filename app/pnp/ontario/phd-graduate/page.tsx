@@ -268,7 +268,7 @@ export default function OntarioPhdGraduatePage() {
             caption="Ontario PhD Graduate Stream indicative timelines and fees, current to May 2026 (ontario.ca / canada.ca). Figures change, verify before paying."
           />
 
-          <h2>How Wild Mountain helps with the PhD Graduate Stream</h2>
+          <h2>How Wild Mountain Immigration helps with the PhD Graduate Stream</h2>
           <p>
             Wild Mountain Immigration confirms your doctorate and Ontario institution qualify, checks you are within the
             recent-graduation window, and builds a registration and nomination application that stands up to scrutiny.</p>

@@ -319,7 +319,7 @@ export default function NovaScotiaPnpPage() {
             position on novascotia.ca and canada.ca before you rely on them.
           </p>
 
-          <h2>How Wild Mountain helps you immigrate to Nova Scotia</h2>
+          <h2>How Wild Mountain Immigration helps you immigrate to Nova Scotia</h2>
           <p>
             Wild Mountain Immigration assesses your profile against Nova Scotia&apos;s 2026 priorities, confirms whether
             your best route is enhanced or base, and steers you toward the stream, Express Entry, Skilled Worker,

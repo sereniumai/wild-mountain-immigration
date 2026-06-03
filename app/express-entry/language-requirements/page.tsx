@@ -246,7 +246,7 @@ export default function LanguageRequirementsPage() {
             validity dates when we build a profile, so your scores never lapse at the wrong moment.
           </p>
 
-          <h2>How Wild Mountain helps with your language strategy</h2>
+          <h2>How Wild Mountain Immigration helps with your language strategy</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team reads your CLB results ability by ability,
             identifies which skill is costing you the most points, and maps a realistic plan to lift it, whether that

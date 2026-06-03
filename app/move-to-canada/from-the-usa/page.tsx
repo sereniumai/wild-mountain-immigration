@@ -279,7 +279,7 @@ export default function FromUsaPage() {
             <a href="/fees">fees guide</a> explains our professional fee and how it differs from government fees.
           </p>
 
-          <h2>How Wild Mountain helps you move from the USA</h2>
+          <h2>How Wild Mountain Immigration helps you move from the USA</h2>
           <Steps
             steps={[
               { title: "Assess your profile", desc: "We review your age, US qualifications, experience and any US employer to find the route where you are strongest, whether that is Express Entry, a CUSMA permit or an intra-company transfer." },

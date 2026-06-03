@@ -283,7 +283,7 @@ export default function OntarioPnpPage() {
             may shift, confirm the current figures on ontario.ca before you apply.
           </p>
 
-          <h2>How Wild Mountain helps with the OINP</h2>
+          <h2>How Wild Mountain Immigration helps with the OINP</h2>
           <p>
             Wild Mountain Immigration assesses your profile against Ontario&apos;s current priorities, confirms whether the
             stream you want is enhanced or base, and builds the <a href="/express-entry">Express Entry</a> and Expression of

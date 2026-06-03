@@ -255,7 +255,7 @@ export default function FederalSkilledTradesPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps with the Federal Skilled Trades Program</h2>
+          <h2>How Wild Mountain Immigration helps with the Federal Skilled Trades Program</h2>
           <p>
             FST cases live and die on detail: the right{" "}
             <abbr title="National Occupational Classification">NOC</abbr> code, reference letters that prove every

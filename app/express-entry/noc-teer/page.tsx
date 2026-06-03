@@ -254,7 +254,7 @@ export default function NocTeerPage() {
             the old letters.
           </Callout>
 
-          <h2>How Wild Mountain helps you get your NOC right</h2>
+          <h2>How Wild Mountain Immigration helps you get your NOC right</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team matches your actual duties to the correct NOC 2021
             code and TEER category, then confirms which programs and draws that opens, from{" "}

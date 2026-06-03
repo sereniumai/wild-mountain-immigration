@@ -272,7 +272,7 @@ export default function SaskatchewanFarmPage() {
             with what the SINP actually requires.
           </Callout>
 
-          <h2>How Wild Mountain helps with your Farm application</h2>
+          <h2>How Wild Mountain Immigration helps with your Farm application</h2>
           <p>
             As a CICC-regulated practice led by a licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr>,
             our team confirms your Saskatchewan Farm Owner and Operator eligibility, pressure-tests your net worth and

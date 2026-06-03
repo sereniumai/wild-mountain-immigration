@@ -266,7 +266,7 @@ export default function FrenchSpeakingSkilledWorkerPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps with the OINP French stream</h2>
+          <h2>How Wild Mountain Immigration helps with the OINP French stream</h2>
           <p>
             Wild Mountain Immigration confirms your French and English scores genuinely meet the stream on every ability, keeps
             your <a href="/express-entry">Express Entry</a> profile as competitive as possible while you wait for a

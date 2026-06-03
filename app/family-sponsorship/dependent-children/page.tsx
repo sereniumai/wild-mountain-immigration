@@ -311,7 +311,7 @@ export default function DependentChildrenPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps</h2>
+          <h2>How Wild Mountain Immigration helps</h2>
           <p>
             Dependent-child cases turn on details that are easy to get wrong: the age lock-in date, whether an over-age child
             meets the condition test, adoption requirements, and declaring every child correctly. Working under a licensed

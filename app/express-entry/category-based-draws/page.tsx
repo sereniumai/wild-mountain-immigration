@@ -262,7 +262,7 @@ export default function CategoryBasedDrawsPage() {
             minutes, so you can see exactly where you stand before a draw.
           </p>
 
-          <h2>How Wild Mountain helps you target a category draw</h2>
+          <h2>How Wild Mountain Immigration helps you target a category draw</h2>
           <p>
             We start by confirming the categories you genuinely qualify for, checking your NOC classification, your
             qualifying months and, for the French category, your test results. Then we build your Express Entry profile

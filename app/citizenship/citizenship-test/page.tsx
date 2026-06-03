@@ -281,7 +281,7 @@ export default function CitizenshipTestPage() {
             require you to give up another nationality, though you should check the rules of your other country.
           </p>
 
-          <h2>How Wild Mountain helps with your citizenship application</h2>
+          <h2>How Wild Mountain Immigration helps with your citizenship application</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team confirms whether you genuinely meet the{" "}
             <a href="/citizenship">citizenship requirements</a>, counts your physical presence accurately, checks

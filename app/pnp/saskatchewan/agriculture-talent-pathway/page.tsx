@@ -275,7 +275,7 @@ export default function AgricultureTalentPathwayPage() {
             provincial and federal timelines move with demand, so treat any estimate as approximate.
           </p>
 
-          <h2>How Wild Mountain helps with the Agriculture Talent Pathway</h2>
+          <h2>How Wild Mountain Immigration helps with the Agriculture Talent Pathway</h2>
           <p>
             We assess your profile and your Saskatchewan job offer against the province&apos;s current agriculture
             priorities, confirm your NOC code is genuinely in scope, and steer you toward the right route, the Agriculture

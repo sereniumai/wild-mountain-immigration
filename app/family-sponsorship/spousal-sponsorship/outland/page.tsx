@@ -263,7 +263,7 @@ export default function OutlandSpousalSponsorshipPage() {
             most avoidable delay lives, and where an RCIC adds the most value.
           </p>
 
-          <h2>How Wild Mountain helps with outland sponsorship</h2>
+          <h2>How Wild Mountain Immigration helps with outland sponsorship</h2>
           <p>
             We make spousal and partner sponsorship our priority. Working under a licensed RCIC (CICC #R706497), our team
             confirms your eligibility, recommends outland or inland based on your partner&apos;s location, work needs and

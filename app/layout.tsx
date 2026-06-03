@@ -29,7 +29,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Canmore Immigration Consultant (RCIC) | Wild Mountain",
+    default: "Canmore Immigration Consultant | Wild Mountain Immigration",
     template: "%s | Wild Mountain Immigration",
   },
   description:

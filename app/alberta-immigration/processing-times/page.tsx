@@ -271,7 +271,7 @@ export default function ProcessingTimesPage() {
             <li><strong>Verify the live timelines.</strong> Treat alberta.ca/aaip-processing-information as your AAIP processing time tracker and check it and canada.ca periodically, the estimates here are current to May 2026 and do change.</li>
           </ul>
 
-          <h2>How Wild Mountain keeps your AAIP file moving</h2>
+          <h2>How Wild Mountain Immigration keeps your AAIP file moving</h2>
           <p>
             Alberta is our home province, we are based in Canmore, in the Bow Valley, and the{" "}
             <a href="/alberta-immigration">AAIP</a> is the program we work with most. We cannot speed up a government

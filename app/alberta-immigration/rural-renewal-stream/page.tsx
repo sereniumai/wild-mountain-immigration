@@ -331,7 +331,7 @@ export default function RuralRenewalStreamPage() {
             big-city role, the Opportunity Stream usually fits better.
           </p>
 
-          <h2>How Wild Mountain helps with your Rural Renewal application</h2>
+          <h2>How Wild Mountain Immigration helps with your Rural Renewal application</h2>
           <p>
             Alberta is our home province, we are based in Canmore, in the Bow Valley, and we work with the{" "}
             <a href="/alberta-immigration">AAIP</a> every day. Working under a licensed RCIC (CICC #R706497), our team

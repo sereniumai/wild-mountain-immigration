@@ -253,7 +253,7 @@ export default function SaskatchewanTechTalentPathwayPage() {
             IRCC website.
           </p>
 
-          <h2>How Wild Mountain helps with the Tech Talent Pathway</h2>
+          <h2>How Wild Mountain Immigration helps with the Tech Talent Pathway</h2>
           <p>
             We confirm that your NOC sits on Saskatchewan&apos;s current Tech Talent Pathway list, assess whether your job
             offer and employer meet the province&apos;s criteria, and prepare a nomination application that stands up to

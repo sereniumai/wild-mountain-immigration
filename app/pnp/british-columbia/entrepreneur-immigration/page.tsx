@@ -284,7 +284,7 @@ export default function BcEntrepreneurImmigrationPage() {
             assessments and build the strongest possible case within the official rules.
           </Callout>
 
-          <h2>How Wild Mountain helps with your BC business move</h2>
+          <h2>How Wild Mountain Immigration helps with your BC business move</h2>
           <p>
             As a CICC-regulated practice led by a licensed RCIC, our team assesses whether BC Entrepreneur Immigration
             genuinely fits your capital, experience and goals, helps you choose between the Base Category and the Regional

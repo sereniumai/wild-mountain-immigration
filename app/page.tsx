@@ -250,7 +250,7 @@ function RockiesBand() {
         <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/65 to-ink/20" />
         <Container className="relative flex h-full items-center">
           <Reveal className="max-w-xl">
-            <Label light>Why Wild Mountain</Label>
+            <Label light>Why Wild Mountain Immigration</Label>
             <h2 className="mt-5 text-[2.1rem] font-semibold leading-[1.08] tracking-[-0.03em] text-white sm:text-[3rem]">
               From the Bow Valley to your new beginning.
             </h2>

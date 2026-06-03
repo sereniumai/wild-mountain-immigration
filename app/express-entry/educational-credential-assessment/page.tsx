@@ -260,7 +260,7 @@ export default function EducationalCredentialAssessmentPage() {
             <a href="/tools/crs-calculator">CRS calculator</a> before you commit to a provider.
           </p>
 
-          <h2>How Wild Mountain helps with your ECA</h2>
+          <h2>How Wild Mountain Immigration helps with your ECA</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team confirms whether you actually need an Educational
             Credential Assessment, which designated organisation suits your country and occupation, and whose

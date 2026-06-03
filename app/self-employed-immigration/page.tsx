@@ -51,7 +51,7 @@ const faqs = [
     a: "Yes. When it is open and an application succeeds, the Self-Employed Persons Program grants permanent residence, letting you live and work in Canada and continue your self-employed cultural or athletic activity. It is a direct PR route rather than a temporary status. That said, with intake currently paused, the practical path to PR for many cultural and athletic professionals runs through other programs in the meantime. We are careful not to overstate what this program can deliver while its availability is uncertain.",
   },
   {
-    q: "Can Wild Mountain help with self-employed immigration?",
+    q: "Can Wild Mountain Immigration help with self-employed immigration?",
     a: "Yes, within our scope and honestly about availability. Working under a licensed RCIC, our team assesses whether your cultural or athletic background fits the Self-Employed Persons Program, checks the current intake status on canada.ca, and, if the program is paused or not the best fit, maps the open alternatives such as the Start-up Visa or a provincial entrepreneur stream. We represent clients entirely online, and we will tell you plainly if this program is not a realistic route for you right now.",
   },
 ];
@@ -221,7 +221,7 @@ export default function SelfEmployedPage() {
             availability is uncertain.
           </p>
 
-          <h2>How Wild Mountain helps</h2>
+          <h2>How Wild Mountain Immigration helps</h2>
           <p>
             For <strong>self-employed immigration to Canada</strong>, our team works under a licensed RCIC (CICC
             #R706497) to assess whether your cultural or athletic background fits the Self-Employed Persons Program,

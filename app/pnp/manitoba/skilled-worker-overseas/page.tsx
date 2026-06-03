@@ -287,7 +287,7 @@ export default function SkilledWorkerOverseasPage() {
             permanent residence. Treat any estimate as approximate and verify on immigratemanitoba.com and canada.ca.
           </p>
 
-          <h2>How Wild Mountain helps with your Skilled Worker Overseas application</h2>
+          <h2>How Wild Mountain Immigration helps with your Skilled Worker Overseas application</h2>
           <p>
             For an overseas candidate, almost everything turns on the Manitoba connection and a well-built Expression of
             Interest, and that is exactly where Wild Mountain Immigration focuses.</p>

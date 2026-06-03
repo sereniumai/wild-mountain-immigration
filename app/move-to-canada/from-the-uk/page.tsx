@@ -284,7 +284,7 @@ export default function FromUkPage() {
             <a href="/fees">fees guide</a> sets out our professional fee and how it sits apart from government fees.
           </p>
 
-          <h2>How Wild Mountain helps you move from the UK</h2>
+          <h2>How Wild Mountain Immigration helps you move from the UK</h2>
           <p>
             We do one thing: build the strongest, most complete Canadian immigration application for your situation, and
             represent you with IRCC from the UK through to your arrival.</p>

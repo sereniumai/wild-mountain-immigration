@@ -306,7 +306,7 @@ export default function NewBrunswickPnpPage() {
             stream may suit you better. We assess both before recommending a path.
           </p>
 
-          <h2>How Wild Mountain helps with the NBPNP</h2>
+          <h2>How Wild Mountain Immigration helps with the NBPNP</h2>
           <p>
             Wild Mountain Immigration assesses your profile against New Brunswick&apos;s current sector priorities, confirms
             whether your occupation is eligible, and steers you toward the stream with the strongest realistic chance: NB

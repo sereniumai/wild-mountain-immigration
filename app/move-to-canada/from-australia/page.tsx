@@ -277,7 +277,7 @@ export default function FromAustraliaPage() {
             <a href="/fees">fees guide</a> explains our professional fee and how it differs from government fees.
           </p>
 
-          <h2>How Wild Mountain helps you move from Australia</h2>
+          <h2>How Wild Mountain Immigration helps you move from Australia</h2>
           <Steps
             steps={[
               { title: "Assess your profile", desc: "We review your age, Australian qualifications, experience and language to find the route where you are strongest, whether that is Express Entry, a PNP or the IEC." },

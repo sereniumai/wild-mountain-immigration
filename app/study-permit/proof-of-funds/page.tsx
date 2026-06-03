@@ -276,7 +276,7 @@ export default function StudyPermitProofOfFundsPage() {
             experience open the door to <a href="/immigrate">permanent residence</a>.
           </p>
 
-          <h2>How Wild Mountain helps with proof of funds</h2>
+          <h2>How Wild Mountain Immigration helps with proof of funds</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team calculates the real total you need to show, tuition
             plus the current cost-of-living figure plus travel, and helps you structure proof of funds the way officers

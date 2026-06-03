@@ -274,7 +274,7 @@ export default function SaskatchewanEntrepreneurPage() {
             assessments and build the strongest possible case within the official rules.
           </Callout>
 
-          <h2>How Wild Mountain helps with your Saskatchewan business move</h2>
+          <h2>How Wild Mountain Immigration helps with your Saskatchewan business move</h2>
           <p>
             As a CICC-regulated practice led by a licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr>,
             our team assesses whether the Saskatchewan Entrepreneur stream genuinely fits your capital, experience and

@@ -320,7 +320,7 @@ export default function ComprehensiveRankingSystemPage() {
             exact number.
           </p>
 
-          <h2>How Wild Mountain helps you maximise your CRS</h2>
+          <h2>How Wild Mountain Immigration helps you maximise your CRS</h2>
           <p>
             We review your profile section by section to capture every point you are entitled to, the right ECA, a
             language-test strategy, correctly claimed spouse points, and the skill-transferability combinations DIY

@@ -305,7 +305,7 @@ export default function LabourMarketPrioritiesPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps with Labour Market Priorities</h2>
+          <h2>How Wild Mountain Immigration helps with Labour Market Priorities</h2>
           <p>
             The hardest part of Labour Market Priorities is that you cannot apply for it directly, your only lever is
             how well your <a href="/express-entry">Express Entry</a> profile matches Nova Scotia&apos;s shifting

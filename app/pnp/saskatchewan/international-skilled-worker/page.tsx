@@ -285,7 +285,7 @@ export default function InternationalSkilledWorkerPage() {
             months to the better part of a year overall (source: saskatchewan.ca and IRCC processing times, 2026).
           </p>
 
-          <h2>How Wild Mountain helps with your SINP skilled worker application</h2>
+          <h2>How Wild Mountain Immigration helps with your SINP skilled worker application</h2>
           <p>
             We assess your profile against Saskatchewan&apos;s current priorities, calculate your EOI points, and steer
             you toward the sub-category, Employment Offer, Occupation In-Demand or Saskatchewan Express Entry, with the

@@ -281,7 +281,7 @@ export default function DedicatedHealthCarePathwayPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps health-care workers</h2>
+          <h2>How Wild Mountain Immigration helps health-care workers</h2>
           <p>
             Alberta is our home province, we are based in Canmore, in the Bow Valley, and health care is the
             province&apos;s leading immigration priority within the <a href="/alberta-immigration">AAIP</a>. Working under

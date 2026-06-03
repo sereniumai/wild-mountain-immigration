@@ -245,7 +245,7 @@ export default function NovaScotiaOccupationInDemandPage() {
             no honest consultant should.
           </Callout>
 
-          <h2>How Wild Mountain helps with your Occupation in Demand application</h2>
+          <h2>How Wild Mountain Immigration helps with your Occupation in Demand application</h2>
           <p>
             We start by confirming the part most applicants get wrong: whether your occupation is actually on Nova
             Scotia&apos;s current in-demand list, since it changes and can be empty. From there, our team, led by a

@@ -267,7 +267,7 @@ export default function LmiaPage() {
             this route.
           </p>
 
-          <h2>How Wild Mountain helps employers and workers</h2>
+          <h2>How Wild Mountain Immigration helps employers and workers</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team supports the work-permit side of an LMIA-based hire.
             We help employers understand the process and the choice between streams, and we prepare the worker&apos;s

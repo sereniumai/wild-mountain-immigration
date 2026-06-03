@@ -292,7 +292,7 @@ export default function NewBrunswickBusinessImmigrationPage() {
             assessments and build the strongest possible case within the official rules.
           </Callout>
 
-          <h2>How Wild Mountain helps with your NB business move</h2>
+          <h2>How Wild Mountain Immigration helps with your NB business move</h2>
           <p>
             Our team is led by a licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC
             #R706497); we assess whether the New Brunswick Business Immigration Stream genuinely fits your capital,

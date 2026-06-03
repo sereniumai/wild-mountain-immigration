@@ -269,7 +269,7 @@ export default function FromPakistanPage() {
             <a href="/fees">fees guide</a> explains our professional fee and how it differs from government fees.
           </p>
 
-          <h2>How Wild Mountain helps you move from Pakistan</h2>
+          <h2>How Wild Mountain Immigration helps you move from Pakistan</h2>
           <p>
             We do one thing: build the strongest, most complete Canadian immigration application for your situation, and
             represent you with IRCC, all online, from Pakistan through to your arrival. As a CICC-regulated practice led

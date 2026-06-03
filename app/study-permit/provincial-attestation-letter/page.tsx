@@ -259,7 +259,7 @@ export default function ProvincialAttestationLetterPage() {
             current 2026 guidance and confirm the live position on canada.ca before you rely on it.
           </p>
 
-          <h2>How Wild Mountain helps with your PAL and study permit</h2>
+          <h2>How Wild Mountain Immigration helps with your PAL and study permit</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team confirms whether your specific program needs a
             provincial attestation letter or qualifies for a current exemption, checks that the PAL you receive is valid,

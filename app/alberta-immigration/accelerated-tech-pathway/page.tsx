@@ -306,7 +306,7 @@ export default function AcceleratedTechPathwayPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps tech workers</h2>
+          <h2>How Wild Mountain Immigration helps tech workers</h2>
           <p>
             The Accelerated Tech Pathway rewards precision: the right NOC 2021 code, an{" "}
             <a href="/express-entry">Express Entry</a> occupation that truly matches the job offer, every Worker EOI point

@@ -272,7 +272,7 @@ export default function TourismHospitalityStreamPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps Bow Valley hospitality workers</h2>
+          <h2>How Wild Mountain Immigration helps Bow Valley hospitality workers</h2>
           <p>
             Alberta is our home province and the Bow Valley is our backyard, so the Tourism &amp; Hospitality Stream is a
             route we know well within the <a href="/alberta-immigration">AAIP</a>. Working under a licensed RCIC

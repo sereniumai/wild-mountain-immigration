@@ -34,11 +34,12 @@ export function Hero() {
         cover
       />
 
-      {/* Cinematic grading: strong dark wash on the left for the copy, a soft
-          vignette, and a brand glow, so the footage reads as a backdrop. */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/55 to-ink/15" aria-hidden />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/5 to-ink/30" aria-hidden />
-      <div className="pointer-events-none absolute inset-0 [box-shadow:inset_0_0_220px_60px_rgba(20,22,24,0.5)]" aria-hidden />
+      {/* Cinematic grading: a left wash for the copy, a soft vignette, and a
+          brand glow, so the footage reads as a backdrop. Same lighter wash on
+          both the still poster and the moving footage. */}
+      <div className="pointer-events-none absolute inset-0 bg-linear-to-r from-ink/62 via-ink/42 to-ink/12" aria-hidden />
+      <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-ink/52 via-ink/5 to-ink/24" aria-hidden />
+      <div className="pointer-events-none absolute inset-0 [box-shadow:inset_0_0_220px_60px_rgba(20,22,24,0.4)]" aria-hidden />
 
       {/* Sound toggle: subtle frosted control, top-right, aligned with the nav. */}
       {sound.enabled && (
@@ -87,7 +88,7 @@ export function Hero() {
             starts here.
           </motion.h2>
 
-          <motion.p {...fade(0.15)} className="mt-6 max-w-xl text-[17px] leading-relaxed text-white/75">
+          <motion.p {...fade(0.15)} className="mt-6 max-w-xl text-[17px] leading-relaxed text-white">
             A CICC-regulated Canmore consultancy run by people who made the move themselves. We find your best
             pathway, build your strongest application, and stay beside you to the finish.
           </motion.p>

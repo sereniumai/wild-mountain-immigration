@@ -247,7 +247,7 @@ export default function StudyToPrPage() {
             and <a href="/study-permit/proof-of-funds">proof of funds</a> as you prepare.
           </p>
 
-          <h2>How Wild Mountain helps you go from study to PR</h2>
+          <h2>How Wild Mountain Immigration helps you go from study to PR</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team maps the full study to PR in Canada pathway from the
             start, so each step builds on the last. We help confirm that your program leads to an eligible PGWP, plan the

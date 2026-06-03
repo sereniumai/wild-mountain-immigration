@@ -275,7 +275,7 @@ export default function OntarioSkilledTradesPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps with your Skilled Trades application</h2>
+          <h2>How Wild Mountain Immigration helps with your Skilled Trades application</h2>
           <p>
             Trades files turn on detail: the right NOC code, experience that actually falls inside the qualifying window, and
             a language result that clears the federal minimum on every ability. Working under a licensed{" "}

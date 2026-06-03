@@ -201,7 +201,7 @@ export default function ExpressEntryPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps with Express Entry</h2>
+          <h2>How Wild Mountain Immigration helps with Express Entry</h2>
           <p>
             We build your profile to capture every CRS point you are entitled to, choose the right program, and prepare
             an application that stands up to scrutiny. Working under a licensed RCIC (CICC #R706497), our team represents

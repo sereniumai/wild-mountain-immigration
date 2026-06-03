@@ -259,7 +259,7 @@ export default function CetaPage() {
             the eventual PR route in mind so the temporary step builds toward the permanent one.
           </p>
 
-          <h2>How Wild Mountain helps with your CETA application</h2>
+          <h2>How Wild Mountain Immigration helps with your CETA application</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team confirms your EU nationality and category, checks
             that your sector and role are covered, and prepares a complete, well-evidenced work-permit application for

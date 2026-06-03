@@ -252,7 +252,7 @@ export default function StartUpVisaPage() {
             entrepreneur can make.
           </p>
 
-          <h2>How Wild Mountain helps with the Start-up Visa</h2>
+          <h2>How Wild Mountain Immigration helps with the Start-up Visa</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team supports Start-up Visa Canada applicants from first
             assessment through to the permanent-residence application. We check eligibility honestly, help structure a

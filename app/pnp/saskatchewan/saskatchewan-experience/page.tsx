@@ -280,7 +280,7 @@ export default function SaskatchewanExperiencePage() {
             processing times on saskatchewan.ca and canada.ca.
           </Callout>
 
-          <h2>How Wild Mountain helps with your Saskatchewan Experience application</h2>
+          <h2>How Wild Mountain Immigration helps with your Saskatchewan Experience application</h2>
           <p>
             We assess your profile against Saskatchewan&apos;s current rules, identify the sub-category, Existing Work
             Permit, Health Professionals, Hospitality Sector, Long-Haul Truck Driver or Students, with the strongest

@@ -274,7 +274,7 @@ export default function CusmaPage() {
             path exists before assuming a slower route is necessary.
           </p>
 
-          <h2>How Wild Mountain helps with your CUSMA application</h2>
+          <h2>How Wild Mountain Immigration helps with your CUSMA application</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team confirms your citizenship and category, matches
             your role to the CUSMA provisions, and prepares a complete <strong>CUSMA work permit</strong> application

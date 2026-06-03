@@ -288,7 +288,7 @@ export default function ParentsGrandparentsPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps with parents and grandparents</h2>
+          <h2>How Wild Mountain Immigration helps with parents and grandparents</h2>
           <p>
             We give families an honest, current read on the fastest realistic way to reunite. Working under a licensed
             RCIC (CICC #R706497), our team assesses whether the Super Visa or a future PGP round is the better fit for

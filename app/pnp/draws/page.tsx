@@ -250,7 +250,7 @@ export default function PnpDrawsPage() {
             matters.
           </p>
 
-          <h2>How Wild Mountain helps you target the right PNP draw</h2>
+          <h2>How Wild Mountain Immigration helps you target the right PNP draw</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team matches your profile to the provinces and streams
             where you are most competitive, sets a provincial route against your federal{" "}

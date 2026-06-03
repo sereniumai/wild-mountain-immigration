@@ -273,7 +273,7 @@ export default function SpousalOpenWorkPermitPage() {
             <a href="/family-sponsorship/spousal-sponsorship">spousal sponsorship guide</a>.
           </Callout>
 
-          <h2>How Wild Mountain helps</h2>
+          <h2>How Wild Mountain Immigration helps</h2>
           <p>
             Spousal and partner sponsorship is our flagship service, and the consultation for it is free. We confirm
             whether inland or outland fits your family, time the open-work-permit application so it lands without a gap,

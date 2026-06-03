@@ -241,7 +241,7 @@ export default function ProcessingTimesPage() {
             available for your application type, to see the stages your file has reached.
           </p>
 
-          <h2>How Wild Mountain helps you plan around timelines</h2>
+          <h2>How Wild Mountain Immigration helps you plan around timelines</h2>
           <p>
             We use realistic, current timelines to plan your case, sequencing steps such as language tests, an{" "}
             <a href="/express-entry/educational-credential-assessment">ECA</a>, a{" "}

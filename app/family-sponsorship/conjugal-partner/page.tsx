@@ -307,7 +307,7 @@ export default function ConjugalPartnerPage() {
             is a careful, complete application the first time, which is the service we focus on.
           </Callout>
 
-          <h2>How Wild Mountain helps with conjugal partner sponsorship</h2>
+          <h2>How Wild Mountain Immigration helps with conjugal partner sponsorship</h2>
           <p>
             The conjugal category is narrow and easy to misapply, so our first job is honest: confirming whether you genuinely
             fit it, or whether <a href="/family-sponsorship/spousal-sponsorship">spousal or common-law sponsorship</a> is the

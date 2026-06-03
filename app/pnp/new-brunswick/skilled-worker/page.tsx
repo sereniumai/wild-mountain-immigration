@@ -279,7 +279,7 @@ export default function NewBrunswickSkilledWorkerPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps with your NB Skilled Worker application</h2>
+          <h2>How Wild Mountain Immigration helps with your NB Skilled Worker application</h2>
           <p>
             We assess your profile against New Brunswick&apos;s current sector priorities, confirm whether your occupation is
             eligible and whether your employer&apos;s support meets the program&apos;s expectations, and prepare an INB Portal

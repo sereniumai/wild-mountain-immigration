@@ -288,7 +288,7 @@ function evalSponsor(a: Answers): EvalResult {
   if (status === "pr" && val(a, "sponsorWhere") === "abroad") {
     flags.push("A permanent-resident sponsor must be living in Canada to sponsor. A Canadian citizen can sometimes sponsor a spouse or child from abroad if they will return.");
   }
-  if (arr(a, "sponsorBars").length) {
+  if (arr(a, "sponsorBars").filter((v) => v !== "none").length) {
     flags.push("One or more of your answers (a past sponsorship default, an overdue immigration loan or bond, undischarged bankruptcy, a removal order, or a serious criminal conviction) can legally prevent a sponsorship even for a citizen or PR. This must be reviewed carefully before relying on a sponsorship.");
   }
 

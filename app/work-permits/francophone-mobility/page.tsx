@@ -235,7 +235,7 @@ export default function FrancophoneMobilityPage() {
             outside Quebec. We map the work-permit stage with that destination in mind.
           </p>
 
-          <h2>How Wild Mountain helps with Francophone Mobility</h2>
+          <h2>How Wild Mountain Immigration helps with Francophone Mobility</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team confirms your French evidence, checks the job and
             NOC code against the current C16 rules, and prepares a complete application alongside the employer&apos;s

@@ -253,7 +253,7 @@ export default function WorkWhileStudyingPage() {
             current rules on canada.ca before you plan around a second income.
           </p>
 
-          <h2>How Wild Mountain helps international students</h2>
+          <h2>How Wild Mountain Immigration helps international students</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team helps international students understand exactly what
             their study permit allows, whether a co-op permit is needed, and how to stay compliant while building toward

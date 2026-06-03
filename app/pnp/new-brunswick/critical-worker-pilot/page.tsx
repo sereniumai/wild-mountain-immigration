@@ -257,7 +257,7 @@ export default function CriticalWorkerPilotPage() {
             independently. We give you a candid read before you invest time and fees.
           </Callout>
 
-          <h2>How Wild Mountain helps with the Critical Worker Pilot</h2>
+          <h2>How Wild Mountain Immigration helps with the Critical Worker Pilot</h2>
           <p>
             The single most common mistake we see with the <strong>New Brunswick Critical Worker Pilot</strong> is assuming
             it is an open route. Our team is led by a licensed{" "}

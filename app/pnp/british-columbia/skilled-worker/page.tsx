@@ -295,7 +295,7 @@ export default function SkilledWorkerPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps with your Skilled Worker application</h2>
+          <h2>How Wild Mountain Immigration helps with your Skilled Worker application</h2>
           <p>
             We assess your profile against BC&apos;s current priorities, model your SIRS score, and tell you honestly
             whether the base route or Express Entry BC gives you the strongest realistic chance. As a CICC-regulated

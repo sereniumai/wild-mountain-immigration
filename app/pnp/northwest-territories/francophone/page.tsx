@@ -52,7 +52,7 @@ const faqs = [
   },
   {
     q: "Does a Francophone Stream nomination guarantee permanent residence?",
-    a: "No. A nomination is a territorial endorsement, not permanent residence. You still submit a separate application to IRCC, which makes the final decision on medical, security and admissibility grounds. As a licensed RCIC we build the strongest possible case and flag risks before they become refusals. Wild Mountain is not affiliated with the Government of the Northwest Territories or IRCC.",
+    a: "No. A nomination is a territorial endorsement, not permanent residence. You still submit a separate application to IRCC, which makes the final decision on medical, security and admissibility grounds. As a licensed RCIC we build the strongest possible case and flag risks before they become refusals. Wild Mountain Immigration is not affiliated with the Government of the Northwest Territories or IRCC.",
   },
 ];
 

@@ -246,7 +246,7 @@ export default function CitizenshipApplicationPage() {
             processing-times tool before you plan around a date.
           </p>
 
-          <h2>How Wild Mountain helps with your application</h2>
+          <h2>How Wild Mountain Immigration helps with your application</h2>
           <p>
             Knowing how to apply for Canadian citizenship is one thing; applying once, completely, is another.
             Working under a licensed RCIC (CICC #R706497), our team confirms whether you genuinely meet the

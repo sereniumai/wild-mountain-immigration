@@ -274,7 +274,7 @@ export default function BcPnpTechPage() {
             tech applicants should plan for the better part of a year from registration to permanent residence, sometimes more.
           </p>
 
-          <h2>How Wild Mountain helps BC tech workers</h2>
+          <h2>How Wild Mountain Immigration helps BC tech workers</h2>
           <p>
             The BC PNP tech route rewards precision: the right NOC 2021 code, a B.C. job offer at a wage that scores well on
             SIRS, and, if you go enhanced, a federal Express Entry profile that turns the +600 into an invitation. As a

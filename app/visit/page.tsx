@@ -237,7 +237,7 @@ export default function VisitHubPage() {
             detail.
           </p>
 
-          <h2>How Wild Mountain helps you visit Canada</h2>
+          <h2>How Wild Mountain Immigration helps you visit Canada</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team prepares visitor visa and super visa
             applications and advises on eTA and business visitor questions. We confirm which status you actually need to

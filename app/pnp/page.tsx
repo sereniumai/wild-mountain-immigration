@@ -289,7 +289,7 @@ export default function PnpPage() {
             allocations were cut sharply for 2025 and stay tight in 2026, streams open and close with little notice. Always confirm timelines against the live provincial page when you apply.
           </p>
 
-          <h2>No Quebec, and how Wild Mountain helps</h2>
+          <h2>No Quebec, and how Wild Mountain Immigration helps</h2>
           <p>
             One important boundary: the Provincial Nominee Program does <strong>not</strong> include{" "}
             <strong>Quebec</strong>. Under the Canada-Québec Accord, Quebec selects its own economic immigrants through

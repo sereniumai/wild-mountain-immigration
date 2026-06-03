@@ -262,7 +262,7 @@ export default function ExpressEntryBcPage() {
             fees on welcomebc.ca before applying.
           </p>
 
-          <h2>How Wild Mountain helps with Express Entry BC</h2>
+          <h2>How Wild Mountain Immigration helps with Express Entry BC</h2>
           <p>
             As a CICC-regulated practice led by a licensed RCIC, our team makes sure your federal{" "}
             <a href="/express-entry">Express Entry</a> profile is built to score every point it should, and that your{" "}

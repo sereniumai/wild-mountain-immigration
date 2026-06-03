@@ -60,7 +60,7 @@ const faqs = [
     a: "Helpful documents include a letter from your foreign employer describing the purpose and duration of the trip, details of any meetings, conference registrations or contracts, evidence that your salary and main employment remain abroad, and proof of ties to your home country. For after-sales service, carry the original purchase or warranty agreement showing it was made outside Canada. Carrying clear documentation helps you explain your purpose to a border officer and supports that you are a genuine business visitor, not entering the labour market.",
   },
   {
-    q: "Can Wild Mountain advise on business visitor trips?",
+    q: "Can Wild Mountain Immigration advise on business visitor trips?",
     a: "Yes. As a CICC-regulated practice, our team assesses whether your planned activities qualify under the business visitor category or whether they require a work permit, advises on the visitor visa or eTA you need to travel, and helps you prepare supporting documentation. If a work permit turns out to be the right route, we prepare that application too. We work entirely online; our goal is to make sure you travel under the correct status and avoid a misstep.",
   },
 ];
@@ -268,7 +268,7 @@ export default function BusinessVisitorPage() {
             labour market.
           </p>
 
-          <h2>How Wild Mountain helps business travellers</h2>
+          <h2>How Wild Mountain Immigration helps business travellers</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team assesses whether your planned activities
             qualify under the business visitor category or whether they require a work permit, advises on the{" "}

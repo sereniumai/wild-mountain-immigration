@@ -275,7 +275,7 @@ export default function SkilledWorkerInManitobaPage() {
             caption="Skilled Worker in Manitoba vs Skilled Worker Overseas (immigratemanitoba.com, 2026)."
           />
 
-          <h2>How Wild Mountain helps with your application</h2>
+          <h2>How Wild Mountain Immigration helps with your application</h2>
           <p>
             Wild Mountain Immigration assesses your profile against Manitoba&apos;s current priorities, reviews your job offer
             and work history, documents the all-important <strong>Manitoba connection</strong>, and models your EOI ranking so

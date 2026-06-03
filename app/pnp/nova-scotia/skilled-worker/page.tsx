@@ -249,7 +249,7 @@ export default function NovaScotiaSkilledWorkerPage() {
             the current position on novascotia.ca and canada.ca before you apply.
           </p>
 
-          <h2>How Wild Mountain helps with your Skilled Worker application</h2>
+          <h2>How Wild Mountain Immigration helps with your Skilled Worker application</h2>
           <p>
             We assess your profile against Nova Scotia&apos;s 2026 criteria, confirm that your job offer and NOC code
             line up, and check whether the Skilled Worker stream, <a href="/pnp/nova-scotia/occupation-in-demand">

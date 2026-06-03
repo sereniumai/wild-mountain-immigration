@@ -253,7 +253,7 @@ export default function CanadianExperienceClassPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps with the Canadian Experience Class</h2>
+          <h2>How Wild Mountain Immigration helps with the Canadian Experience Class</h2>
           <p>
             We confirm your Canadian Experience Class eligibility before you spend a dollar on testing, then build your
             Express Entry profile to capture every CRS point your Canadian work and study earn you. Working under a

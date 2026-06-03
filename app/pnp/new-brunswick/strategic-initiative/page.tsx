@@ -275,7 +275,7 @@ export default function StrategicInitiativePage() {
             numbers are limited.
           </p>
 
-          <h2>How Wild Mountain helps with the Strategic Initiative Stream</h2>
+          <h2>How Wild Mountain Immigration helps with the Strategic Initiative Stream</h2>
           <p>
             We assess your profile against New Brunswick&apos;s current francophone and sector priorities, confirm your
             French results clear the threshold the province expects, and position your Express Entry profile and INB Portal

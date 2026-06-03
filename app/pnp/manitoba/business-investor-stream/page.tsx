@@ -286,7 +286,7 @@ export default function ManitobaBusinessInvestorStreamPage() {
             assessments and build the strongest possible case within the official rules.
           </Callout>
 
-          <h2>How Wild Mountain helps with your Manitoba business move</h2>
+          <h2>How Wild Mountain Immigration helps with your Manitoba business move</h2>
           <p>
             Working under a licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497),
             Wild Mountain Immigration assesses whether the Business Investor Stream genuinely fits your capital, experience

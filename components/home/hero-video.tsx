@@ -159,20 +159,26 @@ export const HeroVideo = forwardRef<HeroVideoHandle, HeroVideoProps>(function He
             const YT = window.YT;
             // Restart (muted) if it ever reaches the true end.
             if (e.data === YT.PlayerState.ENDED) {
+              revealed = false;
+              setPlaying(false);
               e.target.seekTo(start, true);
               e.target.mute();
               setMuted(true);
               e.target.playVideo();
             }
-            // Resume INSTANTLY on paused/unstarted/cued, rather than waiting up
-            // to a tick. These are the states that render YouTube's centre play/
-            // pause button, so closing the gap to ~0ms means it can't be caught
-            // on screen right after the reveal.
+            // Paused/unstarted/cued are exactly the states that render YouTube's
+            // centre play button. Once the film has revealed, the poster is
+            // transparent, so that button would flash through for a frame. Drop
+            // the poster back on top FIRST (revealed = false), then resume
+            // instantly; the reveal logic re-lifts the poster only once the film
+            // is cleanly playing again past the start-up chrome.
             if (
               e.data === YT.PlayerState.PAUSED ||
               e.data === YT.PlayerState.UNSTARTED ||
               e.data === YT.PlayerState.CUED
             ) {
+              revealed = false;
+              setPlaying(false);
               e.target.playVideo();
             }
           },

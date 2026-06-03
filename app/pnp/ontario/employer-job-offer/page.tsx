@@ -294,7 +294,7 @@ export default function EmployerJobOfferPage() {
             on ontario.ca before you apply.
           </p>
 
-          <h2>How Wild Mountain helps with your Ontario job offer PR application</h2>
+          <h2>How Wild Mountain Immigration helps with your Ontario job offer PR application</h2>
           <p>
             Turning an <strong>Ontario job offer PR</strong> plan into a nomination takes coordination on both sides, yours
             and your employer&apos;s. Working under a licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr>{" "}

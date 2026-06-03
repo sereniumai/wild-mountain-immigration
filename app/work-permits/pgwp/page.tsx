@@ -316,7 +316,7 @@ export default function PgwpPage() {
             PGWP application an expert check before you submit.
           </p>
 
-          <h2>How Wild Mountain helps with your PGWP</h2>
+          <h2>How Wild Mountain Immigration helps with your PGWP</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team treats the post-graduation work permit as one stage
             in a longer plan rather than a stand-alone form. We confirm that your institution and program are

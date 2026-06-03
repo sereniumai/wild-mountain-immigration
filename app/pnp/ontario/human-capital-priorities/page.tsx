@@ -269,7 +269,7 @@ export default function OntarioHcpPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps with your HCP application</h2>
+          <h2>How Wild Mountain Immigration helps with your HCP application</h2>
           <p>
             Because you cannot apply to the Human Capital Priorities Stream directly, the work happens <em>before</em> the NOI
             arrives, in how your <a href="/express-entry">Express Entry</a> profile is built.</p>

@@ -248,7 +248,7 @@ export default function EtaPage() {
             border.
           </p>
 
-          <h2>How Wild Mountain can help</h2>
+          <h2>How Wild Mountain Immigration can help</h2>
           <p>
             The Canada eTA application itself is simple and most travellers complete it directly on canada.ca. Where our
             team adds value, working under a licensed RCIC (CICC #R706497), is confirming which status you actually

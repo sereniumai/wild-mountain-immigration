@@ -277,7 +277,7 @@ export default function CitizenshipPage() {
             caption="Illustrative 2026 timelines. Figures change, verify current processing times on IRCC."
           />
 
-          <h2>How Wild Mountain helps with your citizenship application</h2>
+          <h2>How Wild Mountain Immigration helps with your citizenship application</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team confirms whether you genuinely meet the
             requirements, helps you count your physical presence accurately, checks your tax filings line up, and

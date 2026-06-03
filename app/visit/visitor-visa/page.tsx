@@ -252,7 +252,7 @@ export default function VisitorVisaPage() {
             caption="A visitor visa gets you to Canada; a visitor record extends a stay once you are here."
           />
 
-          <h2>How Wild Mountain helps with your visitor visa</h2>
+          <h2>How Wild Mountain Immigration helps with your visitor visa</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team prepares complete, accurate visitor visa
             applications. We present your purpose of travel and your ties to home in the strongest, most honest light,

@@ -271,7 +271,7 @@ export default function NsInternationalGraduateEntrepreneurPage() {
             stages and verify current processing information on novascotia.ca and canada.ca.
           </Callout>
 
-          <h2>How Wild Mountain helps with your graduate entrepreneur application</h2>
+          <h2>How Wild Mountain Immigration helps with your graduate entrepreneur application</h2>
           <p>
             The NSNP business streams reward a clear, credible record and a clean application, and that is exactly what a{" "}
             <strong>Nova Scotia graduate running their own business</strong> needs.</p>

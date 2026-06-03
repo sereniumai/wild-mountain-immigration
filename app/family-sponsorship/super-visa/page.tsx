@@ -272,7 +272,7 @@ export default function SuperVisaPage() {
             live processing-time tool on canada.ca for the current figure for your country, and build in a buffer when
             planning travel.
           </p>
-          <Callout type="brand" title="How Wild Mountain helps">
+          <Callout type="brand" title="How Wild Mountain Immigration helps">
             We confirm your host income meets LICO, vet the insurance policy from a Canadian or approved foreign
             insurer against every IRCC condition, draft a strong invitation letter and manage the full Super Visa
             Canada application from start to decision. Prefer to do the legwork yourself? Our lower-cost{" "}

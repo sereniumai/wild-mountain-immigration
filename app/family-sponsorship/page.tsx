@@ -288,7 +288,7 @@ export default function FamilySponsorshipPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps with family sponsorship</h2>
+          <h2>How Wild Mountain Immigration helps with family sponsorship</h2>
           <p>
             We make spousal and partner sponsorship our priority. Working under a licensed RCIC (CICC #R706497), our
             team assesses your eligibility, chooses the right stream, and builds a relationship record that stands up

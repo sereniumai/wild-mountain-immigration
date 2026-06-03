@@ -247,7 +247,7 @@ export default function NbExpressEntryLabourMarketPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps with NB Express Entry</h2>
+          <h2>How Wild Mountain Immigration helps with NB Express Entry</h2>
           <p>
             We assess your <a href="/express-entry">Express Entry</a> standing, confirm whether your New Brunswick job
             offer and occupation are eligible, and position your <strong>NB EOI</strong> to match the province&apos;s

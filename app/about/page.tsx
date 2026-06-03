@@ -41,7 +41,7 @@ const faqs = [
     a: "Not at all. Wild Mountain Immigration is based in Canmore, Alberta, and we work with clients across the Bow Valley and Calgary online, by video call and phone. Immigration is paperwork and expertise, not geography, so we represent clients right across Canada and around the world remotely, by video call, phone, email and secure document sharing.",
   },
   {
-    q: "How do I get started with Wild Mountain?",
+    q: "How do I get started with Wild Mountain Immigration?",
     a: "Tell us your goals and background through our contact page. We give you an honest read on your realistic options and recommend the right pathway and service for your situation, whether that is full File Management or our lower-cost File Review. We set out clear, fixed-scope fees in writing before you commit to anything.",
   },
   {

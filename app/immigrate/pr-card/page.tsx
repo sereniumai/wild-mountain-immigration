@@ -215,7 +215,7 @@ export default function PrCardPage() {
             apply for or renew a card, so there are no surprises.
           </p>
 
-          <h2>How Wild Mountain helps with your PR card</h2>
+          <h2>How Wild Mountain Immigration helps with your PR card</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team advises on whether your first card will issue
             automatically, helps you confirm your address with IRCC, and prepares a PR card application or{" "}

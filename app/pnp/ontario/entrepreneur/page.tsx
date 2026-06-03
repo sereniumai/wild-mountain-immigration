@@ -279,7 +279,7 @@ export default function OntarioEntrepreneurStreamPage() {
             assessments and build the strongest possible case within the official rules.
           </Callout>
 
-          <h2>How Wild Mountain helps with your Ontario business move</h2>
+          <h2>How Wild Mountain Immigration helps with your Ontario business move</h2>
           <p>
             Wild Mountain Immigration is based in Canmore, Alberta, but represents clients across Canada and abroad, including
             entrepreneurs targeting Ontario through the OINP. Working under a licensed{" "}

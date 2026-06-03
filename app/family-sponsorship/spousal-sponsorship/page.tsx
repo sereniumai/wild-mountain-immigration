@@ -355,7 +355,7 @@ export default function SpousalSponsorshipPage() {
             focus on.
           </Callout>
 
-          <h2>How Wild Mountain helps with spousal sponsorship</h2>
+          <h2>How Wild Mountain Immigration helps with spousal sponsorship</h2>
           <p>
             We make spousal and partner sponsorship our priority. Working under a licensed RCIC (CICC #R706497), our team
             assesses your eligibility, recommends the right stream, and builds a relationship record that stands up to

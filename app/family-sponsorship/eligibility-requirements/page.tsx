@@ -237,7 +237,7 @@ export default function FamilySponsorshipEligibilityPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps confirm eligibility</h2>
+          <h2>How Wild Mountain Immigration helps confirm eligibility</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team confirms your <strong>family sponsorship
             eligibility in Canada</strong>: whether you are an eligible sponsor, whether your relative is in an eligible

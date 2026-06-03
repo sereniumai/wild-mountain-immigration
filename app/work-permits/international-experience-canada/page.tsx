@@ -273,7 +273,7 @@ export default function InternationalExperienceCanadaPage() {
             <a href="/immigrate">immigrate to Canada</a> for the bigger picture.
           </p>
 
-          <h2>How Wild Mountain helps with International Experience Canada</h2>
+          <h2>How Wild Mountain Immigration helps with International Experience Canada</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team helps you confirm which IEC category you qualify for,
             build a pool profile that is ready to convert the moment you are invited, and prepare a clean work permit

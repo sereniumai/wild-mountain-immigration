@@ -73,7 +73,17 @@ export function EligibilityFinder() {
     setAnswers((prev) => {
       if (f.type === "multi") {
         const cur = Array.isArray(prev[f.id]) ? (prev[f.id] as string[]) : [];
-        const next = cur.includes(value) ? cur.filter((v) => v !== value) : [...cur, value];
+        const opt = f.options.find((o) => o.value === value);
+        const exclusiveVals = new Set(f.options.filter((o) => o.exclusive).map((o) => o.value));
+        let next: string[];
+        if (cur.includes(value)) {
+          next = cur.filter((v) => v !== value); // toggle the same option off
+        } else if (opt?.exclusive) {
+          next = [value]; // choosing "None" clears every other option
+        } else {
+          // choosing a real option clears any exclusive ("None") selection
+          next = [...cur.filter((v) => !exclusiveVals.has(v)), value];
+        }
         return { ...prev, [f.id]: next };
       }
       return { ...prev, [f.id]: value };
@@ -83,7 +93,8 @@ export function EligibilityFinder() {
   function sectionComplete(): boolean {
     if (!section) return false;
     return visibleFields(section, answers).every((f) => {
-      if (f.optional || f.type === "multi") return true;
+      if (f.optional) return true;
+      if (f.type === "multi") return arr(answers, f.id).length > 0;
       return Boolean(val(answers, f.id));
     });
   }

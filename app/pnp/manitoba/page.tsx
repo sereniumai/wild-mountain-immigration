@@ -303,7 +303,7 @@ export default function ManitobaPnpPage() {
             applicants should plan for the better part of a year, sometimes more, from EOI to permanent residence.
           </p>
 
-          <h2>How Wild Mountain helps with the MPNP</h2>
+          <h2>How Wild Mountain Immigration helps with the MPNP</h2>
           <p>
             Wild Mountain Immigration assesses your profile against Manitoba&apos;s current priorities, builds and documents
             the all-important Manitoba connection, models your <a href="/pnp/manitoba/skilled-worker-overseas">Expression of

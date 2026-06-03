@@ -249,7 +249,7 @@ export default function NovaScotiaExperienceExpressEntryPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps with your Experience: Express Entry application</h2>
+          <h2>How Wild Mountain Immigration helps with your Experience: Express Entry application</h2>
           <p>
             We assess whether the Experience stream is genuinely your strongest route, or whether the federal{" "}
             <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a>, the{" "}

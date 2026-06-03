@@ -273,7 +273,7 @@ export default function OntarioMastersGraduatePage() {
             progress, both the criteria and the process may shift. Beware any source that implies a place is guaranteed.
           </Callout>
 
-          <h2>How Wild Mountain helps with your OINP application</h2>
+          <h2>How Wild Mountain Immigration helps with your OINP application</h2>
           <p>
             Wild Mountain Immigration assesses your profile against Ontario&apos;s current graduate-stream rules, confirms
             whether your degree and timeline qualify, and builds an Expression of Interest that presents your case well.

@@ -223,7 +223,7 @@ export default function ResidencyObligationPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps with the residency obligation</h2>
+          <h2>How Wild Mountain Immigration helps with the residency obligation</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team helps you count your days, understand what time
             abroad counts, organise the supporting evidence and prepare a <a href="/immigrate/pr-card-renewal">PR card

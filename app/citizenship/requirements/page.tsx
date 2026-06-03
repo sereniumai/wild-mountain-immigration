@@ -241,7 +241,7 @@ export default function CitizenshipRequirementsPage() {
             ]}
           />
 
-          <h2>How Wild Mountain helps you confirm eligibility</h2>
+          <h2>How Wild Mountain Immigration helps you confirm eligibility</h2>
           <p>
             Working under a licensed RCIC (CICC #R706497), our team confirms whether you genuinely meet the
             <strong> citizenship eligibility</strong> rules in Canada, helps you count your physical presence

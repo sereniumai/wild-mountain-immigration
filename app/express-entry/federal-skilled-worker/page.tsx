@@ -253,7 +253,7 @@ export default function FederalSkilledWorkerPage() {
             ]}
           />
 
-          <h2>How does Wild Mountain help FSW applicants?</h2>
+          <h2>How does Wild Mountain Immigration help FSW applicants?</h2>
           <p>
             We start by scoring your 67-point grid honestly, then map the same profile against the CRS so you know both
             whether you qualify and how competitive you are. Working under a licensed RCIC (CICC #R706497), our team
