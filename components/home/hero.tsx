@@ -36,9 +36,9 @@ export function Hero() {
 
       {/* Cinematic grading: strong dark wash on the left for the copy, a soft
           vignette, and a brand glow, so the footage reads as a backdrop. */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-ink/95 via-ink/75 to-ink/30" aria-hidden />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/10 to-ink/45" aria-hidden />
-      <div className="pointer-events-none absolute inset-0 [box-shadow:inset_0_0_220px_60px_rgba(20,22,24,0.65)]" aria-hidden />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/55 to-ink/15" aria-hidden />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/5 to-ink/30" aria-hidden />
+      <div className="pointer-events-none absolute inset-0 [box-shadow:inset_0_0_220px_60px_rgba(20,22,24,0.5)]" aria-hidden />
 
       {/* Sound toggle: subtle frosted control, top-right, aligned with the nav. */}
       {sound.enabled && (
@@ -46,7 +46,7 @@ export function Hero() {
           type="button"
           onClick={() => videoRef.current?.toggleSound()}
           aria-label={sound.muted ? "Turn video sound on" : "Mute video"}
-          className="absolute right-5 top-6 z-20 inline-flex items-center gap-2 rounded-full bg-ink/65 px-4 py-2 text-[13px] font-semibold text-white shadow-lg ring-1 ring-inset ring-white/30 backdrop-blur transition-all hover:-translate-y-0.5 hover:bg-ink/80 active:scale-95 lg:right-8"
+          className="absolute left-5 top-6 z-20 inline-flex items-center gap-2 rounded-full bg-ink/65 px-4 py-2 text-[13px] font-semibold text-white shadow-lg ring-1 ring-inset ring-white/30 backdrop-blur transition-all hover:-translate-y-0.5 hover:bg-ink/80 active:scale-95 sm:left-6 lg:left-auto lg:right-8"
         >
           {sound.muted && (
             <span className="relative flex size-2.5" aria-hidden>
