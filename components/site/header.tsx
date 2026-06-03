@@ -9,6 +9,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/site/logo";
 import { SectionTree, activeSectionFor } from "@/components/site/section-nav";
+import { SidebarCta } from "@/components/site/sidebar-cta";
 import { navSections, utilityNav, aboutSection, site, type NavSection } from "@/lib/site";
 
 // "Visit" stays on the site (footer + cross-links) but is kept out of the top nav.
@@ -152,6 +153,7 @@ export function Header() {
               transition={{ type: "spring", stiffness: 360, damping: 38 }}
             >
               <SectionTree section={panel} variant="panel" onNavigate={() => setPanel(null)} />
+              <SidebarCta />
             </motion.aside>
           </div>
         )}
