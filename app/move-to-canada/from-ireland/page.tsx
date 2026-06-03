@@ -136,7 +136,8 @@ export default function FromIrelandPage() {
             When you <strong>move to Canada from Ireland</strong>, you start with real advantages. English is one of
             Canada&apos;s two official languages, so you score well on the language factors that drive most economic
             programs. Irish degrees and trade qualifications are well understood and straightforward to have assessed, and
-            generations of Irish emigration mean established communities right across the country. As an Irish passport
+            generations of Irish emigration mean established communities right across the country.</p>
+          <p>As an Irish passport
             holder you travel visa-exempt to visit. What you cannot do is simply turn up and stay, because visiting and
             immigrating are different things. The route that fits depends on your age, your occupation, your work
             experience and whether you have a Canadian job offer or close family already in Canada.
@@ -170,7 +171,8 @@ export default function FromIrelandPage() {
             Experience Canada (IEC)</a> Working Holiday is one of the easiest ways to get to Canada, and Ireland&apos;s
             working holiday quota is particularly generous. It is an open work permit, so you are not tied to one employer, and many
             Irish applicants take the two-year option, living and working almost anywhere in Canada before deciding
-            whether to stay. Beyond the adventure, it is strategically valuable: skilled Canadian work experience gained
+            whether to stay.</p>
+          <p>Beyond the adventure, it is strategically valuable: skilled Canadian work experience gained
             on a Working Holiday can qualify you for the{" "}
             <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a>, turning a working holiday
             into a springboard to permanent residence.
@@ -271,7 +273,8 @@ export default function FromIrelandPage() {
             biometrics; third-party costs add your ECA, an English test, the Garda certificate, a medical exam and, for
             most Express Entry applicants, the settlement funds you have to show. These amounts move from time to time, so
             we itemise the live numbers for your route rather than quote a single headline, and government fees can be
-            checked on canada.ca. On timing, IRCC usually completes a full Express Entry application about six months after
+            checked on canada.ca.</p>
+          <p>On timing, IRCC usually completes a full Express Entry application about six months after
             the invitation, while provincial nomination and family sponsorship add their own stages and the IEC runs in
             seasonal rounds. Whatever it costs to move to Canada from Ireland, our <a href="/fees">fees guide</a> explains
             our professional fee and how it differs from government fees.

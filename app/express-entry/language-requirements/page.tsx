@@ -150,7 +150,8 @@ export default function LanguageRequirementsPage() {
             To enter the <a href="/express-entry">Express Entry</a> pool, you must prove your ability in English or
             French by taking an approved language test and meeting the minimum for your program. IRCC expresses every
             requirement on the <strong>Canadian Language Benchmark (CLB)</strong> scale, a national standard that runs
-            from level 1 to 12 (the French equivalent is the NCLC). Your test reports raw scores, and IRCC converts
+            from level 1 to 12 (the French equivalent is the NCLC).</p>
+          <p>Your test reports raw scores, and IRCC converts
             them to CLB levels for each of the four abilities: reading, writing, listening and speaking. IRCC
             publishes a Canadian Language Benchmark chart for every approved test, so you can map your result to a CLB
             level before you book. Meeting the minimum makes you eligible; scoring higher earns you more points in
@@ -249,7 +250,8 @@ export default function LanguageRequirementsPage() {
           <p>
             Working under a licensed RCIC (CICC #R706497), our team reads your CLB results ability by ability,
             identifies which skill is costing you the most points, and maps a realistic plan to lift it, whether that
-            is a retake, a different approved test, or building French toward the bonus. We then make sure your scores
+            is a retake, a different approved test, or building French toward the bonus.</p>
+          <p>We then make sure your scores
             meet the Express Entry language requirements for your program and are entered correctly into your{" "}
             <a href="/express-entry">Express Entry</a> profile. We work entirely online.
             Approved tests, the IELTS to CLB conversion and bonus values change over time, so we always confirm the

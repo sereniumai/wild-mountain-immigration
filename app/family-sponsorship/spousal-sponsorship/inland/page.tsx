@@ -149,7 +149,8 @@ export default function InlandSpousalSponsorshipPage() {
             <strong>stay</strong>, and they maintain <strong>valid status</strong> while they wait. It is the natural
             choice for couples who are already building a life together in Canada. The alternative,{" "}
             <a href="/family-sponsorship/spousal-sponsorship/outland">outland sponsorship</a>, is processed as though the
-            applicant is abroad and is more travel-friendly. In IRCC terms, inland sits in the{" "}
+            applicant is abroad and is more travel-friendly.</p>
+          <p>In IRCC terms, inland sits in the{" "}
             <strong>spouse or common-law partner in-Canada class</strong>, and the file is handled by a{" "}
             <strong>Case Processing Centre</strong>. Both routes lead to the same{" "}
             <strong>unconditional permanent residence</strong>. Conditional PR was repealed in 2017, so a sponsored

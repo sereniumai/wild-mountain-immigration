@@ -150,7 +150,8 @@ export default function YukonSkilledWorkerPage() {
             The defining feature is that the stream is <strong>employer-driven</strong>: the Yukon employer registers
             with the program and submits the nomination application, so you cannot self-nominate. Yukon&apos;s 2026
             nomination allocation is about <strong>282</strong> across all YNP streams, one of the smallest in the
-            country after IRCC cut provincial and territorial allocations nationwide (source: yukon.ca, 2026). With so
+            country after IRCC cut provincial and territorial allocations nationwide (source: yukon.ca, 2026).</p>
+          <p>With so
             few spaces, the territory concentrates on its highest-priority profiles, so meeting the Skilled Worker
             stream&apos;s minimum eligibility is not the same as receiving a nomination. Figures and rules change
             frequently, so always verify the current position on yukon.ca before acting.
@@ -168,7 +169,8 @@ export default function YukonSkilledWorkerPage() {
             The <strong>YNP skilled worker</strong> stream is designed for people whose occupation is higher-skilled and
             who have secured a permanent, full-time job offer, for example trades and technicians in Yukon, supervisors
             and many regulated and professional roles in TEER 0–3. It often fits in-demand occupations and skilled jobs in
-            Whitehorse where a local employer cannot recruit from the territory. It suits candidates who do
+            Whitehorse where a local employer cannot recruit from the territory.</p>
+          <p>It suits candidates who do
             not have a federal Express Entry profile, or whose Comprehensive Ranking System (CRS) score is not yet
             competitive, but who have a committed Yukon employer behind them. If you already have an active Express Entry profile, compare this
             stream with the enhanced <a href="/pnp/yukon/express-entry">Yukon Express Entry</a> route first, and you can
@@ -225,7 +227,8 @@ export default function YukonSkilledWorkerPage() {
             secure a genuine full-time, permanent job offer from an eligible Yukon employer. The employer then registers
             with the program and submits the offer of employment, paying the IRCC employer compliance fee (about $230).
             You and your employer then submit the Skilled Worker application during an open{" "}
-            <strong>EOI intake window</strong>. For 2026, yukon.ca lists roughly <strong>January 19–30</strong> and{" "}
+            <strong>EOI intake window</strong>.</p>
+          <p>For 2026, yukon.ca lists roughly <strong>January 19–30</strong> and{" "}
             <strong>July 6–17</strong>. If Yukon selects you, the territory issues a Yukon nominee certificate, and you then apply
             to <strong>IRCC</strong> for permanent residence on a separate paper application, because this is a base
             nomination. Because intake windows are short and the cap is small, preparing well ahead of a window is the
@@ -243,7 +246,8 @@ export default function YukonSkilledWorkerPage() {
           <p>
             Timelines run in stages. The first variable is simply waiting for an open <strong>EOI window</strong> and
             being selected within Yukon&apos;s limited allocation. After a complete application is submitted, territorial
-            processing of the nomination typically takes a few months. Because the Skilled Worker stream is a{" "}
+            processing of the nomination typically takes a few months.</p>
+          <p>Because the Skilled Worker stream is a{" "}
             <strong>base, paper-based</strong> nomination, the federal stage is a separate IRCC application that generally
             takes longer than the roughly six months IRCC targets for enhanced (Express Entry) applications.
             Realistically, most candidates should plan for the better part of a year, sometimes more, from application
@@ -257,7 +261,8 @@ export default function YukonSkilledWorkerPage() {
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497), our team confirms your
             eligibility against the wider <a href="/pnp/yukon">Yukon Nominee Program</a> priorities, checks that your
             occupation, experience, language and education line up with the stream, and makes sure your employer&apos;s
-            offer of employment and your documents are ready before a window opens. If you are already in Canada on a{" "}
+            offer of employment and your documents are ready before a window opens.</p>
+          <p>If you are already in Canada on a{" "}
             <a href="/work-permits">work permit</a>, we factor that in, and if you hold an{" "}
             <a href="/express-entry">Express Entry</a> profile we compare this base route with the enhanced{" "}
             <a href="/pnp/yukon/express-entry">Yukon Express Entry</a> stream. We prepare a nomination application that

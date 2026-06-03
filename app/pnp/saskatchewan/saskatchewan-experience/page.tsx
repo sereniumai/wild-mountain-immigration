@@ -208,7 +208,8 @@ export default function SaskatchewanExperiencePage() {
           <p>
             Across the Saskatchewan Experience sub-categories, the core requirements are similar: recent full-time work
             in Saskatchewan, a permanent job offer from your current employer, valid temporary status and language
-            results. Skilled workers in the Existing Work Permit sub-category generally need at least <strong>six months
+            results.</p>
+          <p>Skilled workers in the Existing Work Permit sub-category generally need at least <strong>six months
             </strong> of work in the province, while lower-skilled routes such as the Hospitality Sector and Long-Haul
             Truck Driver sub-categories set their own qualifying periods and occupation rules. The table below
             summarises the common eligibility pillars; the controlling list lives on saskatchewan.ca and changes
@@ -237,7 +238,8 @@ export default function SaskatchewanExperiencePage() {
             The clearest way to understand the Saskatchewan Experience category is to contrast it with the SINP&apos;s
             other main skilled route. The <strong>Saskatchewan Experience category</strong> is for people already
             working in the province and almost always requires an in-Saskatchewan job offer and prior in-province
-            experience. The <a href="/pnp/saskatchewan/international-skilled-worker">International Skilled Worker</a>{" "}
+            experience.</p>
+          <p>The <a href="/pnp/saskatchewan/international-skilled-worker">International Skilled Worker</a>{" "}
             category uses an Expression of Interest pool scored out of 110 points and includes routes, such as the
             Saskatchewan Express Entry sub-category, that can be enhanced. If you are abroad, or have no Saskatchewan
             job offer yet, the International Skilled Worker category is usually the better fit.
@@ -283,7 +285,8 @@ export default function SaskatchewanExperiencePage() {
             We assess your profile against Saskatchewan&apos;s current rules, identify the sub-category, Existing Work
             Permit, Health Professionals, Hospitality Sector, Long-Haul Truck Driver or Students, with the strongest
             realistic chance, and confirm your work permit, months of in-province experience and job offer all meet the
-            SINP&apos;s standards. As a licensed{" "}
+            SINP&apos;s standards.</p>
+          <p>As a licensed{" "}
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (#R706497), our team prepares a nomination
             application that stands up to scrutiny and represents you with the province and with IRCC. We catch the
             avoidable mistakes, a wrong occupation code, a language band one short, a status gap, that cause refusals.

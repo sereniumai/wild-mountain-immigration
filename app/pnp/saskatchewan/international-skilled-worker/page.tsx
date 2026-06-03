@@ -142,7 +142,8 @@ export default function InternationalSkilledWorkerPage() {
             on the occupations Saskatchewan needs. It is the SINP&apos;s main skilled-worker category and is split into
             three sub-categories, <strong>Employment Offer</strong>, <strong>Occupation In-Demand</strong> and{" "}
             <strong>Saskatchewan Express Entry</strong>, most of which rank candidates through an{" "}
-            <strong>Expression of Interest (EOI)</strong> pool. Saskatchewan&apos;s 2026 nomination allocation is about{" "}
+            <strong>Expression of Interest (EOI)</strong> pool.</p>
+          <p>Saskatchewan&apos;s 2026 nomination allocation is about{" "}
             <strong>4,761</strong>, well below the roughly 8,000 it had in 2024, after IRCC reduced provincial
             allocations nationwide (source: saskatchewan.ca / IRCC, May 2026). With fewer spaces, the province has
             reserved roughly half of its nominations for priority sectors.
@@ -185,7 +186,8 @@ export default function InternationalSkilledWorkerPage() {
             against a points grid out of <strong>110 points</strong>, with <strong>60</strong> the minimum to be eligible
             to enter the pool. You create a free EOI profile, Saskatchewan scores it, and the province invites the
             highest-ranked profiles in periodic draws. Reaching 60 is an eligibility floor, not a guarantee. With the
-            2026 allocation reduced, a draw cut-off can sit well above 60. No SINP draw has been published in 2026 for the
+            2026 allocation reduced, a draw cut-off can sit well above 60.</p>
+          <p>No SINP draw has been published in 2026 for the
             paused sub-categories, so there is no live cut-off to target right now. Points come from
             your education and training, skilled work experience, language ability, age and your connection to
             Saskatchewan. There is no official SINP points calculator, but our team scores your grid by hand. Not sure how
@@ -235,7 +237,8 @@ export default function InternationalSkilledWorkerPage() {
             The clearest way to understand the ISW category is to contrast its enhanced and base routes. The{" "}
             <strong>Saskatchewan Express Entry</strong> sub-category is <em>enhanced</em>: you must already hold a valid
             federal Express Entry profile, and a nomination through this route adds <strong>600 CRS
-            points</strong> to your Comprehensive Ranking System score, well above recent federal cut-offs. IRCC still issues the Invitation to Apply at a
+            points</strong> to your Comprehensive Ranking System score, well above recent federal cut-offs.</p>
+          <p>IRCC still issues the Invitation to Apply at a
             following draw. The <strong>Employment Offer</strong> and <strong>Occupation In-Demand</strong>{" "}
             sub-categories are <em>base</em> (paper) streams: once nominated, you submit a separate permanent-residence
             application directly to IRCC, with no CRS boost.
@@ -274,7 +277,8 @@ export default function InternationalSkilledWorkerPage() {
           <p>
             <strong>How long the International Skilled Worker category takes</strong> depends on the stage. For EOI routes,
             waiting for an invitation hinges on your points score and the pace of draws, and with the Occupation
-            In-Demand and Saskatchewan Express Entry draws paused, that timing is uncertain in 2026. After you submit a
+            In-Demand and Saskatchewan Express Entry draws paused, that timing is uncertain in 2026.</p>
+          <p>After you submit a
             complete nomination application, the SINP application processing time is often a matter of weeks, though it
             varies by route and volume. Once nominated, an enhanced Express Entry application to IRCC is processed in roughly six
             months, while a base, paper-based application generally takes longer. Most applicants should plan for several

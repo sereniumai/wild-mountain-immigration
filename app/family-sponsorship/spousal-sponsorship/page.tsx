@@ -216,7 +216,8 @@ export default function SpousalSponsorshipPage() {
           <p>
             Most couples are spouses or common-law partners. Whether you want to sponsor your wife or husband as a married
             spouse, or pursue common-law sponsorship in Canada based on 12 months of cohabitation, the relationship test is
-            the same: it must be genuine. The <strong>conjugal partner</strong> category is narrow and often misunderstood:
+            the same: it must be genuine.</p>
+          <p>The <strong>conjugal partner</strong> category is narrow and often misunderstood:
             it is for couples who are genuinely unable to live together or marry, for example because of immigration
             barriers, marital status, or laws in their country, not simply a couple who has chosen not to. If you are unsure
             which category fits, that is exactly what the free consultation is for.

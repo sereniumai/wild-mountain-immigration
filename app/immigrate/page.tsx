@@ -253,7 +253,8 @@ export default function ImmigratePage() {
           <p>
             How long it takes to immigrate to Canada depends entirely on your route. A complete Express Entry application
             is processed in about <strong>six months</strong> after an invitation, while provincial nominations and
-            spousal sponsorship typically add several months on top. Costs vary too: government fees for an Express Entry
+            spousal sponsorship typically add several months on top.</p>
+          <p>Costs vary too: government fees for an Express Entry
             PR application run to roughly <strong>CAD $1,525 per adult</strong>, before an approved language test (such as
             IELTS or CELPIP), an educational credential assessment, medicals and police certificates. You will also need
             to show proof of funds unless you have a qualifying job or Canadian work experience. Because fees and

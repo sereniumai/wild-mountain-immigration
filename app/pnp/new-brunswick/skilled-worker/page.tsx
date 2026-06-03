@@ -217,7 +217,8 @@ export default function NewBrunswickSkilledWorkerPage() {
             Within those sectors, eligibility still turns on your occupation&apos;s <strong>NOC TEER</strong> category and whether
             it sits among the occupations in demand New Brunswick is currently prioritising. New Brunswick also publishes a
             list of <strong>excluded occupations</strong> that are not eligible for the stream, including accommodation and
-            food services, retail, shipping, food-processing, bookkeeping and many administrative roles. Because this
+            food services, retail, shipping, food-processing, bookkeeping and many administrative roles.</p>
+          <p>Because this
             designated occupation list and the excluded list are detailed and updated regularly, the safest step is a profile
             review against the current welcomenb.ca program guide before your employer commits to supporting an application.
           </p>

@@ -143,7 +143,8 @@ export default function ManitobaBusinessInvestorStreamPage() {
             Program (MPNP), for entrepreneurs and investors who will <strong>start a business in Manitoba, or buy and
             actively operate one, and earn permanent residence by doing so</strong>. It runs within Manitoba&apos;s 2026
             nomination allocation of about <strong>6,239</strong> across all MPNP streams (source: immigratemanitoba.com /
-            IRCC, 2026). Unlike the skilled-worker routes, it is not based on a job offer or a Worker Expression of Interest
+            IRCC, 2026).</p>
+          <p>Unlike the skilled-worker routes, it is not based on a job offer or a Worker Expression of Interest
             ranking: you become a permanent resident by establishing and running a genuine Manitoba business that creates
             local economic benefit. The stream is split into two pathways, the <strong>Entrepreneur Pathway</strong> for
             general businesses and the <strong>Farm Investor Pathway</strong> for agricultural operations.
@@ -159,7 +160,8 @@ export default function ManitobaBusinessInvestorStreamPage() {
             This stream fits people who want to <em>build and run</em> a business and settle in Manitoba, owner-operators
             with real business-management or ownership experience, capital they can invest and verify, and a concrete idea
             for a venture Manitoba actually needs. Often described informally as a Manitoba entrepreneur visa, it works as an
-            owner-operator work permit first and a nomination second. The Entrepreneur Pathway suits a trade or service
+            owner-operator work permit first and a nomination second.</p>
+          <p>The Entrepreneur Pathway suits a trade or service
             business, a shop or restaurant, a manufacturing or technology operation, or buying an existing Manitoba business
             and growing it. The Farm Investor Pathway is for experienced farmers planning to establish a primary-production farm
             in rural Manitoba. It is not for passive investors looking to park money, and certain business types are excluded. Confirm the current eligible and ineligible categories on immigratemanitoba.com.
@@ -274,7 +276,8 @@ export default function ManitobaBusinessInvestorStreamPage() {
             traps are an unverifiable or thinly documented source of funds; a business plan that does not match real Manitoba
             market conditions; mistaking a passive investment for the required active, at-risk equity; underestimating the
             Business Performance Agreement&apos;s operating commitments; choosing the wrong pathway or location for your
-            investment minimum; and relying on outdated thresholds. Because the figures and eligible-business lists change, a
+            investment minimum; and relying on outdated thresholds.</p>
+          <p>Because the figures and eligible-business lists change, a
             plan built on last year&apos;s numbers can quietly fall short.
           </p>
           <Callout type="warning" title="No guarantees, and no government affiliation">

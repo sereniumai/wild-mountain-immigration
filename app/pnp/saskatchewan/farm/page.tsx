@@ -139,7 +139,8 @@ export default function SaskatchewanFarmPage() {
             The <strong>Saskatchewan Farm Owner and Operator</strong> category is the farm sub-category of the
             Saskatchewan Immigrant Nominee Program&apos;s Entrepreneur and Farm stream. It is for experienced farmers who
             intend to buy and actively operate a commercial farm in Saskatchewan, leading to a provincial nomination for
-            permanent residence. Agriculture is one of the province&apos;s named priority sectors, and Saskatchewan&apos;s
+            permanent residence.</p>
+          <p>Agriculture is one of the province&apos;s named priority sectors, and Saskatchewan&apos;s
             2026 nomination allocation is about <strong>4,761</strong> across all SINP streams, well down from roughly
             8,000 in 2024 after IRCC reduced provincial allocations nationwide (source: saskatchewan.ca / IRCC, May 2026).
             The Farm category is a niche, business-class route: it is for people bringing real capital and farm-management
@@ -155,7 +156,8 @@ export default function SaskatchewanFarmPage() {
             The Farm Owner and Operator category is built for a specific applicant: an experienced farmer or senior farm
             manager with the capital and the track record to take over or build a commercial farm in Saskatchewan. It
             suits owner-operators and farm managers from a primary-agriculture background who want to continue farming in
-            Canada and settle permanently in the province. It is <em>not</em> designed for investors who simply want to
+            Canada and settle permanently in the province.</p>
+          <p>It is <em>not</em> designed for investors who simply want to
             put money into agriculture without running the operation, nor for people without genuine, hands-on
             farm-management experience. If you are buying land and a working farm in Saskatchewan and intend to manage
             day-to-day production yourself, this is the category the program points you toward.
@@ -166,7 +168,8 @@ export default function SaskatchewanFarmPage() {
             <strong>Saskatchewan Farm Owner and Operator requirements</strong> centre on four connected pillars: proven
             farming experience, the financial resources to invest, an actual investment of your own equity into a
             Saskatchewan farm, and, typically, an exploratory visit to research opportunities and show genuine intent.
-            The table below summarises the current criteria as a planning guide. Saskatchewan sets and updates the
+            The table below summarises the current criteria as a planning guide.</p>
+          <p>Saskatchewan sets and updates the
             controlling thresholds, including net-worth and minimum-investment figures, so treat every number as
             something to <strong>confirm on saskatchewan.ca</strong> before you act. The SINP farm net worth
             requirement and minimum farm investment are tied to the cost of a viable operation. Because farmland prices
@@ -221,7 +224,8 @@ export default function SaskatchewanFarmPage() {
             assumes deep farming experience, while the{" "}
             <a href="/pnp/saskatchewan/entrepreneur">SINP Entrepreneur category</a> is for establishing or buying a
             general business, retail, services, trades and the like, assessed through a business proposal and a Business
-            Performance Agreement. If you are buying or building a working farm and meeting agricultural net-worth and
+            Performance Agreement.</p>
+          <p>If you are buying or building a working farm and meeting agricultural net-worth and
             investment criteria, the Farm category fits; if you are launching a non-farm business, the Entrepreneur
             category is the better route. Workers with an agri-food <em>job offer</em>, rather than capital to invest,
             should instead look at the{" "}

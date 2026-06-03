@@ -223,7 +223,8 @@ export default function PeiLabourImpactPage() {
             nomination leads to a separate IRCC paper application rather than adding points. The{" "}
             <a href="/pnp/prince-edward-island/express-entry">PEI Express Entry</a> stream is enhanced: you must already
             hold an active federal Express Entry profile, and a PEI nomination adds <strong>600 CRS points</strong>,
-            putting most candidates well above the typical federal draw cut-off. Many Labour Impact applicants do not have an
+            putting most candidates well above the typical federal draw cut-off.</p>
+          <p>Many Labour Impact applicants do not have an
             <a href="/express-entry"> Express Entry</a> profile at all, which is exactly what this category is for. If you
             have a job offer from a designated PEI employer, the{" "}
             <a href="/atlantic-immigration-program">Atlantic Immigration Program</a> is a further employer-driven route
@@ -273,7 +274,8 @@ export default function PeiLabourImpactPage() {
             identifies which Labour Impact sub-stream, Skilled Worker, Critical Worker or International Graduate, gives
             you the strongest realistic chance, and builds an EOI that positions your PEI job offer well. Because this is
             PEI job offer immigration, we look at the whole path: for a Critical Worker route we can map how a PEI work
-            permit lets you build the six months of qualifying work history with your employer before nomination. Where a
+            permit lets you build the six months of qualifying work history with your employer before nomination.</p>
+          <p>Where a
             federal profile or a designated employer points to{" "}
             <a href="/pnp/prince-edward-island/express-entry">PEI Express Entry</a> or the{" "}
             <a href="/atlantic-immigration-program">Atlantic Immigration Program</a> instead, we will say so. Because PEI

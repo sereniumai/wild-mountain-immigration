@@ -147,7 +147,8 @@ export default function FrenchSpeakingSkilledWorkerPage() {
           <p>
             The <strong>Ontario French-Speaking Skilled Worker Stream</strong> is one of the Ontario Immigrant Nominee
             Program&apos;s (OINP) Human Capital streams, and it is <strong>enhanced</strong>, meaning it is aligned with
-            federal <a href="/express-entry">Express Entry</a>. It exists to help Ontario meet its francophone immigration
+            federal <a href="/express-entry">Express Entry</a>.</p>
+          <p>It exists to help Ontario meet its francophone immigration
             targets: the province has worked toward a goal of <strong>French-speaking immigrants making up about 5%</strong>{" "}
             of its economic nominations, supporting francophone communities outside Quebec (source: ontario.ca, May 2026).
             The stream is designed for skilled workers whose primary language is French but who also have solid English, so it is a <strong>bilingual immigration</strong> pathway into Ontario, not a French-only one. It complements
@@ -174,7 +175,8 @@ export default function FrenchSpeakingSkilledWorkerPage() {
             all four abilities, reading, writing, listening and speaking, plus <strong>English at CLB 6</strong> or higher
             across all four. NCLC (Niveaux de compétence linguistique canadiens) is the French equivalent of the English CLB
             scale, and the <strong>NCLC vs CLB equivalence</strong> means an NCLC 7 result reflects much the same French
-            language proficiency as CLB 7 in English. For the French test you can choose <strong>TEF Canada vs TCF
+            language proficiency as CLB 7 in English.</p>
+          <p>For the French test you can choose <strong>TEF Canada vs TCF
             Canada</strong>: both are accepted, so sit whichever format suits you. Crucially, each requirement is measured
             on your <strong>lowest of four abilities</strong>, so one weak skill in either language can put you below the
             bar. The table below summarises the historic thresholds; confirm the current numbers on ontario.ca, as the 2026
@@ -222,7 +224,8 @@ export default function FrenchSpeakingSkilledWorkerPage() {
             Unlike streams with their own Expression of Interest portal, this enhanced stream selects directly from the{" "}
             <strong>Express Entry pool</strong>. Ontario reviews the pool in periodic, targeted rounds and issues a{" "}
             <strong>Notification of Interest (NOI)</strong> to French-speaking candidates who meet the stream&apos;s criteria
-            and fall within the CRS range Ontario sets for that round. Receiving an NOI is your green light to apply to the
+            and fall within the CRS range Ontario sets for that round.</p>
+          <p>Receiving an NOI is your green light to apply to the
             OINP, but the province controls the timing and targeting, so <strong>being eligible does not guarantee an
             NOI</strong>. <strong>Ontario francophone NOI rounds</strong> have historically reached lower CRS scores than its
             general draws, which is part of the appeal for bilingual candidates. That appeal grows alongside steady demand in
@@ -239,7 +242,8 @@ export default function FrenchSpeakingSkilledWorkerPage() {
             This is where an enhanced stream earns its keep. Your federal <a href="/express-entry/comprehensive-ranking-system">CRS
             score</a> ranks you against everyone in the Express Entry pool. An OINP nomination through the French-Speaking
             Skilled Worker Stream adds a flat <strong>600 CRS points</strong>, a boost so large it lifts most
-            candidates well above the cut-off. In recent draws that has been more than enough to earn an Invitation to Apply at the next Express Entry draw, though IRCC still issues it. For
+            candidates well above the cut-off.</p>
+          <p>In recent draws that has been more than enough to earn an Invitation to Apply at the next Express Entry draw, though IRCC still issues it. For
             bilingual candidates who are competitive but not quite at the federal cut-off on their own, that <strong>+600
             CRS</strong> is often the difference between waiting indefinitely and receiving an ITA within weeks. Not sure
             where your score sits today? Try our <a href="/tools/crs-calculator">free CRS calculator</a> first.
@@ -267,7 +271,8 @@ export default function FrenchSpeakingSkilledWorkerPage() {
             Wild Mountain Immigration confirms your French and English scores genuinely meet the stream on every ability, keeps
             your <a href="/express-entry">Express Entry</a> profile as competitive as possible while you wait for a
             Notification of Interest, and prepares a complete OINP application that can be filed inside Ontario&apos;s tight
-            deadline. Working under a licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr>{" "}
+            deadline.</p>
+          <p>Working under a licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr>{" "}
             (CICC #R706497), our team represents you with both Ontario and IRCC. With the OINP being redesigned in 2026, we
             keep your strategy aligned to the rules actually in force when you apply, and we give you a candid read on your
             realistic chances first. We are not affiliated with the Government of Ontario or

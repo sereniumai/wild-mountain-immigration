@@ -278,7 +278,8 @@ export default function NwtSkilledWorkerPage() {
             the base Skilled Worker stream or enhanced{" "}
             <a href="/pnp/northwest-territories/express-entry">NWT Express Entry</a> is the better route, and helps you
             and your NWT employer put together an EOI and nomination application that ranks well and stands up to
-            scrutiny. If you are in Canada on a <a href="/work-permits">work permit</a> we factor that in, and we weigh
+            scrutiny.</p>
+          <p>If you are in Canada on a <a href="/work-permits">work permit</a> we factor that in, and we weigh
             your federal <a href="/express-entry">Express Entry</a> standing alongside the territorial route. Working
             under a licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497), we
             represent you with the territory and with IRCC, and catch the documentation gaps that cause avoidable

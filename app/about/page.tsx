@@ -86,7 +86,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About us"
         crumbs={[{ name: "About", path: PATH }]}
-        title={<>Your <span className="text-brand">Regulated Canadian Immigration Consultant</span></>}
+        title={<>Your Regulated <span className="text-brand">Canadian Immigration Consultant</span></>}
         lede={
           <p>
             Wild Mountain Immigration is led by <strong>Nicola Wightman, a Regulated Canadian Immigration

@@ -141,7 +141,8 @@ export default function FromIndiaPage() {
             When you <strong>move to Canada from India</strong>, you are following the most travelled path of any
             country. <a href="/express-entry">Express Entry</a> rewards a strong combination of education, skilled
             experience, age and English, and many Indian applicants build that profile through a Canadian study program
-            first. Visiting and immigrating are different things, though: as an Indian passport holder you are
+            first.</p>
+          <p>Visiting and immigrating are different things, though: as an Indian passport holder you are
             visa-required even to visit, and a visitor visa never lets you settle or work. To live in Canada you need the
             right status: permanent residence to settle, or a work or study permit to come temporarily. The route that
             fits depends on your age, your occupation and your experience, and on whether you have a Canadian job offer
@@ -186,7 +187,8 @@ export default function FromIndiaPage() {
             your Indian degree and an approved English test, most Indian applicants sit IELTS General Training. Small
             differences in age, experience and test scores move your CRS more than people expect, and a{" "}
             <a href="/pnp">provincial nomination</a> adds a decisive 600 points. Your profile is also matched to a{" "}
-            <strong>NOC code</strong> for your occupation, which sets your program eligibility. The same code decides
+            <strong>NOC code</strong> for your occupation, which sets your program eligibility.</p>
+          <p>The same code decides
             whether you qualify for IRCC&apos;s category-based draws, for example in healthcare, trades or French
             language, where the cut-off score is often lower than the general CRS cut-off. Use our free{" "}
             <a href="/tools/crs-calculator">CRS calculator</a> to see where you stand against the latest CRS cut-off,
@@ -199,7 +201,8 @@ export default function FromIndiaPage() {
             <a href="/study-permit">study permit</a> at a designated learning institution lets you study in Canada, and
             after graduating you may qualify for a <a href="/work-permits/pgwp">Post-Graduation Work Permit (PGWP)</a>,
             an open permit that lets you work for almost any employer and build the skilled Canadian experience that
-            feeds straight into the <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a>. You
+            feeds straight into the <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a>.</p>
+          <p>You
             will need to show <a href="/study-permit/proof-of-funds">proof of funds</a> for tuition and living costs, and
             a <a href="/study-permit/provincial-attestation-letter">Provincial Attestation Letter</a> where required.
             Program choice matters enormously here, because it shapes your PGWP eligibility, so we help you plan the
@@ -267,7 +270,8 @@ export default function FromIndiaPage() {
             biometrics; third-party costs add your WES ECA, IELTS, the police clearance certificate, a medical exam and,
             for most Express Entry applicants, the settlement funds you must show. These amounts change periodically, so
             we itemise the current figures for your route rather than quote one headline, and government fees can be
-            checked on canada.ca. On timing, a complete Express Entry application is usually finished about six months
+            checked on canada.ca.</p>
+          <p>On timing, a complete Express Entry application is usually finished about six months
             after the invitation, while provincial nomination, the study-to-PR sequence and family sponsorship each add
             their own stages. Our <a href="/fees">fees guide</a> explains our professional fee and how it differs from
             government fees.

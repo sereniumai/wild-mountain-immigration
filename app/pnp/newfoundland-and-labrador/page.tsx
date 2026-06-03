@@ -171,7 +171,8 @@ export default function NewfoundlandLabradorPnpPage() {
           <p>
             A <strong>base</strong> stream is not connected to Express Entry. Once Newfoundland and Labrador nominates you
             under a base stream, you submit a <strong>separate permanent-residence application directly to IRCC</strong>,
-            which does not earn CRS points and is generally processed more slowly. In the NLPNP, the Express Entry Skilled
+            which does not earn CRS points and is generally processed more slowly.</p>
+          <p>In the NLPNP, the Express Entry Skilled
             Worker stream and Priority Skills NL operate within the Express Entry (enhanced) framework, while the standard
             Skilled Worker stream is a base route. Confirming whether your stream is enhanced or base is one of the first
             things we check. Not sure where your federal score stands? Try our{" "}
@@ -238,7 +239,8 @@ export default function NewfoundlandLabradorPnpPage() {
           <p>
             The <strong>International Graduate</strong> stream is for recent graduates holding a valid post-graduation
             work permit. <strong>Priority Skills NL</strong> waives the job-offer requirement for in-demand candidates
-            within the Express Entry framework. The two entrepreneur streams replace a job offer with business criteria, net-worth, minimum-investment and language thresholds, and the Graduate Entrepreneur route is reserved for
+            within the Express Entry framework.</p>
+          <p>The two entrepreneur streams replace a job offer with business criteria, net-worth, minimum-investment and language thresholds, and the Graduate Entrepreneur route is reserved for
             graduates of Memorial University (MUN) or the College of the North Atlantic. Because the published criteria
             are detailed and updated regularly, the safest step is a profile review against the current gov.nl.ca program
             guide.
@@ -280,7 +282,8 @@ export default function NewfoundlandLabradorPnpPage() {
             employer-driven federal-provincial program shared across the four Atlantic provinces, with its own
             designated-employer and endorsement process. Many candidates in Newfoundland and Labrador qualify for one
             pathway or the other; choosing correctly up front saves time, which is exactly the kind of call we make in a
-            consultation. A <a href="/work-permits">work permit</a> can bridge either route, and graduates who studied on
+            consultation.</p>
+          <p>A <a href="/work-permits">work permit</a> can bridge either route, and graduates who studied on
             a <a href="/study-permit">study permit</a> and now hold a{" "}
             <a href="/work-permits/pgwp">Post-Graduation Work Permit</a> often build the NL experience that strengthens an{" "}
             <a href="/pnp/newfoundland-and-labrador/international-graduate">International Graduate</a> or AIP application.
@@ -296,7 +299,8 @@ export default function NewfoundlandLabradorPnpPage() {
             the base <a href="/pnp/newfoundland-and-labrador/skilled-worker">Skilled Worker</a> stream,{" "}
             <a href="/pnp/newfoundland-and-labrador/international-graduate">International Graduate</a>,{" "}
             <a href="/pnp/newfoundland-and-labrador/priority-skills">Priority Skills NL</a> or an entrepreneur stream,
-            with the strongest realistic chance. Working under a licensed RCIC (CICC #R706497), our team prepares an EOI
+            with the strongest realistic chance.</p>
+          <p>Working under a licensed RCIC (CICC #R706497), our team prepares an EOI
             and nomination application that stands up to scrutiny and represents you with the province and with IRCC,
             online throughout.
           </p>

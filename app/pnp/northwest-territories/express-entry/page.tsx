@@ -202,7 +202,8 @@ export default function NorthwestTerritoriesExpressEntryPage() {
             <strong>NWT Express Entry eligibility</strong> layers territorial requirements on top of the federal Express
             Entry minimums. First, you must qualify for and hold an active profile in the federal Express Entry pool, under the Federal Skilled Worker Program, Canadian Experience Class or Federal Skilled Trades Program.
             Second, you need an eligible full-time, non-seasonal <strong>NWT job offer</strong> from an employer who
-            supports your file. Third, you must meet the NTNP&apos;s work-experience, language and education criteria for
+            supports your file.</p>
+          <p>Third, you must meet the NTNP&apos;s work-experience, language and education criteria for
             the stream. Because the published criteria are detailed and updated regularly, the safest step is a profile
             review against the current immigratenwt.ca program guide.
           </p>
@@ -248,7 +249,8 @@ export default function NorthwestTerritoriesExpressEntryPage() {
           <p>
             <strong>How long NWT Express Entry takes</strong> depends on the stage. On the employer-driven side, the wait
             for an invitation now hinges on your EOI ranking and the draw schedule, the NTNP&apos;s 2026 draws are
-            planned for <strong>March 25, June 25 and September 25</strong>, each inviting up to 65 candidates. After a
+            planned for <strong>March 25, June 25 and September 25</strong>, each inviting up to 65 candidates.</p>
+          <p>After a
             complete nomination application is submitted, territorial processing varies. Once you hold the nomination and
             update your Express Entry profile with the 600 points, IRCC typically processes an enhanced PR application in
             about <strong>six months</strong>. Most applicants should plan for the better part of a year from job offer
@@ -262,7 +264,8 @@ export default function NorthwestTerritoriesExpressEntryPage() {
             <a href="/express-entry/comprehensive-ranking-system">Comprehensive Ranking System (CRS)</a> score, often
             via the <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a> for those with
             skilled Canadian experience, and issues invitations in regular draws; a job offer is optional.{" "}
-            <strong>NWT Express Entry</strong> sits on top of that pool. It
+            <strong>NWT Express Entry</strong> sits on top of that pool.</p>
+          <p>It
             requires an NWT job offer and employer support, but in exchange a nomination delivers the 600-point boost
             that lifts most candidates above recent cut-offs, though IRCC issues any invitation. If your standalone CRS
             is already very competitive, you may not need a provincial route at all. If it is not, an{" "}
@@ -276,7 +279,8 @@ export default function NorthwestTerritoriesExpressEntryPage() {
             The enhanced stream rewards preparation on two fronts at once, your federal{" "}
             <a href="/express-entry">Express Entry</a> profile and the territorial EOI. Our team assesses whether your
             profile is competitive, confirms that your <strong>NWT job offer</strong> and occupation qualify, and helps
-            you and your employer build a ranked EOI and nomination application that stands up to scrutiny. If you do not
+            you and your employer build a ranked EOI and nomination application that stands up to scrutiny.</p>
+          <p>If you do not
             yet have a qualifying offer, we also weigh the base{" "}
             <a href="/pnp/northwest-territories/employer-driven-skilled-worker">Employer-Driven Skilled Worker</a> and{" "}
             <a href="/pnp/northwest-territories/entry-level-semi-skilled">Entry-Level / Semi-Skilled</a> streams within

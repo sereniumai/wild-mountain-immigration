@@ -139,7 +139,8 @@ export default function BcPnpTechPage() {
 
           <h2>What is BC PNP Tech?</h2>
           <p>
-            <strong>BC PNP Tech</strong> is the way British Columbia channels technology workers toward permanent residence. Today it runs as a priority <em>within</em> the broader Skilled Worker stream rather than as a separate program. Through
+            <strong>BC PNP Tech</strong> is the way British Columbia channels technology workers toward permanent residence. Today it runs as a priority <em>within</em> the broader Skilled Worker stream rather than as a separate program.</p>
+          <p>Through
             Skills Immigration and the <strong>Skills Immigration Registration System (SIRS)</strong>, eligible tech
             occupations receive targeted, priority invitations, so long as the candidate holds a genuine B.C. tech job offer.
             According to welcomebc.ca, the BC PNP&apos;s 2026 nomination allocation is about <strong>5,254</strong>, sharply
@@ -239,7 +240,8 @@ export default function BcPnpTechPage() {
             The Skilled Worker stream that carries tech offers an <strong>Express Entry BC (EEBC)</strong> option. If you
             already qualify for federal Express Entry and hold an active profile, an enhanced BC nomination adds
             <strong> 600 CRS points</strong> to your federal score, which in recent draws has sat comfortably above the cut-off, though IRCC still issues the Invitation to Apply in
-            a following federal draw. It is the fastest route to <strong>BC tech worker PR</strong> because the provincial
+            a following federal draw.</p>
+          <p>It is the fastest route to <strong>BC tech worker PR</strong> because the provincial
             nomination plugs directly into the federal system. A base nomination, by contrast, leads to a paper application to
             IRCC and does not add CRS points. Learn more on our{" "}
             <a href="/pnp/british-columbia/express-entry-bc">Express Entry BC</a> page.

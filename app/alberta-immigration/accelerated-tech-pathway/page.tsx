@@ -139,7 +139,8 @@ export default function AcceleratedTechPathwayPage() {
           <p>
             The <strong>Alberta Accelerated Tech Pathway</strong> (ATP) is a targeted pathway within the{" "}
             <a href="/alberta-immigration">Alberta Advantage Immigration Program (AAIP)</a> that fast-tracks technology
-            workers toward provincial nomination and permanent residence. It is not a
+            workers toward provincial nomination and permanent residence.</p>
+          <p>It is not a
             stand-alone program: it runs <em>through</em> the enhanced{" "}
             <a href="/alberta-immigration/express-entry-stream">Alberta Express Entry Stream</a>, so Alberta selects
             candidates directly from the federal Express Entry pool whose primary occupation matches an in-demand Alberta
@@ -164,7 +165,8 @@ export default function AcceleratedTechPathwayPage() {
           <p>
             Eligible tech occupations span software engineering, development, data, networking and IT leadership. Your
             Express Entry <abbr title="National Occupational Classification">NOC</abbr> 2021 primary occupation must match
-            the Alberta tech job offer you hold. Many roles sit inside the broad <strong>NOC 21230 occupation group</strong>{" "}
+            the Alberta tech job offer you hold.</p>
+          <p>Many roles sit inside the broad <strong>NOC 21230 occupation group</strong>{" "}
             (computer systems developers and programmers, TEER 1), while computer and information systems managers (NOC
             20012) are a <strong>TEER 0 manager</strong> occupation. The table below lists representative eligible
             technology occupations and the practical requirements that apply to each, but Alberta updates this list
@@ -241,7 +243,8 @@ export default function AcceleratedTechPathwayPage() {
             generally lower living costs than Toronto or Vancouver, which stretches a developer&apos;s salary further. And
             because the Calgary and Edmonton tech sector is actively hiring into the very occupations the Accelerated Tech
             Pathway covers, a genuine in-province tech offer is more attainable here than the headlines about a tight
-            allocation might suggest. One scoring caveat: the Worker EOI awards <strong>0 location points</strong> for the
+            allocation might suggest.</p>
+          <p>One scoring caveat: the Worker EOI awards <strong>0 location points</strong> for the
             Calgary and Edmonton census metropolitan areas, since those points are reserved for rural and designated
             communities, but that does not affect your eligibility for the tech pathway itself.
           </p>

@@ -140,7 +140,8 @@ export default function AlbertaExpressEntryStreamPage() {
             The <strong>Alberta Express Entry Stream</strong> is the enhanced pathway of the Alberta Advantage Immigration
             Program (AAIP). &ldquo;Enhanced&rdquo; means it is wired into the federal{" "}
             <a href="/express-entry">Express Entry</a> system: Alberta searches the federal pool, notifies candidates it
-            wants, and a provincial nomination then adds <strong>600 CRS points</strong> to your profile. To be eligible
+            wants, and a provincial nomination then adds <strong>600 CRS points</strong> to your profile.</p>
+          <p>To be eligible
             you must already have an active federal Express Entry profile with a Comprehensive Ranking System score of at
             least <strong>300</strong> (source: alberta.ca, Alberta Express Entry Stream eligibility, 2026). That CRS 300
             floor is a hard requirement set by Alberta, and it is the first thing to confirm before anything else.

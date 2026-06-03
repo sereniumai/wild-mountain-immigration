@@ -140,7 +140,8 @@ export default function StrategicInitiativePage() {
             Nominee Program (NBPNP) created to attract <strong>French-speaking skilled workers</strong> to the province, and
             it sits at the heart of <strong>New Brunswick francophone immigration</strong>. New
             Brunswick is Canada&apos;s only officially bilingual province, and roughly <strong>one in three</strong>{" "}
-            residents speaks French as a first language (source: Statistics Canada, 2021 Census). To protect that
+            residents speaks French as a first language (source: Statistics Canada, 2021 Census).</p>
+          <p>To protect that
             demographic balance, the province has set a <strong>francophone immigration target</strong>, aiming for
             francophones to make up a third of its newcomers, and the Strategic Initiative Stream is one of the main tools
             it uses to reach it (source: welcomenb.ca, May 2026). Figures and targets change, so always verify the current
@@ -159,7 +160,8 @@ export default function StrategicInitiativePage() {
             This stream is built for one profile above all: a <strong>French-speaking skilled worker</strong> who genuinely
             intends to live, work and settle in New Brunswick. It is the province&apos;s flagship channel for{" "}
             <strong>French immigration to New Brunswick</strong>, helping to grow its{" "}
-            <strong>French-speaking minority communities</strong> outside Quebec. If you are a francophone or strongly
+            <strong>French-speaking minority communities</strong> outside Quebec.</p>
+          <p>If you are a francophone or strongly
             bilingual professional with qualifying work experience and you are drawn to the Acadian and francophone
             communities of New Brunswick, in regions such as the north and east of the province, this is the route designed
             with you in mind. The wider{" "}
@@ -179,7 +181,8 @@ export default function StrategicInitiativePage() {
             Because New Brunswick selects by sector and labour-market need rather than a single published score,
             requirements are best read as a connected set rather than a fixed checklist. That said, the core pillars of{" "}
             <strong>Strategic Initiative Stream eligibility</strong> are consistent: French language ability, qualifying
-            work experience, education, and a credible intention to settle in New Brunswick. The stream is aimed squarely at
+            work experience, education, and a credible intention to settle in New Brunswick.</p>
+          <p>The stream is aimed squarely at
             francophone and <strong>bilingual workers</strong> New Brunswick wants to retain, so French ability sits at the
             centre of every profile. Some routes within the
             province&apos;s francophone selection also look for a <strong>connection to New Brunswick</strong> or a genuine{" "}
@@ -264,7 +267,8 @@ export default function StrategicInitiativePage() {
             Two factors shape the program in 2026. First, New Brunswick&apos;s nomination space is{" "}
             <strong>tight</strong>, its 2025 allocation was about <strong>2,750</strong> spaces shared between the PNP and
             the Atlantic Immigration Program, and the 2026 figure is expected to remain constrained after federal
-            allocations were cut nationwide (source: welcomenb.ca / IRCC, May 2026). Second, the province runs a{" "}
+            allocations were cut nationwide (source: welcomenb.ca / IRCC, May 2026).</p>
+          <p>Second, the province runs a{" "}
             <strong>controlled, sector-focused intake</strong>, directing invitations toward its highest priorities. The
             francophone focus of the Strategic Initiative Stream is a deliberate counterweight: by encouraging francophone
             mobility into the province, it lets New Brunswick keep attracting French-speaking newcomers even while overall
@@ -277,7 +281,8 @@ export default function StrategicInitiativePage() {
             French results clear the threshold the province expects, and position your Express Entry profile and INB Portal
             expression of interest to stand out. Our team is led by a licensed{" "}
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497); we prepare a nomination
-            application that stands up to scrutiny and represent you with both the province and IRCC. We work entirely
+            application that stands up to scrutiny and represent you with both the province and IRCC.</p>
+          <p>We work entirely
             online. With New Brunswick&apos;s allocation tight and intake shifting, that positioning is where good advice
             earns its keep, and we will tell you honestly if the enhanced{" "}
             <a href="/pnp/new-brunswick/express-entry-labour-market">NB Express Entry</a> route or another stream fits you

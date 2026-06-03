@@ -146,7 +146,8 @@ export default function YukonCommunityPilotPage() {
           <p>
             The <strong>Yukon Community Pilot</strong>, sometimes searched as the <strong>YCP</strong> or the{" "}
             <strong>Yukon community immigration pilot</strong>, and formally the Yukon Community Program, was a
-            community-driven element of the territory&apos;s immigration system. Its purpose was practical: to help
+            community-driven element of the territory&apos;s immigration system.</p>
+          <p>Its purpose was practical: to help
             smaller and rural Yukon communities, outside the main Whitehorse labour market, attract and retain the
             workers they genuinely needed. Like other community pilots across Canada, it recognised that rural employers
             often struggle to compete for talent, and gave participating communities a more direct role in connecting
@@ -181,7 +182,8 @@ export default function YukonCommunityPilotPage() {
             While the pilot was active, it followed the logic common to Canada&apos;s community-driven immigration
             initiatives. Participating <strong>communities</strong> helped identify genuine, local labour shortages that
             were hard to fill from within the territory. A local <strong>employer</strong> would then offer a newcomer a
-            genuine, full-time role tied to that need. The candidate&apos;s application moved forward with community and
+            genuine, full-time role tied to that need.</p>
+          <p>The candidate&apos;s application moved forward with community and
             employer support, and, like the rest of the Yukon Nominee Program, a nomination was a stepping stone to
             applying to <strong>IRCC</strong> for permanent residence, not permanent residence itself. The community
             layer was the distinguishing feature: it gave smaller centres a more direct say in attracting and{" "}
@@ -193,7 +195,8 @@ export default function YukonCommunityPilotPage() {
             The pilot was aimed at workers willing to live and work in smaller Yukon communities, such as Dawson City or
             Watson Lake, rather than only in Whitehorse, and at the rural Yukon employers who needed them. In practice the
             strongest candidates had a genuine job offer from a participating community employer and the intention to
-            settle there for the long term. The &ldquo;retain&rdquo; half of &ldquo;attract and retain&rdquo; was
+            settle there for the long term.</p>
+          <p>The &ldquo;retain&rdquo; half of &ldquo;attract and retain&rdquo; was
             central. With the pilot now closed, that same profile, a rural Yukon job offer plus a real commitment to the
             community, remains valuable, because <strong>roles in rural communities are one of Yukon&apos;s stated 2026
             priorities</strong>{" "}
@@ -228,7 +231,8 @@ export default function YukonCommunityPilotPage() {
             With a closed pilot, accuracy matters more than ever. Before acting on anything you read about the{" "}
             <strong>Yukon Community Pilot</strong>, here or elsewhere, confirm the live position on the Government of
             Yukon&apos;s own website, <strong>yukon.ca</strong>, which is the authoritative source for every Yukon
-            immigration route. Program statuses, allocations and stream rules change regularly. Wild Mountain
+            immigration route.</p>
+          <p>Program statuses, allocations and stream rules change regularly. Wild Mountain
             Immigration is an independent, <abbr title="College of Immigration and Citizenship Consultants">CICC</abbr>
             -regulated practice and is not affiliated with, or endorsed by, the Government of Yukon or IRCC; we cannot
             guarantee any outcome, and we will always tell you honestly whether a route is realistic for you.
@@ -244,7 +248,8 @@ export default function YukonCommunityPilotPage() {
             <a href="/pnp/yukon/critical-impact-worker">Critical Impact Worker</a> or{" "}
             <a href="/pnp/yukon/express-entry">Yukon Express Entry</a> stream gives you the strongest realistic chance,
             and makes sure your employer&apos;s offer of employment and your documents are ready before a short EOI
-            window opens. As a closest alternative to the Yukon Community Pilot for rural and small-centre hires, we also
+            window opens.</p>
+          <p>As a closest alternative to the Yukon Community Pilot for rural and small-centre hires, we also
             look at the <a href="/rural-northern-immigration-pilot">Rural and Northern Immigration Pilot</a> and other{" "}
             <a href="/pnp">provincial nominee programs</a>.
           </p>

@@ -46,10 +46,16 @@ export function Hero() {
           type="button"
           onClick={() => videoRef.current?.toggleSound()}
           aria-label={sound.muted ? "Turn video sound on" : "Mute video"}
-          className="absolute right-5 top-6 z-20 inline-flex items-center gap-1.5 rounded-full bg-ink/45 px-3 py-1.5 text-[12.5px] font-medium text-white/85 ring-1 ring-inset ring-white/20 backdrop-blur transition-colors hover:bg-ink/65 hover:text-white active:scale-95 lg:right-8"
+          className="absolute right-5 top-6 z-20 inline-flex items-center gap-2 rounded-full bg-ink/65 px-4 py-2 text-[13px] font-semibold text-white shadow-lg ring-1 ring-inset ring-white/30 backdrop-blur transition-all hover:-translate-y-0.5 hover:bg-ink/80 active:scale-95 lg:right-8"
         >
-          {sound.muted ? <Volume2 className="size-4" /> : <VolumeX className="size-4" />}
-          {sound.muted ? "Sound" : "Mute"}
+          {sound.muted && (
+            <span className="relative flex size-2.5" aria-hidden>
+              <span className="absolute inline-flex size-full rounded-full bg-brand opacity-75 motion-safe:animate-ping" />
+              <span className="relative inline-flex size-2.5 rounded-full bg-brand" />
+            </span>
+          )}
+          {sound.muted ? <Volume2 className="size-4.5" /> : <VolumeX className="size-4.5" />}
+          {sound.muted ? "Tap for sound" : "Mute"}
         </button>
       )}
 

@@ -143,7 +143,8 @@ export default function ParentsGrandparentsPage() {
             The <strong>Parents and Grandparents Program (PGP)</strong> is the family-class route that lets a Canadian
             citizen or permanent resident sponsor their <strong>parents and grandparents</strong> to become permanent
             residents of Canada. Unlike spousal sponsorship, the PGP does not run on a first-come basis, IRCC manages
-            demand through a randomised <em>interest-to-sponsor</em> lottery. You submit a free Interest to Sponsor
+            demand through a randomised <em>interest-to-sponsor</em> lottery.</p>
+          <p>You submit a free Interest to Sponsor
             form, and IRCC invites a limited number of people from the pool to apply. According to IRCC, the 2025 round
             drew only from the existing 2020 interest pool and closed in October 2025, with no new pool opened (source:
             canada.ca, sponsor your parents and grandparents, 2026).

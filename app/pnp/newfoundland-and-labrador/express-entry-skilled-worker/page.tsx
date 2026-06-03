@@ -142,7 +142,8 @@ export default function NlExpressEntrySkilledWorkerPage() {
             The <strong>Newfoundland Express Entry Skilled Worker</strong> stream is the Express-Entry-aligned route within
             the Newfoundland and Labrador Provincial Nominee Program (NLPNP). It is built for skilled workers who already
             have a permanent, full-time job offer from an eligible Newfoundland and Labrador employer and an active profile
-            in the federal Express Entry pool. Because it is an <strong>enhanced</strong> stream, a provincial nomination
+            in the federal Express Entry pool.</p>
+          <p>Because it is an <strong>enhanced</strong> stream, a provincial nomination
             adds <strong>600 CRS points</strong> to your Comprehensive Ranking System score. That lifts most candidates well
             above the typical Express Entry draw cut-off, although the Invitation to Apply still comes from IRCC. The province has set an ambitious growth goal of welcoming
             up to roughly <strong>5,100 newcomers a year</strong> by 2026 (source: gov.nl.ca, 2026), and skilled workers
@@ -164,7 +165,8 @@ export default function NlExpressEntrySkilledWorkerPage() {
             boost from an enhanced <strong>NLPNP Express Entry</strong> nomination lifts almost any profile clear of the
             cut-off. In practical terms, once Newfoundland and Labrador nominates you under this stream, an Invitation to
             Apply at the next eligible draw is all but certain, and federal processing for enhanced applications then
-            typically runs around six months. You can see how the{" "}
+            typically runs around six months.</p>
+          <p>You can see how the{" "}
             <a href="/express-entry/comprehensive-ranking-system">Comprehensive Ranking System</a> adds up, and candidates
             with skilled Canadian experience often enter the pool through the{" "}
             <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a>. Not sure where your federal
@@ -275,7 +277,8 @@ export default function NlExpressEntrySkilledWorkerPage() {
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497), our team confirms your
             job offer qualifies under TEER 0–3, checks your profile against the 67-point grid, makes sure your{" "}
             <a href="/express-entry">Express Entry</a> profile is live and accurate, and prepares an EOI and nomination
-            application that stand up to scrutiny. If you have no NL job offer yet,{" "}
+            application that stand up to scrutiny.</p>
+          <p>If you have no NL job offer yet,{" "}
             <a href="/pnp/newfoundland-and-labrador/priority-skills">Priority Skills NL</a> or the{" "}
             <a href="/atlantic-immigration-program">Atlantic Immigration Program</a> may fit better, and we will say so.
             We also catch the avoidable mistakes that cause refusals: a mismatched NOC code, a language band one short, or a

@@ -185,7 +185,8 @@ export default function YukonExpressEntryPage() {
             <strong>Yukon Express Entry eligibility</strong> combines the territory&apos;s requirements with the federal
             Express Entry minimums. At the YNP level you generally need a genuine, full-time, ongoing{" "}
             <strong>job offer from an eligible Yukon employer</strong>, work experience that matches the offered role,
-            and language results scaled to your occupation&apos;s skill level. On the federal side, you must hold an
+            and language results scaled to your occupation&apos;s skill level.</p>
+          <p>On the federal side, you must hold an
             active Express Entry profile and meet the eligibility criteria of one of its programs (Canadian Experience
             Class, Federal Skilled Worker or Federal Skilled Trades). The table below summarises the core requirements;
             the official, controlling list lives on yukon.ca and changes periodically.
@@ -215,7 +216,8 @@ export default function YukonExpressEntryPage() {
             <a href="/express-entry">Express Entry profile</a> and enter the federal pool, where you are ranked by your{" "}
             <a href="/express-entry/comprehensive-ranking-system">Comprehensive Ranking System (CRS)</a> score, often
             qualifying through the <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a> if
-            you already hold skilled Canadian work experience. Separately, your Yukon employer drives the YNP nomination.
+            you already hold skilled Canadian work experience.</p>
+          <p>Separately, your Yukon employer drives the YNP nomination.
             When Yukon nominates you, it issues a <strong>Yukon nominee certificate</strong> through the federal system,
             linked to your <strong>Express Entry profile number</strong>, which automatically adds{" "}
             <strong>600 CRS points</strong> to your profile. That provincial nomination of 600 points sits well above any
@@ -245,7 +247,8 @@ export default function YukonExpressEntryPage() {
           <p>
             Timelines run in stages. The first variable is simply waiting for an open <strong>EOI window</strong> and
             being selected within Yukon&apos;s limited allocation of about 282. After a complete application is
-            submitted, territorial processing of the nomination typically takes a few months. Once the nomination adds
+            submitted, territorial processing of the nomination typically takes a few months.</p>
+          <p>Once the nomination adds
             600 CRS and you receive an ITA, IRCC processes an enhanced (Express Entry) permanent-residence application in{" "}
             <strong>roughly six months</strong> (source: canada.ca, processing times, 2026), faster than a base, paper
             application. Realistically, plan for the better part of a year from application to permanent residence, and
@@ -259,7 +262,8 @@ export default function YukonExpressEntryPage() {
             actually lands you an ITA. Working under a licensed{" "}
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497), our team confirms your
             eligibility, optimises your <a href="/express-entry">Express Entry</a> profile, and prepares a nomination
-            application that stands up to scrutiny with both the territory and IRCC. We catch the avoidable mistakes that
+            application that stands up to scrutiny with both the territory and IRCC.</p>
+          <p>We catch the avoidable mistakes that
             cause refusals: a wrong NOC code, a language band one point short, a gap in your profile. If you do not yet have a
             qualifying offer, we also weigh the base <a href="/pnp/yukon/skilled-worker">Skilled Worker</a> and{" "}
             <a href="/pnp/yukon/critical-impact-worker">Critical Impact Worker</a> streams, and you can see every route

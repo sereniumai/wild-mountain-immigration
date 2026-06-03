@@ -143,7 +143,8 @@ export default function PgwpPage() {
           <p>
             A post-graduation work permit (PGWP) is an open work permit for international students who have graduated
             from an eligible Canadian designated learning institution (DLI). Because it is open, it is not tied to a
-            single employer, job or location. You can work for almost any employer in Canada, change jobs freely, and
+            single employer, job or location.</p>
+          <p>You can work for almost any employer in Canada, change jobs freely, and
             build the Canadian work experience that counts toward permanent residence. The PGWP is one of the most
             sought-after permits in the system: it converts a Canadian education into the right to work, and IRCC
             processes hundreds of thousands of work permit applications each year (source: canada.ca, 2026).
@@ -191,7 +192,8 @@ export default function PgwpPage() {
             <strong>PGWP processing time</strong> varies through the year, so the practical question for most graduates
             is whether they can keep working in the meantime. If you applied before your study permit expired and you
             were already eligible to work off-campus, you can generally continue full-time work while waiting for your
-            PGWP under <strong>maintained status</strong> (formerly implied status), as long as you stay in Canada. This
+            PGWP under <strong>maintained status</strong> (formerly implied status), as long as you stay in Canada.</p>
+          <p>This
             is also how you can hold a <strong>PGWP without a study permit</strong> in hand once the old permit lapses.
             The rules differ if you left Canada or your study permit expired before you applied. We confirm your
             specific situation so you never work without authorization while your application is in the queue. Check the

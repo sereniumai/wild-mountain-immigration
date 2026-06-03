@@ -131,7 +131,8 @@ export default function ComprehensiveRankingSystemPage() {
             The Comprehensive Ranking System (CRS) is the points formula IRCC uses to rank every Express Entry profile.
             It awards up to <strong>1,200 points</strong> across four sections, totals your score, and places you in a
             pool with every other candidate. Roughly every two weeks IRCC holds a draw and issues an Invitation to Apply
-            (ITA) to the highest-ranked profiles. According to IRCC&apos;s rounds of invitations, the most recent 2026
+            (ITA) to the highest-ranked profiles.</p>
+          <p>According to IRCC&apos;s rounds of invitations, the most recent 2026
             Canadian Experience Class draw (27 May 2026) cut off at a <strong>CRS score of 518</strong> (source:
             canada.ca, rounds of invitations, May 2026). There is no fixed pass mark, the cut-off is simply wherever the
             last invited candidate sits, so it changes every CRS draw. When several candidates share the cut-off score,

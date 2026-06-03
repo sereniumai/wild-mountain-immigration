@@ -279,7 +279,8 @@ export default function RuralNorthernImmigrationPilotPage() {
             Costs on a rural file are mostly <strong>government and third-party fees</strong>: IRCC processing, the
             right-of-permanent-residence fee, biometrics, an approved language test, an{" "}
             <strong>ECA</strong> if you studied abroad, a medical exam, police certificates and proof of settlement
-            funds, plus your own relocation costs. These government figures change periodically, so we itemise the
+            funds, plus your own relocation costs.</p>
+          <p>These government figures change periodically, so we itemise the
             current numbers for your case and you can confirm amounts on <strong>canada.ca</strong>. Our{" "}
             <a href="/fees">fees guide</a> explains how our professional fee differs from government fees. On{" "}
             <strong>timelines</strong>, processing moves with application volume and with the program and community in
@@ -292,7 +293,8 @@ export default function RuralNorthernImmigrationPilotPage() {
             Immigration Pilot) proved that a community-driven model could work. <strong>RCIP</strong> (the Rural
             Community Immigration Pilot), introduced in 2025, carries that model forward as its successor and expansion.
             The mechanics are familiar: a job offer in a participating community, a community recommendation, and a path
-            to permanent residence. Alongside RCIP, Canada also runs a <strong>Francophone Community Immigration
+            to permanent residence.</p>
+          <p>Alongside RCIP, Canada also runs a <strong>Francophone Community Immigration
             Pilot</strong> that applies the same community-driven idea to French-speaking communities outside Quebec. What
             changes between programs is the <strong>participating communities and the exact criteria</strong>, which is
             why we always check the current program and the live designated community list rather than an old one.

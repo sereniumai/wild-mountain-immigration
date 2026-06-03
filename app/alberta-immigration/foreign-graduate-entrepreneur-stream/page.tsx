@@ -140,7 +140,8 @@ export default function ForeignGraduateEntrepreneurStreamPage() {
             The <strong>Alberta Foreign Graduate Entrepreneur Stream</strong> is a business pathway under the Alberta
             Advantage Immigration Program (AAIP) that lets recent graduates of approved post-secondary institutions
             <em> located outside Canada</em> establish an innovative business in the province and then apply for
-            permanent residence. Alberta&apos;s AAIP business streams sit within a tightly managed program: the
+            permanent residence.</p>
+          <p>Alberta&apos;s AAIP business streams sit within a tightly managed program: the
             province&apos;s 2026 AAIP allocation is about <strong>6,403 nominations</strong> across all streams (source:
             alberta.ca, AAIP processing information, May 2026), so entrepreneur pathways like this one are deliberately
             selective and concept-driven rather than high-volume. The defining feature of this stream is its route in:
@@ -233,7 +234,8 @@ export default function ForeignGraduateEntrepreneurStreamPage() {
             Canada and runs through a designated-agency endorsement. The{" "}
             <a href="/alberta-immigration/graduate-entrepreneur-stream">Alberta Graduate Entrepreneur Stream</a> is for
             graduates of approved Alberta or Canadian institutions, typically people holding a Post-Graduation Work
-            Permit (PGWP) with meaningful time remaining. That PGWP comparison is the quickest way to tell the two streams
+            Permit (PGWP) with meaningful time remaining.</p>
+          <p>That PGWP comparison is the quickest way to tell the two streams
             apart. If your business is aimed at a smaller community, the{" "}
             <a href="/alberta-immigration/rural-entrepreneur-stream">Rural Entrepreneur Stream</a> may be the better fit
             again. The table below sets the two graduate streams side by side.
@@ -254,7 +256,8 @@ export default function ForeignGraduateEntrepreneurStreamPage() {
           <p>
             Both the designated agency and the province are looking for a genuinely <strong>innovative</strong> business,
             one that brings something new, scalable or technically distinctive, rather than a passive investment or a
-            routine operation that simply duplicates what already exists. The endorsement process is, in effect, a
+            routine operation that simply duplicates what already exists.</p>
+          <p>The endorsement process is, in effect, a
             credibility test: the designated agency stakes its reputation on concepts it believes can succeed in Alberta.
             That is why <strong>Alberta entrepreneur immigration</strong> through this foreign graduate route lives or dies on
             the strength of the concept and the plan behind it, not just on meeting the financial floor. A well-built
@@ -266,7 +269,8 @@ export default function ForeignGraduateEntrepreneurStreamPage() {
           <p>
             The avoidable errors we see most often are choosing the wrong stream (applying as a foreign graduate when you
             actually studied in Canada, or vice versa), underestimating how central the designated-agency endorsement is,
-            and treating published thresholds as permanent. Investment minimums, language bands and the agency list all
+            and treating published thresholds as permanent.</p>
+          <p>Investment minimums, language bands and the agency list all
             change, so a plan built on last year&apos;s numbers can unravel. Documenting sources of funds late, or
             presenting a concept that reads as a passive investment rather than an actively managed innovative business,
             are the other classic stumbles. Each is fixable, but far more cheaply before you submit than after a

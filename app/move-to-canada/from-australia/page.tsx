@@ -138,7 +138,8 @@ export default function FromAustraliaPage() {
             Canada&apos;s two official languages, so you score well on the language factors that drive most economic
             programs. Australian degrees and trade qualifications are well understood and straightforward to have
             assessed, and the two countries share similar systems and institutions, which makes the move feel familiar.
-            As an Australian passport holder you travel visa-exempt to visit. What you cannot do is simply turn up and
+            As an Australian passport holder you travel visa-exempt to visit.</p>
+          <p>What you cannot do is simply turn up and
             stay: visiting and immigrating are different things, and the route that fits depends on your age, your
             occupation, your work experience and whether you have a Canadian job offer or close family already in Canada.
           </p>
@@ -268,7 +269,8 @@ export default function FromAustraliaPage() {
             biometrics; third-party costs add your ECA, an English test, the AFP check, a medical exam and, for most
             Express Entry applicants, the settlement funds you must show. For Australians, long-haul flights and shipping
             are usually the largest line on top. These amounts change periodically, so we itemise the current figures for
-            your route rather than quote one headline, and government fees can be checked on canada.ca. On timing, a
+            your route rather than quote one headline, and government fees can be checked on canada.ca.</p>
+          <p>On timing, a
             complete Express Entry application is usually finished about six months after the invitation, with provincial
             nomination and family sponsorship adding stages and the IEC running in seasonal rounds. Knowing both numbers up front
             is what makes a plan to <strong>move to Canada from Australia</strong> realistic rather than a guess. Our{" "}

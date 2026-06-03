@@ -141,7 +141,8 @@ export default function CitizenshipRequirementsPage() {
             To become a Canadian citizen by grant, you must meet a defined set of{" "}
             <strong>citizenship eligibility requirements</strong> under the Citizenship Act. The starting point is
             permanent residence, and from there the core rules are physical presence, tax filing, language and the
-            knowledge test. These rules apply across the country, so if you are asking <em>do I qualify for Canadian
+            knowledge test.</p>
+          <p>These rules apply across the country, so if you are asking <em>do I qualify for Canadian
             citizenship</em>, this is your eligibility checklist. The table below summarises each one, and the sections
             that follow explain them in detail. All figures reflect IRCC policy current to May 2026; confirm the latest
             on canada.ca before you apply.

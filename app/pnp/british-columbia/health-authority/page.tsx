@@ -139,7 +139,8 @@ export default function BcPnpHealthAuthorityPage() {
           <p>
             The <strong>BC PNP Health Authority</strong> stream is a route within British Columbia&apos;s Skills
             Immigration program built specifically for health-care workers who hold a job offer from one of the
-            province&apos;s public health authorities. It exists because health care sits at the very top of BC&apos;s
+            province&apos;s public health authorities.</p>
+          <p>It exists because health care sits at the very top of BC&apos;s
             immigration priorities: according to welcomebc.ca, BC&apos;s 2026 selection is concentrated on its highest-priority
             &ldquo;Care, Build and Innovate&rdquo; occupations, with care (health) the largest group, against a reduced
             provincial allocation of roughly <strong>5,254 nominations</strong> for the year (source: welcomebc.ca / IRCC,
@@ -245,7 +246,8 @@ export default function BcPnpHealthAuthorityPage() {
             The Health Authority stream offers an <strong>Express Entry BC (EEBC)</strong> option. If you already qualify
             for federal Express Entry and hold an active profile, an enhanced BC nomination adds <strong>600 CRS
             points</strong> to your federal score, which in recent draws has comfortably exceeded the cut-off, though IRCC still issues the Invitation to Apply in a
-            following federal draw. It is the fastest route because the provincial nomination plugs directly into the
+            following federal draw.</p>
+          <p>It is the fastest route because the provincial nomination plugs directly into the
             federal Express Entry system. If you do not qualify for Express Entry, you can still apply through the base
             (non-enhanced) version of the stream and file with IRCC on paper after nomination. Not sure where your federal
             score stands? Try our <a href="/tools/crs-calculator">free CRS calculator</a> first.
@@ -273,7 +275,8 @@ export default function BcPnpHealthAuthorityPage() {
             the clearest routes for clinicians to permanent residence. As a CICC-regulated practice led by a licensed
             RCIC, our team confirms your role and job offer qualify, coordinates the timing between your BC college
             registration and your immigration file, and
-            advises on whether the enhanced Express Entry BC route or the base stream is genuinely stronger for you. We
+            advises on whether the enhanced Express Entry BC route or the base stream is genuinely stronger for you.</p>
+          <p>We
             also catch the small mistakes that cause avoidable refusals: the wrong{" "}
             <abbr title="National Occupational Classification">NOC</abbr> code, a language score one band short of your
             college&apos;s standard, or an offer that is not actually from a public health authority.

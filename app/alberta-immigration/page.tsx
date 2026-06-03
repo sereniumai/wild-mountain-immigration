@@ -189,7 +189,8 @@ export default function AlbertaImmigrationPage() {
             The <strong>Alberta Opportunity Stream</strong> carries roughly 80% of AAIP invitation volume, so for many
             people it is the practical route to immigrate to Alberta. It is designed for temporary foreign workers who are
             <em> already</em> living and working in Alberta on a valid work permit, with an ongoing full-time job offer
-            from their Alberta employer. The language requirement scales with your job. Most occupations in NOC 2021
+            from their Alberta employer.</p>
+          <p>The language requirement scales with your job. Most occupations in NOC 2021
             TEER 0&ndash;3 need CLB 5, TEER 4&ndash;5 roles need CLB 4, and some regulated roles (such as NOC 33102) require
             CLB 7. The AOS is a base stream, so a nomination leads to a separate IRCC application rather than CRS points.
           </p>

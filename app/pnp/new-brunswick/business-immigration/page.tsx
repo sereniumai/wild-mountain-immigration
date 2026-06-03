@@ -144,7 +144,8 @@ export default function NewBrunswickBusinessImmigrationPage() {
             The <strong>New Brunswick Business Immigration Stream</strong> is the business route of the New Brunswick
             Provincial Nominee Program (NBPNP) for entrepreneurs who will <strong>establish, buy into and actively manage a
             business in New Brunswick</strong>. It is one of New Brunswick&apos;s economic pathways and runs through the
-            province&apos;s INB Portal alongside the worker streams. New Brunswick&apos;s nomination space is limited, its
+            province&apos;s INB Portal alongside the worker streams.</p>
+          <p>New Brunswick&apos;s nomination space is limited, its
             2025 allocation was about <strong>2,750</strong> spaces split between the PNP and the Atlantic Immigration
             Program, with the 2026 figure expected to remain tight after federal allocations were cut nationwide (source:
             welcomenb.ca / IRCC, May 2026). Unlike the worker routes, you do not need a New Brunswick job offer: you become a
@@ -170,7 +171,8 @@ export default function NewBrunswickBusinessImmigrationPage() {
             the main entrepreneurial route you should have real business-ownership or senior-management experience, capital
             you can invest and verify, and a concrete idea for a venture the province actually needs. That could mean a trade
             or service business, a shop or restaurant, a manufacturing or technology operation, becoming self-employed in a
-            regulated field, or buying and growing an existing New Brunswick business. The{" "}
+            regulated field, or buying and growing an existing New Brunswick business.</p>
+          <p>The{" "}
             <strong>post-graduate entrepreneurial</strong> route, by contrast, is aimed at recent graduates of
             New Brunswick institutions who want to launch their own business in the province after studying there. Neither
             route is for passive investors looking to park money, and certain business types are excluded, confirm the

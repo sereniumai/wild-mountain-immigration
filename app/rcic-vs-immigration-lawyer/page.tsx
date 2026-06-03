@@ -137,7 +137,8 @@ export default function RcicVsImmigrationLawyerPage() {
           <h2>Immigration consultant vs lawyer in Canada: are they both licensed?</h2>
           <p>
             When you weigh up an <strong>immigration consultant vs lawyer in Canada</strong>, the first thing to know is
-            that both are properly licensed, authorised representatives. Under{" "}
+            that both are properly licensed, authorised representatives.</p>
+          <p>Under{" "}
             <strong>section 91 of the Immigration and Refugee Protection Act (IRPA)</strong>, only three kinds of people
             may represent you for a fee in connection with a Canadian immigration or citizenship matter: a Regulated
             Canadian Immigration Consultant (RCIC) in good standing with the College of Immigration and Citizenship

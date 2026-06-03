@@ -142,7 +142,8 @@ export default function InternationalExperienceCanadaPage() {
           <p>
             International Experience Canada (IEC) is a program run by Immigration, Refugees and Citizenship Canada (IRCC)
             that lets young people from countries with a bilateral youth-mobility agreement come to Canada to work and
-            travel. In short, if your country has signed an agreement with Canada and you are within the eligible age
+            travel.</p>
+          <p>In short, if your country has signed an agreement with Canada and you are within the eligible age
             range, IEC gives you a time-limited work permit, usually 12 or 24 months, to gain experience, fund your
             travels and explore the country. According to IRCC, more than 30 countries and territories take part in the
             program, and the 2026 pools opened in December 2025 (source: canada.ca, 2026).

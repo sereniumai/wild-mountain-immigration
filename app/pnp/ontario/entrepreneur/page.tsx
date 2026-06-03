@@ -140,7 +140,8 @@ export default function OntarioEntrepreneurStreamPage() {
             The <strong>Ontario Entrepreneur Stream</strong> is the OINP business stream, the business route of the{" "}
             <a href="/pnp/ontario">Ontario Immigrant Nominee Program (OINP)</a>, Ontario&apos;s economic immigration
             program. It is for entrepreneurs who will <strong>start a business in Ontario for PR, or buy and grow an
-            existing one, and actively manage it</strong> day to day. Ontario runs the country&apos;s largest provincial
+            existing one, and actively manage it</strong> day to day.</p>
+          <p>Ontario runs the country&apos;s largest provincial
             program, with a 2026 nomination allocation of roughly <strong>14,119</strong> across all of its worker and
             business streams (source: ontario.ca / IRCC, May 2026). Unlike the OINP&apos;s worker routes, this stream needs
             no Ontario job offer: you progress toward permanent residence by investing in and running a genuine business
@@ -159,7 +160,8 @@ export default function OntarioEntrepreneurStreamPage() {
           <p>
             This stream fits people who want to <em>build and run</em> a business and put down roots in Ontario, founders
             with real business or senior-management experience, capital they can invest and verify, and a concrete plan for
-            a venture that creates jobs. Good candidates include those launching a trade, service, retail, manufacturing or
+            a venture that creates jobs.</p>
+          <p>Good candidates include those launching a trade, service, retail, manufacturing or
             technology business, or buying and growing an established Ontario business whose owner is moving on. It is not
             for passive investors looking to park money, and certain business types are excluded. Confirm the current
             lists of eligible and ineligible business types on ontario.ca.
@@ -284,7 +286,8 @@ export default function OntarioEntrepreneurStreamPage() {
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497), our team assesses whether the
             Entrepreneur Stream genuinely fits your capital, experience and goals, helps you structure a credible business and
             EOI, and prepares an application, net-worth worksheet, source-of-funds trail and business plan, that stands up to
-            provincial scrutiny. With the OINP being redesigned in 2026, we keep your strategy aligned to the rules actually in
+            provincial scrutiny.</p>
+          <p>With the OINP being redesigned in 2026, we keep your strategy aligned to the rules actually in
             force when you apply. If a different route fits better, we will tell you honestly.
           </p>
           <p>

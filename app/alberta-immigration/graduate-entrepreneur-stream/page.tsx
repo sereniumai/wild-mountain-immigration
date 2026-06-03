@@ -140,7 +140,8 @@ export default function GraduateEntrepreneurStreamPage() {
             The <strong>Alberta Graduate Entrepreneur Stream</strong> is a business pathway within the Alberta Advantage
             Immigration Program (AAIP) that lets graduates of <strong>approved Alberta post-secondary institutions</strong>{" "}
             establish or operate a business in the province and apply for permanent residence. It is one of several
-            entrepreneur streams the province uses to channel its tight provincial allocation. Alberta&apos;s total 2026
+            entrepreneur streams the province uses to channel its tight provincial allocation.</p>
+          <p>Alberta&apos;s total 2026
             AAIP nomination cap is about <strong>6,403</strong>, down sharply from 9,750 in 2024, and most invitation
             volume goes to worker streams (source: alberta.ca, AAIP, May 2026). Because the business streams are
             <em> base</em> streams, a nomination here leads to a separate paper application to IRCC for permanent residence

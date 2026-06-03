@@ -227,7 +227,8 @@ export default function EducationalCredentialAssessmentPage() {
             ECA processing time depends on the organisation and how fast your school sends documents, and it commonly
             runs from several weeks to a few months. A <strong>WES Canada</strong> ECA, through{" "}
             <strong>World Education Services</strong>, is often quicker once your transcripts arrive, while a WES ECA
-            for some countries can take longer where verification is harder. The ECA cost varies by provider and the
+            for some countries can take longer where verification is harder.</p>
+          <p>The ECA cost varies by provider and the
             service level you choose, with extra fees for courier or expedited handling. Because both timelines and
             fees change, we point clients to the chosen organisation&apos;s own site and to canada.ca for current
             figures rather than quoting a fixed number, and we advise ordering early so a slow transcript does not
@@ -264,7 +265,8 @@ export default function EducationalCredentialAssessmentPage() {
             Working under a licensed RCIC (CICC #R706497), our team confirms whether you actually need an Educational
             Credential Assessment, which designated organisation suits your country and occupation, and whose
             credentials are worth assessing for
-            the strongest <a href="/express-entry/comprehensive-ranking-system">CRS</a> result. We then make sure the
+            the strongest <a href="/express-entry/comprehensive-ranking-system">CRS</a> result.</p>
+          <p>We then make sure the
             equivalency is entered correctly into your <a href="/express-entry">Express Entry</a> profile and check
             that it stays valid through to your PR application. We represent clients entirely online. ECA fees,
             timelines and the designated list change over time, so we always confirm

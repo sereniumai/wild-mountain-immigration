@@ -148,7 +148,8 @@ export default function MoveToCanadaPage() {
             worker, the honest answer is that the right pathway depends on you, not your passport. When you{" "}
             <strong>move to Canada from another country</strong>, the route you choose depends far more on your profile,
             your age, education, skilled work experience, language ability and any Canadian job offer or family, than on
-            the country you are leaving. Broadly there are two destinations:{" "}
+            the country you are leaving.</p>
+          <p>Broadly there are two destinations:{" "}
             <strong>permanent residence</strong>, which lets you live, work and settle anywhere in Canada indefinitely
             and leads to citizenship, and <strong>temporary status</strong> through a <a href="/work-permits">work</a> or{" "}
             <a href="/study-permit">study permit</a>, which is often used as a stepping stone to permanent residence. The
@@ -213,7 +214,8 @@ export default function MoveToCanadaPage() {
             employer-specific permit supported by a Labour Market Impact Assessment, an{" "}
             <a href="/work-permits/intra-company-transfer">intra-company transfer</a> if you work for a multinational
             with a Canadian office, or a <a href="/work-permits/bridging-open-work-permit">bridging open work permit</a>{" "}
-            once your PR application is far enough along. Younger applicants from eligible countries can also use the{" "}
+            once your PR application is far enough along.</p>
+          <p>Younger applicants from eligible countries can also use the{" "}
             <a href="/work-permits/international-experience-canada">International Experience Canada (IEC)</a> Working
             Holiday. Many newcomers come on a permit first, build Canadian experience, and transition to PR through
             Express Entry or a PNP.
@@ -276,7 +278,8 @@ export default function MoveToCanadaPage() {
             Costs fall into government fees (IRCC processing, the right-of-permanent-residence fee and biometrics) and
             third-party costs (your ECA, language test, police certificates, medical exam and, for most Express Entry
             applicants, proof of settlement funds that scales with family size). On top of that you budget for your own
-            move, flights, shipping and initial housing. These figures change periodically, so we itemise the current
+            move, flights, shipping and initial housing.</p>
+          <p>These figures change periodically, so we itemise the current
             numbers for your route rather than quote a single headline, and you can confirm government fees on canada.ca.
             On timelines, a complete Express Entry application is usually processed in around six months after an
             invitation, while provincial nomination, work and study permits and family sponsorship each add their own

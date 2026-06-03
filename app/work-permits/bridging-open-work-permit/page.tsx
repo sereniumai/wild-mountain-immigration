@@ -140,7 +140,8 @@ export default function BridgingOpenWorkPermitPage() {
             A bridging open work permit (BOWP) is a temporary open work permit that lets certain permanent-residence
             applicants continue working in Canada while Immigration, Refugees and Citizenship Canada (IRCC) finishes
             processing their PR application. It exists to solve a common timing problem: your work permit is expiring,
-            but your permanent residence has not yet been decided. Rather than forcing you to stop working, or leave
+            but your permanent residence has not yet been decided.</p>
+          <p>Rather than forcing you to stop working, or leave
             Canada, the BOWP &quot;bridges&quot; the gap between your old permit and your PR decision. Work permits like the BOWP
             remain one of the most-used immigration documents in Canada, with IRCC processing hundreds of thousands of
             work permit applications each year (source: canada.ca, 2026).

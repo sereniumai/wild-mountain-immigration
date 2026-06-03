@@ -152,7 +152,8 @@ export default function NewfoundlandGraduateEntrepreneurPage() {
             earn PR</strong>. It is the practical face of MUN graduate immigration: a clear path from studying in the
             province to Newfoundland business owner PR. You build a genuine, active NL business, demonstrate that you own
             and run it, and use that, together
-            with your eligible NL credential, as the foundation of your nomination. Because the business
+            with your eligible NL credential, as the foundation of your nomination.</p>
+          <p>Because the business
             categories are <em>base</em> streams, a nomination here leads to a separate paper application to IRCC for
             permanent residence rather than adding points to a federal Express Entry profile. Figures and policies change
             frequently, so always verify the current rules on gov.nl.ca before acting.
@@ -293,7 +294,8 @@ export default function NewfoundlandGraduateEntrepreneurPage() {
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497), our team confirms whether
             the Graduate Entrepreneur category is the right fit, helps shape your expression of interest, and prepares an
             application and nomination package, with proof of ownership, active management and your eligible NL
-            credential, that stands up to scrutiny with the province and with IRCC. If the{" "}
+            credential, that stands up to scrutiny with the province and with IRCC.</p>
+          <p>If the{" "}
             <a href="/pnp/newfoundland-and-labrador/international-entrepreneur">International Entrepreneur</a> route or
             another <a href="/pnp/newfoundland-and-labrador">NLPNP</a> stream fits better, we will tell you honestly.
           </p>

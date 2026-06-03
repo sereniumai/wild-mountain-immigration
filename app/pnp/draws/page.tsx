@@ -161,7 +161,8 @@ export default function PnpDrawsPage() {
             A <strong>PNP draw</strong> is an invitation round held by a province or territory under its{" "}
             <a href="/pnp">Provincial Nominee Program</a>. The province reaches into a pool of candidates, usually
             ranked by an <strong>Expression of Interest (EOI)</strong> score, selects a stream or category, and
-            invites the highest-ranked candidates to apply for a <strong>provincial nomination</strong>. A nomination
+            invites the highest-ranked candidates to apply for a <strong>provincial nomination</strong>.</p>
+          <p>A nomination
             is not permanent residence on its own, but it is one of the strongest steps toward it, and through an
             Express Entry-aligned stream it puts most candidates well above the typical federal draw cut-off. Because every province runs its
             own program, there is no single national PNP draw. You track each province separately.
@@ -255,7 +256,8 @@ export default function PnpDrawsPage() {
             where you are most competitive, sets a provincial route against your federal{" "}
             <a href="/express-entry">Express Entry</a> /{" "}
             <a href="/express-entry/comprehensive-ranking-system">CRS</a> standing, and prepares a complete EOI or
-            application for the streams you actually qualify for. In our home province, that includes the{" "}
+            application for the streams you actually qualify for.</p>
+          <p>In our home province, that includes the{" "}
             <a href="/alberta-immigration">Alberta AAIP</a>, and across Canada it spans{" "}
             <a href="/pnp/british-columbia">BC</a>, <a href="/pnp/saskatchewan">Saskatchewan</a>,{" "}
             <a href="/pnp/ontario">Ontario</a>, <a href="/pnp/manitoba">Manitoba</a> and more. We work entirely

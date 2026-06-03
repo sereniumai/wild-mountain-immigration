@@ -186,7 +186,8 @@ export default function SaskatchewanTechTalentPathwayPage() {
             International Skilled Worker requirements. You generally need a genuine, full-time offer in an eligible tech
             occupation from an approved Saskatchewan employer, skilled work experience that matches that occupation,
             language results appropriate to the role, post-secondary education or training (often with an Educational
-            Credential Assessment for foreign credentials), and enough settlement funds. As with every SINP route, meeting
+            Credential Assessment for foreign credentials), and enough settlement funds.</p>
+          <p>As with every SINP route, meeting
             the requirements places you in scope. It does not guarantee a nomination. The table summarises the core asks;
             the official, controlling criteria live on saskatchewan.ca.
           </p>

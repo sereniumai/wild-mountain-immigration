@@ -138,7 +138,8 @@ export default function FromUsaPage() {
             When you <strong>move to Canada from the USA</strong>, you start with real advantages. English is one of
             Canada&apos;s two official languages, so you score well on the language factors that drive most economic
             programs. US degrees and qualifications are well understood and straightforward to have assessed. And as an
-            American passport holder you travel visa-exempt, with no eTA needed at a land border. What you cannot do is
+            American passport holder you travel visa-exempt, with no eTA needed at a land border.</p>
+          <p>What you cannot do is
             simply move north and stay, because visiting and immigrating are different things. So a US citizen move to
             Canada almost always runs through one of the formal routes below. The route that fits depends on your age,
             your occupation, your work experience and whether you have a Canadian job offer or close family already in
@@ -217,7 +218,8 @@ export default function FromUsaPage() {
             without a Labour Market Impact Assessment, and the permit can frequently be issued at a port of entry. If you
             work for a multinational with a Canadian office, an{" "}
             <a href="/work-permits/intra-company-transfer">intra-company transfer</a> can move you within the same
-            company. Once your PR application is far enough along, a{" "}
+            company.</p>
+          <p>Once your PR application is far enough along, a{" "}
             <a href="/work-permits/bridging-open-work-permit">bridging open work permit</a> can keep you working in the
             meantime. Many American professionals come on a work permit first, build Canadian experience, and transition
             to PR through Express Entry or a PNP. Note that there is no IEC Working Holiday agreement for US citizens, so
@@ -269,7 +271,8 @@ export default function FromUsaPage() {
             biometrics; third-party costs add your ECA, an English test, the FBI identity history summary, a medical exam
             and, for most Express Entry applicants, the settlement funds you must show. These amounts change periodically,
             so we itemise the current figures for your route rather than quote one headline, and government fees can be
-            checked on canada.ca. On timing, a complete Express Entry application is usually finished about six months
+            checked on canada.ca.</p>
+          <p>On timing, a complete Express Entry application is usually finished about six months
             after the invitation. A CUSMA or intra-company transfer permit can frequently be arranged far faster,
             sometimes at the border, while provincial nomination and family sponsorship add their own stages. Budgeting
             these figures and timelines early is what keeps a plan to move to Canada from the USA on track, and our{" "}

@@ -250,7 +250,8 @@ export default function SkilledWorkerOverseasPage() {
           <p>
             This distinction changes your timeline more than any other. Most Skilled Worker Overseas nominations are{" "}
             <strong>base</strong>: once nominated, you submit a <em>separate paper application directly to IRCC</em> for
-            permanent residence, earning no CRS points. If you already hold a federal Express Entry profile, however, you can
+            permanent residence, earning no CRS points.</p>
+          <p>If you already hold a federal Express Entry profile, however, you can
             pursue the <strong>enhanced</strong> route, which runs the MPNP as an <strong>Express Entry aligned PNP</strong>:
             an enhanced nomination adds <strong>600 CRS points</strong>, which sits well above recent cut-offs, though IRCC
             still issues the Invitation to Apply at the next Express Entry draw. We confirm at the outset whether your route is
@@ -279,7 +280,8 @@ export default function SkilledWorkerOverseasPage() {
           <p>
             <strong>How long it takes</strong> depends on the stage. Waiting for a Letter of Advice to Apply hinges on your
             EOI ranking and which occupations Manitoba draws, there is no fixed timeline. After you submit a complete
-            nomination application, provincial processing typically runs several months. Once nominated, a base
+            nomination application, provincial processing typically runs several months.</p>
+          <p>Once nominated, a base
             nomination&apos;s paper application to IRCC generally takes longer than an enhanced Express Entry application.
             Adding it up, most overseas applicants should plan for the better part of a year, sometimes more, from EOI to
             permanent residence. Treat any estimate as approximate and verify on immigratemanitoba.com and canada.ca.
@@ -288,7 +290,8 @@ export default function SkilledWorkerOverseasPage() {
           <h2>How Wild Mountain helps with your Skilled Worker Overseas application</h2>
           <p>
             For an overseas candidate, almost everything turns on the Manitoba connection and a well-built Expression of
-            Interest, and that is exactly where Wild Mountain Immigration focuses. Working under a licensed{" "}
+            Interest, and that is exactly where Wild Mountain Immigration focuses.</p>
+          <p>Working under a licensed{" "}
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497), our team documents and
             strengthens your connection, models your EOI ranking out of 1,000, confirms whether your route is base or{" "}
             <a href="/express-entry">enhanced</a>, and prepares a nomination application that stands up to scrutiny with the

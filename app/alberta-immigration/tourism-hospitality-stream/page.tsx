@@ -178,7 +178,8 @@ export default function TourismHospitalityStreamPage() {
             The stream targets front-line and supervisory occupations across accommodation, food and beverage, and visitor
             experiences. The table below summarises the typical eligible roles and what each one needs. National Occupational
             Classification (NOC) codes matter here: they drive both whether a role is eligible and the language level you
-            must meet, so getting the NOC right is one of the most common places a DIY application goes wrong. Two of the most
+            must meet, so getting the NOC right is one of the most common places a DIY application goes wrong.</p>
+          <p>Two of the most
             common files we see are <strong>cook immigration to Alberta (NOC 63200)</strong> and{" "}
             <strong>food and beverage server PR (NOC 65200)</strong>, the front-line roles that fill Bow Valley kitchens and
             dining rooms year-round.
@@ -234,7 +235,8 @@ export default function TourismHospitalityStreamPage() {
             picture is genuinely our backyard. The corridor&apos;s economy runs on tourism: hotels, mountain lodges,
             restaurants, ski operations and guided outdoor-adventure businesses staff up year-round and lean heavily on
             international workers. <strong>Hotel and ski-resort workers in Banff and Canmore</strong>, from front-desk agents
-            to lift and guest-services teams, are precisely the people this route is built for. We field steady enquiries
+            to lift and guest-services teams, are precisely the people this route is built for.</p>
+          <p>We field steady enquiries
             on hotel worker PR in Alberta, ski-resort worker immigration and Canmore hospitality jobs that lead to PR. Many of
             those employers are exactly the kind of Travel Alberta experience providers and industry-association members the
             Tourism &amp; Hospitality Stream is designed around.

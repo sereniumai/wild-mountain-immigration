@@ -256,7 +256,8 @@ export default function FromUaePage() {
             Costs sit in two groups. Government charges cover IRCC processing, the right-of-permanent-residence fee,
             biometrics and your medical exam; third-party costs add your ECA, a language test, the police certificates from
             each country you have lived in and, for most Express Entry applicants, the settlement funds you must show, where
-            Gulf savings often help. These amounts change periodically, so our team itemises the current figures for your
+            Gulf savings often help.</p>
+          <p>These amounts change periodically, so our team itemises the current figures for your
             route rather than quote one headline. On timing, a complete Express Entry application is usually finished about
             six months after the invitation, while provincial nomination and family sponsorship add their own stages. Our{" "}
             <a href="/fees">fees guide</a> explains our professional fee and how it differs from government fees.
@@ -268,7 +269,8 @@ export default function FromUaePage() {
             represent you with IRCC from the UAE through to your arrival. As a CICC-regulated practice led by a licensed RCIC,
             our team assesses your profile honestly, confirms your entry-visa status by nationality, chooses the route where
             you are most competitive, and manages the paperwork, the ECA, the police certificates and the proof of funds so
-            you do not have to decode it alone. Whether you are weighing Canada PR from Dubai or a work permit out of Abu
+            you do not have to decode it alone.</p>
+          <p>Whether you are weighing Canada PR from Dubai or a work permit out of Abu
             Dhabi, the goal is the same: help you <strong>move to Canada from the UAE</strong> with a plan built around your
             nationality and your numbers.
           </p>

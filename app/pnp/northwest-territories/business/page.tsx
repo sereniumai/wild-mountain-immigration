@@ -142,7 +142,8 @@ export default function NorthwestTerritoriesBusinessStreamPage() {
             Territories Nominee Program (NTNP), for people who will <strong>start a business in the NWT, or buy into an
             existing one, and actively manage it</strong> day to day. It is the one NTNP route that does not need a job
             offer: you become a permanent resident by establishing and running a genuine territorial business that creates
-            local economic benefit. The NTNP works within a 2026 territorial allocation of just{" "}
+            local economic benefit.</p>
+          <p>The NTNP works within a 2026 territorial allocation of just{" "}
             <strong>about 197 nominations</strong> across all of its worker and business streams, one of the smallest in
             Canada (source: immigratenwt.ca / IRCC, May 2026). With so few spaces, a well-prepared business file matters.
           </p>
@@ -157,7 +158,8 @@ export default function NorthwestTerritoriesBusinessStreamPage() {
             This stream fits the working <strong>Northwest Territories entrepreneur</strong> who wants to{" "}
             <em>build and run</em> a business and put down roots in the territory, whether in Yellowknife or a smaller
             northern community that needs new investment, jobs and services. It suits self-employed founders and start-up
-            owners as much as people buying an established operation. You should have real business-ownership or
+            owners as much as people buying an established operation.</p>
+          <p>You should have real business-ownership or
             senior-management experience, capital you can invest and verify, and a concrete idea for a venture the
             territory actually needs: a trade or service business, a shop, restaurant or tourism operation, a
             resource-related or transport business, or buying and growing an existing local business whose owner is
@@ -284,7 +286,8 @@ export default function NorthwestTerritoriesBusinessStreamPage() {
             Working under a licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497),
             our team assesses whether the <strong>NTNP business</strong> route genuinely fits your capital, experience
             and goals, helps you match a credible business to the right NWT location, and prepares an application,
-            net-worth worksheet, source-of-funds trail and business plan, that stands up to territorial scrutiny. If a
+            net-worth worksheet, source-of-funds trail and business plan, that stands up to territorial scrutiny.</p>
+          <p>If a
             worker route fits better, such as the{" "}
             <a href="/pnp/northwest-territories/employer-driven-skilled-worker">Employer-Driven Skilled Worker</a> or{" "}
             <a href="/pnp/northwest-territories/express-entry">NWT Express Entry</a> stream within the wider{" "}

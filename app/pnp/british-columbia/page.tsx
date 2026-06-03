@@ -241,7 +241,8 @@ export default function BritishColumbiaPnpPage() {
             The alternative is a <strong>base nomination</strong>. Base nominations do not touch your CRS score; instead,
             once BC nominates you, you submit a separate paper-based permanent-residence application directly to IRCC.
             Base routes can suit applicants who do not yet hold an Express Entry profile or who do not meet a federal
-            program&apos;s minimums, but they are generally slower to process than the enhanced Express Entry path. Many
+            program&apos;s minimums, but they are generally slower to process than the enhanced Express Entry path.</p>
+          <p>Many
             BC applicants who already have skilled Canadian work experience, for example through a{" "}
             <a href="/work-permits/pgwp">Post-Graduation Work Permit</a>, qualify federally under the{" "}
             <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a> and so are well placed to use
@@ -319,7 +320,8 @@ export default function BritishColumbiaPnpPage() {
             <a href="/pnp/british-columbia/skilled-worker">Skilled Worker</a>,{" "}
             <a href="/pnp/british-columbia/health-authority">Health Authority</a> or{" "}
             <a href="/pnp/british-columbia/entrepreneur-immigration">Entrepreneur Immigration</a>, with the strongest
-            realistic chance. As a CICC-regulated practice led by a licensed RCIC, our team prepares a registration and
+            realistic chance.</p>
+          <p>As a CICC-regulated practice led by a licensed RCIC, our team prepares a registration and
             nomination application that stands up to scrutiny and represents you with the province and with IRCC. With
             BC&apos;s allocation reduced for 2026, that positioning is where good advice earns its keep, and we work with
             BC clients entirely online by video call and secure document sharing.

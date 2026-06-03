@@ -323,7 +323,8 @@ export default function RuralRenewalStreamPage() {
           <p>
             Both are base AAIP streams, but they suit different people. The{" "}
             <a href="/alberta-immigration/opportunity-stream">Alberta Opportunity Stream</a> is for temporary foreign
-            workers already living and working anywhere in Alberta on a valid permit, no community endorsement needed. The
+            workers already living and working anywhere in Alberta on a valid permit, no community endorsement needed.</p>
+          <p>The
             Rural Renewal Stream is built around <em>settling in a specific designated community</em>, which means an extra
             endorsement step but a lower EOI cut-off and access to rural and sector points. If your job and life are
             genuinely rooted in a smaller Alberta community, Rural Renewal is often the stronger route; if you are in a

@@ -148,7 +148,8 @@ export default function AgricultureTalentPathwayPage() {
             below the roughly 8,000 it had in 2024, after IRCC reduced provincial allocations nationwide (source:
             saskatchewan.ca / IRCC, May 2026). With fewer spaces, the province reserved roughly half of its nominations
             for priority sectors such as health, technology and <strong>agriculture</strong>, channelling them through
-            dedicated Talent Pathways rather than broad open draws. The pathway is a provincial route, distinct from any
+            dedicated Talent Pathways rather than broad open draws.</p>
+          <p>The pathway is a provincial route, distinct from any
             federal agri-food immigration pilot, though both target similar agriculture and agri-food occupations.
             Because figures and policies change frequently, always verify the current rules before acting.
           </p>
@@ -190,7 +191,8 @@ export default function AgricultureTalentPathwayPage() {
             <strong>Agriculture Talent Pathway eligibility</strong> combines an employer-side requirement with the usual
             SINP candidate minimums. Because it is employer-driven, the anchor is a genuine, qualifying job offer from an
             eligible Saskatchewan agriculture or agri-food employer; the rest mirrors the International Skilled Worker
-            framework. Many applicants already work in a Saskatchewan agriculture job on an LMIA-supported temporary
+            framework.</p>
+          <p>Many applicants already work in a Saskatchewan agriculture job on an LMIA-supported temporary
             work permit, which can strengthen a nomination but is not in itself a substitute for it. The summary
             below is accurate to May 2026. The official, controlling criteria live on saskatchewan.ca and change
             periodically.
@@ -266,7 +268,8 @@ export default function AgricultureTalentPathwayPage() {
           <p>
             <strong>How long the Agriculture Talent Pathway takes</strong> depends on the stage. After you submit a
             complete nomination application, Saskatchewan&apos;s assessment is often a matter of weeks, though it varies by
-            route and volume. Once nominated, your application to IRCC is a base, paper-based permanent-residence
+            route and volume.</p>
+          <p>Once nominated, your application to IRCC is a base, paper-based permanent-residence
             application, which generally takes longer than the roughly six months IRCC targets for enhanced Express Entry
             applications. Most applicants should plan for several months to the better part of a year overall, and both
             provincial and federal timelines move with demand, so treat any estimate as approximate.

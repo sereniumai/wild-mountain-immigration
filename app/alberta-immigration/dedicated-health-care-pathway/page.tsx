@@ -142,7 +142,8 @@ export default function DedicatedHealthCarePathwayPage() {
             health-care employer. It is delivered mainly through the enhanced{" "}
             <a href="/alberta-immigration/express-entry-stream">Alberta Express Entry Stream</a>, which means a provincial
             nomination adds <strong>600 CRS points</strong> to your federal Express Entry profile, typically enough to
-            clear the cut-off in the next Express Entry draw, though IRCC issues the invitation. Alberta runs targeted draws for the pathway and
+            clear the cut-off in the next Express Entry draw, though IRCC issues the invitation.</p>
+          <p>Alberta runs targeted draws for the pathway and
             selects health-care candidates from its Worker Expression of Interest (EOI) pool, with a published 2026
             allocation of roughly <strong>500 nominations</strong> for the health-care stream (source: alberta.ca, AAIP,
             May 2026).
@@ -227,7 +228,8 @@ export default function DedicatedHealthCarePathwayPage() {
             Language is scored on your <strong>lowest of four abilities</strong>, reading, writing, listening and
             speaking, so a single weak skill can quietly hold back the whole file. As a practical guide, many health-care
             roles work to around <strong>CLB 5</strong>, while several regulated nursing occupations effectively need{" "}
-            <strong>CLB 7</strong> to satisfy both the AAIP and Alberta licensure. The decisive standard is usually set by
+            <strong>CLB 7</strong> to satisfy both the AAIP and Alberta licensure.</p>
+          <p>The decisive standard is usually set by
             your regulatory college rather than the AAIP itself: the College of Registered Nurses of Alberta, for
             instance, applies its own English-language requirement that can exceed the AAIP minimum. Always confirm both
             the AAIP and the college standard for your exact occupation before booking a test.
@@ -285,7 +287,8 @@ export default function DedicatedHealthCarePathwayPage() {
             province&apos;s leading immigration priority within the <a href="/alberta-immigration">AAIP</a>. Working under
             a licensed RCIC (CICC #R706497), our team helps you confirm your occupation is eligible, coordinates the
             timing between your Alberta college registration and your immigration file, and builds your Worker EOI to
-            capture every point you are entitled to. We catch the small mistakes, the wrong{" "}
+            capture every point you are entitled to.</p>
+          <p>We catch the small mistakes, the wrong{" "}
             <abbr title="National Occupational Classification">NOC</abbr> code, a language score one band short of your
             college&apos;s standard, a job offer that doesn&apos;t quite meet AAIP requirements, that cause avoidable
             refusals.

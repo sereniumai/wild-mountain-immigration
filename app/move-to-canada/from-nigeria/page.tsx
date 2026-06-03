@@ -143,7 +143,8 @@ export default function FromNigeriaPage() {
             When you <strong>move to Canada from Nigeria</strong>, you bring some real advantages. English is one of
             Canada&apos;s two official languages, so you score well on the language factors that drive most economic
             programs, and Nigerian professionals are well represented across Canadian workplaces. That said, visiting and
-            immigrating are different things. As a Nigerian passport holder you are visa-required even to visit, and a
+            immigrating are different things.</p>
+          <p>As a Nigerian passport holder you are visa-required even to visit, and a
             visitor visa never lets you settle or work. To live in Canada you need the right status: permanent residence
             to settle, or a work or study permit to come temporarily. The route that fits depends on your age,
             occupation and experience, and on whether you have a Canadian job offer or close family already in Canada.
@@ -195,7 +196,8 @@ export default function FromNigeriaPage() {
             One of the most underused opportunities for Nigerian applicants is the{" "}
             <a href="/express-entry/category-based-draws">category-based draw</a> for candidates with strong French.
             IRCC runs targeted draws for specific occupations and for French-speaking candidates, and the French-language
-            draws have at times used <strong>lower CRS cut-offs</strong> than general draws. Many Nigerian applicants
+            draws have at times used <strong>lower CRS cut-offs</strong> than general draws.</p>
+          <p>Many Nigerian applicants
             already have some French from school or are well placed to build it, so if you can claim CLB French points, or
             are willing to study toward a recognised French test result, this can be the difference between waiting and
             being invited. The category-based draw occupations and the CRS cut-offs change, so confirm the current ones
@@ -208,7 +210,8 @@ export default function FromNigeriaPage() {
             learning institution gets you onto a Canadian course, and graduating can open a{" "}
             <a href="/work-permits/pgwp">Post-Graduation Work Permit (PGWP)</a>, an open permit that lets you work for
             almost any employer and bank the skilled Canadian experience that flows into the{" "}
-            <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a>. You will need{" "}
+            <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a>.</p>
+          <p>You will need{" "}
             <a href="/study-permit/proof-of-funds">proof of funds</a> for tuition and living costs, documented with the
             same care Nigerian applications need, plus a{" "}
             <a href="/study-permit/provincial-attestation-letter">Provincial Attestation Letter</a> where required. Because
@@ -266,7 +269,8 @@ export default function FromNigeriaPage() {
             biometrics; third-party costs add your WES ECA, a language test, the Nigeria Police Force certificate, a
             medical exam and, for most Express Entry applicants, the settlement funds you must show. These amounts change
             periodically, so we itemise the current figures for your route rather than quote one headline, and government
-            fees can be checked on canada.ca. On timing, a complete Express Entry application is usually finished about six
+            fees can be checked on canada.ca.</p>
+          <p>On timing, a complete Express Entry application is usually finished about six
             months after the invitation, while provincial nomination, the study route and family sponsorship each add
             their own stages. Our <a href="/fees">fees guide</a> explains our professional fee and how it differs from
             government fees.
@@ -275,7 +279,8 @@ export default function FromNigeriaPage() {
           <h2>How Wild Mountain helps you move from Nigeria</h2>
           <p>
             We do one thing: build the strongest, most complete Canadian immigration application for your situation, and
-            represent you with IRCC from Nigeria through to your arrival. As a CICC-regulated practice led by a licensed
+            represent you with IRCC from Nigeria through to your arrival.</p>
+          <p>As a CICC-regulated practice led by a licensed
             RCIC, we assess your profile honestly, choose the route where you are most competitive, including whether the
             French-language draws are realistic for you, and manage the paperwork, the ECA, the police certificate and
             the proof of funds so you do not have to decode it alone. If you are ready to move to Canada from Nigeria,

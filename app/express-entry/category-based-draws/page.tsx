@@ -141,7 +141,8 @@ export default function CategoryBasedDrawsPage() {
             Express Entry category-based draws, the rounds IRCC formally calls category-based selection, are rounds of
             invitations in which IRCC invites candidates who belong to a specific, in-demand category, rather than simply
             inviting the highest-scoring profiles in the whole pool. IRCC introduced category-based selection in 2023 to
-            target occupations and skills the Canadian labour market needs most. In a recent 2026 example, IRCC issued <strong>4,000 invitations in a single Healthcare and social
+            target occupations and skills the Canadian labour market needs most.</p>
+          <p>In a recent 2026 example, IRCC issued <strong>4,000 invitations in a single Healthcare and social
             services round at a CRS cut-off of 467</strong> (source: IRCC rounds of invitations, canada.ca, 2026), well
             below the high-500s seen in Canadian Experience Class rounds the same year.
           </p>

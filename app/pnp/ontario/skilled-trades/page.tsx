@@ -148,7 +148,8 @@ export default function OntarioSkilledTradesPage() {
             <a href="/pnp/ontario">Ontario Immigrant Nominee Program (OINP)</a> built for tradespeople who already have a
             federal Express Entry profile and have been working in Ontario in an eligible skilled trade. It sits in the
             OINP&apos;s Human Capital category alongside the Human Capital Priorities and French-Speaking Skilled Worker
-            streams. Ontario runs the country&apos;s largest provincial program, with a 2026 nomination allocation of
+            streams.</p>
+          <p>Ontario runs the country&apos;s largest provincial program, with a 2026 nomination allocation of
             roughly <strong>14,119</strong> across all streams, the biggest of any PNP (source: ontario.ca / IRCC, May
             2026). Because the Skilled Trades Stream is <strong>enhanced</strong>, a nomination is tied directly to your
             Express Entry profile rather than leading to a separate paper application.
@@ -166,7 +167,8 @@ export default function OntarioSkilledTradesPage() {
             <strong>OINP skilled trades</strong> eligibility rests on a connected set of requirements you must satisfy at
             the time Ontario reviews your profile and when you apply. Miss any one of them and the application can be
             refused: the wrong <abbr title="National Occupational Classification">NOC</abbr> code, experience gained
-            outside the qualifying window, or a language ability one band short. Depending on your occupation,
+            outside the qualifying window, or a language ability one band short.</p>
+          <p>Depending on your occupation,
             trade certification in Ontario (for example a Certificate of Qualification) may also be expected as evidence of
             your skill level. The table below summarises the core requirements; the official, controlling list lives on
             ontario.ca and is changing under the 2026 redesign.
@@ -195,7 +197,8 @@ export default function OntarioSkilledTradesPage() {
             The stream covers a broad set of <strong>Express Entry trades</strong> in Ontario, drawn from the skilled-trade
             NOC major groups. Construction and industrial trades feature heavily, electricians, welders, plumbers,
             carpenters and heavy-equipment technicians, alongside chefs, cooks, butchers and bakers, and certain
-            agricultural and processing supervisory roles. Many of these are in-demand trades across Canada, and several
+            agricultural and processing supervisory roles.</p>
+          <p>Many of these are in-demand trades across Canada, and several
             line up with Red Seal trade designations, so an Ontario construction trades PR path through this stream often
             suits workers whose occupation also appears in federal Express Entry trades draws. The grid below shows the NOC
             major groups that have historically qualified; the exact eligible trade NOC list for Ontario is set by the

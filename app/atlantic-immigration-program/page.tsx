@@ -193,7 +193,8 @@ export default function AtlanticImmigrationProgramPage() {
             institution in one of the four provinces already have local credentials and, often, local connections.
             Where the skilled-worker route asks for recent qualifying work experience, eligible graduates can apply
             without meeting the same experience requirement, provided they completed an eligible credential at a
-            recognised Atlantic institution and meet the other criteria. It is a natural next step after a{" "}
+            recognised Atlantic institution and meet the other criteria.</p>
+          <p>It is a natural next step after a{" "}
             <a href="/study-permit">study permit</a>, and it sits alongside the{" "}
             <a href="/work-permits/pgwp">Post-Graduation Work Permit (PGWP)</a> as a way to turn study in the region
             into permanent residence. We confirm whether your specific program and institution qualify before you
@@ -331,7 +332,8 @@ export default function AtlanticImmigrationProgramPage() {
             Wild Mountain Immigration is a CICC-regulated practice led by a licensed RCIC (R706497), and we represent
             clients entirely online by video call and secure document sharing. On an Atlantic Immigration Program file,
             our job is to make sure the designated-employer offer, the occupation classification, the provincial
-            endorsement and your permanent residence application all line up before anything reaches IRCC. We assess
+            endorsement and your permanent residence application all line up before anything reaches IRCC.</p>
+          <p>We assess
             your eligibility honestly, compare the AIP against <a href="/express-entry">Express Entry</a> and the{" "}
             <a href="/pnp">Atlantic PNPs</a>, and build the route where you are strongest. Our scope is standard RCIC
             work, and what we do is give your application the best possible chance.

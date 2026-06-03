@@ -152,7 +152,8 @@ export default function CusmaPage() {
             Agreement (CUSMA), the trade agreement that replaced the North American Free Trade Agreement (NAFTA) in
             July 2020. It is <strong>LMIA-exempt</strong>, which means a Canadian employer hiring under CUSMA does not
             need a <a href="/work-permits/lmia">Labour Market Impact Assessment</a> from Employment and Social
-            Development Canada. The agreement itself provides for the cross-border movement of certain business
+            Development Canada.</p>
+          <p>The agreement itself provides for the cross-border movement of certain business
             people, so the usual labour-market test is set aside. CUSMA work permits sit within Canada&apos;s{" "}
             <a href="/work-permits/international-mobility-program">International Mobility Program</a> alongside other
             LMIA-exempt routes.
@@ -229,7 +230,8 @@ export default function CusmaPage() {
             The <strong>trader</strong> category is for US or Mexican citizens carrying on substantial trade in goods
             or services principally between their country and Canada. The <strong>investor</strong> category is for
             those who have made, or are actively in the process of making, a substantial and genuinely at-risk
-            investment in a Canadian enterprise, and who will direct or develop it. Both categories turn on the word
+            investment in a Canadian enterprise, and who will direct or develop it.</p>
+          <p>Both categories turn on the word
             &quot;substantial,&quot; which is assessed against the size and nature of the business. That makes the
             documentary evidence central: financial records, business plans and trade data all need to be clear. These
             cases reward careful preparation, and we build the evidence package to match the test.

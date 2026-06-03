@@ -140,7 +140,8 @@ export default function ProcessingTimesPage() {
             <strong>AAIP processing time</strong> is best understood as a chain of separate stages, not one number. From
             submitting your Worker Expression of Interest (EOI) to landing as a permanent resident, most worker files run
             roughly <strong>12 to 20 months</strong>. That total hides a lot of variation, because each stage has its
-            own clock, and the biggest one (the IRCC permanent-residence step) is not run by Alberta at all. As a frame of
+            own clock, and the biggest one (the IRCC permanent-residence step) is not run by Alberta at all.</p>
+          <p>As a frame of
             reference, Alberta&apos;s 2026 nomination allocation is just <strong>6,403</strong>, down from 9,750 in 2024
             (source: alberta.ca, AAIP processing information, May 2026), so demand is firm against a tighter cap and
             timelines stay sensitive to volume.
@@ -198,7 +199,8 @@ export default function ProcessingTimesPage() {
             Once you are invited and submit a complete nomination application with the <strong>$1,500</strong> AAIP
             application fee, Alberta assesses your eligibility, documents and Worker EOI claims. Alberta does not publish a
             fixed service standard, but in 2026 most <em>complete</em> applications are being assessed in roughly a{" "}
-            <strong>3 to 6 month</strong> window once submitted. The single biggest variable here is completeness: a file
+            <strong>3 to 6 month</strong> window once submitted.</p>
+          <p>The single biggest variable here is completeness: a file
             that triggers a request for missing documents, or that has a wrong NOC code or an expired language result,
             restarts the back-and-forth and stretches the AAIP application processing time well beyond that range. The
             controlling, up-to-date position lives on alberta.ca/aaip-processing-information.
@@ -236,7 +238,8 @@ export default function ProcessingTimesPage() {
             the longer clock is the federal PR step that follows. The Alberta{" "}
             <a href="/alberta-immigration/express-entry-stream">Express Entry Stream</a> is the province&apos;s
             only enhanced route, a nomination there adds 600 CRS points and channels you into the faster electronic
-            IRCC process. The <a href="/alberta-immigration/opportunity-stream">Opportunity Stream</a> and other base
+            IRCC process.</p>
+          <p>The <a href="/alberta-immigration/opportunity-stream">Opportunity Stream</a> and other base
             streams lead to a separate paper PR application, which typically takes longer at the federal stage. Either way,
             IRCC, not Alberta, makes the final decision on medical, security and admissibility grounds, and
             those checks can add time. Confirm current figures on canada.ca, as they move with demand.
@@ -273,7 +276,8 @@ export default function ProcessingTimesPage() {
             Alberta is our home province, we are based in Canmore, in the Bow Valley, and the{" "}
             <a href="/alberta-immigration">AAIP</a> is the program we work with most. We cannot speed up a government
             decision, and we never pretend to: timelines are set by Alberta and IRCC, and we make no guarantees about
-            outcomes or processing speed. What we <em>can</em> do is remove the avoidable delays. Working under a licensed
+            outcomes or processing speed.</p>
+          <p>What we <em>can</em> do is remove the avoidable delays. Working under a licensed
             RCIC (CICC #R706497), our team builds a complete, accurate nomination application the first time, right NOC
             code, valid documents, evidence in order, and manages the separate IRCC step so requests for more information
             don&apos;t stretch your timeline.

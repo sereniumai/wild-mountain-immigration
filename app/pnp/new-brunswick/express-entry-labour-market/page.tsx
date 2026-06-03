@@ -148,7 +148,8 @@ export default function NbExpressEntryLabourMarketPage() {
             New Brunswick&apos;s nomination space is limited and shapes how this stream runs. The province&apos;s 2025
             allocation was about <strong>2,750</strong> nomination spaces, split between the NBPNP and the Atlantic
             Immigration Program, with the 2026 figure expected to stay tight after federal allocations were cut nationwide
-            (source: welcomenb.ca / IRCC, May 2026). Because supply is constrained, New Brunswick directs its enhanced
+            (source: welcomenb.ca / IRCC, May 2026).</p>
+          <p>Because supply is constrained, New Brunswick directs its enhanced
             invitations toward priority sectors and occupations, so meeting the minimum eligibility is not the same as
             receiving an invitation. Figures and policies change frequently; always verify the current rules before acting.
           </p>
@@ -200,7 +201,8 @@ export default function NbExpressEntryLabourMarketPage() {
             <strong>Expression of Interest (EOI)</strong> in the province&apos;s INB Portal. You submit a profile that
             reflects your Express Entry standing, your job offer and your ties to New Brunswick; the province may then send
             a Notification of Interest and issue Invitations to Apply to the candidates whose profiles best match its
-            current labour-market and sector priorities. Unlike a points-only system, there is no single published score
+            current labour-market and sector priorities.</p>
+          <p>Unlike a points-only system, there is no single published score
             to clear and no fixed NB Express Entry draw schedule. Selection follows provincial need and the available
             allocation.
           </p>

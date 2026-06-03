@@ -141,7 +141,8 @@ export default function PeiExpressEntryPage() {
             <strong>PEI PNP Express Entry</strong>, also called Prince Edward Island Express Entry, is the enhanced,
             federally aligned stream of the Prince Edward Island Provincial Nominee Program. &ldquo;Enhanced&rdquo; has a
             precise meaning: the stream is plugged into the federal Express Entry system, so a provincial nomination adds{" "}
-            <strong>600 points</strong> to your Comprehensive Ranking System (CRS) score. To use it, you must already
+            <strong>600 points</strong> to your Comprehensive Ranking System (CRS) score.</p>
+          <p>To use it, you must already
             hold an active federal Express Entry profile. According to princeedwardisland.ca (accurate as of May 2026),
             the PEI PNP is organised into three categories, Labour Impact, Express Entry and Business Impact, and
             Express Entry is the only enhanced one.
@@ -285,7 +286,8 @@ export default function PeiExpressEntryPage() {
             Island, confirms that <a href="/pnp/prince-edward-island/express-entry">PEI Express Entry</a> is genuinely
             your strongest route rather than a <a href="/pnp/prince-edward-island/labour-impact">Labour Impact</a> stream
             or the <a href="/atlantic-immigration-program">Atlantic Immigration Program</a>, and builds an EOI that
-            positions your occupation and ties against PEI&apos;s priority sectors. Because the province publishes no
+            positions your occupation and ties against PEI&apos;s priority sectors.</p>
+          <p>Because the province publishes no
             cut-off scores, that honest sector and connection read is where good advice earns its keep. Working under a
             licensed RCIC (CICC #R706497), our team prepares a nomination application that stands up to scrutiny and
             manages both the provincial and federal Express Entry stages on your behalf, online throughout.

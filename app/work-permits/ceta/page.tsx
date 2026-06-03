@@ -153,7 +153,8 @@ export default function CetaPage() {
             the European Union that has applied provisionally since 2017. It is <strong>LMIA-exempt</strong>: a
             Canadian employer or client engaging an eligible EU national under CETA does not need a{" "}
             <a href="/work-permits/lmia">Labour Market Impact Assessment</a> from Employment and Social Development
-            Canada. The agreement itself provides for the temporary entry of certain service suppliers, professionals
+            Canada.</p>
+          <p>The agreement itself provides for the temporary entry of certain service suppliers, professionals
             and corporate transferees, so the labour-market test is set aside. CETA permits sit within Canada&apos;s{" "}
             <a href="/work-permits/international-mobility-program">International Mobility Program</a> alongside other
             LMIA-exempt routes.
@@ -193,7 +194,8 @@ export default function CetaPage() {
             These two categories are closely related and often confused. A <strong>contractual service supplier</strong>{" "}
             is an <em>employee</em> of an EU company that holds a service contract with a Canadian client, sent to Canada
             to deliver that service. An <strong>independent professional</strong> is essentially the same idea but{" "}
-            <em>self-employed</em>: an EU professional contracting directly with a Canadian client. In both cases you
+            <em>self-employed</em>: an EU professional contracting directly with a Canadian client.</p>
+          <p>In both cases you
             typically need relevant qualifications, a defined period of prior experience, a contract that falls within a
             covered sector, and a stay limited to the contract within a set period. The distinction between employed and
             self-employed determines which set of rules applies, so we pin it down at the outset.
@@ -204,7 +206,8 @@ export default function CetaPage() {
             If you work for a company with offices in both an EU member state and Canada, the{" "}
             <a href="/work-permits/intra-company-transfer">intra-corporate transferee</a> category lets you move to the
             Canadian office without an LMIA. CETA recognises three types: <strong>senior personnel</strong>,{" "}
-            <strong>specialists</strong>, and <strong>graduate trainees</strong>. You generally need to have been
+            <strong>specialists</strong>, and <strong>graduate trainees</strong>.</p>
+          <p>You generally need to have been
             employed by the enterprise for a qualifying period before the transfer, and the role in Canada must match
             the type you apply under. CETA gives EU nationals a treaty-based path to this transfer, and it sits
             alongside the broader intra-company transfer route under the International Mobility Program, which is open to

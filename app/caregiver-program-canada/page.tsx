@@ -165,7 +165,8 @@ export default function CaregiverProgramCanadaPage() {
           </p>
           <p>
             The current direction, the <strong>Home Care Worker Immigration Pilots</strong>, carries that same
-            purpose forward and covers the same two broad kinds of work, child care and home support. The framework set
+            purpose forward and covers the same two broad kinds of work, child care and home support.</p>
+          <p>The framework set
             out for the 2025 intake described two ways in, a <strong>Gaining experience stream</strong> for applicants
             new to Canadian caregiving and a <strong>Recognized experience stream</strong> for those with qualifying
             Canadian work, though intake caps and exactly which job offers qualify still move between versions. Because
@@ -193,7 +194,8 @@ export default function CaregiverProgramCanadaPage() {
             Filipino caregivers have a long and respected history in Canadian families, and the{" "}
             <a href="/move-to-canada/from-the-philippines">move to Canada from the Philippines</a> often runs through
             exactly these pathways. The appeal is clear: caregiving experience is widely held, English is widely spoken,
-            and the destination is permanent residence rather than a temporary posting. The same rules apply to
+            and the destination is permanent residence rather than a temporary posting.</p>
+          <p>The same rules apply to
             Filipino applicants as to anyone else, so success comes down to an eligible job offer, meeting
             the language and education standards, and applying while a relevant stream is open. We support these applicants
             and others around the world entirely online, by video call and phone, and our country guide
@@ -268,7 +270,8 @@ export default function CaregiverProgramCanadaPage() {
             right-of-permanent-residence fee, biometrics, an approved language test, an Educational Credential
             Assessment if you studied abroad, a medical exam and police certificates, and your own relocation costs.
             These government figures change periodically, so we itemise the current numbers for your case and you can
-            confirm amounts on <strong>canada.ca</strong>. Our <a href="/fees">fees guide</a> explains how our
+            confirm amounts on <strong>canada.ca</strong>.</p>
+          <p>Our <a href="/fees">fees guide</a> explains how our
             professional fee works and how it differs from government fees. On <strong>timelines</strong>, processing
             moves with application volume and with whether a stream is open, so we plan against current IRCC estimates
             rather than a fixed promise.

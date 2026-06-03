@@ -140,7 +140,8 @@ export default function YukonBusinessNomineePage() {
             The <strong>Yukon Business Nominee Program</strong> (YBNP) is the entrepreneur route within the Yukon Nominee
             Program. The Yukon Nominee Program is the territory&apos;s economic immigration system, the northern equivalent of a
             provincial nominee program. The YBNP is designed for people who will <strong>invest in, and actively manage, a Yukon business</strong>,
-            either by starting a new venture or buying and growing an existing one. Yukon&apos;s 2026 nomination allocation is
+            either by starting a new venture or buying and growing an existing one.</p>
+          <p>Yukon&apos;s 2026 nomination allocation is
             about <strong>282</strong> across all of its streams, one of the smallest in Canada after IRCC cut provincial and
             territorial allocations nationwide (source: yukon.ca, 2026). Unlike Yukon&apos;s worker streams, the Business
             Nominee stream does not require a Yukon job offer: you become a permanent resident by establishing and running a
@@ -158,7 +159,8 @@ export default function YukonBusinessNomineePage() {
             they already work for themselves or plan to start. You should have real business-ownership or senior-management
             experience, capital you can invest and verify, and a concrete idea for a venture the territory actually needs.
             That might be a trade or service business, a tourism or hospitality operation, a Whitehorse shop or restaurant, a
-            resource or logistics business, or buying and growing an existing Yukon company whose owner is retiring. It is not
+            resource or logistics business, or buying and growing an existing Yukon company whose owner is retiring.</p>
+          <p>It is not
             for passive investors looking to park money, and certain ineligible business categories are typically excluded.
             Because this is <strong>Yukon business immigration</strong> at its core, the practical test is whether your venture
             is genuine, viable and good for the local economy. Confirm the current eligible business types and ineligible
@@ -279,7 +281,8 @@ export default function YukonBusinessNomineePage() {
             under a licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497), our team
             assesses whether the Business Nominee stream genuinely fits your capital, experience and goals, helps you shape a
             viable venture for the Yukon market, and prepares an application, net-worth worksheet, source-of-funds evidence and
-            business plan, that stands up to territorial scrutiny. If a worker route fits better, such as the{" "}
+            business plan, that stands up to territorial scrutiny.</p>
+          <p>If a worker route fits better, such as the{" "}
             <a href="/pnp/yukon/skilled-worker">Skilled Worker</a> or{" "}
             <a href="/pnp/yukon/express-entry">Yukon Express Entry</a> stream, or a programme in another province like the{" "}
             <a href="/alberta-immigration">Alberta Advantage Immigration Program</a>, we will tell you honestly.

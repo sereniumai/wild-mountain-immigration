@@ -155,7 +155,8 @@ export default function NocTeerPage() {
             name, describe and group every occupation in the labour market, and your <strong>NOC code</strong> is the
             five-digit number it assigns to your job. The version IRCC uses today is{" "}
             <strong>NOC 2021</strong>, which gives each occupation that five-digit code and places it in a category
-            called <strong>TEER</strong>. TEER stands for <strong>Training, Education, Experience and
+            called <strong>TEER</strong>.</p>
+          <p>TEER stands for <strong>Training, Education, Experience and
             Responsibilities</strong>, the four things that define how skilled a job is. Every occupation sits in one
             TEER category from 0 to 5, and that category, together with the code itself, is what immigration programs
             read when they decide whether your experience counts.

@@ -136,7 +136,8 @@ export default function FarmStreamPage() {
             The <strong>Alberta Farm Stream</strong> is a business pathway within the Alberta Advantage Immigration
             Program (AAIP) for experienced farmers and farm managers who intend to buy or start, and then actively
             operate, a primary-production farm in Alberta, leading to a nomination for permanent residence. It sits
-            alongside Alberta&apos;s entrepreneur streams as part of the program&apos;s business category. Agriculture is
+            alongside Alberta&apos;s entrepreneur streams as part of the program&apos;s business category.</p>
+          <p>Agriculture is
             one of Alberta&apos;s named 2026 priority sectors, and the AAIP&apos;s total provincial allocation for 2026 is
             about <strong>6,403 nominations</strong> across all streams (source: alberta.ca, Alberta Advantage Immigration
             Program, May 2026). The Farm Stream is a niche, business-class route, it is for people bringing real capital
@@ -153,7 +154,8 @@ export default function FarmStreamPage() {
             The Farm Stream is built for a specific applicant: an experienced farmer or senior farm manager with the
             capital and the track record to take over or establish a commercial farm in Alberta. It suits owner-operators
             and farm managers from a primary-agriculture background who want to continue farming in Canada and settle
-            permanently in the province. It is <em>not</em> designed for investors who simply want to put money into
+            permanently in the province.</p>
+          <p>It is <em>not</em> designed for investors who simply want to put money into
             agriculture without running the operation, nor for people without genuine, hands-on farm-management
             experience. If you are buying land and a working farm in Alberta and intend to manage day-to-day production
             yourself, this is the stream the program points you toward.
@@ -214,7 +216,8 @@ export default function FarmStreamPage() {
             experience, while the{" "}
             <a href="/alberta-immigration/rural-entrepreneur-stream">Rural Entrepreneur Stream</a> is for general
             businesses, retail, services, trades and the like, in eligible rural Alberta communities, and the graduate
-            entrepreneur routes are for recent graduates building a business. If you are buying or starting a working farm
+            entrepreneur routes are for recent graduates building a business.</p>
+          <p>If you are buying or starting a working farm
             and meeting agricultural net-worth and investment criteria, the Farm Stream fits; if you are launching a
             non-farm business, an entrepreneur stream is the better route.
           </p>

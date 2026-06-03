@@ -139,7 +139,8 @@ export default function LawEnforcementPathwayPage() {
           <p>
             The <strong>AAIP Law Enforcement Pathway</strong> is a niche route within the Alberta Advantage Immigration
             Program (AAIP) for law-enforcement workers who hold an Alberta job offer where the employer is a member of the{" "}
-            <strong>Alberta Association of Chiefs of Police</strong>. It is delivered through the enhanced{" "}
+            <strong>Alberta Association of Chiefs of Police</strong>.</p>
+          <p>It is delivered through the enhanced{" "}
             <a href="/alberta-immigration/express-entry-stream">Alberta Express Entry Stream</a>, so a provincial
             nomination adds <strong>600 CRS points</strong> to your federal Express Entry profile, typically enough to
             clear the cut-off in the next Express Entry draw, though IRCC issues the invitation. Law enforcement is one of Alberta&apos;s named
@@ -164,7 +165,8 @@ export default function LawEnforcementPathwayPage() {
             Eligibility centres on genuine law-enforcement roles in Alberta. The clearest fit is the sworn officer NOC,
             the police officer occupation (<abbr title="National Occupational Classification">NOC</abbr> 42100), but
             certain peace-officer roles can also qualify where the position is genuinely law-enforcement in nature and the
-            employer participates in the Alberta Association of Chiefs of Police. That includes community peace officer
+            employer participates in the Alberta Association of Chiefs of Police.</p>
+          <p>That includes community peace officer
             immigration and special constable PR cases, provided the role is truly enforcement-focused. The table below
             gives representative examples; the exact occupation list and how a role is classified reflect
             Alberta&apos;s current priorities and change over time, so always confirm your specific NOC 2021 code and the

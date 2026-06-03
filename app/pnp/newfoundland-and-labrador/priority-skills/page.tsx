@@ -140,7 +140,8 @@ export default function PrioritySkillsNlPage() {
             <strong>Priority Skills Newfoundland and Labrador</strong> (PSNL, often shortened to Priority Skills NL) is a
             fast-track stream of the Newfoundland and Labrador Provincial Nominee Program built for high-skilled
             candidates the province most wants to attract. Its defining feature is that, unlike most NLPNP streams, it
-            can lead to a nomination <em>without</em> a Newfoundland and Labrador job offer. The province has set an
+            can lead to a nomination <em>without</em> a Newfoundland and Labrador job offer.</p>
+          <p>The province has set an
             ambitious growth goal, welcoming up to roughly <strong>5,100 newcomers a year</strong> by 2026 (source:
             gov.nl.ca, 2026), and Priority Skills NL is one of the levers it uses to draw in talent that fits its
             in-demand priorities, such as health care and other high-need sectors.
@@ -150,7 +151,8 @@ export default function PrioritySkillsNlPage() {
             PhD graduates whose advanced education aligns with provincial priorities, making it one of the clearest PhD
             immigration routes into Canada. The{" "}
             <strong>In-Demand Work Path</strong> targets high-skilled workers, in NL or abroad, with strong experience in
-            an in-demand Newfoundland occupation. Both run inside the federal Express Entry framework, which makes a
+            an in-demand Newfoundland occupation.</p>
+          <p>Both run inside the federal Express Entry framework, which makes a
             PSNL nomination <em>enhanced</em>, worth 600 Comprehensive Ranking System (CRS) points. Figures and policies
             change frequently, so always verify the current rules on gov.nl.ca before acting.
           </p>
@@ -199,7 +201,8 @@ export default function PrioritySkillsNlPage() {
             <strong>600 CRS points</strong> to your{" "}
             <a href="/express-entry/comprehensive-ranking-system">Comprehensive Ranking System</a> score. That puts most
             candidates well above the typical Express Entry draw cut-off, with roughly six-month federal
-            processing once IRCC issues the invitation. Candidates who already have skilled Canadian experience may instead qualify through the{" "}
+            processing once IRCC issues the invitation.</p>
+          <p>Candidates who already have skilled Canadian experience may instead qualify through the{" "}
             <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a> within that same profile. The enhanced route is
             a meaningful advantage over the NLPNP&apos;s base streams, where a nomination leads to a separate, slower
             paper application to IRCC and earns no CRS points. The trade-off is that PSNL
@@ -248,7 +251,8 @@ export default function PrioritySkillsNlPage() {
           </p>
           <p>
             Choosing between PSNL and an employer-linked stream is a real decision, not a formality. If you already hold
-            a qualifying Newfoundland and Labrador job offer, an employer-driven route may be more direct. But if you are
+            a qualifying Newfoundland and Labrador job offer, an employer-driven route may be more direct.</p>
+          <p>But if you are
             a strong candidate without a local offer, a recent master&apos;s or PhD graduate, or a highly skilled worker
             in an in-demand occupation, Priority Skills NL is usually the route that keeps your options open while still
             delivering an enhanced, 600-point nomination. We weigh that trade-off against your CRS, your occupation and
@@ -280,7 +284,8 @@ export default function PrioritySkillsNlPage() {
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497), our team confirms which
             path fits your profile, assesses how your credentials and experience match Newfoundland and Labrador&apos;s
             current priorities, optimises your <a href="/express-entry">Express Entry</a> profile so a nomination delivers
-            its full 600-point benefit, and prepares an EOI and nomination application that stand up to scrutiny. If a
+            its full 600-point benefit, and prepares an EOI and nomination application that stand up to scrutiny.</p>
+          <p>If a
             job-offer route such as the{" "}
             <a href="/pnp/newfoundland-and-labrador/express-entry-skilled-worker">Express Entry Skilled Worker</a> stream
             would be more direct for you, we will say so. We also catch the avoidable mistakes that cause refusals: the

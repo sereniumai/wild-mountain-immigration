@@ -141,7 +141,8 @@ export default function HealthTalentPathwayPage() {
             province introduced as part of the Saskatchewan Immigrant Nominee Program&apos;s 2026 restructuring. Rather
             than relying solely on broad Expression of Interest draws, Saskatchewan now reserves roughly half of its{" "}
             <strong>2026 allocation of about 4,761 nominations</strong> for priority sectors, health among them, and
-            invites employer-supported candidates through dedicated pathways (source: saskatchewan.ca, May 2026). This{" "}
+            invites employer-supported candidates through dedicated pathways (source: saskatchewan.ca, May 2026).</p>
+          <p>This{" "}
             <strong>SINP health</strong> pathway targets the occupations the province most needs to fill, from front-line
             roles in hospitals and long-term care, many of them Saskatchewan Health Authority jobs, to physicians in
             under-served communities.
@@ -229,7 +230,8 @@ export default function HealthTalentPathwayPage() {
             This distinction matters for your timeline. An <em>enhanced</em>, Express Entry-aligned nomination adds 600
             points to your federal Comprehensive Ranking System score; a <em>base</em> nomination does not, and instead
             leads to a separate paper application to IRCC. Treat the Health Talent Pathway as a base, paper-based route
-            unless the province confirms an enhanced option for your case. If you already hold a valid Express Entry
+            unless the province confirms an enhanced option for your case.</p>
+          <p>If you already hold a valid Express Entry
             profile, ask us whether the <a href="/pnp/saskatchewan">Saskatchewan Express Entry</a> sub-category could
             apply alongside your health offer, though note its Expression of Interest draws have been paused since late
             2024. Not sure where your federal score stands? Try our{" "}

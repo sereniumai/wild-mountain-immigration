@@ -142,7 +142,8 @@ export default function NewfoundlandInternationalEntrepreneurPage() {
             and Labrador Provincial Nominee Program (NLPNP) for experienced entrepreneurs and business owners who will
             <strong> establish a new business, or buy and actively run an existing one, in Newfoundland and Labrador</strong>.
             It supports the province&apos;s growth ambitions, which aim to welcome up to roughly <strong>5,100 newcomers a
-            year</strong> by 2026 (source: gov.nl.ca, 2026). Unlike the NLPNP&apos;s worker streams, you do not need a
+            year</strong> by 2026 (source: gov.nl.ca, 2026).</p>
+          <p>Unlike the NLPNP&apos;s worker streams, you do not need a
             Newfoundland job offer: you become a permanent resident by investing in and operating a genuine local business
             that creates economic benefit for the province.
           </p>
@@ -157,7 +158,8 @@ export default function NewfoundlandInternationalEntrepreneurPage() {
             This category fits people who want to <em>build and run</em> a business and settle in Newfoundland and Labrador:
             seasoned entrepreneurs and senior managers with capital they can invest and verify. You should have genuine
             business-ownership or management experience, a concrete idea for a venture the province needs, and the personal
-            net worth to absorb business risk. Typical fits include a trade or service business, a shop, restaurant or
+            net worth to absorb business risk.</p>
+          <p>Typical fits include a trade or service business, a shop, restaurant or
             tourism operation, a manufacturing or technology venture, or buying a business in Newfoundland from a retiring
             owner and growing it. Because it rewards active ownership rather than passive capital, Newfoundland investor
             immigration through this route means running the business yourself. It is not for passive investors looking to
@@ -285,7 +287,8 @@ export default function NewfoundlandInternationalEntrepreneurPage() {
             under a licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497), our team
             assesses whether the International Entrepreneur Category is the right call, helps you shape a credible business
             concept for Newfoundland and Labrador, and prepares your file, net-worth worksheet, source-of-funds trail and
-            business plan, to provincial standards. If the{" "}
+            business plan, to provincial standards.</p>
+          <p>If the{" "}
             <a href="/pnp/newfoundland-and-labrador/graduate-entrepreneur">Graduate Entrepreneur</a> route or a different{" "}
             <a href="/pnp/newfoundland-and-labrador">NLPNP</a> pathway fits better, we will tell you honestly.
           </p>

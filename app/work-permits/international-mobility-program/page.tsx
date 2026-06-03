@@ -200,7 +200,8 @@ export default function ImpPage() {
             A large share of IMP cases run on Canada&apos;s trade agreements. Work permits under the{" "}
             <strong>Canada-United States-Mexico Agreement (CUSMA)</strong>, formerly NAFTA, let qualifying US and Mexican
             citizens work in Canada in named professional categories and as intra-company transferees without an LMIA, and
-            eligible applicants can often be processed at a Canadian port of entry. The{" "}
+            eligible applicants can often be processed at a Canadian port of entry.</p>
+          <p>The{" "}
             <strong>Canada-European Union Comprehensive Economic and Trade Agreement (CETA)</strong> opens similar
             LMIA-exempt routes for EU nationals, including professionals, intra-corporate transferees, contractual service
             suppliers and independent professionals. Each agreement has its own occupation lists and conditions, so the
@@ -214,7 +215,8 @@ export default function ImpPage() {
             Where no treaty applies, many workers still qualify under a broad <strong>Canadian interest</strong>. The{" "}
             <strong>significant benefit</strong> category (codes C10 and C11) covers workers, entrepreneurs and
             self-employed people whose presence delivers a clear social, cultural or economic benefit that outweighs the
-            usual labour-market test. The <a href="/work-permits/intra-company-transfer">intra-company transfer</a>{" "}
+            usual labour-market test.</p>
+          <p>The <a href="/work-permits/intra-company-transfer">intra-company transfer</a>{" "}
             (code C12) is the most heavily used Canadian-interest route: it lets a multinational move an existing
             executive, senior manager or specialised-knowledge employee to a Canadian office, provided the worker has the
             qualifying role and a qualifying period of prior employment with the company abroad. Both are
@@ -224,11 +226,13 @@ export default function ImpPage() {
           <h3>Reciprocal employment and francophone mobility</h3>
           <p>
             <strong>Reciprocal employment</strong> (the C20 series) rests on a simple idea: if a role here creates
-            comparable opportunities for Canadians working abroad, the labour-market test can be waived. Several exchange
+            comparable opportunities for Canadians working abroad, the labour-market test can be waived.</p>
+          <p>Several exchange
             and youth-mobility arrangements, including parts of{" "}
             <a href="/work-permits/international-experience-canada">International Experience Canada</a>, sit on this logic.{" "}
-            <strong>Francophone mobility</strong> (code C16) is a distinct stream that lets French-speaking workers take
-            eligible jobs anywhere in Canada outside Quebec without an LMIA, supporting francophone minority communities.
+            <strong><a href="/work-permits/francophone-mobility">Francophone Mobility</a></strong> (code C16) is a
+            distinct stream that lets French-speaking workers take eligible jobs anywhere in Canada outside Quebec
+            without an LMIA, supporting francophone minority communities.
             Because the eligible occupations and language thresholds for francophone mobility are reviewed periodically,
             we confirm the current criteria on canada.ca for each case.
           </p>
@@ -307,7 +311,8 @@ export default function ImpPage() {
             Working under a licensed RCIC (CICC #R706497), our team treats the International Mobility Program as a system
             of exemptions to be matched, not a single form. We start by confirming whether your role is genuinely
             LMIA-exempt and, if so, which LMIA exemption code it relies on, whether that is a CUSMA or CETA treaty
-            category, an intra-company transfer, significant benefit, reciprocal employment or francophone mobility. We
+            category, an intra-company transfer, significant benefit, reciprocal employment or francophone mobility.</p>
+          <p>We
             then coordinate the employer&apos;s offer of employment through the IRCC Employer Portal, confirm the
             employer compliance fee is paid, and prepare your work-permit application around the offer of employment
             number. We represent clients entirely online, by video call and secure document sharing.

@@ -99,7 +99,8 @@ export default function TermsPage() {
             <h2>3. Information may not be current or accurate</h2>
             <p>
               Canadian immigration programs, eligibility criteria, government fees, document requirements and processing
-              times change frequently, sometimes without advance notice. While we take reasonable care to keep our
+              times change frequently, sometimes without advance notice.</p>
+            <p>While we take reasonable care to keep our
               content current and to cite or link to official sources, <strong>we make no representation or warranty that
               any information on this Site is complete, accurate, reliable or up to date</strong> at the time you read it.
               You are responsible for verifying all program details, figures and requirements against the official

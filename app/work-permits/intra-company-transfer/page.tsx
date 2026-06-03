@@ -140,7 +140,8 @@ export default function IntraCompanyTransferPage() {
           <p>
             An intra-company transfer (ICT) is an LMIA-exempt work permit that lets a multinational company move a
             qualifying employee from a foreign office into a related Canadian entity, a parent, branch, subsidiary or
-            affiliate. It sits under the <a href="/work-permits">International Mobility Program (IMP)</a>, which covers
+            affiliate.</p>
+          <p>It sits under the <a href="/work-permits">International Mobility Program (IMP)</a>, which covers
             permits that do <em>not</em> require a Labour Market Impact Assessment because they serve a broader Canadian
             economic interest (source: canada.ca, 2026). For global businesses, the ICT is one of the most practical ways
             to bring leadership and specialised talent into a Canadian operation without the delay of the LMIA process.

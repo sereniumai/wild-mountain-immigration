@@ -143,7 +143,8 @@ export default function StartUpVisaPage() {
             innovative business idea that is supported by a designated organisation in Canada. The defining feature is
             that endorsement: a designated <strong>venture capital fund</strong>, <strong>angel investor group</strong>{" "}
             or <strong>business incubator</strong> must agree to back your business and issue a{" "}
-            <strong>Letter of Support</strong> (with a matching commitment certificate sent to IRCC). Many
+            <strong>Letter of Support</strong> (with a matching commitment certificate sent to IRCC).</p>
+          <p>Many
             entrepreneur routes give a temporary status that you later try to convert. The Start-up Visa instead leads{" "}
             <strong>directly to permanent residence</strong>, which makes it attractive to founders who want
             certainty about settling in Canada.
@@ -175,7 +176,8 @@ export default function StartUpVisaPage() {
             A <strong>designated organisation</strong> is a Canadian body, a venture capital fund, an angel investor
             group or a business incubator, that IRCC has approved to support Start-up Visa Canada applicants. To use the
             program, you must persuade one of them to back your business, usually after a <strong>peer review</strong>{" "}
-            and the organisation&apos;s own due diligence on your venture. When they agree, two related documents appear:
+            and the organisation&apos;s own due diligence on your venture.</p>
+          <p>When they agree, two related documents appear:
             the <strong>Letter of Support</strong> is given to you to file with your application, while the organisation
             separately sends a matching <strong>commitment certificate</strong> directly to IRCC. The Letter of Support
             is the cornerstone of the whole application: without it, there is no Start-up Visa.
@@ -220,7 +222,8 @@ export default function StartUpVisaPage() {
           <p>
             Two timing factors shape a Start-up Visa plan. First, the permanent-residence <strong>processing time</strong>{" "}
             takes a meaningful period. Second, and importantly, the program applies <strong>intake caps and limits</strong>{" "}
-            on the number of applications it accepts, and these can change. Caps mean that the timing and order of
+            on the number of applications it accepts, and these can change.</p>
+          <p>Caps mean that the timing and order of
             applications can matter as much as the strength of the file. Because both the processing estimates and the
             intake limits are adjusted by IRCC from time to time, we point applicants to canada.ca for the current
             Start-up Visa processing time and intake position rather than quoting a fixed timeline that may already have
@@ -240,7 +243,8 @@ export default function StartUpVisaPage() {
             is not always the best fit. If your background is in cultural activities or athletics rather than an
             innovative scalable company, the federal{" "}
             <a href="/self-employed-immigration">Self-Employed Persons Program</a> may be more relevant (subject to its
-            current availability). If you would rather invest in or manage an established or smaller business in a
+            current availability).</p>
+          <p>If you would rather invest in or manage an established or smaller business in a
             specific province, the entrepreneur streams within the{" "}
             <a href="/pnp">Provincial Nominee Programs</a> are often a better match. And skilled workers without a
             business idea usually look to <a href="/express-entry">Express Entry</a> instead. Our team weighs these
@@ -254,7 +258,8 @@ export default function StartUpVisaPage() {
             assessment through to the permanent-residence application. We check eligibility honestly, help structure a
             qualifying business that fits the voting-rights and active-management rules, prepare you to approach
             designated organisations, and build a complete, accurate application around the Letter of Support once it is
-            secured. We represent clients entirely online, by video call and secure document sharing, and we are clear
+            secured.</p>
+          <p>We represent clients entirely online, by video call and secure document sharing, and we are clear
             about what we can and cannot control: we do not issue Letters of Support, and changeable figures such as
             settlement funds, processing time and intake caps are always confirmed against canada.ca.
           </p>

@@ -210,7 +210,8 @@ export default function EmployerJobOfferPage() {
             Requirements differ by stream, but the category shares a common spine built around the job offer and the
             employer. The offer must be <strong>permanent and full-time</strong>, in a qualifying occupation, and pay a wage
             that meets the stream&apos;s threshold, Ontario generally expects the offer to meet the median wage for the
-            occupation or the employer&apos;s prevailing wage, whichever applies. The <strong>employer</strong> must also
+            occupation or the employer&apos;s prevailing wage, whichever applies.</p>
+          <p>The <strong>employer</strong> must also
             qualify: minimum revenue, a minimum number of employees, and (for the Foreign Worker and International Student
             streams) recruitment efforts, with more flexible thresholds inside the Greater Toronto Area than outside it.
             Employer registration is now part of the process.
@@ -238,7 +239,8 @@ export default function EmployerJobOfferPage() {
           <p>
             The clearest way to place these streams is to contrast them with Ontario&apos;s flagship enhanced route. The{" "}
             <strong>Employer Job Offer streams are base</strong>: no Express Entry profile is required, a nomination adds no
-            CRS points, and you finish with a separate paper application to IRCC. The{" "}
+            CRS points, and you finish with a separate paper application to IRCC.</p>
+          <p>The{" "}
             <a href="/pnp/ontario/human-capital-priorities">Human Capital Priorities stream</a> is enhanced: you must already
             be in the Express Entry pool, and a nomination adds <strong>600 CRS points</strong>, well above recent cut-offs. IRCC still issues the
             Invitation to Apply at the next federal draw. If you do not have a strong Express Entry profile but you do have an
@@ -284,7 +286,8 @@ export default function EmployerJobOfferPage() {
             There are two stages, each with its own fee and timeline. OINP application fees for Employer Job Offer streams
             have historically run from about <strong>$1,500 to $2,000</strong>, with a higher amount for positions in the
             Greater Toronto Area; these provincial fees are separate from the IRCC permanent-residence fees you pay at the
-            federal stage. Ontario&apos;s service standard for processing a complete nomination application has historically
+            federal stage.</p>
+          <p>Ontario&apos;s service standard for processing a complete nomination application has historically
             sat in the region of <strong>30 to 90 days</strong>, varying by stream and volume. After that, the base IRCC paper
             application generally takes longer than the roughly six months IRCC targets for enhanced applications. With the{" "}
             <strong>OINP 2026</strong> redesign in progress, both fees and timelines may shift, confirm the current figures
@@ -298,7 +301,8 @@ export default function EmployerJobOfferPage() {
             (CICC #R706497), Wild Mountain Immigration confirms which Employer Job Offer stream fits your profile, checks the
             wage and employer-eligibility tests before you rely on them, reviews the underlying{" "}
             <a href="/work-permits">work permit</a>, builds an Expression of Interest that ranks you well, and prepares a
-            nomination and separate IRCC application that stand up to scrutiny. With the OINP being redesigned in 2026, our
+            nomination and separate IRCC application that stand up to scrutiny.</p>
+          <p>With the OINP being redesigned in 2026, our
             team keeps your strategy aligned to the rules actually in force when you apply, and gives you a candid read on your
             realistic chances first.
           </p>

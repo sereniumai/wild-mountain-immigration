@@ -143,7 +143,8 @@ export default function SpousalOpenWorkPermitPage() {
             authorisation that lets a sponsored spouse or common-law partner work for almost any employer in Canada
             while their <strong>inland</strong> spousal sponsorship application is being processed. It exists to solve a
             real problem: spousal permanent-residence applications take time, and without work authorisation a couple
-            could spend many months unable to earn a second income. The SOWP closes that gap. According to IRCC, the
+            could spend many months unable to earn a second income.</p>
+          <p>The SOWP closes that gap. According to IRCC, the
             published service standard for a spouse or common-law partner sponsorship is about <strong>12 months</strong>{" "}
             from a complete application (source: canada.ca, spouse or common-law partner sponsorship, 2026), so being
             able to <strong>work while the spousal sponsorship is processed</strong> matters a great deal.

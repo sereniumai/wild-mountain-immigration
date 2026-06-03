@@ -168,7 +168,8 @@ export default function OntarioHcpPage() {
           <p>
             A <strong>Notification of Interest</strong> is Ontario&apos;s invitation to apply to the HCP Stream, delivered
             straight to your IRCC Express Entry account. Because the stream is enhanced, the province pulls candidates out of
-            the federal pool itself, you do not file an HCP application up front and wait. Ontario runs periodic{" "}
+            the federal pool itself, you do not file an HCP application up front and wait.</p>
+          <p>Ontario runs periodic{" "}
             <strong>NOI draws</strong> that are frequently <strong>targeted</strong>: it may search by CRS range, by specific
             in-demand occupations (such as an <strong>HCP tech draw</strong> aimed at a priority NOC code, or a
             health-sector round), by education level, or by French-language ability. These mirror the way IRCC now runs{" "}
@@ -196,7 +197,8 @@ export default function OntarioHcpPage() {
             This is the heart of why the HCP Stream matters. If Ontario issues you an NOI, you apply, and the province
             nominates you, that nomination adds <strong>600 points</strong> to your Comprehensive Ranking System score in
             Express Entry. There is no single <strong>HCP CRS cut-off</strong> to clear before the boost applies. Because
-            regular Express Entry cut-offs sit far below 600, that boost lifts most candidates well above the line. In
+            regular Express Entry cut-offs sit far below 600, that boost lifts most candidates well above the line.</p>
+          <p>In
             recent draws it has been more than enough to earn an <strong>Invitation to Apply</strong> at the next general
             draw, which IRCC still issues. It is the single largest point award in the entire CRS. Not sure where your
             score sits today? Try our{" "}
@@ -270,7 +272,8 @@ export default function OntarioHcpPage() {
           <h2>How Wild Mountain helps with your HCP application</h2>
           <p>
             Because you cannot apply to the Human Capital Priorities Stream directly, the work happens <em>before</em> the NOI
-            arrives, in how your <a href="/express-entry">Express Entry</a> profile is built. Working under a licensed{" "}
+            arrives, in how your <a href="/express-entry">Express Entry</a> profile is built.</p>
+          <p>Working under a licensed{" "}
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497), Wild Mountain Immigration
             optimises that profile to improve your chances of a Notification of Interest, confirms whether HCP or the{" "}
             <a href="/pnp/ontario/french-speaking-skilled-worker">French-Speaking</a> route fits you best, and then prepares a

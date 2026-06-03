@@ -142,7 +142,8 @@ export default function SaskatchewanEntrepreneurPage() {
             Nominee Program (SINP) for entrepreneurs who will <strong>establish a new business in Saskatchewan, or buy an
             existing one, and actively manage it</strong>. It sits alongside the program&apos;s skilled-worker and farm
             routes within Saskatchewan&apos;s total provincial allocation of about <strong>4,761 nominations for 2026</strong>{" "}
-            (source: saskatchewan.ca / IRCC, May 2026). Unlike the worker routes, you do not need a Saskatchewan job offer:
+            (source: saskatchewan.ca / IRCC, May 2026).</p>
+          <p>Unlike the worker routes, you do not need a Saskatchewan job offer:
             you become a permanent resident by investing in and running a genuine business that creates local economic
             benefit. Because figures and policies change frequently, always verify the current rules before acting.
           </p>
@@ -159,7 +160,8 @@ export default function SaskatchewanEntrepreneurPage() {
             should have real business-ownership or senior-management experience, capital you can invest and verify, and a
             concrete idea for a venture the province needs, a trade or service business, a shop or restaurant, a
             manufacturing or technology operation, or buying and growing an existing local business whose owner is retiring.
-            It is not for passive investors looking to park money, and certain business types are excluded. Confirm the
+            It is not for passive investors looking to park money, and certain business types are excluded.</p>
+          <p>Confirm the
             current list of eligible and ineligible business types in Saskatchewan on saskatchewan.ca.
           </p>
           <Callout type="info" title="Where you locate matters">
@@ -278,7 +280,8 @@ export default function SaskatchewanEntrepreneurPage() {
             our team assesses whether the Saskatchewan Entrepreneur stream genuinely fits your capital, experience and
             goals, then helps you match a credible business to the right location. We also prepare your application,
             net-worth documentation, source-of-funds trail and business establishment plan, built from a proven template,
-            so the file stands up to provincial scrutiny. If a different SINP route, such as the{" "}
+            so the file stands up to provincial scrutiny.</p>
+          <p>If a different SINP route, such as the{" "}
             <a href="/pnp/saskatchewan/farm">Farm category</a> or the{" "}
             <a href="/pnp/saskatchewan/international-skilled-worker">International Skilled Worker</a> category, fits better, we
             will tell you honestly. Not sure where your federal score stands? Try our{" "}

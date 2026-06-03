@@ -280,7 +280,8 @@ export default function OntarioMastersGraduatePage() {
             Working under a licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497), our
             team prepares a nomination application that stands up to scrutiny and represents you with both Ontario and IRCC.
             Many graduates reach this stream after a <a href="/study-permit">study permit</a> and a{" "}
-            <a href="/work-permits/pgwp">Post-Graduation Work Permit</a>, and we make sure those pieces line up. With the OINP
+            <a href="/work-permits/pgwp">Post-Graduation Work Permit</a>, and we make sure those pieces line up.</p>
+          <p>With the OINP
             being redesigned in 2026, we keep your strategy aligned to the rules actually in force when you apply, and give you
             a candid read on your realistic chances first.
           </p>

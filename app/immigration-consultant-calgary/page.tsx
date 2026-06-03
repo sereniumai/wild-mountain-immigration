@@ -164,7 +164,8 @@ export default function ImmigrationConsultantCalgaryPage() {
             Choosing an <strong>immigration consultant in Calgary</strong> who genuinely knows Alberta gives your
             application a real edge. Calgary&apos;s economy is unlike anywhere else in Canada: a global energy hub that has
             diversified fast into technology, financial services, logistics and clean energy. Those sectors shape the cases
-            we see every week. We work with petroleum engineers and geoscientists, software developers and data specialists
+            we see every week.</p>
+          <p>We work with petroleum engineers and geoscientists, software developers and data specialists
             in the growing Calgary tech scene, accountants and project managers, health-care workers, and the skilled trades
             that keep the city building. When your route to permanent residence depends on Alberta employers and Alberta&apos;s
             provincial program, that local context matters.

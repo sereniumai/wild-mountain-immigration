@@ -141,7 +141,8 @@ export default function NovaScotiaPhysicianPage() {
             pathway for internationally trained and Canadian physicians who hold an approved offer of employment or a
             clinical appointment from <strong>Nova Scotia Health</strong> (the Nova Scotia Health Authority) or the{" "}
             <strong>IWK Health Centre</strong>. A provincial nomination is your stepping stone to applying to IRCC for
-            permanent residence, it is not permanent residence in itself. Physician recruitment is one of Nova
+            permanent residence, it is not permanent residence in itself.</p>
+          <p>Physician recruitment is one of Nova
             Scotia&apos;s clearest health priorities, which is why this dedicated route exists at all. In early 2026, Nova
             Scotia consolidated its older streams (effective for new expressions of interest from February 18, 2026;
             source: novascotia.ca, May 2026). That change folded the Physician stream into the province&apos;s broader
@@ -167,7 +168,8 @@ export default function NovaScotiaPhysicianPage() {
             being recruited into Nova Scotia&apos;s public health system. The defining feature is the employer: your offer
             of employment or clinical appointment must come from <strong>Nova Scotia Health</strong> or the{" "}
             <strong>IWK Health Centre</strong> (the province&apos;s women&apos;s, children&apos;s and youth health centre
-            in Halifax). If you are a physician without such an offer, or you are practising in a non-physician health
+            in Halifax).</p>
+          <p>If you are a physician without such an offer, or you are practising in a non-physician health
             role, a different NSNP route, or a federal program, is likely the better fit. As a piece of{" "}
             <strong>Nova Scotia doctor immigration</strong> planning, confirming the source and terms of your offer is the
             first and most important step.
@@ -205,7 +207,8 @@ export default function NovaScotiaPhysicianPage() {
             Language is scored on your <strong>lowest of four abilities</strong>, reading, writing, listening and
             speaking, so a single weak skill can quietly hold back the whole file. Where the Physician route runs through
             Express Entry, you must meet the federal program&apos;s language threshold using an approved test such as
-            IELTS or CELPIP (or TEF/TCF for French). Separately, the College of Physicians &amp; Surgeons of Nova Scotia
+            IELTS or CELPIP (or TEF/TCF for French).</p>
+          <p>Separately, the College of Physicians &amp; Surgeons of Nova Scotia
             applies its own English-language proficiency requirement for licensure, which can be higher than the
             immigration minimum. The safest approach is to confirm both the immigration standard and the College standard
             for your situation before you book a test, so you only sit it once.
@@ -240,7 +243,8 @@ export default function NovaScotiaPhysicianPage() {
             #R706497); we help physicians confirm that a Nova Scotia Health or IWK offer meets NSNP requirements,
             coordinate the timing between your College of Physicians &amp; Surgeons of Nova Scotia registration and your{" "}
             <a href="/express-entry">Express Entry</a> profile, and prepare an expression of interest and nomination
-            application that stands up to scrutiny. We catch the small mistakes, a language score one band short of the
+            application that stands up to scrutiny.</p>
+          <p>We catch the small mistakes, a language score one band short of the
             College&apos;s standard, an offer that doesn&apos;t quite meet program requirements, a thin document set, that
             cause avoidable delays or refusals. We work entirely online and are not affiliated with any government.
           </p>

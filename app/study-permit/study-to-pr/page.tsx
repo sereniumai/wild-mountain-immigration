@@ -191,7 +191,8 @@ export default function StudyToPrPage() {
             <a href="/express-entry">Express Entry</a> program for people with skilled Canadian work experience, which
             is exactly what you build on a PGWP. You generally need one year of skilled work experience in an eligible
             NOC TEER occupation, gained within a set period, plus the language ability set out in Canadian Language
-            Benchmark (CLB) levels. Unlike most{" "}
+            Benchmark (CLB) levels.</p>
+          <p>Unlike most{" "}
             <a href="/express-entry/federal-skilled-worker">Federal Skilled Worker</a> applicants, CEC applicants do not
             need to show settlement funds. Once you have the experience, you can claim it in an Express Entry profile and
             be scored under the <a href="/express-entry/comprehensive-ranking-system">Comprehensive Ranking System</a>.
@@ -203,7 +204,8 @@ export default function StudyToPrPage() {
             category-based draws, which target specific occupations or French ability and can invite candidates at a
             lower score, and a <a href="/pnp">Provincial Nominee Program (PNP)</a>. Many provinces run streams aimed
             specifically at international graduates of their institutions, or at graduate workers in priority
-            occupations. An enhanced nomination adds <strong>600 CRS points</strong>, putting most candidates well
+            occupations.</p>
+          <p>An enhanced nomination adds <strong>600 CRS points</strong>, putting most candidates well
             above the typical federal cut-off, though IRCC still issues the invitation. As a Canmore-based firm, we know <a href="/alberta-immigration">Alberta</a> and the Alberta
             Advantage Immigration Program best, and several Alberta streams can suit graduates and
             skilled workers. The right stream depends on your province, your program and your occupation, so we match
@@ -228,7 +230,8 @@ export default function StudyToPrPage() {
             qualify for the Canadian Experience Class, followed by Express Entry processing of roughly six months after
             an invitation. Provincial nomination adds its own steps. In practice the journey from arriving as a student
             to becoming a permanent resident often spans several years, shaped by your program length, your PGWP
-            duration and how quickly you build qualifying experience. IRCC has at times opened dedicated in-Canada PR
+            duration and how quickly you build qualifying experience.</p>
+          <p>IRCC has at times opened dedicated in-Canada PR
             pathways for recent graduating classes, such as the Class of 2024 and 2025, so it is worth checking whether
             any current measure fits your profile. Processing times move with volume, so we plan against current IRCC
             estimates rather than a fixed promise.

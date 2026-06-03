@@ -130,8 +130,9 @@ export function Footer() {
               <Logo />
             </Link>
             <p className="mt-5 max-w-sm text-[14px] leading-relaxed text-ink-soft">
-              Honest, licensed Canadian immigration help. We guide people from around the
-              world to Canada through Express Entry, the AAIP, sponsorship, work and study.
+              <strong className="font-semibold text-ink">Canadian immigration services, one trusted RCIC.</strong>{" "}
+              We guide people from around the world to Canada through Express Entry, the AAIP,
+              sponsorship, work and study, with honest, licensed help at every step.
             </p>
             <div className="mt-6 space-y-2.5 text-[14px]">
               <p className="flex items-center gap-2.5 text-ink-soft">

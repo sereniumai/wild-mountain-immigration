@@ -141,7 +141,8 @@ export default function FromPakistanPage() {
             When you <strong>move to Canada from Pakistan</strong>, <a href="/express-entry">Express Entry</a> is usually
             the centre of the plan, with provincial programs and the study route as strong alternatives. The key is to
             be realistic about the requirements: Pakistani passport holders are visa-required, so you need the right
-            status both to enter and to settle, and a visitor visa never lets you live or work in Canada. Permanent
+            status both to enter and to settle, and a visitor visa never lets you live or work in Canada.</p>
+          <p>Permanent
             residence lets you live in Canada indefinitely and leads to citizenship, while a work or study permit brings
             you temporarily and is often used as a stepping stone. The route that fits depends on your age, education,
             experience and language, and on how carefully your documentation is prepared.
@@ -195,7 +196,8 @@ export default function FromPakistanPage() {
             <a href="/study-permit">study permit</a> at a designated learning institution gets you onto a Canadian course,
             and graduating can open a <a href="/work-permits/pgwp">Post-Graduation Work Permit (PGWP)</a>, an open permit
             that lets you work for almost any employer and bank the skilled Canadian experience that flows into the{" "}
-            <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a>. You will need{" "}
+            <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a>.</p>
+          <p>You will need{" "}
             <a href="/study-permit/proof-of-funds">proof of funds</a> for tuition and living costs, documented with the
             same care a Pakistani application needs, plus a{" "}
             <a href="/study-permit/provincial-attestation-letter">Provincial Attestation Letter</a> where required. Since
@@ -261,7 +263,8 @@ export default function FromPakistanPage() {
             biometrics; third-party costs add your WES ECA, IELTS, the Pakistani police certificate, a medical exam and,
             for most Express Entry applicants, the settlement funds you must show. These amounts change periodically, so we
             itemise the current figures for your route rather than quote one headline, and government fees can be checked
-            on canada.ca. On timing, a complete Express Entry application is usually finished about six months after the
+            on canada.ca.</p>
+          <p>On timing, a complete Express Entry application is usually finished about six months after the
             invitation, while provincial nomination, the study route and family sponsorship each add their own stages. Our{" "}
             <a href="/fees">fees guide</a> explains our professional fee and how it differs from government fees.
           </p>
@@ -272,7 +275,8 @@ export default function FromPakistanPage() {
             represent you with IRCC, all online, from Pakistan through to your arrival. As a CICC-regulated practice led
             by a licensed RCIC, we assess your profile honestly, choose the route where you are most competitive, and
             manage the paperwork, the WES ECA, the police certificate and the source-of-funds documentation so you do
-            not have to decode it alone. Whichever pathway fits, our goal is the same: to help you{" "}
+            not have to decode it alone.</p>
+          <p>Whichever pathway fits, our goal is the same: to help you{" "}
             <strong>move to Canada from Pakistan</strong> on the route that gives you the best realistic chance, with
             IRCC always the decision-maker on the outcome.
           </p>

@@ -214,13 +214,15 @@ export default function NovaScotiaPnpPage() {
             <a href="/express-entry">Express Entry</a> framework. The{" "}
             <a href="/pnp/nova-scotia/labour-market-priorities">Labour Market Priorities</a> approach lets the province
             search the federal Express Entry pool and issue Letters of Interest to candidates whose occupation, language
-            and experience match a current priority, often <strong>without requiring a standing job offer</strong>. The{" "}
+            and experience match a current priority, often <strong>without requiring a standing job offer</strong>.</p>
+          <p>The{" "}
             <a href="/pnp/nova-scotia/experience-express-entry">Experience: Express Entry</a> stream targets candidates
             who already have skilled work experience in Nova Scotia or elsewhere in Canada, the same kind of experience
             that also supports a federal{" "}
             <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a> profile. Both NSNP routes
             are <strong>enhanced</strong>, so a nomination adds the 600 CRS points described above on top of your existing{" "}
-            <a href="/express-entry/comprehensive-ranking-system">Comprehensive Ranking System</a> score. Because these
+            <a href="/express-entry/comprehensive-ranking-system">Comprehensive Ranking System</a> score.</p>
+          <p>Because these
             are ranked, invitation-based routes, there is no fixed pass mark, and we do not invent cut-off scores that the
             province has not published. To use an enhanced stream you must first build and maintain a valid Express Entry
             profile, so a sensible first step is to run our{" "}
@@ -231,7 +233,8 @@ export default function NovaScotiaPnpPage() {
           <p>
             On the base side, the <a href="/pnp/nova-scotia/skilled-worker">Skilled Worker</a> stream is the main
             employer-driven route: it generally requires a <strong>full-time, permanent job offer</strong> from a Nova
-            Scotia employer and qualifying work experience. The{" "}
+            Scotia employer and qualifying work experience.</p>
+          <p>The{" "}
             <a href="/pnp/nova-scotia/occupation-in-demand">Occupation in Demand</a> route works similarly but focuses on
             selected in-demand occupations; the list of eligible occupations changes, so confirm it before relying on it.
             For business owners, the <a href="/pnp/nova-scotia/entrepreneur">Entrepreneur</a> stream and the{" "}
@@ -246,7 +249,8 @@ export default function NovaScotiaPnpPage() {
             Requirements differ by stream, but most skilled routes look at the same building blocks: a qualifying{" "}
             <strong>occupation and skill level</strong> (NOC TEER), sufficient <strong>work experience</strong>, language
             results appropriate to your occupation, an <strong>educational credential assessment</strong> for foreign
-            education, and proof of settlement funds. Employer-driven streams add a valid Nova Scotia{" "}
+            education, and proof of settlement funds.</p>
+          <p>Employer-driven streams add a valid Nova Scotia{" "}
             <strong>job offer</strong>; the Express Entry-aligned routes add the federal Express Entry minimums on top.
             Entrepreneur streams instead test net worth, investment and a business plan. For 2026, Nova Scotia has also
             signalled priority tiers that affect which candidates are invited first, so two people who both &quot;qualify&quot;
@@ -260,7 +264,8 @@ export default function NovaScotiaPnpPage() {
             <strong>expression of interest (EOI)</strong> model: you create a profile describing your occupation, work
             experience, language results, education and any Nova Scotia job offer or ties, and the province scores and
             ranks the pool. In periodic rounds Nova Scotia invites the highest-ranked profiles that match its current
-            priorities. Submitting an EOI is not an application and does not, on its own, secure a nomination. It places
+            priorities.</p>
+          <p>Submitting an EOI is not an application and does not, on its own, secure a nomination. It places
             you in a pool from which the province selects. That is why meeting a stream&apos;s minimum eligibility and
             actually receiving an invitation are two different things, and why how your profile is presented matters as
             much as whether you qualify on paper. For the enhanced routes, your federal{" "}
@@ -273,7 +278,8 @@ export default function NovaScotiaPnpPage() {
             <a href="/atlantic-immigration-program">Atlantic Immigration Program (AIP)</a>, but the two are not the same
             thing. The AIP is an employer-driven federal pathway shared with{" "}
             <a href="/pnp/new-brunswick">New Brunswick</a>,{" "}
-            <a href="/pnp/prince-edward-island">Prince Edward Island</a> and Newfoundland and Labrador. It requires a job
+            <a href="/pnp/prince-edward-island">Prince Edward Island</a> and Newfoundland and Labrador.</p>
+          <p>It requires a job
             offer from a <strong>designated Atlantic employer</strong> and an approved settlement plan, and it does not run
             through the NSNP&apos;s expression-of-interest system. If you already hold an offer from a designated Nova
             Scotia employer, the AIP can be a faster, lower-CRS route to permanent residence than building an Express Entry
@@ -305,7 +311,8 @@ export default function NovaScotiaPnpPage() {
             are mainly your supporting documents and time: an approved language test, an educational credential assessment
             for foreign education, police certificates and proof of settlement funds. The federal{" "}
             <a href="/express-entry">IRCC</a> permanent-residence fees come later and are separate, and our own
-            professional fee is set out plainly on our <a href="/fees">fees page</a>. On timing, provincial processing of
+            professional fee is set out plainly on our <a href="/fees">fees page</a>.</p>
+          <p>On timing, provincial processing of
             a nomination typically runs a few weeks to a few months depending on the stream and document completeness; an
             enhanced Express Entry permanent-residence application is then usually processed in about six months, while a
             base, paper-based application generally takes longer. All figures and timelines change, so confirm the current
@@ -319,7 +326,8 @@ export default function NovaScotiaPnpPage() {
             Occupation in Demand or one of the entrepreneur pathways, where you genuinely rank well. Our team is led by a
             licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497), and we prepare
             an expression of interest and nomination application that stands up to scrutiny, then represent you with the
-            province and with IRCC. We work entirely online and we are not affiliated with any government. Good positioning is where sound advice earns its keep. If your plans range wider than
+            province and with IRCC.</p>
+          <p>We work entirely online and we are not affiliated with any government. Good positioning is where sound advice earns its keep. If your plans range wider than
             Nova Scotia, we also advise on the <a href="/atlantic-immigration-program">Atlantic Immigration Program</a>,{" "}
             other <a href="/pnp">Provincial Nominee Programs</a> and federal{" "}
             <a href="/express-entry">Express Entry</a>.

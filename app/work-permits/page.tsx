@@ -112,6 +112,8 @@ export default function WorkPermitsPage() {
             </div>
             <RelatedLinks
               links={[
+                { label: "Hiring foreign workers (employers)", href: "/work-permits/hiring-foreign-workers", note: "A guide for Canadian employers" },
+                { label: "Francophone Mobility", href: "/work-permits/francophone-mobility", note: "LMIA-exempt for French speakers" },
                 { label: "Immigrate to Canada (PR)", href: "/immigrate", note: "All permanent-residence routes" },
                 { label: "Study permits", href: "/study-permit", note: "Study now, work after graduation" },
                 { label: "Express Entry", href: "/express-entry", note: "Turn Canadian work into PR" },
@@ -138,7 +140,8 @@ export default function WorkPermitsPage() {
             A Canada work permit is a document issued by Immigration, Refugees and Citizenship Canada (IRCC) that lets a
             foreign national work legally in Canada for a set period. People often search for a "work visa Canada", but
             strictly there is no such thing: a work permit is the authorisation to work, and it is not the same as
-            permanent residence or a visa on its own. Visa-required travellers also need a temporary resident visa or eTA
+            permanent residence or a visa on its own.</p>
+          <p>Visa-required travellers also need a temporary resident visa or eTA
             to enter. In
             2026, work permits remain one of the most common ways to come to Canada, with IRCC processing hundreds of
             thousands of applications each year (source: canada.ca, 2026).
@@ -194,7 +197,8 @@ export default function WorkPermitsPage() {
           <p>
             LMIA streams are split into <strong>low-wage</strong> and <strong>high-wage</strong> positions based on the
             provincial or territorial median wage. If the offered wage is below the median for the location, it is treated
-            as low-wage; at or above, it is high-wage. The distinction matters because the two streams carry different
+            as low-wage; at or above, it is high-wage.</p>
+          <p>The distinction matters because the two streams carry different
             caps on the share of low-wage staff a workplace may employ, different housing and transport obligations, and, since 2024, very different odds of approval. The employer also pays a $1,000 processing fee per position for
             most LMIA applications, and the LMIA itself must be approved before the worker can apply for a permit.
           </p>
@@ -227,17 +231,21 @@ export default function WorkPermitsPage() {
             navigate the LMIA process, the IMP is frequently the faster and more practical path, when a worker qualifies.
           </p>
           <p>
-            Two IMP routes are worth highlighting. An <strong>intra-company transfer (ICT)</strong> requires a qualifying
+            Two IMP routes are worth highlighting.</p>
+          <p>An <strong>intra-company transfer (ICT)</strong> requires a qualifying
             corporate relationship between the foreign and Canadian entities and at least one year in a similar role in
             the past three years; permits can run up to seven years for executives and senior managers, or five years for
-            specialised-knowledge workers. <strong>Francophone Mobility</strong> is an often-overlooked option: it is
-            LMIA-exempt for French-speaking workers (NCLC 5 or higher) taking jobs outside Quebec in almost any
-            occupation, which makes it a strong route for bilingual candidates who might otherwise face the LMIA process.
+            specialised-knowledge workers. <strong><a href="/work-permits/francophone-mobility">Francophone Mobility</a></strong>{" "}
+            is an often-overlooked option: it is LMIA-exempt for French-speaking workers (NCLC 5 or higher) taking jobs
+            outside Quebec in almost any occupation, which makes it a strong route for bilingual candidates who might
+            otherwise face the LMIA process.
           </p>
           <p>
             See our full guide to the{" "}
-            <a href="/work-permits/international-mobility-program">International Mobility Program</a>, or, if your activity
-            may not need a permit at all, when you can{" "}
+            <a href="/work-permits/international-mobility-program">International Mobility Program</a>. If you are a
+            Canadian employer, our guide to{" "}
+            <a href="/work-permits/hiring-foreign-workers">hiring foreign workers</a> walks through your options, or
+            see when you can{" "}
             <a href="/work-permits/work-without-a-permit">work in Canada without a work permit</a>.
           </p>
 

@@ -148,7 +148,8 @@ export default function SelfEmployedPage() {
             The federal <strong>Self-Employed Persons Program</strong> is the main self-employed visa to Canada: a
             permanent-residence route for people with relevant experience in <strong>cultural activities</strong> or
             <strong> athletics</strong> who intend and are able to be self-employed in Canada and to contribute to
-            Canadian cultural or athletic life. It is designed for a particular group: artists and athletes, including
+            Canadian cultural or athletic life.</p>
+          <p>It is designed for a particular group: artists and athletes, including
             musicians, writers, performers and coaches, and similar self-employed individuals whose work would make a
             meaningful contribution at a national level. It is not a general business or entrepreneur visa, and it is not
             a route for skilled employees, so the fit has to be genuine. As noted above, its availability is currently in
@@ -226,7 +227,8 @@ export default function SelfEmployedPage() {
             #R706497) to assess whether your cultural or athletic background fits the Self-Employed Persons Program,
             checks the current intake status on canada.ca, and, if the program is paused or not the best fit, maps the
             open alternatives such as the <a href="/start-up-visa">Start-up Visa</a>{" "}
-            or a provincial entrepreneur stream under the <a href="/pnp">PNPs</a>. We represent clients entirely online,
+            or a provincial entrepreneur stream under the <a href="/pnp">PNPs</a>.</p>
+          <p>We represent clients entirely online,
             by video call and secure document sharing. We will tell you plainly if this
             program is not a realistic route for you right now. Our <a href="/fees">fees guide</a> explains how our
             professional fee works.

@@ -199,7 +199,8 @@ export default function ManitobaInternationalEducationStreamPage() {
             The <strong>Career Employment Pathway</strong> is the most-used IES route. It is designed for graduates of a
             designated Manitoba institution who have secured a <strong>full-time, long-term job offer</strong> from a
             Manitoba employer in an occupation that appears on the province&apos;s in-demand list <em>and</em> is connected
-            to their field of study. The in-demand-occupation requirement is central. The role must sit on
+            to their field of study. The in-demand-occupation requirement is central.</p>
+          <p>The role must sit on
             Manitoba&apos;s current in-demand list and relate to what you studied, so a marketing degree paired with an
             off-list job will not qualify. You are generally expected to be working in the province on a valid
             post-graduation work permit, living in Manitoba, and intending to settle there. This is the route that
@@ -244,7 +245,8 @@ export default function ManitobaInternationalEducationStreamPage() {
             runs through all three. You must have <strong>graduated from a designated Manitoba post-secondary
             institution</strong>, hold or qualify for the appropriate immigration status (typically a valid{" "}
             <a href="/work-permits/pgwp">Post-Graduation Work Permit</a> after your{" "}
-            <a href="/study-permit">study permit</a>), be living in Manitoba, and intend to settle in the province. Language
+            <a href="/study-permit">study permit</a>), be living in Manitoba, and intend to settle in the province.</p>
+          <p>Language
             ability is tested by an approved English or French test, and each pathway then layers on its own requirement, a job
             offer, a completed Mitacs internship, or an operating business. For most applicants the journey is the same:
             you study on a study permit, transition to a PGWP, then use one of the three pathways to convert that status
@@ -284,7 +286,8 @@ export default function ManitobaInternationalEducationStreamPage() {
           <p>
             <strong>How long the International Education Stream takes</strong> depends on your pathway and the federal
             stage. After you submit a complete nomination application, Manitoba&apos;s provincial processing typically runs
-            several months. Because the IES is a base nomination, you then file a separate paper application to IRCC, which
+            several months.</p>
+          <p>Because the IES is a base nomination, you then file a separate paper application to IRCC, which
             generally takes longer than an enhanced Express Entry application (source: canada.ca, processing times, 2026).
             Adding it up, most graduates should plan for the better part of a year, sometimes more, from application to
             permanent residence, and both provincial and federal timelines move with demand.

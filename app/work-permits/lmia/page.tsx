@@ -210,7 +210,8 @@ export default function LmiaPage() {
             The <strong>Global Talent Stream</strong> is a faster LMIA route within the Temporary Foreign Worker Program,
             built for innovative employers hiring highly skilled talent, often in technology and specialised
             occupations. Eligible employers and roles benefit from expedited LMIA processing, and the matching work
-            permit is also processed more quickly. In exchange, the employer commits to a Labour Market Benefits Plan,
+            permit is also processed more quickly.</p>
+          <p>In exchange, the employer commits to a Labour Market Benefits Plan,
             setting out lasting benefits for Canadians, such as job creation or skills training. When the role and
             employer qualify, it is one of the most attractive LMIA streams, and our team helps the worker move fast on
             the work-permit application so the speed advantage is not lost.
@@ -243,7 +244,8 @@ export default function LmiaPage() {
             <a href="/express-entry">Express Entry</a>, and many{" "}
             <a href="/pnp">Provincial Nominee Program</a> streams are built around an employer job offer. In{" "}
             <a href="/alberta-immigration">Alberta</a>, for example, several worker streams expect a genuine job offer
-            from an Alberta employer. Just as importantly, the skilled Canadian work experience you build on an LMIA-based
+            from an Alberta employer.</p>
+          <p>Just as importantly, the skilled Canadian work experience you build on an LMIA-based
             permit can qualify you for the{" "}
             <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a>. We plan the work-permit
             stage with the eventual PR route in mind, so the temporary step builds toward the permanent one. You can
@@ -256,7 +258,8 @@ export default function LmiaPage() {
             The term <strong>owner-operator LMIA</strong> describes an arrangement where a foreign national buys or
             establishes a Canadian business and seeks an LMIA to support their own work permit to run it. The rules in
             this area have tightened and changed over time, and the traditional owner-operator exemption has been
-            altered, so this is far more restricted than it once was. Because the policy keeps moving, we assess each
+            altered, so this is far more restricted than it once was.</p>
+          <p>Because the policy keeps moving, we assess each
             entrepreneurial case against the current rules and often compare it with dedicated business routes such as
             the <a href="/start-up-visa">Start-up Visa</a>, the{" "}
             <a href="/self-employed-immigration">Self-Employed Persons Program</a>, or a provincial entrepreneur stream

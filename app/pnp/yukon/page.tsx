@@ -158,7 +158,8 @@ export default function YukonPnpPage() {
             is enhanced or base. The <a href="/pnp/yukon/express-entry">Yukon Express Entry</a> stream is the{" "}
             <em>enhanced</em> option: you must already hold an active federal <a href="/express-entry">Express Entry</a>{" "}
             profile, and a Yukon nomination adds <strong>600 CRS points</strong> to your{" "}
-            <a href="/express-entry/comprehensive-ranking-system">Comprehensive Ranking System</a> score. That boost
+            <a href="/express-entry/comprehensive-ranking-system">Comprehensive Ranking System</a> score.</p>
+          <p>That boost
             lifts most candidates well above recent cut-offs, putting them in a strong position for an Invitation to Apply
             at the next draw. IRCC issues the invitation, then takes roughly six months to process the federal
             application. Candidates who already have skilled Yukon work experience often qualify under the{" "}
@@ -204,7 +205,8 @@ export default function YukonPnpPage() {
             <strong>genuine, full-time, ongoing job offer from an eligible Yukon employer</strong>, relevant work
             experience (about a year for Skilled Worker; roughly six months for Critical Impact Worker), and language
             results matched to your occupation&apos;s skill level, broadly higher Canadian Language Benchmark (CLB)
-            levels for higher-TEER roles and lower CLB levels for Critical Impact Worker positions. The Yukon Express
+            levels for higher-TEER roles and lower CLB levels for Critical Impact Worker positions.</p>
+          <p>The Yukon Express
             Entry stream adds the federal Express Entry minimums on top. Business Nominee instead tests net worth,
             investment and a viable Yukon business plan rather than a job offer. Because the published CLB-by-TEER
             matrix and thresholds are detailed and updated regularly, confirm them against the current yukon.ca program
@@ -234,7 +236,8 @@ export default function YukonPnpPage() {
             <a href="/pnp/yukon/business-nominee">Business Nominee</a>, develop a qualifying business plan). Many
             candidates already in Canada arrive first on a Yukon <a href="/work-permits">work permit</a>, sometimes a{" "}
             <a href="/work-permits/pgwp">post-graduation work permit</a> after Canadian study, and build the Yukon
-            experience the territory prioritises. Your employer then registers and submits the offer of employment,
+            experience the territory prioritises.</p>
+          <p>Your employer then registers and submits the offer of employment,
             paying the IRCC employer compliance fee, currently about <strong>$230</strong>. During an open EOI window,
             you and your employer submit the application for the relevant stream. If Yukon nominates you, you apply to{" "}
             <strong>IRCC</strong> for permanent residence, through <a href="/express-entry">Express Entry</a> if your
@@ -246,7 +249,8 @@ export default function YukonPnpPage() {
           <p>
             Timelines run in stages. The first variable is simply waiting for an open <strong>EOI window</strong> and
             being selected within Yukon&apos;s limited allocation. After a complete application is submitted, territorial
-            processing of the nomination typically takes a few months. Once nominated, a <strong>Yukon Express
+            processing of the nomination typically takes a few months.</p>
+          <p>Once nominated, a <strong>Yukon Express
             Entry</strong> (enhanced) application to IRCC is processed in roughly six months, while a base, paper-based
             application generally takes longer. Realistically, most candidates should plan for the better part of a year
             from application to permanent residence, sometimes more, and confirm current service standards on
@@ -264,7 +268,8 @@ export default function YukonPnpPage() {
             makes sure your employer&apos;s offer of employment and your documents are ready before a window opens.
             Working under a licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC
             #R706497), we prepare a nomination application that stands up to scrutiny and represent you with the
-            territory and with IRCC. Compare Yukon with our home province&apos;s{" "}
+            territory and with IRCC.</p>
+          <p>Compare Yukon with our home province&apos;s{" "}
             <a href="/alberta-immigration">Alberta Advantage Immigration Program</a>, or see every route on our{" "}
             <a href="/pnp">provincial nominee programs</a> hub.
           </p>

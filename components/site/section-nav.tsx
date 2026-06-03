@@ -98,7 +98,17 @@ function NavItem({
         {!panel && active && <span className="absolute left-0 top-1/2 h-5 w-[3px] -translate-y-1/2 rounded-r bg-brand" />}
         <Link
           href={node.href}
-          onClick={onNavigate}
+          onClick={(e) => {
+            // First click on a collapsed parent reveals its children instead of
+            // navigating, so people can see what's inside; a second click (now
+            // expanded) opens the section's own page.
+            if (kids.length > 0 && !open) {
+              e.preventDefault();
+              setOpenKey(node.href);
+            } else {
+              onNavigate?.();
+            }
+          }}
           aria-current={active ? "page" : undefined}
           title={node.label}
           className={clsx(

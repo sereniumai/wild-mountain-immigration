@@ -167,7 +167,8 @@ export default function WorkWhileStudyingPage() {
             Off-campus work means working for any employer anywhere in Canada, not just at your school. To work off
             campus without a separate permit you generally must hold a valid study permit that allows off-campus work,
             be a full-time student at a designated learning institution in an eligible post-secondary program, and have
-            actually started your studies. Check the remarks or conditions field on your study permit, as it states
+            actually started your studies.</p>
+          <p>Check the remarks or conditions field on your study permit, as it states
             whether you have work authorisation; if that wording is missing, you cannot work off campus until it is
             corrected. Before you start any international student jobs in Canada, you will also need a Social Insurance
             Number (see below).
@@ -195,7 +196,8 @@ export default function WorkWhileStudyingPage() {
             school, a faculty member, a student organisation, or certain businesses and contractors on campus.
             Generally, eligible full-time students with a valid study permit and a Social Insurance Number can work on
             campus, often with no fixed weekly hour limit while studying, which makes it a flexible option around your
-            class schedule. As with off-campus work, you must meet the eligibility conditions and start only once your
+            class schedule.</p>
+          <p>As with off-campus work, you must meet the eligibility conditions and start only once your
             program has begun. Because conditions can change, we confirm them against canada.ca for your institution.
           </p>
 
@@ -244,7 +246,8 @@ export default function WorkWhileStudyingPage() {
             Canadian references, and after you graduate it positions you for a{" "}
             <a href="/work-permits/pgwp">Post-Graduation Work Permit</a>, where the skilled work you then do can qualify
             you for the <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a> under{" "}
-            <a href="/express-entry">Express Entry</a>. For the full graduate-to-PR picture, see our{" "}
+            <a href="/express-entry">Express Entry</a>.</p>
+          <p>For the full graduate-to-PR picture, see our{" "}
             <a href="/study-permit/study-to-pr">study to permanent residence</a> guide. Spousal open work permit
             eligibility is now narrower and tied to specific programs, so if your partner hopes to work too, confirm the
             current rules on canada.ca before you plan around a second income.

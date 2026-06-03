@@ -115,9 +115,9 @@ export function PageHero({
             <h1
               className={clsx(
                 "mt-5 font-semibold leading-[1.04] tracking-[-0.035em] text-ink",
-                hub
-                  ? "text-[2.85rem] sm:text-[3.85rem] lg:text-[4.5rem]"
-                  : "text-[2.4rem] sm:text-[3.25rem] lg:text-[3.5rem]"
+                // Hub (section landing) and default (cluster) pages share one H1
+                // size so every program heading reads consistently.
+                "text-[2.4rem] sm:text-[3.25rem] lg:text-[3.5rem]"
               )}
             >
               {title}

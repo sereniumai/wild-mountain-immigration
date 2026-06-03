@@ -186,7 +186,8 @@ export default function CitizenshipByDescentPage() {
             automatically by the first-generation limit. The mechanism is a{" "}
             <strong>substantial-connection test</strong>: broadly, a Canadian parent who was themselves born
             abroad can pass citizenship to their child born abroad where the parent has a genuine, demonstrable
-            connection to Canada. This is typically measured by physical presence in Canada, in the order of{" "}
+            connection to Canada.</p>
+          <p>This is typically measured by physical presence in Canada, in the order of{" "}
             <strong>1,095 days</strong>, before the child&apos;s birth or adoption.
             This matters most for the <strong>second generation born abroad</strong> and beyond, where the old
             first-generation limit used to stop citizenship entirely.
@@ -268,7 +269,8 @@ export default function CitizenshipByDescentPage() {
             once, and the <strong>citizenship certificate processing time</strong> has been stretched as a result.
             It helps to gather the records that link the generations of your family together early: birth
             certificates, your Canadian parent&apos;s proof of citizenship, and evidence of their time in Canada.
-            The sooner you confirm your status, the smoother your application will be. Older documents can take time
+            The sooner you confirm your status, the smoother your application will be.</p>
+          <p>Older documents can take time
             to track down, so starting early is usually the difference between a clean file and a stalled one. Confirm the current processing times
             on canada.ca before you plan around any deadline, such as an upcoming move, a passport need or a
             child&apos;s birth abroad.
@@ -291,7 +293,8 @@ export default function CitizenshipByDescentPage() {
             make you a <strong>Canadian citizen by descent</strong> under the current rules, explains how the{" "}
             <strong>first-generation limit</strong> and <strong>Bill C-3</strong> apply to your case, and prepares
             and reviews your <strong>proof-of-citizenship</strong> application so avoidable mistakes never reach
-            IRCC. We also advise on the broader <a href="/citizenship">citizenship requirements</a> and the full
+            IRCC.</p>
+          <p>We also advise on the broader <a href="/citizenship">citizenship requirements</a> and the full
             range of <a href="/immigrate">permanent-residence routes</a> if descent does not apply to you. Because
             the descent rules are still evolving, we always work from the current canada.ca guidance and never
             guarantee an outcome. We represent clients entirely online, by video call and secure document sharing.

@@ -231,7 +231,8 @@ export default function NewBrunswickPnpPage() {
             Requirements differ by stream, but most NBPNP routes share the same foundations for immigration to NB:
             qualifying work experience, language results appropriate to your occupation, education and a genuine intention
             to settle in New Brunswick. Employer-driven streams generally require a full-time job offer from an eligible New
-            Brunswick employer. This group covers the Skilled Worker stream, the Employment-in-NB pathway of NB Express
+            Brunswick employer.</p>
+          <p>This group covers the Skilled Worker stream, the Employment-in-NB pathway of NB Express
             Entry and the Critical Worker Pilot. The Strategic Initiative stream targets French-speaking candidates, and
             Business Immigration tests net worth, investment and a viable business plan instead of a job offer.
           </p>
@@ -262,7 +263,8 @@ export default function NewBrunswickPnpPage() {
             confirm you meet a stream&apos;s requirements and that your occupation is currently eligible. Next, submit an{" "}
             <strong>expression of interest through the INB Portal</strong>, which stays valid for <strong>365 days</strong>.
             New Brunswick then runs periodic rounds of invitation: each NB PNP draw (or NB EOI draw) selects profiles by
-            sector and labour-market priority rather than a published score. If one of these rounds of invitation issues you
+            sector and labour-market priority rather than a published score.</p>
+          <p>If one of these rounds of invitation issues you
             an Invitation to Apply, you submit a full nomination application with supporting documents within the window you
             are given. Once nominated, you apply to <strong>IRCC</strong> for permanent residence, through Express Entry if
             your nomination is enhanced, or on paper if it is a base nomination.
@@ -282,7 +284,8 @@ export default function NewBrunswickPnpPage() {
             application fee of around <strong>$250</strong>, while Business Immigration carries a higher fee of roughly{" "}
             <strong>$2,000</strong>. These provincial amounts are separate from the{" "}
             <a href="/express-entry">IRCC</a> permanent-residence fees you pay at the federal stage, and from our own
-            professional fee, which we set out plainly on our <a href="/fees">fees page</a>. On timing, provincial
+            professional fee, which we set out plainly on our <a href="/fees">fees page</a>.</p>
+          <p>On timing, provincial
             processing of a nomination typically runs several weeks to a few months; an enhanced Express Entry
             permanent-residence application is then usually processed in about six months, while a base, paper-based
             application generally takes longer. All figures change, so confirm current fees and service standards on
@@ -295,7 +298,8 @@ export default function NewBrunswickPnpPage() {
             <strong>Atlantic Immigration Program (AIP)</strong>, but the two are not the same thing. The AIP is a separate,
             employer-driven federal pathway shared with{" "}
             <a href="/pnp/nova-scotia">Nova Scotia</a>,{" "}
-            <a href="/pnp/prince-edward-island">Prince Edward Island</a> and Newfoundland and Labrador. It requires a job
+            <a href="/pnp/prince-edward-island">Prince Edward Island</a> and Newfoundland and Labrador.</p>
+          <p>It requires a job
             offer from a <strong>designated Atlantic employer</strong> and a settlement plan, and it does not run through
             the INB Portal. If you have an offer from a designated employer, the{" "}
             <a href="/atlantic-immigration-program">AIP</a> may be a faster route than the NBPNP; if not, a provincial
@@ -309,7 +313,8 @@ export default function NewBrunswickPnpPage() {
             Express Entry, Skilled Worker, Strategic Initiative, Business Immigration or the Critical Worker Pilot.
             Our team is led by a licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC
             #R706497), and we prepare an INB Portal profile and nomination application that stands up to scrutiny, then
-            represent you with the province and with IRCC. We work entirely online. With New Brunswick&apos;s allocation
+            represent you with the province and with IRCC.</p>
+          <p>We work entirely online. With New Brunswick&apos;s allocation
             tight and its sector limits in force, that positioning is where good advice earns its keep. If your plans range
             wider than New Brunswick, we also advise on the{" "}
             <a href="/atlantic-immigration-program">Atlantic Immigration Program</a>, other{" "}

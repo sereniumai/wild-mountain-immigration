@@ -223,7 +223,8 @@ export default function GlobalTalentStreamPage() {
             (LMBP)</strong>. This sets out how the hire will create lasting, positive effects for the Canadian labour
             market. For <strong>Category A</strong>, a mandatory benefit is creating jobs for Canadians and permanent
             residents; for <strong>Category B</strong>, it is investing in the skills and training of Canadians and
-            permanent residents. Employers also choose complementary benefits, such as creating co-op placements,
+            permanent residents.</p>
+          <p>Employers also choose complementary benefits, such as creating co-op placements,
             increasing revenue, or improving company processes, and they report on progress over time. A well-built LMBP
             is central to a smooth GTS application.
           </p>

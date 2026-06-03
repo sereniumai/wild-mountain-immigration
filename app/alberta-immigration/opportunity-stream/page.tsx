@@ -135,7 +135,8 @@ export default function OpportunityStreamPage() {
             The <strong>Alberta Opportunity Stream</strong> is a base stream of the Alberta Advantage Immigration Program
             (AAIP) for temporary foreign workers who are <em>already</em> living and working in Alberta on a valid work
             permit, with an ongoing full-time job offer from their Alberta employer. It is the AAIP&apos;s highest-volume
-            worker route, carrying roughly <strong>80% of AAIP invitation volume</strong>. Alberta&apos;s 2026
+            worker route, carrying roughly <strong>80% of AAIP invitation volume</strong>.</p>
+          <p>Alberta&apos;s 2026
             allocation for the stream is about <strong>3,425 nominations</strong> out of a total provincial cap of 6,403
             (source: alberta.ca, AAIP processing information, May 2026). Because it is a base stream, an Opportunity Stream
             nomination leads to a separate paper application to IRCC for permanent residence rather than adding points to a

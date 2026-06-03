@@ -140,7 +140,8 @@ export default function BcEntrepreneurImmigrationPage() {
             Program, for people who will <strong>invest in and actively manage a business in British Columbia</strong>. It sits
             alongside the province&apos;s Skills Immigration streams, but works very differently: rather than scoring you on a
             job offer, it asks you to register a credible business concept, establish the business yourself, and earn a
-            nomination by delivering on what you promised. According to welcomebc.ca, the BC PNP is divided into Skills
+            nomination by delivering on what you promised.</p>
+          <p>According to welcomebc.ca, the BC PNP is divided into Skills
             Immigration and Entrepreneur Immigration, and British Columbia&apos;s overall 2026 nomination allocation is about{" "}
             <strong>5,254</strong>, sharply reduced from prior years (source: welcomebc.ca / IRCC, May 2026). As the main route
             for business immigration in BC, it places founders on a staged pathway. With space tight, the province directs
@@ -158,7 +159,8 @@ export default function BcEntrepreneurImmigrationPage() {
             This route fits people who want to <em>build and run</em> a business in British Columbia and have the capital,
             experience and appetite to do it hands-on. You should have genuine business ownership or senior-management
             experience, personal net worth you can document and verify, and a concrete idea for a venture that creates real
-            economic benefit, typically including <strong>new jobs for Canadians or permanent residents</strong>. It is not
+            economic benefit, typically including <strong>new jobs for Canadians or permanent residents</strong>.</p>
+          <p>It is not
             for passive investors looking to park money, and certain business types are excluded. People often search for a
             &ldquo;BC entrepreneur visa&rdquo;, but the route is technically a work permit followed by a provincial nomination,
             not a single visa. If you are drawn to a smaller or regional BC community, the <strong>Regional Pilot</strong>

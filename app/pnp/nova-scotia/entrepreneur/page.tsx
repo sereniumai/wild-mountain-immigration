@@ -142,7 +142,8 @@ export default function NovaScotiaEntrepreneurPage() {
           <p>
             The <strong>Nova Scotia Entrepreneur stream</strong> is a business pathway of the Nova Scotia Nominee Program
             (NSNP) for experienced owners and senior managers who will <strong>start a business in Nova Scotia, or buy and
-            actively run an existing one</strong>, and settle in the province as permanent residents. It is part of how
+            actively run an existing one</strong>, and settle in the province as permanent residents.</p>
+          <p>It is part of how
             Nova Scotia grows its economy: the province charges <strong>no provincial application fee</strong> for an NSNP
             nomination (source: novascotia.ca, May 2026), one of the few in Canada to do so, though federal IRCC fees still
             apply. Unlike the employer-driven routes, the <strong>NSNP Entrepreneur</strong> path needs no job offer, you
@@ -157,7 +158,8 @@ export default function NovaScotiaEntrepreneurPage() {
           <h2>Who is the NSNP Entrepreneur stream for?</h2>
           <p>
             This stream fits people who want to <em>build and run</em> a business and put down roots in Nova Scotia, whether
-            in Halifax (the Halifax Regional Municipality, or HRM) or a smaller community across the province. You should have
+            in Halifax (the Halifax Regional Municipality, or HRM) or a smaller community across the province.</p>
+          <p>You should have
             real business ownership or senior-management experience, capital you can invest and verify, and a concrete idea
             for a viable venture: a trade or service business, a shop or restaurant, a manufacturing or technology operation,
             or buying and growing an existing local business whose owner is retiring. It is not for passive investors looking

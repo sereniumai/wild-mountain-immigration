@@ -145,7 +145,8 @@ export default function OntarioPhdGraduatePage() {
           <p>
             The <strong>Ontario PhD Graduate Stream</strong> is a base stream of the{" "}
             <a href="/pnp/ontario">Ontario Immigrant Nominee Program (OINP)</a> built for one group: people who have
-            completed a doctorate at an eligible Ontario university and want to stay in the province. Its defining feature
+            completed a doctorate at an eligible Ontario university and want to stay in the province.</p>
+          <p>Its defining feature
             is that it lets <strong>PhD graduates apply for permanent residence without a job offer</strong>, you are
             nominated on the strength of your Ontario doctorate, recent graduation and your intention to settle in Ontario,
             not on an employment contract. Ontario runs the country&apos;s largest provincial program, with a 2026
@@ -270,7 +271,8 @@ export default function OntarioPhdGraduatePage() {
           <h2>How Wild Mountain helps with the PhD Graduate Stream</h2>
           <p>
             Wild Mountain Immigration confirms your doctorate and Ontario institution qualify, checks you are within the
-            recent-graduation window, and builds a registration and nomination application that stands up to scrutiny. Working
+            recent-graduation window, and builds a registration and nomination application that stands up to scrutiny.</p>
+          <p>Working
             under a licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497), our team
             represents you with both Ontario and IRCC, and gives you a candid read on whether the PhD Graduate Stream or an
             alternative, such as the <a href="/pnp/ontario/masters-graduate">Masters Graduate Stream</a> or an{" "}

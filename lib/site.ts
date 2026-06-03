@@ -253,6 +253,7 @@ export const navSections: NavSection[] = [
           { label: "Intra-Company Transfers", href: "/work-permits/intra-company-transfer" },
           { label: "CUSMA Work Permit", href: "/work-permits/cusma" },
           { label: "CETA Work Permit", href: "/work-permits/ceta" },
+          { label: "Francophone Mobility", href: "/work-permits/francophone-mobility" },
         ],
       },
       {
@@ -265,6 +266,7 @@ export const navSections: NavSection[] = [
           { label: "Bridging Open Work Permit (BOWP)", href: "/work-permits/bridging-open-work-permit" },
         ],
       },
+      { label: "Hiring Foreign Workers (Employers)", href: "/work-permits/hiring-foreign-workers" },
     ],
   },
   {

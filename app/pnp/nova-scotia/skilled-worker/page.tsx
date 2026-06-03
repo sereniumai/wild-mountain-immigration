@@ -140,7 +140,8 @@ export default function NovaScotiaSkilledWorkerPage() {
             The <strong>Nova Scotia Skilled Worker stream</strong> is the employer-driven, base pathway of the{" "}
             <a href="/pnp/nova-scotia">Nova Scotia Nominee Program (NSNP)</a>. It lets the province nominate foreign
             workers and recent graduates who hold a <strong>full-time, permanent job offer</strong> from a Nova Scotia
-            employer. As of 2026 Nova Scotia charges <strong>no provincial application fee</strong> for an NSNP
+            employer.</p>
+          <p>As of 2026 Nova Scotia charges <strong>no provincial application fee</strong> for an NSNP
             nomination (source: novascotia.ca, May 2026), one of the few provinces to do so, though federal IRCC fees
             still apply. The stream is the province&apos;s main route for people whose path to permanent residence runs
             through a Nova Scotia employer rather than the federal Express Entry pool.
@@ -148,7 +149,8 @@ export default function NovaScotiaSkilledWorkerPage() {
           <p>
             What sets the Skilled Worker stream apart from most PNP routes is its reach into <strong>lower-skilled
             occupations</strong>. As an <strong>employer-driven PNP</strong> stream, it ties your route to permanent
-            residence to a Nova Scotia employer rather than a federal pool. While many streams are limited to
+            residence to a Nova Scotia employer rather than a federal pool.</p>
+          <p>While many streams are limited to
             professional and managerial NOC TEER 0–3 roles, the
             Skilled Worker stream can accept job offers in selected <strong>TEER 4 and some TEER 5</strong> occupations,
             with the language requirement scaled down accordingly. Because it is a <strong>base nomination</strong>, a
@@ -216,7 +218,8 @@ export default function NovaScotiaSkilledWorkerPage() {
             Both are <strong>base, employer-driven</strong> streams that require a Nova Scotia job offer, which is why
             they are easy to confuse. The <strong>Skilled Worker stream</strong> is the broader of the two: it can accept
             a wide range of occupations, including many lower-skilled roles, as long as the offer is full-time and
-            permanent. The <a href="/pnp/nova-scotia/occupation-in-demand">Occupation in Demand</a> stream works
+            permanent.</p>
+          <p>The <a href="/pnp/nova-scotia/occupation-in-demand">Occupation in Demand</a> stream works
             similarly but focuses on a <em>defined list of selected in-demand occupations</em> that the province updates
             from time to time. If your occupation is on that list, Occupation in Demand may be the better fit; if it is
             not, the Skilled Worker stream is usually the route to consider. Because the in-demand list changes, confirm
@@ -254,7 +257,8 @@ export default function NovaScotiaSkilledWorkerPage() {
             <a href="/pnp/nova-scotia/labour-market-priorities">Labour Market Priorities</a> route gives you the strongest
             position. Our team is led by a licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr>{" "}
             (CICC #R706497); we prepare an expression of interest and nomination application that stands up to scrutiny,
-            then manage the separate IRCC permanent-residence application. We catch the avoidable mistakes that cause
+            then manage the separate IRCC permanent-residence application.</p>
+          <p>We catch the avoidable mistakes that cause
             refusals: a mismatched NOC code, a language band one point short, or a job offer that is not genuinely
             permanent. If your
             employer is a designated Atlantic employer, we also weigh the{" "}

@@ -274,7 +274,8 @@ export default function NsInternationalGraduateEntrepreneurPage() {
           <h2>How Wild Mountain helps with your graduate entrepreneur application</h2>
           <p>
             The NSNP business streams reward a clear, credible record and a clean application, and that is exactly what a{" "}
-            <strong>Nova Scotia graduate running their own business</strong> needs. Our team is led by a licensed{" "}
+            <strong>Nova Scotia graduate running their own business</strong> needs.</p>
+          <p>Our team is led by a licensed{" "}
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497); we confirm whether the
             International Graduate Entrepreneur stream is the right fit, help you evidence your eligible credential and
             your year of business operation, and prepare an expression of interest and nomination package that stand up to

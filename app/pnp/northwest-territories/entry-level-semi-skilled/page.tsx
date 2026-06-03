@@ -144,7 +144,8 @@ export default function NwtEntryLevelSemiSkilledPage() {
             <strong>TEER 4 or TEER 5</strong>, who hold a permanent, full-time job offer from an eligible NWT employer.
             In practice that means roles across <strong>tourism, hospitality, food and accommodation services, retail
             and general labour</strong>, for example cooks, food counter attendants, housekeeping and labourer
-            positions. These are exactly the jobs a small northern economy struggles to fill locally. Because it is{" "}
+            positions.</p>
+          <p>These are exactly the jobs a small northern economy struggles to fill locally. Because it is{" "}
             <strong>employer-driven</strong>, the NWT employer must offer the position and initiate the application;
             candidates cannot apply on their own.
           </p>
@@ -152,7 +153,8 @@ export default function NwtEntryLevelSemiSkilledPage() {
             This is the part of the NTNP built for <strong>NWT lower-skilled immigration</strong>, sitting alongside the
             higher-skilled streams. The territory&apos;s 2026 nomination allocation is about <strong>197</strong> across
             all streams, down from roughly 300 the previous year, after IRCC cut provincial and territorial allocations
-            nationwide (source: immigratenwt.ca / IRCC, May 2026). With one of the smallest allocations in Canada, a
+            nationwide (source: immigratenwt.ca / IRCC, May 2026).</p>
+          <p>With one of the smallest allocations in Canada, a
             well-positioned, employer-supported profile is essential. As with every nominee program, a nomination is a
             recommendation, not permanent residence in itself, you still apply to IRCC for PR on a separate application.
             Figures and rules change frequently, so always verify the current position on immigratenwt.ca before acting.
@@ -169,7 +171,8 @@ export default function NwtEntryLevelSemiSkilledPage() {
             Eligibility for the <strong>Entry-Level / Semi-Skilled</strong> stream rests on a connected set of
             requirements you must satisfy before your employer submits the application. The defining condition is the{" "}
             <strong>12-month same-employer rule</strong>: you must have worked full-time for at least 12 months with the
-            same NWT employer who is supporting your nomination. That requirement is what most clearly separates this
+            same NWT employer who is supporting your nomination.</p>
+          <p>That requirement is what most clearly separates this
             stream from the Skilled Worker route, and it means you will already be in the NWT and employed when the file
             goes in. The table below summarises the core criteria; the official, controlling list lives on
             immigratenwt.ca and changes periodically.
@@ -269,7 +272,8 @@ export default function NwtEntryLevelSemiSkilledPage() {
           <p>
             <strong>How long the stream takes</strong> depends on the stage. On the employer-driven side, the wait for an
             invitation now hinges on your EOI ranking and the draw schedule (draws planned for March, June and September
-            2026). After a complete nomination application is submitted, territorial processing varies. Once nominated,
+            2026). After a complete nomination application is submitted, territorial processing varies.</p>
+          <p>Once nominated,
             because this is a base nomination, your separate IRCC paper application generally takes longer than the
             roughly six months IRCC targets for enhanced files. Most applicants should plan for the better part of a
             year, often more, from invitation to permanent residence, on top of the 12 months of employment the stream
@@ -284,7 +288,8 @@ export default function NwtEntryLevelSemiSkilledPage() {
             <a href="/pnp/northwest-territories/employer-driven-skilled-worker">Employer-Driven Skilled Worker</a> band,
             checks that your 12 months of full-time work with the same NWT employer is documented properly, often built
             on a <a href="/work-permits">work permit</a>, and helps you and your employer put together an EOI and
-            nomination application that ranks well and stands up to scrutiny. Working under a licensed{" "}
+            nomination application that ranks well and stands up to scrutiny.</p>
+          <p>Working under a licensed{" "}
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497), we represent you with
             the territory and with IRCC, and catch the documentation gaps that cause avoidable refusals. With only about
             197 nominations available across all of 2026, that positioning is where good advice earns its keep.

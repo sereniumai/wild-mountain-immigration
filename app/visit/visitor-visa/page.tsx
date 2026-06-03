@@ -157,7 +157,8 @@ export default function VisitorVisaPage() {
             allows a traveller from a{" "}
             <strong>visa-required country</strong> to travel to a Canadian port of entry and seek admission as a
             temporary resident, for tourism, visiting family or friends, or attending an event such as a wedding,
-            conference or graduation. The visa itself lets you travel to Canada; a border services officer makes the
+            conference or graduation.</p>
+          <p>The visa itself lets you travel to Canada; a border services officer makes the
             final decision on admission and on how long you may stay when you arrive. A visitor visa is strictly for
             visiting: it does not authorize you to work or to study in a long programme.
           </p>
@@ -237,7 +238,8 @@ export default function VisitorVisaPage() {
             Most visitors are admitted for up to <strong>six months</strong>, but the border services officer sets the
             actual period on entry. The stamp in your passport, or any document the officer gives you, tells you when you
             must leave. If you want to stay longer, you apply from within Canada for a <strong>visitor record</strong>,
-            a status document that extends your visitor status and sets a new departure date. Apply before your current
+            a status document that extends your visitor status and sets a new departure date.</p>
+          <p>Apply before your current
             status expires; if you do, you can usually remain under maintained status while IRCC processes the request.
             A visitor record is not a visa, so it does not, on its own, let you re-enter Canada after leaving.
           </p>

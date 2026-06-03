@@ -140,7 +140,8 @@ export default function SkilledWorkerPage() {
             The <strong>BC PNP Skilled Worker</strong> stream is the highest-volume route within British Columbia&apos;s{" "}
             <strong>Skills Immigration</strong> division of the{" "}
             <a href="/pnp/british-columbia">BC Provincial Nominee Program</a>. It is built for people who hold an
-            indeterminate (permanent), full-time job offer from an eligible BC employer in a skilled occupation, generally <abbr title="National Occupational Classification">NOC</abbr> TEER 0, 1, 2 or 3. According to
+            indeterminate (permanent), full-time job offer from an eligible BC employer in a skilled occupation, generally <abbr title="National Occupational Classification">NOC</abbr> TEER 0, 1, 2 or 3.</p>
+          <p>According to
             welcomebc.ca, British Columbia&apos;s 2026 nomination allocation is about <strong>5,254</strong> across the
             whole program, sharply lower than in previous years after IRCC reduced provincial allocations nationwide
             (source: welcomebc.ca, May 2026). With far fewer spaces, BC now concentrates selection on its highest-priority
@@ -192,7 +193,8 @@ export default function SkilledWorkerPage() {
             Every skilled stream is ranked through the <strong>Skills Immigration Registration System (SIRS)</strong>. You
             create a free registration, SIRS scores it out of <strong>200 points</strong>, and BC invites the
             highest-ranked registrants in periodic draws. Your registration stays in the pool, and <strong>BC PNP
-            points</strong> are awarded across economic and human-capital factors. Your <strong>hourly wage</strong> is
+            points</strong> are awarded across economic and human-capital factors.</p>
+          <p>Your <strong>hourly wage</strong> is
             the single largest factor: the higher the offered wage, the more points you earn. Points also come from your
             occupation&apos;s skill level, work experience, education, language and the region of your BC job. Jobs in
             Metro Vancouver score lower, reflecting BC&apos;s goal of directing roughly a third of nominations outside
@@ -222,7 +224,8 @@ export default function SkilledWorkerPage() {
             The Skilled Worker stream offers an <strong>Express Entry BC (EEBC)</strong> route alongside the base route. To
             use it you must already qualify for federal Express Entry and hold an active profile. When you do, an enhanced
             BC nomination adds <strong>600 CRS points</strong> to your federal score, which in recent draws has sat well above the cut-off, though IRCC still issues
-            the Invitation to Apply in a following federal draw. It is the fastest route to permanent residence through this
+            the Invitation to Apply in a following federal draw.</p>
+          <p>It is the fastest route to permanent residence through this
             stream because the provincial nomination plugs directly into the federal system, replacing the separate paper
             application the base route requires. Our dedicated{" "}
             <a href="/pnp/british-columbia/express-entry-bc">Express Entry BC</a> guide covers the federal minimums in
@@ -269,7 +272,8 @@ export default function SkilledWorkerPage() {
             The BC PNP processing time runs in stages and depends on your SIRS score and the pace of draws. After you
             submit a complete nomination application, BC&apos;s processing typically runs about two to three months. Once nominated, an
             Express Entry BC application to IRCC is processed in roughly six months, while a base, paper-based application
-            generally takes longer (source: welcomebc.ca and canada.ca, 2026). Most skilled applicants should plan for the
+            generally takes longer (source: welcomebc.ca and canada.ca, 2026).</p>
+          <p>Most skilled applicants should plan for the
             better part of a year from registration to permanent residence, sometimes more, and treat any estimate as
             approximate, verifying current times on welcomebc.ca and canada.ca.
           </p>

@@ -158,7 +158,8 @@ export default function BusinessVisitorPage() {
             activities without directly entering the Canadian labour market. This status is often loosely called a{" "}
             <strong>business visa for Canada</strong>, although it is really a category that lets you visit Canada for
             business without a separate permit. The category exists because not every work-related trip amounts to
-            taking a job in Canada. Someone flying in for a conference or convention, to negotiate a contract, to buy
+            taking a job in Canada.</p>
+          <p>Someone flying in for a conference or convention, to negotiate a contract, to buy
             Canadian goods for a foreign company, or to service equipment under a foreign warranty or after-lease
             agreement is doing business that benefits an employer outside Canada, not competing for Canadian work.
             Because of that, business visitors generally do not need a <a href="/work-permits">work permit</a>, although

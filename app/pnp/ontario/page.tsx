@@ -199,7 +199,8 @@ export default function OntarioPnpPage() {
             profile, and the nomination adds <strong>600 CRS points</strong> to your{" "}
             <a href="/express-entry/comprehensive-ranking-system">Comprehensive Ranking System</a> score. That boost lifts
             most candidates well above the cut-off. In recent draws it has been more than enough to earn an Invitation to Apply at the next Express Entry
-            draw, though IRCC still issues the invitation. Ontario&apos;s <a href="/pnp/ontario/human-capital-priorities">Human Capital Priorities</a>,{" "}
+            draw, though IRCC still issues the invitation.</p>
+          <p>Ontario&apos;s <a href="/pnp/ontario/human-capital-priorities">Human Capital Priorities</a>,{" "}
             <a href="/pnp/ontario/french-speaking-skilled-worker">French-Speaking Skilled Worker</a> and{" "}
             <a href="/pnp/ontario/skilled-trades">Skilled Trades</a> streams have historically been enhanced. Candidates with
             skilled Canadian work experience may also qualify under the{" "}
@@ -220,7 +221,8 @@ export default function OntarioPnpPage() {
             program scores you against factors such as work experience, education, official-language ability, and your job
             offer or ties to Ontario. Ontario then issues <strong>Invitations to Apply (ITAs)</strong> to the highest-ranked
             candidates in periodic draws, which are frequently targeted at specific occupations, categories or language
-            profiles. Each <strong>OINP draw</strong> can set its own minimum score and may be limited to selected{" "}
+            profiles.</p>
+          <p>Each <strong>OINP draw</strong> can set its own minimum score and may be limited to selected{" "}
             <abbr title="National Occupational Classification">NOC</abbr> codes, so the <strong>OINP NOC</strong> targeting in
             a given round matters as much as your raw points. Submitting an <strong>OINP Expression of Interest</strong> places
             you in the pool. It does not guarantee an invitation.
@@ -236,7 +238,8 @@ export default function OntarioPnpPage() {
             your <a href="/express-entry">Express Entry</a> profile, education, skilled work experience and language results,
             and the graduate streams (<a href="/pnp/ontario/masters-graduate">Masters Graduate</a> and{" "}
             <a href="/pnp/ontario/phd-graduate">PhD Graduate</a>) add a recent eligible Ontario credential, often after a{" "}
-            <a href="/study-permit">study permit</a> and a <a href="/work-permits/pgwp">Post-Graduation Work Permit</a>. The{" "}
+            <a href="/study-permit">study permit</a> and a <a href="/work-permits/pgwp">Post-Graduation Work Permit</a>.</p>
+          <p>The{" "}
             <a href="/pnp/ontario/employer-job-offer">Employer Job Offer</a> category requires a permanent, full-time{" "}
             <a href="/work-permits">job offer</a> from an eligible Ontario employer, and <strong>employer registration is now
             part of the process</strong>. The <a href="/pnp/ontario/entrepreneur">Entrepreneur</a> stream tests net worth,
@@ -286,7 +289,8 @@ export default function OntarioPnpPage() {
             stream you want is enhanced or base, and builds the <a href="/express-entry">Express Entry</a> and Expression of
             Interest strategy that ranks you well. Our team works under a licensed{" "}
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497) to prepare a nomination
-            application that stands up to scrutiny, and we represent you with both Ontario and IRCC. With the OINP being
+            application that stands up to scrutiny, and we represent you with both Ontario and IRCC.</p>
+          <p>With the OINP being
             redesigned in 2026, we keep your strategy aligned to the rules that are actually in force when you apply, and we
             give you a candid read on your realistic chances first. We are a Canmore, Alberta firm acting online for clients
             across Canada and abroad, so distance from Ontario is no obstacle.

@@ -141,7 +141,8 @@ export default function ProvincialAttestationLetterPage() {
           <p>
             A <strong>provincial attestation letter</strong>, a PAL, is an official letter from a Canadian province
             or territory confirming that your study-permit application counts within that province&apos;s allocated
-            share of the national cap on international students. It is easy to confuse a PAL with your letter of
+            share of the national cap on international students.</p>
+          <p>It is easy to confuse a PAL with your letter of
             acceptance, but they are not the same: a PAL is not your acceptance letter and not your study permit, but a
             separate document that IRCC uses to keep study-permit numbers within the limits set in 2024.
             In some territories the equivalent document is called a <strong>Territorial Attestation Letter (TAL)</strong>,
@@ -202,7 +203,8 @@ export default function ProvincialAttestationLetterPage() {
             straightforward: you receive a{" "}
             <strong>letter of acceptance from a designated learning institution (DLI)</strong>, and the school then
             requests and issues the PAL to you on the province&apos;s behalf, drawing on that province&apos;s limited
-            allocation. The route varies by province. In <strong>Ontario</strong> most public colleges and universities
+            allocation. The route varies by province.</p>
+          <p>In <strong>Ontario</strong> most public colleges and universities
             request the PAL for you, in <strong>British Columbia (BC)</strong> the province runs a dedicated PAL
             application portal that institutions use, and in <strong>Alberta</strong> the PAL is typically issued through
             your school once your seat is confirmed. Check your institution&apos;s instructions, because the exact process

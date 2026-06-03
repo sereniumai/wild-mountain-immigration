@@ -277,7 +277,8 @@ export default function NewfoundlandSkilledWorkerPage() {
             <a href="/pnp/newfoundland-and-labrador/express-entry-skilled-worker">Express Entry Skilled Worker</a> route
             gives you the strongest realistic chance, and, for recent graduates, whether the{" "}
             <a href="/pnp/newfoundland-and-labrador/international-graduate">International Graduate</a> stream or the{" "}
-            <a href="/atlantic-immigration-program">Atlantic Immigration Program</a> fits better. Working under a licensed{" "}
+            <a href="/atlantic-immigration-program">Atlantic Immigration Program</a> fits better.</p>
+          <p>Working under a licensed{" "}
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497), our team prepares an EOI,
             a nomination application and the separate IRCC base PR application, and represents you with the province and
             with IRCC, online throughout.

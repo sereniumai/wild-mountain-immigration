@@ -158,7 +158,8 @@ export default function SkilledWorkerInManitobaPage() {
             This stream is aimed squarely at people who have already started their Manitoba working life. Typically that
             means a <strong>temporary foreign worker</strong> on an employer-specific work permit or open work permit who
             has been with the same Manitoba employer for several months, or a <strong>recent graduate</strong> of a Manitoba
-            institution who has moved into ongoing employment. The common thread is simple. This stream is <em>for workers
+            institution who has moved into ongoing employment.</p>
+          <p>The common thread is simple. This stream is <em>for workers
             already in Manitoba</em>, contributing to the local labour market, whose employer wants to keep them
             permanently. This is the classic <strong>Manitoba job offer PR</strong> route, turning a current work permit
             into permanent residence. If you do not yet have Manitoba work experience or a job offer, this is not your stream.
@@ -195,7 +196,8 @@ export default function SkilledWorkerInManitobaPage() {
             Like every MPNP skilled-worker route, the Skilled Worker in Manitoba stream is ranked through the{" "}
             <strong>MPNP Expression of Interest (MPNP EOI)</strong>, scored out of <strong>1,000 points</strong>. You build a
             free EOI profile and Manitoba scores it, with your <strong>Manitoba connection alone worth up to 500 points</strong>,
-            then the province ranks your profile against the whole pool. Periodic draws then issue a{" "}
+            then the province ranks your profile against the whole pool.</p>
+          <p>Periodic draws then issue a{" "}
             <strong>Letter of Advice to Apply (LAA)</strong> to the highest-ranked candidates, often filtered by an{" "}
             <strong>in-demand occupation in Manitoba</strong> or a strategic recruitment initiative. Crucially, an MPNP EOI
             is <em>not</em> an application, you only apply for a nomination once you hold an LAA.

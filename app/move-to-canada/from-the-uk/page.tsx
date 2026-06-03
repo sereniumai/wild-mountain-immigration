@@ -139,7 +139,8 @@ export default function FromUkPage() {
           <p>
             When you <strong>move to Canada from the UK</strong>, you start with real advantages. English is one of
             Canada&apos;s two official languages, so you score well on the language factors that drive most economic
-            programs. UK degrees and trade qualifications are well understood and straightforward to have assessed. And
+            programs. UK degrees and trade qualifications are well understood and straightforward to have assessed.</p>
+          <p>And
             as a British passport holder you can travel to Canada visa-exempt to visit, explore and attend interviews.
             One point of language to clear up first: Canada has no single skilled worker visa equivalent to the UK
             system, so when people say they want to emigrate to Canada from the UK they usually mean qualifying for
@@ -214,7 +215,8 @@ export default function FromUkPage() {
             For younger Britons, the <a href="/work-permits/international-experience-canada">International Experience
             Canada (IEC)</a> Working Holiday is one of the easiest ways to get to Canada. It is an open work permit, so
             you are not tied to one employer, and it lets eligible UK citizens live and work almost anywhere in Canada
-            for up to two years. The Working Holiday visa age limit for British applicants is generally 18 to 35, so it
+            for up to two years.</p>
+          <p>The Working Holiday visa age limit for British applicants is generally 18 to 35, so it
             is worth applying before you age out. Beyond the adventure, it is strategically valuable: skilled Canadian
             work experience gained on a Working Holiday can qualify you for the{" "}
             <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a>, turning a two-year trip
@@ -276,7 +278,8 @@ export default function FromUkPage() {
             and biometrics, while third-party costs run to your ECA, an English test, the ACRO certificate, a medical
             exam and, for most Express Entry applicants, the settlement funds you must show. Because these amounts shift
             from time to time, we itemise the current figures for your specific route rather than quote one headline
-            number. Timeline-wise, IRCC typically finishes a complete Express Entry application around six months after
+            number.</p>
+          <p>Timeline-wise, IRCC typically finishes a complete Express Entry application around six months after
             the invitation, with provincial nomination and family sponsorship adding their own stages. Our{" "}
             <a href="/fees">fees guide</a> sets out our professional fee and how it sits apart from government fees.
           </p>
@@ -284,7 +287,8 @@ export default function FromUkPage() {
           <h2>How Wild Mountain helps you move from the UK</h2>
           <p>
             We do one thing: build the strongest, most complete Canadian immigration application for your situation, and
-            represent you with IRCC from the UK through to your arrival. As a CICC-regulated practice led by a licensed
+            represent you with IRCC from the UK through to your arrival.</p>
+          <p>As a CICC-regulated practice led by a licensed
             RCIC, we assess your profile honestly, choose the route where you are most competitive, and manage the
             paperwork, the ECA, the police certificates and the provincial steps so you do not have to decode it alone.
             Whether you want to <strong>move to Canada from the UK</strong> as a skilled worker, a young British expat on

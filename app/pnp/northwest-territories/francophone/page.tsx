@@ -141,7 +141,8 @@ export default function NwtFrancophoneStreamPage() {
             Nominee Program (NTNP) designed to support <strong>French-speaking skilled workers</strong> who want to settle
             in the territory and who hold a job offer from an NWT employer. It exists to grow the NWT&apos;s francophone
             community and economy, and it is the program&apos;s most flexible route on skill level, open across all
-            occupations from NOC TEER 0 to TEER 5. The territory&apos;s 2026 nomination allocation is just about{" "}
+            occupations from NOC TEER 0 to TEER 5.</p>
+          <p>The territory&apos;s 2026 nomination allocation is just about{" "}
             <strong>197</strong>, down from roughly 300 the previous year, after IRCC cut provincial and territorial
             numbers nationwide (source: immigratenwt.ca / IRCC, May 2026). Because the Francophone Stream draws from that
             same small, shared pool, a complete application submitted early matters.
@@ -162,7 +163,8 @@ export default function NwtFrancophoneStreamPage() {
             francophone community. It sits within the wider push for{" "}
             <strong>francophone immigration to Canada</strong> outside Quebec, which the federal government supports
             through targeted programs (the temporary-residence Mobilité francophone work-permit category is a separate
-            federal example, for context only, not part of the NTNP). Many successful applicants are{" "}
+            federal example, for context only, not part of the NTNP).</p>
+          <p>Many successful applicants are{" "}
             <strong>bilingual workers</strong> who bring both French and some English, which broadens the roles open to
             them and supports settlement in a predominantly English-speaking territory. Crucially, because the stream
             spans NOC TEER 0–5, it can fit candidates in higher-skilled, technical, intermediate and entry-level
@@ -224,7 +226,8 @@ export default function NwtFrancophoneStreamPage() {
             <strong>How to apply</strong> to the Francophone Stream follows a clear sequence, and because it is
             first-come, first-served, completeness and timing both count. First, secure a genuine full-time job offer
             from an eligible NWT employer who will support your application. Next, prove your French ability with an
-            approved test and gather your work-experience and identity documents. Then submit a complete nomination
+            approved test and gather your work-experience and identity documents.</p>
+          <p>Then submit a complete nomination
             application to the NTNP against the current program guide. If the territory nominates you, you apply
             separately to <strong>IRCC</strong> for permanent residence on a paper application. Because this is a base
             nomination, there is no CRS boost at the federal stage.
@@ -248,7 +251,8 @@ export default function NwtFrancophoneStreamPage() {
             complete nomination application varies and is not guaranteed to a fixed timeline. After a nomination, the
             federal stage is a separate paper application to IRCC: base PNP nominations generally take longer than the
             roughly six months IRCC targets for enhanced (Express Entry) PNP applications (source: canada.ca, processing
-            times, 2026). Most applicants should plan for the better part of a year from job offer to permanent residence,
+            times, 2026).</p>
+          <p>Most applicants should plan for the better part of a year from job offer to permanent residence,
             sometimes more. Verify current times on immigratenwt.ca and canada.ca before you rely on any estimate.
           </p>
 
@@ -259,7 +263,8 @@ export default function NwtFrancophoneStreamPage() {
             profile against the territory&apos;s francophone criteria within the wider{" "}
             <a href="/pnp/northwest-territories">Northwest Territories Nominee Program</a>, confirms your French testing
             and job offer line up with the current program guide, and prepares a nomination and federal application that
-            stand up to scrutiny. If a French-speaking applicant already holds an{" "}
+            stand up to scrutiny.</p>
+          <p>If a French-speaking applicant already holds an{" "}
             <a href="/express-entry">Express Entry</a> profile, we compare this route with the enhanced{" "}
             <a href="/pnp/northwest-territories/express-entry">NWT Express Entry</a> stream, or the base{" "}
             <a href="/pnp/northwest-territories/employer-driven-skilled-worker">Employer-Driven Skilled Worker</a>{" "}

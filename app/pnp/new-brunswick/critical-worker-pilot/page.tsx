@@ -163,7 +163,8 @@ export default function CriticalWorkerPilotPage() {
             offer from one of them in a role they need to fill. On the worker side, the pilot deliberately accommodates
             intermediate-skilled and lower-skilled positions, typically <strong>NOC TEER 4 and 5 occupations</strong> that
             other NB streams exclude, and a <strong>lower language threshold, typically around CLB 4</strong>, which is
-            below what most skilled-worker routes demand. This kind of low-language immigration to Canada is rare, so the
+            below what most skilled-worker routes demand.</p>
+          <p>This kind of low-language immigration to Canada is rare, so the
             pilot is a genuine opening for in-demand workers other streams turn away. You still take an approved language
             test and meet the level set for your role, along with the training and settlement supports the employer provides.
           </p>
@@ -190,7 +191,8 @@ export default function CriticalWorkerPilotPage() {
             selects and approves the participating employers and the volume of workers each may bring in under the pilot.
             A designated employer then recruits or retains a critical worker, supports them with the required training and
             settlement plan, and the candidate is processed toward a provincial nomination through New Brunswick&apos;s INB
-            system. Some candidates are already in New Brunswick on a temporary work permit, which makes the pilot a practical
+            system.</p>
+          <p>Some candidates are already in New Brunswick on a temporary work permit, which makes the pilot a practical
             TR to PR pathway from temporary status to permanent residence; others are recruited from
             abroad. Either way, the employer leads. You cannot enter the pilot by submitting an independent profile.
           </p>

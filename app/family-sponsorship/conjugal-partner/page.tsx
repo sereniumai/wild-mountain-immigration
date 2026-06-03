@@ -149,7 +149,8 @@ export default function ConjugalPartnerPage() {
             The word <em>conjugal</em> describes the relationship itself. A conjugal relationship has the hallmarks of a
             marriage, mutual emotional and physical commitment, some degree of financial interdependence, and a shared
             future, even though the couple is not married. The same definition under the Immigration and Refugee Protection
-            Regulations (R1(1)) underpins spouse or common-law partner sponsorship too. What sets the conjugal partner
+            Regulations (R1(1)) underpins spouse or common-law partner sponsorship too.</p>
+          <p>What sets the conjugal partner
             <em> category</em> apart from the others is the barrier: you must show <strong>why you could not marry or
             cohabit</strong>. Without that barrier, a committed couple is simply a spouse or common-law couple, and the
             conjugal route does not apply.

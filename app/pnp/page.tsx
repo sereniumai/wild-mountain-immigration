@@ -148,7 +148,8 @@ export default function PnpPage() {
             territories select immigrants for permanent residence based on their own labour-market and economic needs.
             Under Canada&apos;s immigration system, the federal government sets overall numbers and makes the final
             permanent-residence decision, while each province runs its own streams to nominate the workers, graduates
-            and entrepreneurs it wants to attract. For 2026, IRCC allocated roughly{" "}
+            and entrepreneurs it wants to attract.</p>
+          <p>For 2026, IRCC allocated roughly{" "}
             <strong>55,000 PNP admissions</strong> across the participating provinces and territories (source:
             canada.ca, Immigration Levels Plan 2026–2028, 2026).
           </p>
@@ -265,7 +266,8 @@ export default function PnpPage() {
             That said, a few patterns hold in 2026. Smaller provinces such as{" "}
             <strong>Newfoundland and Labrador</strong> (which advertises a roughly 25-day provincial processing target)
             and <strong>Saskatchewan</strong> can move quickly for genuinely in-demand occupations. Large programs like{" "}
-            <strong>Ontario</strong> attract far more candidates than they can nominate, so competition is intense. And
+            <strong>Ontario</strong> attract far more candidates than they can nominate, so competition is intense.</p>
+          <p>And
             an enhanced nomination is always the <em>fastest</em> route to PR, because the +600 CRS boost feeds straight
             into Express Entry&apos;s roughly six-month processing, whereas base nominations route through a slower,
             separate IRCC application. Rather than chasing the &quot;easiest&quot; province, we match your occupation and
@@ -301,7 +303,8 @@ export default function PnpPage() {
             permanent-residence application. Working under a licensed{" "}
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497), our team represents you
             with the province and with IRCC, and catches the documentation gaps that cause
-            avoidable refusals. Prefer to do the legwork yourself? Our lower-cost{" "}
+            avoidable refusals.</p>
+          <p>Prefer to do the legwork yourself? Our lower-cost{" "}
             <a href="/contact">File Review</a> gives your own application an expert check before you submit. Whichever
             route fits, the Provincial Nominee Program can be one of the most reliable pathways to
             Canadian permanent residence when your occupation and ties are matched to the right stream.

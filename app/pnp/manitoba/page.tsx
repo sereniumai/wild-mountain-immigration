@@ -240,7 +240,8 @@ export default function ManitobaPnpPage() {
           <p>
             This distinction changes your timeline more than any other. Most MPNP streams issue a <strong>base</strong>
             {" "}nomination, meaning that once nominated you submit a <em>separate paper application directly to IRCC</em> for
-            permanent residence. This route earns no CRS points and is generally slower. The{" "}
+            permanent residence. This route earns no CRS points and is generally slower.</p>
+          <p>The{" "}
             <a href="/pnp/manitoba/skilled-worker-overseas">Skilled Worker Overseas</a> stream, however, includes an{" "}
             <strong>enhanced</strong>, <a href="/express-entry">Express Entry</a>-aligned pathway: if you already hold an
             Express Entry profile, the nomination adds <strong>600 CRS points</strong> to your{" "}
@@ -268,7 +269,8 @@ export default function ManitobaPnpPage() {
             graduates of <strong>designated Manitoba post-secondary institutions</strong>, its Graduate Internship Pathway even
             waives the job-offer requirement by using a Mitacs research internship. Many international graduates first complete
             a <a href="/study-permit">study permit</a> in Manitoba and work on a{" "}
-            <a href="/work-permits/pgwp">Post-Graduation Work Permit</a> before nominating. The{" "}
+            <a href="/work-permits/pgwp">Post-Graduation Work Permit</a> before nominating.</p>
+          <p>The{" "}
             <a href="/pnp/manitoba/business-investor-stream">Business Investor Stream</a> instead tests net worth, investment
             and a viable business plan, and is <a href="/work-permits">work-permit</a>-first. Because the published criteria
             are detailed and change regularly, the safest step is a profile review against the current immigratemanitoba.com
@@ -307,7 +309,8 @@ export default function ManitobaPnpPage() {
             the all-important Manitoba connection, models your <a href="/pnp/manitoba/skilled-worker-overseas">Expression of
             Interest</a> ranking, and steers you toward the stream, <a href="/pnp/manitoba/skilled-worker-in-manitoba">Skilled
             Worker in Manitoba</a>, <a href="/pnp/manitoba/international-education-stream">International Education</a> or{" "}
-            <a href="/pnp/manitoba/business-investor-stream">Business Investor</a>, with the strongest realistic chance. Our
+            <a href="/pnp/manitoba/business-investor-stream">Business Investor</a>, with the strongest realistic chance.</p>
+          <p>Our
             team works under a licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497) to
             prepare an Expression of Interest and nomination application that stands up to scrutiny, and we represent you with
             the province and with IRCC. We are a Canmore, Alberta firm that acts for clients across Canada and abroad entirely

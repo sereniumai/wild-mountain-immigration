@@ -160,7 +160,8 @@ export default function AlbertaDrawsPage() {
             As of the <strong>May&nbsp;13,&nbsp;2026</strong> draw, Alberta&apos;s most recent rounds were a{" "}
             <strong>Dedicated Health Care (Express Entry)</strong> draw of <strong>61 invitations</strong> at a{" "}
             <strong>minimum EOI of 57</strong>, and an <strong>Alberta Opportunity Stream</strong> round on{" "}
-            May&nbsp;6 of <strong>832 invitations</strong> at a cut-off of <strong>54</strong>. Earlier in the
+            May&nbsp;6 of <strong>832 invitations</strong> at a cut-off of <strong>54</strong>.</p>
+          <p>Earlier in the
             spring, an Alberta Express Entry Priority Sectors draw (construction/trades) on April&nbsp;14 cut off at
             60, and a Rural Renewal round on April&nbsp;9 invited 74 candidates at 50. Together these rounds show
             the 2026 pattern at a glance: small, high-bar targeted Express Entry pathways alongside the large,
@@ -202,7 +203,8 @@ export default function AlbertaDrawsPage() {
             Interest (EOIs) and invites the highest-ranked candidates in a chosen pathway to apply for a provincial
             nomination. Every worker who meets the minimum criteria submits an <strong>EOI scored out of 100</strong>,
             split into human capital (max 69) and economic factors (max 31). That EOI then sits in the pool, valid
-            for one year. For each draw, Alberta decides the{" "}
+            for one year.</p>
+          <p>For each draw, Alberta decides the{" "}
             <strong>pathway or sector and how many invitations to issue</strong>; the{" "}
             <strong>minimum EOI is simply the score of the lowest-ranked candidate invited</strong> in that round.
             If your score is at or above that line in an eligible pathway, you receive a Notification of Interest and
@@ -283,7 +285,8 @@ export default function AlbertaDrawsPage() {
           <p>
             Reading the AAIP draw results 2026 and waiting for a round you can actually clear? Use our{" "}
             <a href="/tools/aaip-calculator">free AAIP calculator</a> to estimate your Worker EOI score, then{" "}
-            <a href="/contact">contact us</a> to map the fastest realistic route. Working under a licensed RCIC
+            <a href="/contact">contact us</a> to map the fastest realistic route.</p>
+          <p>Working under a licensed RCIC
             (CICC #R706497), our team can lift your EOI for the{" "}
             <a href="/alberta-immigration/opportunity-stream">Alberta Opportunity Stream</a>, target a higher-bar pathway
             like the <a href="/alberta-immigration/accelerated-tech-pathway">Accelerated Tech Pathway</a> or{" "}

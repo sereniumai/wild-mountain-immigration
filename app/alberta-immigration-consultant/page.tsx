@@ -162,7 +162,8 @@ export default function AlbertaImmigrationConsultantPage() {
           <p>
             Choosing an <strong>immigration consultant in Alberta</strong> who actually knows the province gives your
             application a genuine advantage. We live and work here, so we understand the economy that shapes so many
-            cases across the province. That means the energy and tech employers in Calgary and Edmonton, the year-round
+            cases across the province.</p>
+          <p>That means the energy and tech employers in Calgary and Edmonton, the year-round
             tourism and hospitality work in Canmore and Banff, the healthcare demand in mid-sized cities, and the
             agriculture and trades roles that drive Alberta&apos;s rural communities. When your immigration route depends on Alberta
             employers, an Alberta job offer, and the Alberta PNP (the province&apos;s own provincial nominee program),

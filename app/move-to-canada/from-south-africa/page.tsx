@@ -142,7 +142,8 @@ export default function FromSouthAfricaPage() {
             When you <strong>move to Canada from South Africa</strong>, you start with real advantages. English is one of
             Canada&apos;s two official languages, so you score well on the language factors that drive most economic
             programs, and the skills many South Africans bring in healthcare, the trades, engineering and IT are actively
-            recruited. What you cannot do is simply turn up and stay: visiting and immigrating are different things. South
+            recruited.</p>
+          <p>What you cannot do is simply turn up and stay: visiting and immigrating are different things. South
             African passport holders are visa-required, so you need the right status to enter and to settle, and the route
             that fits depends on your occupation, your experience and whether you have a Canadian job offer or close family
             already in Canada.
@@ -258,7 +259,8 @@ export default function FromSouthAfricaPage() {
             Costs sit in two groups. Government charges cover IRCC processing, the right-of-permanent-residence fee,
             biometrics and your medical exam; third-party costs add your ECA, a language test, the SAPS clearance and, for
             most Express Entry applicants, the settlement funds you must show, which from South Africa means working within
-            exchange-control limits. These amounts change periodically, so our team itemises the current figures for your
+            exchange-control limits.</p>
+          <p>These amounts change periodically, so our team itemises the current figures for your
             route rather than quote one headline. On timing, a complete Express Entry application is usually finished about
             six months after the invitation, while provincial nomination, the study route and family sponsorship each add
             their own stages. Our <a href="/fees">fees guide</a> explains our professional fee and how it differs from

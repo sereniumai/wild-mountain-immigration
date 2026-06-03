@@ -133,7 +133,8 @@ export default function CitizenshipPage() {
             To learn <strong>how to become a Canadian citizen</strong> by grant (the process the
             Citizenship Act calls naturalisation), the starting point is permanent residence: you must
             already be a permanent resident (PR) in good standing, with no unfulfilled conditions on your
-            status and no active removal order. From there, the core
+            status and no active removal order.</p>
+          <p>From there, the core
             <strong> Canadian citizenship requirements</strong> for 2026 are physical presence, language,
             the citizenship test and tax filing. According to IRCC, an adult applicant needs at least
             <strong> 1,095 days of physical presence</strong> in Canada during the five years before

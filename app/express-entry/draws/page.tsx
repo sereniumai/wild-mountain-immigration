@@ -165,7 +165,8 @@ export default function ExpressEntryDrawsPage() {
             category-based French-language draw that issued <strong>4,500 invitations to apply (ITAs)</strong> at a{" "}
             <strong>CRS cut-off of 409</strong>. The day before, Round&nbsp;#417 (May&nbsp;27) was a Canadian
             Experience Class (CEC) draw of 3,000 ITAs at a cut-off of 518, and Round&nbsp;#416 (May&nbsp;25) was a
-            Provincial Nominee Program round of 334 ITAs at 805. These three rounds show the 2026 pattern at a
+            Provincial Nominee Program round of 334 ITAs at 805.</p>
+          <p>These three rounds show the 2026 pattern at a
             glance: a high-volume category draw, a steady CEC draw stream and a small PNP round whose high cut-off
             simply reflects the +600 points a nomination adds. There was no general all-program IRCC draw in this
             window.
@@ -191,7 +192,8 @@ export default function ExpressEntryDrawsPage() {
             the pool of profiles and invites the top-ranked candidates to apply for permanent residence. Every
             profile in the pool carries a <strong>Comprehensive Ranking System (CRS) score</strong> out of 1,200.
             For each round, IRCC decides the category and how many invitations to issue; the{" "}
-            <strong>CRS cut-off is simply the score of the lowest-ranked candidate invited</strong>. If you are at or
+            <strong>CRS cut-off is simply the score of the lowest-ranked candidate invited</strong>.</p>
+          <p>If you are at or
             above that cut-off in an eligible category, you receive an Invitation to Apply (ITA) and have 60 days to
             submit a complete application. Because the cut-off is set by where the line falls each time, it moves
             from round to round. There is no fixed pass mark.

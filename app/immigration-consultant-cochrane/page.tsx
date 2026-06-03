@@ -237,7 +237,8 @@ export default function ImmigrationConsultantCochranePage() {
           <p>
             Cochrane has grown quickly from a ranching town into one of Alberta&apos;s fastest-expanding communities, and
             that growth shapes the immigration cases our team sees. Many newcomers here commute to Calgary, working in
-            energy, technology and professional services. Others build careers closer to home in construction, trades,
+            energy, technology and professional services.</p>
+          <p>Others build careers closer to home in construction, trades,
             retail, health care and the tourism economy that runs west into Canmore and Banff. When we assess a Cochrane
             file, we look at how your occupation and employer line up with Alberta&apos;s priorities, because the
             province&apos;s nomination program rewards work experience in the sectors it is trying to grow.
@@ -246,7 +247,8 @@ export default function ImmigrationConsultantCochranePage() {
             That local read matters in practice. A trades worker pursuing PR, a Calgary-based software developer and a
             Canmore hotel supervisor each have different realistic routes to permanent residence, and the strongest plan
             depends on the details: your National Occupational Classification (NOC) code, your hours, your language
-            results and your employer&apos;s situation. For some Cochrane applicants, Alberta&apos;s Rural Renewal Stream
+            results and your employer&apos;s situation.</p>
+          <p>For some Cochrane applicants, Alberta&apos;s Rural Renewal Stream
             opens a community-driven path when a designated employer is involved. Our team works through all of it so
             your application reflects the program as it runs today, not as it ran a year ago.
           </p>

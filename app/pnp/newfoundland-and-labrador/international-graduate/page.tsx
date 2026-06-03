@@ -140,7 +140,8 @@ export default function NlInternationalGraduatePage() {
           <p>
             The <strong>NLPNP International Graduate</strong> category is the stream of the Newfoundland and
             Labrador Provincial Nominee Program (NLPNP) built for international students who have recently completed a
-            credential at a Newfoundland and Labrador institution and want to stay permanently. Rather than ask you to
+            credential at a Newfoundland and Labrador institution and want to stay permanently.</p>
+          <p>Rather than ask you to
             arrive with years of foreign experience, this NLPNP graduate stream recognises the education you earned in
             the province and the job you have started in your field, turning the journey from international student to
             permanent resident into a single, joined-up path. The province has set an ambitious growth goal, aiming to welcome up to roughly{" "}
@@ -167,7 +168,8 @@ export default function NlInternationalGraduatePage() {
             The category is designed for recent graduates of recognised Newfoundland and Labrador public post-secondary
             institutions, most commonly Memorial University (MUN) and the College of the North Atlantic (CNA), who have
             obtained a valid <a href="/work-permits/pgwp">post-graduation work permit (PGWP)</a> and are now working, or
-            hold a job offer, in an occupation related to what they studied. In other words, this graduate stream of the
+            hold a job offer, in an occupation related to what they studied.</p>
+          <p>In other words, this graduate stream of the
             Newfoundland nominee program rewards people who studied in the province, stayed, and
             began contributing to the local labour market. If you graduated elsewhere in Canada, or your program or
             institution is not on the eligible list, a different NLPNP stream, such as the base{" "}
@@ -277,7 +279,8 @@ export default function NlInternationalGraduatePage() {
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497), our team confirms your
             eligibility, checks that your institution, credential and job all qualify, frames the link between your
             studies and your occupation, and prepares an EOI and nomination application that stand up to scrutiny, then
-            represents you with the province and with IRCC. If the base{" "}
+            represents you with the province and with IRCC.</p>
+          <p>If the base{" "}
             <a href="/pnp/newfoundland-and-labrador/skilled-worker">Skilled Worker</a> stream or the{" "}
             <a href="/atlantic-immigration-program">Atlantic Immigration Program</a> is a better fit, we will say so
             honestly.

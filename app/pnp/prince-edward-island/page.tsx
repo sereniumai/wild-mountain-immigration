@@ -186,7 +186,8 @@ export default function PrinceEdwardIslandPnpPage() {
             <a href="/pnp/prince-edward-island/express-entry">PEI Express Entry</a> is the enhanced option: you must
             already hold an active federal <a href="/express-entry">Express Entry</a> profile, and a PEI nomination adds{" "}
             <strong>600 CRS points</strong> to your{" "}
-            <a href="/express-entry/comprehensive-ranking-system">Comprehensive Ranking System (CRS)</a> score. That
+            <a href="/express-entry/comprehensive-ranking-system">Comprehensive Ranking System (CRS)</a> score.</p>
+          <p>That
             boost lifts most candidates well above recent federal draw cut-offs, with the usual roughly six-month
             IRCC processing that follows once IRCC issues the invitation. If your Canadian work history runs through the{" "}
             <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a>, that experience feeds the
@@ -253,7 +254,8 @@ export default function PrinceEdwardIslandPnpPage() {
           <p>
             Requirements differ by stream, but most Labour Impact routes share a core shape: a genuine{" "}
             <strong>job offer from a Prince Edward Island employer</strong>, qualifying work experience, language
-            results appropriate to your occupation, and an intention to live in PEI. For{" "}
+            results appropriate to your occupation, and an intention to live in PEI.</p>
+          <p>For{" "}
             <strong>Skilled Workers Outside Canada</strong>, the employer must obtain authorization from the PEI Office
             of Immigration <em>before</em> issuing the offer. <strong>Critical Workers</strong> (TEER 4–5) generally
             need at least six months with the employer, and <strong>International Graduates</strong> must have studied
@@ -268,7 +270,8 @@ export default function PrinceEdwardIslandPnpPage() {
             takes part in the <a href="/atlantic-immigration-program">Atlantic Immigration Program (AIP)</a>, a separate,
             employer-driven federal-provincial pathway that runs through designated employers and a settlement plan
             rather than the PEI EOI pool. The two programs overlap in spirit, both are employer-led and both lead to
-            permanent residence, but they are distinct applications with different rules. Many candidates with a PEI job
+            permanent residence, but they are distinct applications with different rules.</p>
+          <p>Many candidates with a PEI job
             offer qualify for one pathway or the other, and choosing correctly at the outset saves months of wasted
             effort. If you have a job offer from a designated PEI employer, the{" "}
             <a href="/atlantic-immigration-program">AIP</a> may be faster than a base Labour Impact nomination; if you
@@ -304,7 +307,8 @@ export default function PrinceEdwardIslandPnpPage() {
           <p>
             The PEI PNP processing time runs in stages. How long you wait for an invitation depends on how well your
             occupation matches PEI&apos;s priorities and the pace of the monthly draws, there is no published cut-off to
-            predict against. After an invitation, you assemble and submit your provincial application; once nominated, an
+            predict against.</p>
+          <p>After an invitation, you assemble and submit your provincial application; once nominated, an
             enhanced PEI Express Entry application to IRCC is typically processed in roughly <strong>six months</strong>,
             while a base, paper-based Labour Impact application generally takes longer. Most applicants should plan for
             the better part of a year from EOI to permanent residence, sometimes more. You can sense-check current
@@ -318,7 +322,8 @@ export default function PrinceEdwardIslandPnpPage() {
             <a href="/pnp/prince-edward-island/labour-impact">Labour Impact</a> route, the{" "}
             <a href="/pnp/prince-edward-island/business-impact">Business Impact</a> entrepreneur stream or the{" "}
             <a href="/atlantic-immigration-program">Atlantic Immigration Program</a>, with the strongest realistic
-            chance, and builds an EOI that positions you well. Because PEI publishes no cut-off scores, that honest
+            chance, and builds an EOI that positions you well.</p>
+          <p>Because PEI publishes no cut-off scores, that honest
             sector read is where good advice earns its keep. Working under a licensed RCIC (CICC #R706497), our team
             prepares a registration and nomination application that stands up to scrutiny and represents you with the
             province and with IRCC, online from start to finish.

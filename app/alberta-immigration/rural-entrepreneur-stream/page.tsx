@@ -139,7 +139,8 @@ export default function RuralEntrepreneurStreamPage() {
           <p>
             The <strong>Alberta Rural Entrepreneur Stream</strong> is a business stream of the Alberta Advantage Immigration
             Program (AAIP) for entrepreneurs who will <strong>start a business in rural Alberta, or buy an existing one, and actively manage it</strong> in
-            a smaller community outside the Calgary and Edmonton metro areas. It is one of Alberta&apos;s entrepreneur pathways
+            a smaller community outside the Calgary and Edmonton metro areas.</p>
+          <p>It is one of Alberta&apos;s entrepreneur pathways
             and supports the province&apos;s 2026 priority on rural economic growth, with the AAIP working within a total provincial
             allocation of <strong>6,403 nominations for 2026</strong> across all of its worker and business streams
             (source: alberta.ca, AAIP allocation, May 2026). Unlike the worker routes, you do not need an Alberta job offer:
@@ -158,7 +159,8 @@ export default function RuralEntrepreneurStreamPage() {
             community, a town that wants new investment, jobs and services. You should have real
             business-management or ownership experience, capital you can invest and verify, and a concrete idea for a
             venture a rural community actually needs: a trade or service business, a shop or restaurant, a manufacturing or
-            agri-related operation, or buying and growing an existing local business whose owner is retiring. It is not for
+            agri-related operation, or buying and growing an existing local business whose owner is retiring.</p>
+          <p>It is not for
             passive investors looking to park money, and certain business types are excluded, confirm the current eligible
             and ineligible categories on alberta.ca.
           </p>

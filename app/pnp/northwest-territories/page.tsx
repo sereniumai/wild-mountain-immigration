@@ -273,7 +273,8 @@ export default function NorthwestTerritoriesPnpPage() {
             reach that point by working in the territory first on a <a href="/work-permits">work permit</a>, sometimes a{" "}
             <a href="/work-permits/pgwp">post-graduation work permit</a> after Canadian study, which is also how the{" "}
             <a href="/pnp/northwest-territories/entry-level-semi-skilled">Entry-Level/Semi-Skilled</a> stream builds its
-            required 12 months of NWT employment. The <strong>employer</strong> then initiates an Expression of Interest
+            required 12 months of NWT employment.</p>
+          <p>The <strong>employer</strong> then initiates an Expression of Interest
             on your behalf, candidates cannot self-apply on the employer-driven streams. If your ranked EOI earns an
             invitation in a draw, a complete nomination application is submitted with supporting documents. Once the
             territory nominates you, you apply to <strong>IRCC</strong> for permanent residence, through{" "}
@@ -304,7 +305,8 @@ export default function NorthwestTerritoriesPnpPage() {
             confirms whether your route is enhanced or base, and helps you and your NWT employer put together an EOI and
             nomination application that ranks well and stands up to scrutiny. Working under a licensed{" "}
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497), we represent you with
-            the territory and with IRCC, and catch the documentation gaps that cause avoidable refusals. With only about
+            the territory and with IRCC, and catch the documentation gaps that cause avoidable refusals.</p>
+          <p>With only about
             197 nominations available for 2026, that positioning is where good advice earns its keep. Compare the NTNP
             with neighbouring <a href="/pnp/yukon">Yukon (YNP)</a>, our home province&apos;s{" "}
             <a href="/alberta-immigration">Alberta Advantage Immigration Program</a>, or every option on the{" "}

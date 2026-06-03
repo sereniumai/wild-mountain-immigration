@@ -140,7 +140,8 @@ export default function BcInternationalGraduatePage() {
             The <strong>BC PNP International Graduate</strong> stream was part of British Columbia&apos;s Skills Immigration
             division, the route that let recent graduates of eligible Canadian institutions seek a provincial nomination for
             permanent residence. It sat alongside a second, narrower route, the <strong>International Post-Graduate</strong>{" "}
-            stream, and together they were BC&apos;s study-to-PR pathways. Both have since been closed: according to
+            stream, and together they were BC&apos;s study-to-PR pathways.</p>
+          <p>Both have since been closed: according to
             welcomebc.ca, the International Post-Graduate stream closed to new registrations in <strong>January 2025</strong>{" "}
             and the International Graduate stream in <strong>November 2025</strong>, as the province narrowed selection around
             its reduced 2026 allocation. This page is now an information resource rather than a live application route.

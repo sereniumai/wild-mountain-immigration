@@ -141,7 +141,8 @@ export default function LabourMarketPrioritiesPage() {
             province&apos;s enhanced, <a href="/express-entry">Express Entry</a>-aligned way of selecting skilled
             candidates whose occupation, experience and language match a current Nova Scotia labour-market priority.
             Rather than waiting for applications, Nova Scotia reaches into the federal Express Entry pool, searches it
-            against its targeted criteria, and issues a <strong>Letter of Interest</strong> to candidates who fit. If you
+            against its targeted criteria, and issues a <strong>Letter of Interest</strong> to candidates who fit.</p>
+          <p>If you
             accept and are nominated, the nomination adds <strong>600 CRS points</strong> to your Comprehensive Ranking
             System score. Nova Scotia charges <strong>no provincial application fee</strong> for an NSNP nomination
             (source: novascotia.ca, May 2026), one of the few provinces that does not, though federal IRCC fees still
@@ -308,7 +309,8 @@ export default function LabourMarketPrioritiesPage() {
           <p>
             The hardest part of Labour Market Priorities is that you cannot apply for it directly, your only lever is
             how well your <a href="/express-entry">Express Entry</a> profile matches Nova Scotia&apos;s shifting
-            priorities. Our team is led by a licensed{" "}
+            priorities.</p>
+          <p>Our team is led by a licensed{" "}
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497); we assess whether your
             occupation and profile fit the province&apos;s targeting, build the strongest possible Express Entry profile,
             and, if a Letter of Interest arrives, prepare a nomination application that stands up to scrutiny. We catch

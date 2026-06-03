@@ -138,7 +138,8 @@ export default function NovaScotiaExperienceExpressEntryPage() {
           <p>
             <strong>Nova Scotia Experience: Express Entry</strong> is one of the Nova Scotia Nominee Program&apos;s
             enhanced, Express Entry-aligned streams. It is designed for candidates who already have recent skilled work
-            experience <em>in Nova Scotia</em> and want to convert that local experience into permanent residence. Because
+            experience <em>in Nova Scotia</em> and want to convert that local experience into permanent residence.</p>
+          <p>Because
             it is enhanced, a Nova Scotia nomination through this stream adds <strong>600 points</strong> to your
             Comprehensive Ranking System (CRS) score in the federal Express Entry pool. That boost puts most
             candidates well above the typical draw cut-off, though IRCC still issues any Invitation to Apply. To use the stream, you must already have an active Express Entry
@@ -162,7 +163,8 @@ export default function NovaScotiaExperienceExpressEntryPage() {
           <p>
             This stream targets people who have spent time working skilled jobs in Nova Scotia, often on a work permit, and now want to settle permanently. Typical candidates include temporary foreign workers, post-graduation work
             permit holders who studied and then worked in the province, and intra-company transferees who built a Nova
-            Scotia track record. Because the route is built around <strong>Nova Scotia work experience PR</strong>, it does
+            Scotia track record.</p>
+          <p>Because the route is built around <strong>Nova Scotia work experience PR</strong>, it does
             not require a forward-looking job offer the way the employer-driven{" "}
             <a href="/pnp/nova-scotia/skilled-worker">Skilled Worker</a> stream does; your existing local experience does
             the work instead. If you have no Nova Scotia experience but match a provincial priority occupation, the{" "}
@@ -217,7 +219,8 @@ export default function NovaScotiaExperienceExpressEntryPage() {
             Nova Scotia runs the Experience stream through a <strong>ranked expression of interest (EOI)</strong>. After
             you create or update your federal Express Entry profile and confirm you meet the minimums, you submit an EOI to
             Nova Scotia. The province ranks candidates and, in periodic rounds, invites the strongest profiles to apply for
-            a nomination. Because selection is ranked rather than first-come, meeting the published minimums places you in
+            a nomination.</p>
+          <p>Because selection is ranked rather than first-come, meeting the published minimums places you in
             consideration but does not entitle you to an invitation. Nova Scotia does not publish a fixed pass mark for
             this stream, and we do not invent cut-off scores the province has not released.
           </p>
@@ -251,7 +254,8 @@ export default function NovaScotiaExperienceExpressEntryPage() {
             We assess whether the Experience stream is genuinely your strongest route, or whether the federal{" "}
             <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a>, the{" "}
             <a href="/pnp/nova-scotia/labour-market-priorities">Labour Market Priorities</a> approach or another{" "}
-            <a href="/pnp/nova-scotia">NSNP stream</a> would position you better. Our team is led by a licensed{" "}
+            <a href="/pnp/nova-scotia">NSNP stream</a> would position you better.</p>
+          <p>Our team is led by a licensed{" "}
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497); we confirm your Nova
             Scotia work experience qualifies, align your <a href="/express-entry">Express Entry</a> profile, and prepare
             an expression of interest and nomination application that stand up to scrutiny. We catch the avoidable

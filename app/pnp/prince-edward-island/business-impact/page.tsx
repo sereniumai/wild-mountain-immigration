@@ -144,11 +144,13 @@ export default function PeiBusinessImpactPage() {
             The <strong>PEI Business Impact Category</strong> is the entrepreneur arm of the Prince Edward Island Provincial
             Nominee Program, alongside the worker-focused Labour Impact streams and the enhanced Express Entry route. It is the
             province&apos;s main <strong>PEI entrepreneur immigration</strong> and business immigration route, the way people
-            move to the island to build or take over a company rather than to fill a job. Its
+            move to the island to build or take over a company rather than to fill a job.</p>
+          <p>Its
             principal pathway is the <strong>Work Permit Entrepreneur</strong> stream: rather than arriving as a permanent
             resident up front, you first move to PEI on a temporary work permit, <strong>establish or buy and actively run an
             eligible Prince Edward Island business</strong>, and only then, once you have met your business and residency
-            commitments, does the province nominate you for permanent residence. According to princeedwardisland.ca, the PEI
+            commitments, does the province nominate you for permanent residence.</p>
+          <p>According to princeedwardisland.ca, the PEI
             PNP organises its routes into three categories: Labour Impact, Express Entry and Business Impact. The
             province&apos;s 2025 base nomination allocation was roughly <strong>1,025</strong> (with a possible top-up), and
             2026 numbers remain tight after IRCC reduced provincial allocations nationwide (source: princeedwardisland.ca /
@@ -168,7 +170,8 @@ export default function PeiBusinessImpactPage() {
             You should have real business-ownership or senior-management experience,
             capital you can invest and verify, and a concrete idea for a venture Prince Edward Island actually needs: a trade
             or service business, a shop, café or restaurant, a tourism operation, a small manufacturer, or buying and growing
-            an existing PEI business whose owner is retiring. Certain business types are typically excluded, and you must take
+            an existing PEI business whose owner is retiring.</p>
+          <p>Certain business types are typically excluded, and you must take
             an active, hands-on management role. Confirm the current eligible and ineligible categories on
             princeedwardisland.ca.
           </p>
@@ -292,7 +295,8 @@ export default function PeiBusinessImpactPage() {
             Working under a licensed <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr> (CICC #R706497),
             our team assesses whether the Work Permit Entrepreneur stream genuinely fits your capital, experience and
             goals, confirms whether intake is open before you invest time and the substantial fee, and helps you shape a
-            credible business concept for the right PEI market. We prepare an Expression of Interest and application,
+            credible business concept for the right PEI market.</p>
+          <p>We prepare an Expression of Interest and application,
             net-worth worksheet, source-of-funds trail and business plan, that stands up to provincial scrutiny, and we
             represent you through the performance agreement, nomination and the separate IRCC permanent-residence stage.
             If a <a href="/pnp/prince-edward-island/labour-impact">Labour Impact</a> route, the enhanced{" "}

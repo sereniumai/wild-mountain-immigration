@@ -175,7 +175,8 @@ export default function FromPhilippinesPage() {
             Canada has long relied on Filipino caregivers, and the demand remains strong. The{" "}
             <a href="/caregiver-program-canada">caregiver pathways</a> are aimed at people who provide child care or home
             support, currently directed through the <strong>Home Care Worker Immigration Pilots</strong> that replaced the
-            earlier Home Child Care Provider and Home Support Worker pilots. Typical requirements include a genuine full-time
+            earlier Home Child Care Provider and Home Support Worker pilots.</p>
+          <p>Typical requirements include a genuine full-time
             job offer in an eligible caregiving role, language ability of around CLB 4 or higher, the equivalent of a Canadian
             high-school education, and relevant training or experience. The destination is <strong>permanent residence</strong>,
             which is what sets these routes apart from an ordinary work permit. Intake and criteria change over time, so our
@@ -219,7 +220,8 @@ export default function FromPhilippinesPage() {
             and the trades, come on a work permit first, build Canadian experience, and transition to PR through the{" "}
             <a href="/express-entry/canadian-experience-class">Canadian Experience Class</a> or a provincial nominee stream.
             Depending on the role, that permit may be supported by a Labour Market Impact Assessment or fall under an exempt
-            category. Smaller communities also recruit through the{" "}
+            category.</p>
+          <p>Smaller communities also recruit through the{" "}
             <a href="/rural-northern-immigration-pilot">Rural and Northern Immigration Pilot</a>, which can suit workers open
             to settling outside the big cities.
           </p>
@@ -280,7 +282,8 @@ export default function FromPhilippinesPage() {
             Costs sit in two groups. Government charges cover IRCC processing, the right-of-permanent-residence fee,
             biometrics and your medical exam; third-party costs add your ECA, a language test, the NBI clearance and, for
             most Express Entry applicants, the settlement funds you must show. Caregiver and work-permit routes have their
-            own fee structures. These amounts change periodically, so our team itemises the current figures for your route
+            own fee structures.</p>
+          <p>These amounts change periodically, so our team itemises the current figures for your route
             rather than quote one headline. On timing, a complete Express Entry application is usually finished about six
             months after the invitation, while provincial nomination, the caregiver pilots and family sponsorship each add
             their own stages. Our <a href="/fees">fees guide</a> explains our professional fee and how it differs from

@@ -139,7 +139,8 @@ export default function YukonCriticalImpactWorkerPage() {
           <h2>What is the Yukon Critical Impact Worker Program?</h2>
           <p>
             The <strong>Yukon Critical Impact Worker Program</strong> is a base stream of the Yukon Nominee
-            Program (YNP) built for people in <strong>intermediate or lower-skilled roles</strong>. These are occupations classified as <abbr title="National Occupational Classification">NOC</abbr> TEER 4 or 5 that a Yukon employer relies on but struggles to fill locally. Think service and hospitality
+            Program (YNP) built for people in <strong>intermediate or lower-skilled roles</strong>. These are occupations classified as <abbr title="National Occupational Classification">NOC</abbr> TEER 4 or 5 that a Yukon employer relies on but struggles to fill locally.</p>
+          <p>Think service and hospitality
             roles, care-support occupations, and retail or labour positions, the kinds of jobs Whitehorse employers and
             operators across the territory most often cannot fill. If a Yukon employer offers you a permanent, full-time role
             of this kind, the <strong>YNP Critical Impact Worker</strong> stream can turn that offer into a
@@ -166,7 +167,8 @@ export default function YukonCriticalImpactWorkerPage() {
             The defining test is the skill level of your job. The Critical Impact Worker stream is built for the{" "}
             <strong>Yukon semi-skilled worker</strong> in <strong>NOC TEER 4 and 5 occupations</strong>. These roles usually require secondary school and/or
             occupation-specific training rather than a university degree or several years of specialised
-            experience. If your offered occupation sits in TEER 0, 1, 2 or 3, you belong in the Skilled Worker
+            experience.</p>
+          <p>If your offered occupation sits in TEER 0, 1, 2 or 3, you belong in the Skilled Worker
             stream instead, which sets higher language and experience bars. Choosing the wrong stream is one of the
             most common and costly mistakes, because the application is assessed against that stream&apos;s
             criteria. The table below contrasts the two worker streams so you can see where your role fits.
@@ -217,7 +219,8 @@ export default function YukonCriticalImpactWorkerPage() {
             lower-skilled workers that is the only realistic YNP route, because the enhanced{" "}
             <a href="/pnp/yukon/express-entry">Yukon Express Entry</a> stream requires an active Express Entry
             profile and higher language levels (broadly CLB 7 for TEER 0–1 and CLB 5 for TEER 2–3) that TEER 4–5
-            roles cannot meet. If you do qualify for Express Entry, though, a Yukon nomination there adds{" "}
+            roles cannot meet.</p>
+          <p>If you do qualify for Express Entry, though, a Yukon nomination there adds{" "}
             <strong>600 CRS points</strong>, putting most candidates well above the typical draw cut-off. Not sure where your
             federal score stands? Try our <a href="/tools/crs-calculator">free CRS calculator</a> before you choose
             a route.
@@ -229,7 +232,8 @@ export default function YukonCriticalImpactWorkerPage() {
             sequence. First, secure a genuine permanent, full-time job offer from an eligible Yukon employer in a
             TEER 4–5 occupation. Your employer then registers with the YNP and submits the offer of employment,
             paying the IRCC employer compliance fee, currently about <strong>$230</strong>. You and your employer then submit the
-            application during an open expression-of-interest (EOI) intake window, with your language results, experience evidence and supporting documents. For 2026, yukon.ca lists two windows, roughly{" "}
+            application during an open expression-of-interest (EOI) intake window, with your language results, experience evidence and supporting documents.</p>
+          <p>For 2026, yukon.ca lists two windows, roughly{" "}
             <strong>January 19–30</strong> and <strong>July 6–17</strong>. If Yukon nominates
             you, you then apply to <strong>IRCC</strong> for permanent residence on a separate paper application.
             Because the windows are short and the allocation is small, preparing well ahead of a window is the single
@@ -246,7 +250,8 @@ export default function YukonCriticalImpactWorkerPage() {
           <p>
             Timelines run in stages. The first variable is simply waiting for an open <strong>EOI window</strong> and
             being selected within Yukon&apos;s limited allocation. After a complete application is submitted,
-            territorial processing of the nomination typically takes a few months. Because the Critical Impact
+            territorial processing of the nomination typically takes a few months.</p>
+          <p>Because the Critical Impact
             Worker stream is a base stream, the federal stage that follows is a separate paper application to IRCC,
             which generally takes longer than the roughly six months IRCC targets for enhanced (Express Entry) PNP
             applications (source: canada.ca, processing times, 2026). Realistically, plan for the better part of a
@@ -262,7 +267,8 @@ export default function YukonCriticalImpactWorkerPage() {
             your occupation truly sits in TEER 4–5 and belongs in the Critical Impact Worker stream rather than the{" "}
             <a href="/pnp/yukon/skilled-worker">Skilled Worker</a> stream, checks your language results against the
             CLB 4 bar, and makes sure your employer&apos;s offer of employment and your documents are ready before a
-            window opens. If you are in Canada on a <a href="/work-permits">work permit</a>, we factor that status in.
+            window opens.</p>
+          <p>If you are in Canada on a <a href="/work-permits">work permit</a>, we factor that status in.
             We catch the avoidable mistakes that cause refusals, such as a wrong NOC code, a language band one short, or a permit-status gap, and we prepare a nomination application that stands up to scrutiny with the territory and
             with IRCC. See every Yukon route on the <a href="/pnp/yukon">Yukon Nominee Program</a> overview.
           </p>

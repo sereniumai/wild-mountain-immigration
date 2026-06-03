@@ -143,7 +143,8 @@ export default function ExpressEntryBcPage() {
             stream. &ldquo;Enhanced&rdquo; means it is wired into the federal{" "}
             <a href="/express-entry">Express Entry</a> system: you register in BC&apos;s points-based system, BC invites
             you, and a provincial nomination then adds <strong>600 points</strong> to your federal Comprehensive Ranking
-            System (CRS) score. According to welcomebc.ca, the program is divided into Skills Immigration and Entrepreneur
+            System (CRS) score.</p>
+          <p>According to welcomebc.ca, the program is divided into Skills Immigration and Entrepreneur
             Immigration, and only specific Skills Immigration streams offer the EEBC enhanced option (source:
             welcomebc.ca, May 2026).
           </p>

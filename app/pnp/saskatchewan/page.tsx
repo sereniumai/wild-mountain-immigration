@@ -160,7 +160,8 @@ export default function SaskatchewanPnpPage() {
             Most skilled applicants apply through the International Skilled Worker category, which uses an{" "}
             <strong>Expression of Interest (EOI)</strong> pool. You create a profile, Saskatchewan scores it against a
             points grid out of <strong>110 points</strong>, and the province invites the highest-ranked profiles in
-            periodic draws. You must reach at least <strong>60 points</strong> to be eligible, but, as with every PNP,
+            periodic draws.</p>
+          <p>You must reach at least <strong>60 points</strong> to be eligible, but, as with every PNP,
             reaching the floor only puts you in the pool; it does not guarantee an invitation. Points come from your
             education and training, skilled work experience, language ability, age and your connection to Saskatchewan
             (such as a job offer, past study or close family in the province).
@@ -178,7 +179,8 @@ export default function SaskatchewanPnpPage() {
             differently. The <strong>Saskatchewan Express Entry</strong> sub-category is <em>enhanced</em>: you must
             already hold a valid federal Express Entry profile, and a Saskatchewan nomination through this route adds{" "}
             <strong>600 CRS points</strong> to your Comprehensive Ranking System score, well above recent federal cut-offs, though IRCC still issues the
-            Invitation to Apply at a following draw. The <strong>Occupation In-Demand</strong> and{" "}
+            Invitation to Apply at a following draw.</p>
+          <p>The <strong>Occupation In-Demand</strong> and{" "}
             <strong>Employment Offer</strong> routes are <em>base</em> (paper) streams: once nominated, you submit a
             separate permanent-residence application directly to IRCC, with no CRS boost. Not sure where your federal
             score stands? Try our <a href="/tools/crs-calculator">free CRS calculator</a> first.
@@ -245,7 +247,8 @@ export default function SaskatchewanPnpPage() {
             solely on broad EOI draws, Saskatchewan now reserves roughly half of its nominations for priority industries
             and invites employer-supported candidates through dedicated <a href="/pnp/saskatchewan/health-talent-pathway">Health</a>,{" "}
             <a href="/pnp/saskatchewan/tech-talent-pathway">Tech</a> and{" "}
-            <a href="/pnp/saskatchewan/agriculture-talent-pathway">Agriculture</a> pathways. A separate carve-out reserves
+            <a href="/pnp/saskatchewan/agriculture-talent-pathway">Agriculture</a> pathways.</p>
+          <p>A separate carve-out reserves
             a block of nominations for graduates of Saskatchewan post-secondary institutions. Some lower-skilled or
             capped sectors, such as food and accommodation, trucking and retail, are limited by quota and run on fixed
             intake windows through the year, and typically require candidates to already be working in the province.
@@ -257,7 +260,8 @@ export default function SaskatchewanPnpPage() {
             asks for skilled work experience in an eligible occupation, language results appropriate to that occupation,
             post-secondary education or training, and enough settlement funds, plus a points score of at least 60 on
             the EOI grid. Your occupation must also match an in-demand SINP NOC code, so check the current list on
-            saskatchewan.ca before assuming you qualify. The Employment Offer route and the Talent Pathways add a job offer from an eligible
+            saskatchewan.ca before assuming you qualify.</p>
+          <p>The Employment Offer route and the Talent Pathways add a job offer from an eligible
             Saskatchewan employer. The Saskatchewan Express Entry sub-category layers the federal Express Entry minimums
             on top. Entrepreneur and Farm applicants are instead assessed on net worth, investment and a viable business
             or farming plan rather than a job offer. Eligibility rules around work-permit type and in-province status are
@@ -269,7 +273,8 @@ export default function SaskatchewanPnpPage() {
             <strong>How to apply for the SINP</strong> follows a clear sequence for skilled applicants. First, confirm
             you meet a route&apos;s requirements and calculate your EOI points. For EOI-based routes, you create your
             saskatchewan.ca SINP login, submit a free Expression of Interest and wait to see whether your score earns
-            an invitation in a draw. For the Employment
+            an invitation in a draw.</p>
+          <p>For the Employment
             Offer route, eligible candidates can apply directly without a draw. If invited or eligible to apply, you
             submit a full nomination application with supporting documents. Once nominated, you apply to{" "}
             <strong>IRCC</strong> for permanent residence, through Express Entry if your nomination is enhanced, or on
@@ -288,7 +293,8 @@ export default function SaskatchewanPnpPage() {
           <p>
             <strong>How long the SINP takes</strong> depends on the stage, and the SINP processing time varies by
             route and volume. For EOI routes, waiting for an invitation hinges on your points score and the pace of
-            draws, and with the International Skilled Worker draws paused, that timing is uncertain in 2026. After you
+            draws, and with the International Skilled Worker draws paused, that timing is uncertain in 2026.</p>
+          <p>After you
             submit a complete nomination application, Saskatchewan&apos;s assessment is often a matter of weeks. Once nominated, an enhanced
             Express Entry application to IRCC is processed in roughly six months, while a base, paper-based application
             generally takes longer. Most applicants should plan for several months to the better part of a year overall.
@@ -303,7 +309,8 @@ export default function SaskatchewanPnpPage() {
             <a href="/pnp/saskatchewan/saskatchewan-experience">Saskatchewan Experience</a>,{" "}
             <a href="/pnp/saskatchewan/entrepreneur">Entrepreneur</a> or{" "}
             <a href="/pnp/saskatchewan/farm">Farm</a>, with the strongest realistic chance while the EOI draws remain
-            paused. As a CICC-regulated practice led by a licensed{" "}
+            paused.</p>
+          <p>As a CICC-regulated practice led by a licensed{" "}
             <abbr title="Regulated Canadian Immigration Consultant">RCIC</abbr>, our team prepares an Expression of
             Interest and nomination application that stands up to scrutiny and represents you with the province and with
             IRCC, working with clients across Canada and abroad entirely online.

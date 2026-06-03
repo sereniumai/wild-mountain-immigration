@@ -144,7 +144,8 @@ export default function FamilySponsorshipEligibilityPage() {
           <p>
             The <strong>sponsor eligibility requirements</strong> come first. To be an eligible <strong>sponsor</strong>{" "}
             in 2026 you must be at least <strong>18 years old</strong> and one of the following: a Canadian citizen, a{" "}
-            <strong>permanent resident sponsor</strong>, or a person registered under the Canadian Indian Act. Beyond
+            <strong>permanent resident sponsor</strong>, or a person registered under the Canadian Indian Act.</p>
+          <p>Beyond
             status and age, you must be able to meet the sponsorship undertaking and generally must not be receiving
             social assistance, with an important exception for assistance received for reasons of disability. Where a
             spouse or partner has income, they can act as a co-signer to help meet an income test that applies. Figures
