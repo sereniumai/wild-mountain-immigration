@@ -11,6 +11,7 @@
 ============================================================================ */
 
 import { POLICY } from "./constants";
+import { countryOptions } from "./countries";
 
 export type PathId = "immigrate" | "work" | "sponsor" | "business" | "study";
 
@@ -104,6 +105,10 @@ const PROVINCE: Option[] = [
   { value: "unsure", label: "Not sure yet (anywhere outside Quebec)" },
 ];
 
+// Real provinces only (no Quebec, no "unsure"), for the dropdown that asks which
+// province someone has a tie to.
+const PROVINCE_REAL: Option[] = PROVINCE.filter((p) => p.value !== "QC" && p.value !== "unsure");
+
 const YESNO: Option[] = [
   { value: "yes", label: "Yes" },
   { value: "no", label: "No" },
@@ -136,6 +141,7 @@ export const PATHS: PathDef[] = [
             { value: "single", label: "Single" },
             { value: "married", label: "Married or common-law" },
           ] },
+          { id: "spouseAccompany", label: "Will your spouse or partner come with you to Canada?", help: "An accompanying partner's language and education can change your Express Entry score.", type: "single", options: YESNO, showIf: (a) => val(a, "marital") === "married" },
           Q_PROVINCE,
         ],
       },
@@ -184,6 +190,7 @@ export const PATHS: PathDef[] = [
             { value: "no", label: "No" },
             { value: "yes", label: "Yes" },
           ] },
+          { id: "provinceLinkWhich", label: "Which province was that?", help: "We don't handle Quebec ties.", type: "select", options: PROVINCE_REAL, showIf: (a) => val(a, "provinceLink") === "yes" },
           { id: "funds", label: "Roughly how much in settlement funds can you show?", help: "Federal Skilled Worker needs proof of funds unless you have a Canadian job offer.", type: "single", options: [
             { value: "lt15k", label: "Less than CAD 15,000" },
             { value: "15-30k", label: "CAD 15,000 to 30,000" },
@@ -205,6 +212,7 @@ export const PATHS: PathDef[] = [
         title: "About you",
         fields: [
           Q_AGE,
+          { id: "citizenship", label: "What country are you a citizen of?", help: "This decides treaty options like CUSMA, CETA and IEC youth mobility.", type: "select", options: countryOptions },
           Q_PROVINCE,
           { id: "status", label: "Where are you right now?", type: "single", options: [
             { value: "outside", label: "Outside Canada" },
@@ -213,6 +221,7 @@ export const PATHS: PathDef[] = [
             { value: "student", label: "Studying in Canada" },
             { value: "graduate", label: "I recently graduated from a Canadian school" },
           ] },
+          { id: "currentCountry", label: "Which country are you currently in?", help: "Some IEC youth-mobility agreements require you to apply from your home country.", type: "select", options: countryOptions, showIf: (a) => ["outside", "visitor"].includes(val(a, "status")) },
         ],
       },
       {
@@ -225,7 +234,6 @@ export const PATHS: PathDef[] = [
             { value: "treaty", label: "Yes, a role under a trade agreement (US/Mexico, EU)" },
             { value: "unsure", label: "Yes, but I'm not sure of the type" },
           ] },
-          { id: "treatyCitizen", label: "Are you a citizen of the US, Mexico, or an EU/EFTA country?", type: "single", options: YESNOUNSURE, showIf: (a) => ["treaty", "unsure", "employer"].includes(val(a, "offerType")) },
           { id: "jobSkill", label: "What is the skill level of the role?", type: "single", options: SKILL, showIf: (a) => val(a, "offerType") !== "none" },
         ],
       },
@@ -236,12 +244,6 @@ export const PATHS: PathDef[] = [
           Q_ENGLISH,
           { id: "french", label: "How strong is your French?", help: "French speakers have an extra LMIA-exempt route outside Quebec.", type: "single", options: LANG("French") },
           { id: "expYears", label: "How many years of skilled work experience do you have?", type: "single", options: WORK_YEARS },
-        ],
-      },
-      {
-        title: "A few more options",
-        fields: [
-          { id: "iec", label: "Are you 18 to 35 and a citizen of a country with a Canadian youth-mobility (IEC) agreement?", help: "e.g. UK, Ireland, Australia, France, Germany, and many more.", type: "single", options: YESNOUNSURE },
           { id: "partnerInCanada", label: "Is your spouse or partner a worker, student or PR in Canada (or applying)?", type: "single", options: YESNO },
         ],
       },
@@ -251,8 +253,8 @@ export const PATHS: PathDef[] = [
   /* ----------------------------------------------------------- SPONSOR (FAMILY) */
   {
     id: "sponsor",
-    label: "Sponsor family",
-    blurb: "Check who can be sponsored to come to or stay in Canada.",
+    label: "Sponsor a partner or family",
+    blurb: "Bring a spouse, common-law partner, child, parent or grandparent to live with you in Canada.",
     icon: "heart",
     sections: [
       {
@@ -262,13 +264,19 @@ export const PATHS: PathDef[] = [
             { value: "sponsor", label: "I'm in Canada and want to sponsor a relative" },
             { value: "sponsored", label: "I'm abroad and want a relative in Canada to sponsor me" },
           ] },
-          { id: "relationship", label: "Who is the relative you'd sponsor or be sponsored by?", type: "single", options: [
+          { id: "relationship", label: "Who is the relative you'd sponsor or be sponsored by?", help: "Spouse and common-law partner are the most common, and the most direct.", type: "single", options: [
             { value: "spouse", label: "Spouse or common-law partner" },
             { value: "conjugal", label: "Partner I can't live with or marry (conjugal)" },
             { value: "child", label: "Dependent child" },
             { value: "parent", label: "Parent or grandparent" },
             { value: "other", label: "Another relative" },
           ] },
+          { id: "unionType", label: "What's your relationship status with them?", type: "single", options: [
+            { value: "married", label: "We're legally married" },
+            { value: "common-law", label: "We live together (common-law)" },
+            { value: "not-yet", label: "Engaged or together, but not married or living together yet" },
+          ], showIf: (a) => val(a, "relationship") === "spouse" },
+          { id: "cohabit12", label: "Have you lived together continuously for at least 12 months?", help: "Common-law status needs 12 months of continuous cohabitation.", type: "single", options: YESNO, showIf: (a) => val(a, "relationship") === "spouse" && val(a, "unionType") === "common-law" },
         ],
       },
       {
@@ -385,6 +393,11 @@ export const PATHS: PathDef[] = [
             { value: "applied", label: "I've applied but not yet accepted" },
             { value: "no", label: "Not yet" },
           ] },
+          { id: "studyLevel", label: "What level will you study at?", help: "Master's and doctoral students at public universities are now exempt from the Provincial Attestation Letter.", type: "single", options: [
+            { value: "bachelor-college", label: "College or bachelor's (undergraduate)" },
+            { value: "masters-doctoral", label: "Master's or doctorate (graduate)" },
+            { value: "other", label: "Language, short course or other" },
+          ], showIf: (a) => ["yes", "applied"].includes(val(a, "acceptance")) },
           { id: "funds", label: `Can you show enough money for tuition plus living costs (at least about CAD ${POLICY.studyLivingCostsCAD.toLocaleString()} for living costs, plus tuition)?`, type: "single", options: YESNOUNSURE },
           { id: "refused", label: "Have you ever been refused a Canadian study permit or visa?", type: "single", options: YESNO },
           { id: "intendLeave", label: "Can you show you'll have funds and ties to support a temporary stay?", help: "A study permit officer must be satisfied you'll respect its conditions.", type: "single", options: YESNOUNSURE },

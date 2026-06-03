@@ -1,5 +1,6 @@
 import { Resend } from "resend";
 import { site } from "@/lib/site";
+import { POLICY, FRESHNESS_NOTE } from "@/lib/eligibility/constants";
 
 /* Lead capture for the eligibility checker.
    stage "partial"  -> fired when a valid email is entered on the final step but
@@ -14,7 +15,6 @@ type Body = {
   path?: string;          // human label, e.g. "Immigrate permanently"
   name?: string;
   email?: string;
-  phone?: string;
   consent?: boolean;
   answers?: QA[];
   results?: { headline?: string; groups?: Group[]; flags?: string[]; provinceNote?: string };
@@ -36,15 +36,8 @@ function tierChip(tier: string): string {
   return `<span style="display:inline-block;background:${bg};color:${fg};font-size:11px;font-weight:600;padding:2px 9px;border-radius:999px;">${label}</span>`;
 }
 
-function buildHtml(b: Body, partial: boolean): string {
-  const rows = (b.answers ?? [])
-    .map(
-      (qa) => `<tr><td style="padding:9px 16px;border-bottom:1px solid #f4ecea;font-size:13px;color:${muted};width:46%;vertical-align:top;">${esc(qa.q)}</td>
-      <td style="padding:9px 16px;border-bottom:1px solid #f4ecea;font-size:13px;color:#32373c;font-weight:600;">${esc(qa.a)}</td></tr>`,
-    )
-    .join("");
-
-  const groupsHtml = (b.results?.groups ?? [])
+function renderGroups(groups: Group[]): string {
+  return groups
     .map(
       (gr) => `<div style="margin-top:14px;">
         <div style="font-size:12px;text-transform:uppercase;letter-spacing:0.5px;color:${muted};font-weight:700;margin-bottom:6px;">${esc(gr.heading)}</div>
@@ -59,13 +52,26 @@ function buildHtml(b: Body, partial: boolean): string {
       </div>`,
     )
     .join("");
+}
 
-  const flagsHtml = (b.results?.flags ?? []).length
-    ? `<div style="margin-top:14px;padding:12px 14px;background:#fff8e6;border:1px solid #f3e2b3;border-radius:8px;">
-        <div style="font-size:12px;font-weight:700;color:#9a6b00;margin-bottom:6px;">Important notes</div>
-        ${(b.results!.flags ?? []).map((f) => `<div style="font-size:12.5px;color:#6b5a2a;line-height:1.5;margin-top:3px;">• ${esc(f)}</div>`).join("")}
-      </div>`
-    : "";
+function renderFlags(flags: string[], heading = "Important notes"): string {
+  if (!flags.length) return "";
+  return `<div style="margin-top:14px;padding:12px 14px;background:#fff8e6;border:1px solid #f3e2b3;border-radius:8px;">
+      <div style="font-size:12px;font-weight:700;color:#9a6b00;margin-bottom:6px;">${esc(heading)}</div>
+      ${flags.map((f) => `<div style="font-size:12.5px;color:#6b5a2a;line-height:1.5;margin-top:3px;">• ${esc(f)}</div>`).join("")}
+    </div>`;
+}
+
+function buildHtml(b: Body, partial: boolean): string {
+  const rows = (b.answers ?? [])
+    .map(
+      (qa) => `<tr><td style="padding:9px 16px;border-bottom:1px solid #f4ecea;font-size:13px;color:${muted};width:46%;vertical-align:top;">${esc(qa.q)}</td>
+      <td style="padding:9px 16px;border-bottom:1px solid #f4ecea;font-size:13px;color:#32373c;font-weight:600;">${esc(qa.a)}</td></tr>`,
+    )
+    .join("");
+
+  const groupsHtml = renderGroups(b.results?.groups ?? []);
+  const flagsHtml = renderFlags(b.results?.flags ?? []);
 
   const banner = partial ? "Started, not finished" : "Eligibility results";
   const bannerColor = partial ? "#9a6b00" : "#e00400";
@@ -90,7 +96,6 @@ function buildHtml(b: Body, partial: boolean): string {
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #f0e6e4;border-radius:10px;">
         <tr><td style="padding:11px 16px;border-bottom:1px solid #f4ecea;font-size:13px;color:${muted};width:46%;">Name</td><td style="padding:11px 16px;border-bottom:1px solid #f4ecea;font-size:14px;color:#32373c;font-weight:600;">${esc(b.name || "(not given)")}</td></tr>
         <tr><td style="padding:11px 16px;border-bottom:1px solid #f4ecea;font-size:13px;color:${muted};">Email</td><td style="padding:11px 16px;border-bottom:1px solid #f4ecea;font-size:14px;"><a href="mailto:${esc(b.email)}" style="color:#e00400;text-decoration:none;font-weight:600;">${esc(b.email)}</a></td></tr>
-        <tr><td style="padding:11px 16px;border-bottom:1px solid #f4ecea;font-size:13px;color:${muted};">Phone</td><td style="padding:11px 16px;border-bottom:1px solid #f4ecea;font-size:14px;color:#32373c;">${esc(b.phone || "(not given)")}</td></tr>
         <tr><td style="padding:11px 16px;font-size:13px;color:${muted};">Path</td><td style="padding:11px 16px;font-size:14px;"><span style="display:inline-block;background:#fbe9e8;color:#e00400;font-size:13px;font-weight:600;padding:3px 12px;border-radius:999px;">${esc(b.path || "Eligibility")}</span></td></tr>
       </table>
     </td></tr>
@@ -104,6 +109,61 @@ function buildHtml(b: Body, partial: boolean): string {
     <tr><td style="padding:20px 26px 26px;">
       <hr style="border:none;border-top:1px solid #f0e6e4;margin:0 0 12px;">
       <p style="margin:0;font-size:11.5px;color:${muted};line-height:1.6;">Captured by the eligibility checker on <a href="${site.url}/tools/eligibility" style="color:#e00400;text-decoration:none;">wildmountainimmigration.com</a>. This is an AI-assisted guide, not a decision.</p>
+    </td></tr>
+  </table>
+</td></tr></table></body></html>`;
+}
+
+/* The results email sent to the person who completed the checker. Warmer than the
+   internal lead email, and built around a single CTA to book a consultation. */
+function buildUserHtml(b: Body): string {
+  const firstName = (b.name ?? "").trim().split(/\s+/)[0] || "there";
+  const groupsHtml = renderGroups(b.results?.groups ?? []);
+  const flagsHtml = renderFlags(b.results?.flags ?? [], "Important to know");
+  const provinceNote = b.results?.provinceNote
+    ? `<div style="margin-top:14px;padding:12px 14px;background:#fbeceb;border:1px solid #f4d3d0;border-radius:8px;">
+        <div style="font-size:12px;font-weight:700;color:#c40300;margin-bottom:4px;">Provincial programs</div>
+        <div style="font-size:12.5px;color:#6b5a59;line-height:1.55;">${esc(b.results.provinceNote)}</div>
+      </div>`
+    : "";
+  const contactUrl = `${site.url}/contact`;
+
+  return `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"></head>
+<body style="margin:0;padding:0;background:#f4f1ef;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f4f1ef;padding:28px 12px;font-family:${font};"><tr><td align="center">
+  <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="width:600px;max-width:100%;background:#ffffff;border-radius:16px;overflow:hidden;border:1px solid #efe6e4;">
+    <tr><td style="background:#e00400;padding:22px 26px;">
+      <table role="presentation" width="100%"><tr>
+        <td style="font-size:17px;font-weight:700;color:#ffffff;">${esc(site.name)}</td>
+        <td align="right" style="font-size:12px;color:rgba(255,255,255,0.9);font-weight:600;text-transform:uppercase;letter-spacing:0.5px;">Your results</td>
+      </tr></table>
+    </td></tr>
+    <tr><td style="padding:26px 26px 6px;">
+      <h1 style="margin:0 0 8px;font-size:20px;color:#32373c;">Hi ${esc(firstName)}, here's your pathway summary</h1>
+      <p style="margin:0;font-size:13.5px;color:#6b7280;line-height:1.65;">Thanks for using our eligibility checker. Below is an automated first read of the Canadian immigration routes that may fit what you told us. It's a starting point, not a decision, the real next step is a proper review with our regulated consultant.</p>
+    </td></tr>
+    ${b.results?.headline ? `<tr><td style="padding:14px 26px 0;">
+      <div style="padding:13px 16px;background:#fbeceb;border:1px solid #f4d3d0;border-radius:10px;">
+        <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.6px;color:#c40300;font-weight:700;">Summary</div>
+        <div style="font-size:15px;font-weight:700;color:#32373c;margin-top:3px;">${esc(b.results.headline)}</div>
+      </div>
+    </td></tr>` : ""}
+    ${groupsHtml ? `<tr><td style="padding:4px 26px 0;">${groupsHtml}</td></tr>` : ""}
+    ${provinceNote ? `<tr><td style="padding:4px 26px 0;">${provinceNote}</td></tr>` : ""}
+    ${flagsHtml ? `<tr><td style="padding:4px 26px 0;">${flagsHtml}</td></tr>` : ""}
+    <tr><td style="padding:18px 26px 0;">
+      <div style="padding:12px 14px;background:#f7f4f2;border-radius:10px;font-size:12.5px;color:#6b7280;line-height:1.55;">${esc(FRESHNESS_NOTE)}</div>
+    </td></tr>
+    <tr><td style="padding:22px 26px 4px;">
+      <div style="background:#32373c;border-radius:14px;padding:22px 22px 24px;text-align:center;">
+        <div style="font-size:16px;font-weight:700;color:#ffffff;">Ready for a proper review?</div>
+        <p style="margin:8px 0 16px;font-size:13px;color:#cfd3d6;line-height:1.6;">A licensed RCIC (#R706497) will confirm which of these you genuinely qualify for and map your next steps, honestly, with no guarantees about outcomes only IRCC decides.</p>
+        <a href="${contactUrl}" style="display:inline-block;background:#e00400;color:#ffffff;font-size:14px;font-weight:700;text-decoration:none;padding:12px 26px;border-radius:10px;">Book a consultation</a>
+      </div>
+    </td></tr>
+    <tr><td style="padding:20px 26px 26px;">
+      <hr style="border:none;border-top:1px solid #f0e6e4;margin:0 0 12px;">
+      <p style="margin:0;font-size:11.5px;color:${muted};line-height:1.65;">This is an AI-assisted guide, not an official decision, and it isn't legal advice. ${esc(site.name)} is a CICC-regulated immigration consultancy and is not affiliated with the Government of Canada. We don't cover Quebec-selected programs. Program details last verified ${esc(POLICY.lastVerified)}. You received this because you used the eligibility checker at <a href="${site.url}/tools/eligibility" style="color:#e00400;text-decoration:none;">wildmountainimmigration.com</a>.</p>
     </td></tr>
   </table>
 </td></tr></table></body></html>`;
@@ -149,7 +209,6 @@ export async function POST(request: Request) {
     `Path: ${body.path || "Eligibility"}`,
     `Name: ${name || "(not given)"}`,
     `Email: ${email}`,
-    `Phone: ${(body.phone ?? "").trim() || "(not given)"}`,
     "",
     body.results?.headline ? `Summary: ${body.results.headline}` : "",
     ...(body.results?.groups ?? []).flatMap((gr) => [`# ${gr.heading}`, ...gr.items.map((i) => `  [${i.tier}] ${i.title} - ${i.why}`)]),
@@ -157,8 +216,10 @@ export async function POST(request: Request) {
     ...(body.answers?.length ? ["", "Answers:", ...body.answers.map((qa) => `  ${qa.q}: ${qa.a}`)] : []),
   ].filter(Boolean);
 
+  const resend = new Resend(apiKey);
+
+  // 1) Internal lead notification to the business.
   try {
-    const resend = new Resend(apiKey);
     const { error } = await resend.emails.send({
       from,
       to,
@@ -167,14 +228,44 @@ export async function POST(request: Request) {
       text: textLines.join("\n"),
       html: buildHtml(body, partial),
     });
-    if (error) {
-      console.error("[eligibility-lead] Resend error", error);
-      // Still let the user see results; this is a background lead capture.
-      return Response.json({ ok: true, warning: "send-failed" });
-    }
+    if (error) console.error("[eligibility-lead] Resend error (internal)", error);
   } catch (err) {
-    console.error("[eligibility-lead] Resend threw", err);
-    return Response.json({ ok: true, warning: "send-failed" });
+    console.error("[eligibility-lead] Resend threw (internal)", err);
+  }
+
+  // 2) Results email to the user (only when they completed the checker). Replies
+  //    go to the business inbox so they can take it forward.
+  if (!partial) {
+    const userText = [
+      `Hi ${name.split(/\s+/)[0] || "there"},`,
+      "",
+      "Thanks for using our eligibility checker. Here's an automated first read of the routes that may fit what you told us. It's a starting point, not a decision.",
+      "",
+      body.results?.headline ? `Summary: ${body.results.headline}` : "",
+      ...(body.results?.groups ?? []).flatMap((gr) => [`# ${gr.heading}`, ...gr.items.map((i) => `  [${i.tier}] ${i.title} - ${i.why}`)]),
+      ...(body.results?.flags?.length ? ["", "Important to know:", ...body.results.flags.map((f) => `  - ${f}`)] : []),
+      ...(body.results?.provinceNote ? ["", `Provincial programs: ${body.results.provinceNote}`] : []),
+      "",
+      FRESHNESS_NOTE,
+      "",
+      `Ready for a proper review? Book a consultation: ${site.url}/contact`,
+      "",
+      `${site.name} - CICC-regulated RCIC (#R706497). Not affiliated with the Government of Canada. Quebec not covered. Details last verified ${POLICY.lastVerified}.`,
+    ].filter(Boolean);
+
+    try {
+      const { error } = await resend.emails.send({
+        from,
+        to: email,
+        replyTo: to,
+        subject: "Your Canadian immigration pathway results",
+        text: userText.join("\n"),
+        html: buildUserHtml(body),
+      });
+      if (error) console.error("[eligibility-lead] Resend error (user)", error);
+    } catch (err) {
+      console.error("[eligibility-lead] Resend threw (user)", err);
+    }
   }
 
   return Response.json({ ok: true });

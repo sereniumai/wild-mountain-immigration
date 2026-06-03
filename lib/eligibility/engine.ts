@@ -9,6 +9,7 @@
 ============================================================================ */
 import { type Answers, type PathId, val, arr, PROVINCE_NAME } from "./config";
 import { POLICY } from "./constants";
+import { EU, CUSMA, IEC, countryName } from "./countries";
 
 export type Tier = "strong" | "possible" | "note";
 export type ResultItem = { key: string; title: string; tier: Tier; why: string; href?: string };
@@ -82,6 +83,7 @@ function evalImmigrate(a: Answers): EvalResult {
   const postSec = degree || ["one-year", "two-year"].includes(edu) || skill === "teer23";
   const young = ["18-29", "30-34", "35-44"].includes(val(a, "age"));
   const province = val(a, "province");
+  const linkProv = val(a, "provinceLink") === "yes" ? val(a, "provinceLinkWhich") : "";
   const offer = val(a, "jobOffer");
   const nominated = val(a, "nomination") === "yes";
 
@@ -116,12 +118,15 @@ function evalImmigrate(a: Answers): EvalResult {
 
   // Provincial Nominee Programs (province-level)
   if (skilled && (eng >= 5 || fr >= 5)) {
-    const strong = nominated || offer === "offer" || val(a, "provinceLink") === "yes" || expCanada;
+    const strong = nominated || offer === "offer" || linkProv !== "" || expCanada;
+    const focusProv = linkProv || province;
     g.add(PR, { key: "pnp", title: nominated ? "Provincial nomination, complete your PR" : "Provincial Nominee Programs", tier: strong ? "strong" : "possible",
       why: nominated
         ? "With a nomination, a +600 CRS boost puts permanent residence within close reach."
-        : `Provinces nominate skilled workers directly, often a realistic route to ${provinceLabel(province)}.`,
-      href: province === "AB" ? "/alberta-immigration" : "/pnp" });
+        : linkProv
+          ? `Your study or work ties to ${provinceLabel(linkProv)} can open that province's nominee program, often a realistic route to PR.`
+          : `Provinces nominate skilled workers directly, often a realistic route to ${provinceLabel(province)}.`,
+      href: focusProv === "AB" ? "/alberta-immigration" : "/pnp" });
   }
 
   // Atlantic Immigration Program
@@ -152,8 +157,18 @@ function evalImmigrate(a: Answers): EvalResult {
       href: "/family-sponsorship/spousal-sponsorship" });
   }
 
+  // How a partner affects an Express Entry score (only relevant if a PR profile exists).
+  if (val(a, "marital") === "married" && g.count > 0) {
+    const accompanying = val(a, "spouseAccompany") === "yes";
+    g.add(PR, { key: "spouse-points", title: accompanying ? "Your partner can add points" : "You'd be scored as a single applicant", tier: "note",
+      why: accompanying
+        ? "With a partner coming too, their language and education can add Express Entry points, worth scoring together to see your true total."
+        : "If your partner isn't coming, Express Entry scores you as a single applicant, which can actually lift your own CRS in some cases.",
+      href: "/express-entry" });
+  }
+
   const groups = g.build([PR, FAM]);
-  const provinceNote = skilled ? provincePnpNote(province) : undefined;
+  const provinceNote = skilled ? provincePnpNote(province, linkProv) : undefined;
   return finalize(groups, flags, provinceNote, {
     none: "Your profile didn't match our quick PR rules, but that rarely means there's no route. A work permit first, more language points, or a provincial stream often opens the door, let's look properly.",
     some: "Here are the permanent-residence routes you may qualify for based on what you told us.",
@@ -163,28 +178,55 @@ function evalImmigrate(a: Answers): EvalResult {
 /* ===================================================================== WORK */
 function evalWork(a: Answers): EvalResult {
   const g = new Groups();
+  const flags: string[] = [];
   const offer = val(a, "offerType");
+  const hasOffer = offer !== "none";
   const fr = clb(val(a, "french"));
   const status = val(a, "status");
   const skilledOffer = ["teer01", "teer23"].includes(val(a, "jobSkill"));
 
+  // Citizenship drives the treaty + youth-mobility routes.
+  const citizenship = val(a, "citizenship");
+  const currentCountry = val(a, "currentCountry");
+  const isCusma = CUSMA.has(citizenship);
+  const isEu = EU.has(citizenship);
+  const isIec = IEC.has(citizenship);
+  const age = val(a, "age");
+  const iecAge = age === "18-29" || age === "30-34"; // squarely in range
+  const iecEdgeAge = age === "35-44";                // some countries cap at 35
+
+  // Employer-specific (LMIA) route
   if (offer === "employer" || offer === "unsure") {
     g.add(WORK, { key: "lmia", title: "Employer-specific (LMIA) work permit", tier: offer === "employer" ? "strong" : "possible",
-      why: "A Canadian job offer usually leads to an LMIA-based work permit, unless an LMIA exemption applies.",
+      why: "A Canadian job offer usually leads to an LMIA-based work permit, unless one of the LMIA-exempt routes below applies.",
       href: "/work-permits/lmia" });
   }
+  // Intra-company transfer
   if (offer === "transfer") {
     g.add(WORK, { key: "ict", title: "Intra-company transfer (LMIA-exempt)", tier: "strong",
       why: "Moving within your company to a Canadian office can skip the LMIA entirely.",
       href: "/work-permits/intra-company-transfer" });
   }
-  if (offer === "treaty" || (val(a, "treatyCitizen") === "yes" && ["employer", "unsure", "transfer"].includes(offer))) {
-    g.add(WORK, { key: "treaty", title: "Treaty work permit (CUSMA / CETA, LMIA-exempt)", tier: "strong",
-      why: "Trade-agreement routes let eligible US, Mexican and European professionals work without an LMIA.",
+  // CUSMA professional (US / Mexico)
+  if (isCusma && hasOffer && (skilledOffer || offer === "treaty")) {
+    g.add(WORK, { key: "cusma", title: "CUSMA professional work permit (LMIA-exempt)", tier: "strong",
+      why: `As a ${countryName(citizenship)} citizen with a qualifying professional job offer, CUSMA can let you work in Canada without an LMIA.`,
       href: "/work-permits/cusma" });
   }
+  // CETA (EU)
+  if (isEu && hasOffer && (skilledOffer || offer === "treaty")) {
+    g.add(WORK, { key: "ceta", title: "CETA work permit (EU, LMIA-exempt)", tier: skilledOffer ? "strong" : "possible",
+      why: "CETA gives EU professionals, contractual service suppliers and intra-company transferees LMIA-exempt routes into Canada.",
+      href: "/work-permits/ceta" });
+  }
+  // They selected a treaty role but we couldn't map their citizenship to one.
+  if (offer === "treaty" && !isCusma && !isEu) {
+    g.add(WORK, { key: "treaty", title: "Treaty-based work permit (LMIA-exempt)", tier: "possible",
+      why: "Trade-agreement routes (CUSMA, CETA and others) can waive the LMIA for eligible nationals. We'll confirm which one fits your citizenship.",
+      href: "/work-permits/international-mobility-program" });
+  }
   // Francophone Mobility (outside Quebec, French speaker)
-  if (fr >= 5 && offer !== "none") {
+  if (fr >= 5 && hasOffer) {
     g.add(WORK, { key: "franco", title: "Francophone Mobility (LMIA-exempt)", tier: fr >= 6 ? "strong" : "possible",
       why: "As a French speaker taking a job outside Quebec, you may skip the LMIA under Francophone Mobility.",
       href: "/work-permits/francophone-mobility" });
@@ -194,14 +236,19 @@ function evalWork(a: Answers): EvalResult {
       why: "As a recent graduate of an eligible Canadian school, a PGWP lets you work and build toward PR.",
       href: "/work-permits/pgwp" });
   }
-  if (val(a, "iec") === "yes") {
+  // International Experience Canada (youth mobility), derived from citizenship + age
+  if (isIec && iecAge) {
     g.add(WORK, { key: "iec", title: "International Experience Canada (Working Holiday)", tier: "strong",
-      why: "Your age and country may qualify you for an open IEC permit, an easy first step into Canada.",
+      why: `${countryName(citizenship)} has a youth-mobility agreement with Canada and your age fits, often the simplest first work permit, and the Working Holiday is an open permit.`,
       href: "/work-permits/international-experience-canada" });
-  } else if (val(a, "iec") === "unsure") {
+  } else if (isIec && iecEdgeAge) {
     g.add(WORK, { key: "iec", title: "International Experience Canada (Working Holiday)", tier: "possible",
-      why: "If your country has a youth-mobility agreement with Canada, IEC could be an open work permit option.",
+      why: `${countryName(citizenship)} has a youth-mobility agreement with Canada. The upper age limit is 30 to 35 depending on the country, so it's worth checking whether you still qualify.`,
       href: "/work-permits/international-experience-canada" });
+  }
+  // IEC sometimes requires applying from your country of citizenship.
+  if (isIec && (iecAge || iecEdgeAge) && currentCountry && currentCountry !== "OTHER" && currentCountry !== citizenship) {
+    flags.push(`Heads up on IEC: some youth-mobility agreements require you to apply from your country of citizenship. You told us you're currently in ${countryName(currentCountry)}, so we'll confirm this doesn't affect your eligibility.`);
   }
   if (val(a, "partnerInCanada") === "yes") {
     g.add(WORK, { key: "owp", title: "Open work permit (partner of a worker or student)", tier: "possible",
@@ -209,13 +256,13 @@ function evalWork(a: Answers): EvalResult {
       href: "/work-permits/open-work-permit" });
   }
   // PR pathway note
-  if (offer !== "none" && skilledOffer) {
+  if (hasOffer && skilledOffer) {
     g.add(PR, { key: "cec-note", title: "Permanent residence later (Express Entry)", tier: "note",
       why: "Skilled Canadian work experience on this permit can lead to PR through the Canadian Experience Class.",
       href: "/express-entry/canadian-experience-class" });
   }
 
-  return finalize(g.build([WORK, PR]), [], undefined, {
+  return finalize(g.build([WORK, PR]), flags, undefined, {
     none: "We couldn't match a clear work-permit route from your answers, often it just needs a job offer or a detail we should check together.",
     some: "Here are the work-permit routes that may fit your situation.",
   });
@@ -245,11 +292,28 @@ function evalSponsor(a: Answers): EvalResult {
     flags.push("One or more of your answers (a past sponsorship default, an overdue immigration loan or bond, undischarged bankruptcy, a removal order, or a serious criminal conviction) can legally prevent a sponsorship even for a citizen or PR. This must be reviewed carefully before relying on a sponsorship.");
   }
 
+  // For spouse/partner, the union type and cohabitation decide if it's possible now.
+  const union = val(a, "unionType");
+  const commonLawShort = union === "common-law" && val(a, "cohabit12") === "no";
+  const spouseEligibleNow = rel === "spouse" && union !== "not-yet" && !commonLawShort;
+
   if (!blocked) {
     if (rel === "spouse") {
-      g.add(FAM, { key: "spousal", title: "Spousal / common-law partner sponsorship", tier: "strong",
-        why: "A spouse or common-law partner can usually be sponsored. Inland or outland depends on where they live now, we'll confirm the best route.",
-        href: "/family-sponsorship/spousal-sponsorship" });
+      if (union === "not-yet") {
+        g.add(FAM, { key: "spousal", title: "Spousal / partner sponsorship (once you qualify)", tier: "possible",
+          why: "Canada has no fiancé(e) visa. You can sponsor once you're married, once you've lived together for 12 continuous months as common-law, or as conjugal partners only if you genuinely can't do either.",
+          href: "/family-sponsorship/spousal-sponsorship" });
+        flags.push("You can't sponsor a fiancé(e) or a partner you're not yet living with. The routes are: marry, then spousal sponsorship; reach 12 months of continuous cohabitation for common-law; or, only if you truly cannot marry or live together, conjugal sponsorship.");
+      } else if (commonLawShort) {
+        g.add(FAM, { key: "spousal", title: "Common-law partner sponsorship (not eligible yet)", tier: "possible",
+          why: "Common-law sponsorship needs 12 months of continuous living together, and you're not there yet. We'd look at the timing, or marriage, to open the spousal route sooner.",
+          href: "/family-sponsorship/spousal-sponsorship" });
+        flags.push("Common-law sponsorship requires 12 months of continuous cohabitation. Until you reach that, the options are to keep building the 12 months, marry (then sponsor as a spouse), or, only if you genuinely cannot live together or marry, conjugal sponsorship.");
+      } else {
+        g.add(FAM, { key: "spousal", title: union === "common-law" ? "Common-law partner sponsorship" : "Spousal / partner sponsorship", tier: "strong",
+          why: "A spouse or common-law partner can usually be sponsored. Inland or outland depends on where they live now, we'll confirm the best route.",
+          href: "/family-sponsorship/spousal-sponsorship" });
+      }
     } else if (rel === "conjugal") {
       g.add(FAM, { key: "conjugal", title: "Conjugal partner sponsorship", tier: "possible",
         why: "Conjugal sponsorship is for partners who genuinely cannot marry or live together; it has a higher evidence bar we can assess.",
@@ -281,8 +345,8 @@ function evalSponsor(a: Answers): EvalResult {
       flags.push("Canada lets you sponsor only certain relatives. Other relatives are limited to narrow situations (for example, an orphaned sibling, niece or nephew under 18, or where you have no closer relative to sponsor). It's worth a quick check with us.");
     }
 
-    // Spousal open work permit cross-link
-    if (rel === "spouse") {
+    // Spousal open work permit cross-link (only once the sponsorship can actually go ahead)
+    if (spouseEligibleNow) {
       g.add(WORK, { key: "sowp", title: "Spousal Open Work Permit (while you wait)", tier: "note",
         why: "Applying for spousal PR from inside Canada can come with an open work permit during processing.",
         href: "/family-sponsorship/spousal-open-work-permit" });
@@ -363,15 +427,19 @@ function evalStudy(a: Answers): EvalResult {
 
   const fundsOk = funds === "yes";
   const intentOk = intent !== "no";
+  const palExempt = val(a, "studyLevel") === "masters-doctoral";
+  const palLine = palExempt
+    ? "As a master's or doctoral student at a public university, you're now exempt from the Provincial Attestation Letter (PAL)."
+    : "Most applicants also need a Provincial Attestation Letter (PAL); we'll make sure yours is in order.";
 
   if (acceptance === "yes") {
     if (fundsOk && intentOk) {
       g.add(STUDY, { key: "sp", title: "Study permit", tier: "strong",
-        why: "You have an acceptance and can show funds, the core of a study-permit application. Most applicants also need a Provincial Attestation Letter (PAL); master's and doctoral students at public universities are now exempt.",
+        why: `You have an acceptance and can show funds, the core of a study-permit application. ${palLine}`,
         href: "/study-permit" });
     } else {
       g.add(STUDY, { key: "sp", title: "Study permit", tier: "possible",
-        why: "You have an acceptance, but a study permit also needs clear proof of funds (tuition plus living costs) and a Provincial Attestation Letter. Let's shore those up.",
+        why: `You have an acceptance, but a study permit also needs clear proof of funds (tuition plus living costs). ${palLine} Let's shore those up.`,
         href: "/study-permit" });
     }
   } else {
@@ -414,11 +482,14 @@ function finalize(groups: ResultGroup[], flags: string[], provinceNote: string |
   return { headline, intro: total === 0 ? copy.none : copy.some, groups, provinceNote, flags };
 }
 
-function provincePnpNote(province: string): string {
-  if (!province || province === "unsure") {
-    return "Because you're open on location, several provinces' nominee programs (anywhere outside Quebec) could be in play. A consultation pins down which province and stream fit you best.";
+function provincePnpNote(province: string, tie?: string): string {
+  const base = (!province || province === "unsure")
+    ? "Because you're open on location, several provinces' nominee programs (anywhere outside Quebec) could be in play. A consultation pins down which province and stream fit you best."
+    : `Based on settling in ${provinceLabel(province)}, that province's nominee program is the one to focus on. We confirm the exact stream and its current criteria in a consultation.`;
+  if (tie && tie !== "unsure" && tie !== province && PROVINCE_NAME[tie]) {
+    return `${base} You also mentioned ties to ${provinceLabel(tie)}, a real connection there can strengthen that province's nominee program too.`;
   }
-  return `Based on settling in ${provinceLabel(province)}, that province's nominee program is the one to focus on. We confirm the exact stream and its current criteria in a consultation.`;
+  return base;
 }
 
 /* ===================================================================== Quebec off-ramp */

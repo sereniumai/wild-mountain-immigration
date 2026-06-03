@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
 import {
   ArrowRight, ArrowLeft, RotateCcw, Check, Sparkles, Info, ShieldAlert,
-  Compass, Briefcase, Heart, Building2, GraduationCap, Send, BadgeCheck,
+  Compass, Briefcase, Heart, Building2, GraduationCap, Send, BadgeCheck, ChevronDown,
 } from "lucide-react";
 import {
   PATHS, PATH_BY_ID, visibleFields, val, arr,
@@ -31,7 +31,6 @@ export function EligibilityFinder() {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
   const [consent, setConsent] = useState(false);
   const [company, setCompany] = useState(""); // honeypot
   const [error, setError] = useState("");
@@ -120,7 +119,7 @@ export function EligibilityFinder() {
         body: JSON.stringify({
           stage: stageName,
           path: path?.label,
-          name, email, phone, consent, company,
+          name, email, consent, company,
           answers: stageName === "complete" ? qaPairs : undefined,
           results: res ? { headline: res.headline, groups: res.groups, flags: res.flags, provinceNote: res.provinceNote } : undefined,
         }),
@@ -159,7 +158,7 @@ export function EligibilityFinder() {
   function restart() {
     if (partialTimer.current) window.clearTimeout(partialTimer.current);
     setStage("pick"); setPathId(null); setSectionIdx(0); setAnswers({});
-    setName(""); setEmail(""); setPhone(""); setConsent(false);
+    setName(""); setEmail(""); setConsent(false);
     setPartialSent(false); setResult(null); setError("");
   }
 
@@ -222,23 +221,38 @@ export function EligibilityFinder() {
                 <fieldset key={f.id}>
                   <legend className="text-[15px] font-medium text-ink">{f.label}</legend>
                   {f.help && <p className="mt-1 text-[13px] text-ink-soft">{f.help}</p>}
-                  <div className={`mt-3 grid gap-2.5 ${f.options.length > 4 ? "sm:grid-cols-2" : "sm:grid-cols-2"}`}>
-                    {f.options.map((o) => {
-                      const selected = f.type === "multi" ? arr(answers, f.id).includes(o.value) : val(answers, f.id) === o.value;
-                      return (
-                        <button key={o.value} type="button" onClick={() => setField(f, o.value)}
-                          className={`group flex items-center gap-3 rounded-xl border bg-white px-3.5 py-3 text-left transition-all hover:-translate-y-0.5 hover:shadow-soft focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand ${selected ? "border-brand ring-2 ring-brand/20" : "border-line hover:border-brand/40"}`}>
-                          <span className={`flex size-5 shrink-0 items-center justify-center rounded-full border transition-colors ${selected ? "border-brand bg-brand text-white" : "border-line bg-white text-transparent"}`}>
-                            <Check className="size-3.5" />
-                          </span>
-                          <span className="min-w-0">
-                            <span className="block text-[14.5px] font-medium text-ink">{o.label}</span>
-                            {o.hint && <span className="block text-[12px] text-ink-faint">{o.hint}</span>}
-                          </span>
-                        </button>
-                      );
-                    })}
-                  </div>
+                  {f.type === "select" ? (
+                    <div className="relative mt-3">
+                      <select
+                        value={val(answers, f.id)}
+                        onChange={(e) => setField(f, e.target.value)}
+                        className={`w-full min-w-0 appearance-none rounded-xl border bg-white px-3.5 py-3 pr-10 text-[15px] shadow-soft outline-none transition-colors focus:border-brand focus:ring-2 focus:ring-brand/15 ${val(answers, f.id) ? "border-line text-ink" : "border-line text-ink-faint"}`}>
+                        <option value="" disabled>Select an option…</option>
+                        {f.options.map((o) => (
+                          <option key={o.value} value={o.value} className="text-ink">{o.label}</option>
+                        ))}
+                      </select>
+                      <ChevronDown className="pointer-events-none absolute right-3.5 top-1/2 size-4 -translate-y-1/2 text-ink-faint" />
+                    </div>
+                  ) : (
+                    <div className="mt-3 grid gap-2.5 sm:grid-cols-2">
+                      {f.options.map((o) => {
+                        const selected = f.type === "multi" ? arr(answers, f.id).includes(o.value) : val(answers, f.id) === o.value;
+                        return (
+                          <button key={o.value} type="button" onClick={() => setField(f, o.value)}
+                            className={`group flex items-center gap-3 rounded-xl border bg-white px-3.5 py-3 text-left transition-all hover:-translate-y-0.5 hover:shadow-soft focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand ${selected ? "border-brand ring-2 ring-brand/20" : "border-line hover:border-brand/40"}`}>
+                            <span className={`flex size-5 shrink-0 items-center justify-center rounded-full border transition-colors ${selected ? "border-brand bg-brand text-white" : "border-line bg-white text-transparent"}`}>
+                              <Check className="size-3.5" />
+                            </span>
+                            <span className="min-w-0">
+                              <span className="block text-[14.5px] font-medium text-ink">{o.label}</span>
+                              {o.hint && <span className="block text-[12px] text-ink-faint">{o.hint}</span>}
+                            </span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
                 </fieldset>
               ))}
             </div>
@@ -266,7 +280,7 @@ export function EligibilityFinder() {
                 <Sparkles className="size-6" />
               </span>
               <h2 className="mt-4 font-heading text-[1.6rem] font-semibold tracking-[-0.02em] text-ink sm:text-[1.95rem]">Where should we send your results?</h2>
-              <p className="mt-2 text-[14.5px] leading-relaxed text-ink-soft">Add your details to see the routes you may qualify for. We&apos;ll keep them private and only use them to help with your enquiry.</p>
+              <p className="mt-2 text-[14.5px] leading-relaxed text-ink-soft">Add your details to see the routes you may qualify for. We&apos;ll show them right away and email you a copy. We keep them private and only use them to help with your enquiry.</p>
             </div>
 
             <div className="mx-auto mt-6 max-w-md space-y-4">
@@ -278,11 +292,6 @@ export function EligibilityFinder() {
               <label className="block">
                 <span className="block text-sm font-medium text-ink">Email address <span className="text-brand">*</span></span>
                 <input value={email} onChange={(e) => setEmail(e.target.value)} onBlur={onEmailBlur} type="email" required autoComplete="email" inputMode="email" placeholder="you@email.com"
-                  className="mt-1.5 w-full rounded-xl border border-line bg-white px-3.5 py-2.5 text-ink shadow-soft outline-none transition-colors placeholder:text-ink-faint focus:border-brand focus:ring-2 focus:ring-brand/15" />
-              </label>
-              <label className="block">
-                <span className="block text-sm font-medium text-ink">Phone <span className="text-ink-faint">(optional)</span></span>
-                <input value={phone} onChange={(e) => setPhone(e.target.value)} type="tel" autoComplete="tel" placeholder="+1 (___) ___-____"
                   className="mt-1.5 w-full rounded-xl border border-line bg-white px-3.5 py-2.5 text-ink shadow-soft outline-none transition-colors placeholder:text-ink-faint focus:border-brand focus:ring-2 focus:ring-brand/15" />
               </label>
               <label className="flex items-start gap-2.5 text-[13px] leading-relaxed text-ink-soft">
