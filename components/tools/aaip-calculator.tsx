@@ -125,8 +125,8 @@ export function AaipCalculator() {
 
   return (
     <div className="rounded-[1.75rem] border border-brand/15 bg-blush p-4 shadow-soft sm:p-6 lg:p-7">
-      <div className="grid gap-6 lg:grid-cols-[1fr_360px] lg:items-start">
-      <div className="space-y-6">
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start">
+      <div className="min-w-0 space-y-6">
         <Section title="Human capital">
           <div className="grid gap-4 sm:grid-cols-2">
             <Field label="Highest education" hint="Your top completed qualification"><Sel value={s.edu} onChange={(v) => set("edu", v)} options={[PH, ...EDU_OPTS]} /></Field>
@@ -170,7 +170,7 @@ export function AaipCalculator() {
         </button>
       </div>
 
-      <div className="lg:sticky lg:top-28">
+      <div className="min-w-0 lg:sticky lg:top-28">
         <div className="overflow-hidden rounded-2xl border border-brand/10 bg-white shadow-window">
           <div className="border-b border-line bg-blush p-6 text-center">
             <p className="text-xs font-medium uppercase tracking-wider text-ink-soft">Your estimated AAIP EOI score</p>
