@@ -1,0 +1,244 @@
+@import "tailwindcss";
+
+/* ----------------------------------------------------------------
+   Wild Mountain Immigration, design tokens (red-led)
+   Brand: red #E00400 (MAIN) · charcoal #32373C · forest green #1D5C1E
+----------------------------------------------------------------- */
+@theme {
+  /* Brand red, the dominant colour */
+  --color-brand: #e00400;
+  --color-brand-dark: #c40300;
+  --color-brand-soft: #fbe9e8;
+  --color-brand-tint: #fef4f3;
+  --color-blush: #fde9e7; /* warm brand blush, used for tool / calculator surfaces */
+
+  /* Ink / charcoal, text + dark surfaces */
+  --color-ink: #32373c;
+  --color-ink-soft: #565c61;
+  --color-ink-faint: #6b7177; /* darkened to ~4.9:1 on white for WCAG AA on small text */
+
+  /* Forest green, trust / verified accent */
+  --color-forest: #1d5c1e;
+  --color-forest-dark: #174a18;
+  --color-forest-soft: #eaf1ea;
+
+  /* Surfaces & lines */
+  --color-surface: #f7f8f6;
+  --color-surface-2: #f0f2ee;
+  --color-line: #e6e8e3;
+  --color-line-soft: #eff1ec;
+
+  /* Error, distinct from brand red */
+  --color-danger: #b00020;
+
+  /* Fonts (wired from next/font in layout) */
+  --font-heading: var(--font-jost), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Premium easing + shadow */
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  --shadow-card: 0 1px 2px rgba(50, 55, 60, 0.04), 0 8px 24px -12px rgba(50, 55, 60, 0.12);
+  --shadow-lift: 0 2px 4px rgba(50, 55, 60, 0.05), 0 18px 40px -16px rgba(50, 55, 60, 0.18);
+  --shadow-brand: 0 8px 24px -8px rgba(224, 4, 0, 0.35);
+}
+
+@layer base {
+  html {
+    /* Smooth scroll only for in-page anchor jumps; full-page route navigation
+       must reset instantly (global smooth fights Next's scroll restoration and
+       leaves the page partway down the page). scroll-padding offsets the sticky header. */
+    scroll-padding-top: 84px;
+    -webkit-text-size-adjust: 100%;
+  }
+  :has(:target) { scroll-behavior: smooth; }
+  body {
+    background: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+    color: var(--color-ink);
+  }
+  ::selection {
+    background: var(--color-brand);
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+  }
+}
+
+@layer utilities {
+  .text-gradient-brand {
+    background: linear-gradient(100deg, #e00400 0%, #ff5347 50%, #e00400 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-gradient-light {
+    background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,0.72) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Dot grid + topo texture */
+  .bg-topo { background-image: radial-gradient(rgba(255,255,255,0.07) 1px, transparent 1px); background-size: 22px 22px; }
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(50,55,60,0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(50,55,60,0.045) 1px, transparent 1px);
+    background-size: 56px 56px;
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 80%);
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 80%);
+  }
+  .bg-grid-dark {
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+
+  /* Fine grain for depth */
+  .grain::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0.5; mix-blend-mode: soft-light;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  }
+
+  /* Animated aurora blobs */
+  .aurora { position: absolute; inset: -20% 0 auto 0; height: 130%; pointer-events: none; overflow: hidden; }
+  .aurora-blob { position: absolute; border-radius: 9999px; filter: blur(70px); opacity: 0.55; will-change: transform; }
+  .aurora-1 { width: 38rem; height: 38rem; top: -10rem; right: -8rem; background: radial-gradient(circle at 30% 30%, rgba(224,4,0,0.45), transparent 65%); animation: drift1 18s ease-in-out infinite; }
+  .aurora-2 { width: 30rem; height: 30rem; top: -6rem; left: -8rem; background: radial-gradient(circle at 60% 40%, rgba(255,99,71,0.30), transparent 65%); animation: drift2 22s ease-in-out infinite; }
+  .aurora-3 { width: 26rem; height: 26rem; top: 4rem; left: 40%; background: radial-gradient(circle at 50% 50%, rgba(224,4,0,0.16), transparent 65%); animation: drift3 26s ease-in-out infinite; }
+  @keyframes drift1 { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(-3rem,2rem) scale(1.08); } }
+  @keyframes drift2 { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(2.5rem,1.5rem) scale(1.12); } }
+  @keyframes drift3 { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(-2rem,-1.5rem) scale(1.1); } }
+
+  /* Gradient border (glass cards) */
+  .gradient-border { position: relative; }
+  .gradient-border::after {
+    content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px;
+    background: linear-gradient(150deg, rgba(224,4,0,0.5), rgba(255,255,255,0.1) 40%, rgba(255,255,255,0.02));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none;
+  }
+  .glass { background: rgba(255,255,255,0.7); backdrop-filter: blur(16px) saturate(1.4); }
+  .glass-dark { background: rgba(255,255,255,0.06); backdrop-filter: blur(14px); }
+
+  /* Gentle float */
+  .float-slow { animation: floaty 7s ease-in-out infinite; }
+  .float-slower { animation: floaty 9s ease-in-out infinite; }
+  @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+  /* Marquee */
+  .marquee { animation: marquee 30s linear infinite; }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* Scroll reveal (toggled by Reveal component) */
+  .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s var(--ease-out-soft), transform 0.7s var(--ease-out-soft); }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  .animate-rise { animation: rise 0.7s var(--ease-out-soft) both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* ---- Premium primitives (calm, confident) ---- */
+
+  /* Big soft layered shadow for the hero product window */
+  .shadow-window {
+    box-shadow:
+      0 2px 4px rgba(50,55,60,0.04),
+      0 12px 24px -10px rgba(50,55,60,0.12),
+      0 40px 80px -28px rgba(50,55,60,0.28);
+  }
+  .shadow-soft {
+    box-shadow:
+      0 1px 2px rgba(50,55,60,0.04),
+      0 10px 30px -14px rgba(50,55,60,0.16);
+  }
+
+  /* Calm single hero spotlight, replaces the busy aurora on light hero */
+  .hero-spot { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+  .hero-spot::before {
+    content: ""; position: absolute; left: 50%; top: -22rem; width: 70rem; height: 48rem;
+    transform: translateX(-50%);
+    background:
+      radial-gradient(40% 50% at 50% 50%, rgba(224,4,0,0.10), transparent 70%),
+      radial-gradient(34% 42% at 32% 42%, rgba(255,99,71,0.10), transparent 72%),
+      radial-gradient(30% 40% at 70% 46%, rgba(224,4,0,0.06), transparent 72%);
+  }
+
+  /* Faded grid for light sections (gentler than bg-grid) */
+  .fade-grid {
+    background-image:
+      linear-gradient(to right, rgba(50,55,60,0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(50,55,60,0.045) 1px, transparent 1px);
+    background-size: 64px 64px;
+    -webkit-mask-image: radial-gradient(ellipse 72% 58% at 50% 30%, #000 28%, transparent 78%);
+    mask-image: radial-gradient(ellipse 72% 58% at 50% 30%, #000 28%, transparent 78%);
+  }
+
+  /* Subtle conic sheen for the featured/dark cards (replaces grain noise) */
+  .sheen { position: relative; }
+  .sheen::before {
+    content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+    background: radial-gradient(120% 80% at 80% -10%, rgba(255,255,255,0.10), transparent 55%);
+  }
+
+  .marquee-slow { animation: marquee 46s linear infinite; }
+
+  /* ---- Article prose (content pages) ---- */
+  .prose-wmi { color: var(--color-ink-soft); font-size: 1.0625rem; line-height: 1.75; }
+  .prose-wmi > * + * { margin-top: 1.15rem; }
+  .prose-wmi h2 {
+    color: var(--color-ink); font-family: var(--font-heading); font-weight: 600;
+    font-size: 1.7rem; line-height: 1.18; letter-spacing: -0.02em;
+    margin-top: 2.75rem; margin-bottom: 0.5rem; scroll-margin-top: 6rem;
+  }
+  .prose-wmi h3 {
+    color: var(--color-ink); font-family: var(--font-heading); font-weight: 600;
+    font-size: 1.22rem; line-height: 1.3; margin-top: 1.9rem; margin-bottom: 0.25rem; scroll-margin-top: 6rem;
+  }
+  .prose-wmi a { color: var(--color-brand); font-weight: 500; text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+  .prose-wmi a:hover { color: var(--color-brand-dark); }
+  .prose-wmi strong { color: var(--color-ink); font-weight: 600; }
+  .prose-wmi ul { list-style: none; padding-left: 0; }
+  .prose-wmi ul > li { position: relative; padding-left: 1.6rem; margin-top: 0.5rem; }
+  .prose-wmi ul > li::before { content: ""; position: absolute; left: 0.1rem; top: 0.62em; width: 0.45rem; height: 0.45rem; border-radius: 9999px; background: var(--color-brand); }
+  .prose-wmi ol { padding-left: 1.3rem; list-style: decimal; }
+  .prose-wmi ol > li { margin-top: 0.5rem; padding-left: 0.25rem; }
+  .prose-wmi ol > li::marker { color: var(--color-brand); font-weight: 600; }
+  .prose-wmi blockquote { border-left: 3px solid var(--color-brand); padding-left: 1.1rem; color: var(--color-ink); font-style: italic; }
+
+  /* Escape hatch: component lists inside prose must not inherit the red bullet/number,
+     left padding or top margin from .prose-wmi (prevents double markers).
+     Targets both the descendant case (.not-prose wrapper) AND the self case
+     (class applied directly on the ul/ol, e.g. <ol class="not-prose">). */
+  .prose-wmi .not-prose ul,
+  .prose-wmi .not-prose ol,
+  .prose-wmi ul.not-prose,
+  .prose-wmi ol.not-prose { list-style: none !important; padding-left: 0; }
+  .prose-wmi .not-prose ul > li,
+  .prose-wmi .not-prose ol > li,
+  .prose-wmi ul.not-prose > li,
+  .prose-wmi ol.not-prose > li { padding-left: 0; margin-top: 0; }
+  .prose-wmi .not-prose ul > li::before,
+  .prose-wmi ul.not-prose > li::before { content: none; display: none; }
+  .prose-wmi .not-prose ul > li::marker,
+  .prose-wmi .not-prose ol > li::marker,
+  .prose-wmi ul.not-prose > li::marker,
+  .prose-wmi ol.not-prose > li::marker { content: "" !important; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .aurora-1, .aurora-2, .aurora-3, .float-slow, .float-slower, .marquee, .marquee-slow { animation: none !important; }
+    .reveal { opacity: 1 !important; transform: none !important; }
+  }
+}
