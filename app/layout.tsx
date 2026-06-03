@@ -6,6 +6,7 @@ import { Footer } from "@/components/site/footer";
 import { AppShell } from "@/components/site/app-shell";
 import { ScrollToTop } from "@/components/site/scroll-to-top";
 import { Analytics } from "@/components/site/analytics";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { buildGraph } from "@/lib/schema";
 import { site } from "@/lib/site";
 
@@ -51,6 +52,7 @@ export const metadata: Metadata = {
     },
   },
   formatDetection: { telephone: true, address: false, email: false },
+  other: { "facebook-domain-verification": "xk4mtv2sz3jama0zk8rakyrwky714e" },
 };
 
 export const viewport: Viewport = {
@@ -73,6 +75,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
       </head>
+      <GoogleTagManager gtmId="GTM-TWNKHJV" />
       <body className="min-h-full flex flex-col bg-white">
         <script
           type="application/ld+json"

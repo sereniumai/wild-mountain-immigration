@@ -9,8 +9,18 @@ import { useEffect } from "react";
  */
 export function LeadConversion() {
   useEffect(() => {
-    if (typeof window !== "undefined" && typeof window.gtag === "function") {
-      window.gtag("event", "generate_lead", { event_category: "contact", value: 1 });
+    if (typeof window === "undefined") return;
+    const w = window as unknown as {
+      dataLayer?: Record<string, unknown>[];
+      gtag?: (...args: unknown[]) => void;
+    };
+    // Push to the GTM dataLayer so a Google Ads / GA4 conversion tag can fire on
+    // the `generate_lead` event (configure the trigger in GTM-TWNKHJV).
+    w.dataLayer = w.dataLayer || [];
+    w.dataLayer.push({ event: "generate_lead", lead_category: "contact", value: 1 });
+    // Also fire directly if a gtag-based GA tag is loaded.
+    if (typeof w.gtag === "function") {
+      w.gtag("event", "generate_lead", { event_category: "contact", value: 1 });
     }
   }, []);
   return null;

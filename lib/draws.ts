@@ -32,10 +32,15 @@ const stripHtml = (s: string) => (s ?? "").replace(/<[^>]+>/g, "").trim();
 
 export type DrawsResult = { draws: Draw[]; live: boolean };
 
-/** Fetch the latest Express Entry rounds. Revalidates every 6 hours; falls back on error. */
+/** Fetch the latest Express Entry rounds. Revalidates every 6 hours; falls back on
+ *  error OR if the feed does not respond within 8s (canada.ca can hang from
+ *  datacenter IPs, which would otherwise stall the production build). */
 export async function getLatestDraws(limit = 6): Promise<DrawsResult> {
   try {
-    const res = await fetch(FEED_URL, { next: { revalidate: 21600 } });
+    const res = await fetch(FEED_URL, {
+      next: { revalidate: 21600 },
+      signal: AbortSignal.timeout(8000),
+    });
     if (!res.ok) throw new Error(`feed ${res.status}`);
     const json = (await res.json()) as { rounds?: Record<string, string>[] };
     const rounds = json.rounds ?? [];

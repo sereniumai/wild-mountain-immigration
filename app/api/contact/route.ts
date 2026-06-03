@@ -61,6 +61,7 @@ export async function POST(request: Request) {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: params,
+        signal: AbortSignal.timeout(10000),
       });
       const outcome = (await verify.json()) as { success?: boolean };
       if (!outcome.success) {
@@ -100,18 +101,66 @@ export async function POST(request: Request) {
     message || "(no message)",
   ].join("\n");
 
-  const html = `
-    <div style="font-family:ui-sans-serif,system-ui,Arial,sans-serif;color:#32373c;line-height:1.6;max-width:560px">
-      <h2 style="margin:0 0 14px;font-size:18px;color:#e00400">New website enquiry</h2>
-      <table style="border-collapse:collapse;font-size:14px">
-        <tr><td style="padding:4px 14px 4px 0;color:#6b7280">Name</td><td style="padding:4px 0;font-weight:600">${esc(name)}</td></tr>
-        <tr><td style="padding:4px 14px 4px 0;color:#6b7280">Email</td><td style="padding:4px 0"><a href="mailto:${esc(email)}" style="color:#e00400">${esc(email)}</a></td></tr>
-        <tr><td style="padding:4px 14px 4px 0;color:#6b7280">Phone</td><td style="padding:4px 0">${esc(phone) || "(not given)"}</td></tr>
-        <tr><td style="padding:4px 14px 4px 0;color:#6b7280">Pathway</td><td style="padding:4px 0">${esc(service)}</td></tr>
+  const muted = '#9aa0a6';
+  const phoneCell = esc(phone) || `<span style="color:${muted}">Not provided</span>`;
+  const messageCell = esc(message) || `<span style="color:${muted}">No message provided</span>`;
+  const font = "'Segoe UI',Roboto,Helvetica,Arial,sans-serif";
+  const html = `<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"></head>
+<body style="margin:0;padding:0;background:#f4f1ef;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f4f1ef;padding:28px 12px;font-family:${font};">
+    <tr><td align="center">
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="width:600px;max-width:100%;background:#ffffff;border-radius:16px;overflow:hidden;border:1px solid #efe6e4;">
+        <tr><td style="background:#e00400;background-image:linear-gradient(135deg,#ee100c,#e00400);padding:22px 28px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+            <td style="font-size:17px;font-weight:700;color:#ffffff;letter-spacing:-0.2px;">${esc(site.name)}</td>
+            <td align="right" style="font-size:12px;color:rgba(255,255,255,0.88);font-weight:600;text-transform:uppercase;letter-spacing:0.5px;">New enquiry</td>
+          </tr></table>
+        </td></tr>
+        <tr><td style="padding:28px 28px 6px;">
+          <h1 style="margin:0 0 6px;font-size:20px;line-height:1.3;color:#32373c;font-weight:700;">You have a new website enquiry</h1>
+          <p style="margin:0;font-size:14px;line-height:1.6;color:#6b7280;">${esc(name)} got in touch via your website. Reply to this email to respond to them directly.</p>
+        </td></tr>
+        <tr><td style="padding:18px 28px 6px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #f0e6e4;border-radius:12px;background:#fdfbfb;">
+            <tr><td style="padding:14px 18px;border-bottom:1px solid #f4ecea;">
+              <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.6px;color:${muted};font-weight:600;">Name</div>
+              <div style="font-size:15px;color:#32373c;font-weight:600;margin-top:3px;">${esc(name)}</div>
+            </td></tr>
+            <tr><td style="padding:14px 18px;border-bottom:1px solid #f4ecea;">
+              <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.6px;color:${muted};font-weight:600;">Email</div>
+              <div style="font-size:15px;margin-top:3px;"><a href="mailto:${esc(email)}" style="color:#e00400;text-decoration:none;font-weight:600;">${esc(email)}</a></div>
+            </td></tr>
+            <tr><td style="padding:14px 18px;border-bottom:1px solid #f4ecea;">
+              <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.6px;color:${muted};font-weight:600;">Phone</div>
+              <div style="font-size:15px;color:#32373c;margin-top:3px;">${phoneCell}</div>
+            </td></tr>
+            <tr><td style="padding:14px 18px;">
+              <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.6px;color:${muted};font-weight:600;">Pathway</div>
+              <div style="margin-top:7px;"><span style="display:inline-block;background:#fbe9e8;color:#e00400;font-size:13px;font-weight:600;padding:4px 13px;border-radius:999px;">${esc(service)}</span></div>
+            </td></tr>
+          </table>
+        </td></tr>
+        <tr><td style="padding:18px 28px 4px;">
+          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.6px;color:${muted};font-weight:600;margin-bottom:8px;">Their message</div>
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#fef4f3;border-radius:8px;">
+            <tr><td style="padding:14px 16px;border-left:3px solid #e00400;border-radius:8px;font-size:14px;line-height:1.65;color:#32373c;white-space:pre-wrap;">${messageCell}</td></tr>
+          </table>
+        </td></tr>
+        <tr><td style="padding:20px 28px 4px;">
+          <table role="presentation" cellpadding="0" cellspacing="0"><tr><td style="border-radius:10px;background:#e00400;">
+            <a href="mailto:${esc(email)}?subject=Re:%20your%20enquiry%20to%20${encodeURIComponent(site.name)}" style="display:inline-block;padding:12px 26px;font-size:14px;font-weight:600;color:#ffffff;text-decoration:none;border-radius:10px;">Reply to ${esc(name)} &rarr;</a>
+          </td></tr></table>
+        </td></tr>
+        <tr><td style="padding:22px 28px 26px;">
+          <hr style="border:none;border-top:1px solid #f0e6e4;margin:0 0 14px;">
+          <p style="margin:0;font-size:12px;line-height:1.6;color:${muted};">Sent from the contact form at <a href="${site.url}" style="color:#e00400;text-decoration:none;">wildmountainimmigration.com</a>. Hitting reply emails ${esc(name)} directly at ${esc(email)}.</p>
+        </td></tr>
       </table>
-      <p style="margin:18px 0 4px;color:#6b7280;font-size:13px">Message</p>
-      <p style="margin:0;white-space:pre-wrap">${esc(message) || "(no message)"}</p>
-    </div>`;
+      <p style="margin:16px 0 0;font-size:11px;color:#b8b2af;">${esc(site.name)} &middot; RCIC #${site.rcicNumber} &middot; ${esc(site.locality)}, ${esc(site.region)}</p>
+    </td></tr>
+  </table>
+</body></html>`;
 
   try {
     const resend = new Resend(apiKey);
