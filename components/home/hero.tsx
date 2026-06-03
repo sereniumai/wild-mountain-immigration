@@ -82,9 +82,9 @@ export function Hero() {
           </motion.h2>
 
           <motion.p {...fade(0.15)} className="mt-6 max-w-xl text-[17px] leading-relaxed text-white/75">
-            A CICC-regulated <span className="font-medium text-white">Canmore immigration consultancy</span> run by
-            immigrants who have made the move ourselves, we find your best pathway, build your strongest application,
-            and stay right beside you, all the way to the finish line.
+            A CICC-regulated Canmore immigration consultancy run by people who have been through it themselves, we
+            find your best pathway, build your strongest application, and stay right beside you, all the way to the
+            finish line.
           </motion.p>
 
           <motion.div {...fade(0.22)} className="mt-9 flex flex-col gap-3 sm:flex-row">

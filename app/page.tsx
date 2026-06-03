@@ -302,8 +302,8 @@ function MeetNicola() {
           </h2>
           <div className="mt-6 space-y-4 text-[15.5px] leading-relaxed text-ink-soft">
             <p>
-              Wild Mountain Immigration is a CICC-regulated <strong className="font-medium text-ink">Canmore
-              immigration consultant</strong> handling every major Canadian pathway in-house, from Express Entry
+              Wild Mountain Immigration is a CICC-regulated Canmore immigration consultant handling every major
+              Canadian pathway in-house, from Express Entry
               and the AAIP to sponsorship, work and study. We believe in honest advice, careful work and no false
               promises, ever.
             </p>
@@ -486,8 +486,8 @@ function CanmoreLocal() {
               <p>
                 Canmore runs on tourism. The hotels, restaurants, ski hills and tour operators that keep the town
                 moving rely on workers who arrive on temporary permits, hoping to build a permanent life in the
-                Rockies. As your <strong className="font-medium text-ink">immigration consultant in Canmore</strong>,
-                we turn a work permit that could quietly expire into a clear, planned route to permanent residence.
+                Rockies. As your immigration consultant in Canmore, we turn a work permit that could quietly expire
+                into a clear, planned route to permanent residence.
               </p>
               <p>
                 Based right here in the Bow Valley, we know the local labour market and the Alberta streams built

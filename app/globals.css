@@ -62,6 +62,10 @@
     font-family: var(--font-heading);
     letter-spacing: -0.02em;
     color: var(--color-ink);
+    /* Long keyword headings (e.g. "Comprehensive Ranking System") must never
+       force horizontal scroll on the narrowest phones; break only if a word
+       genuinely cannot fit. */
+    overflow-wrap: break-word;
   }
   ::selection {
     background: var(--color-brand);
@@ -240,5 +244,17 @@
   @media (prefers-reduced-motion: reduce) {
     .aurora-1, .aurora-2, .aurora-3, .float-slow, .float-slower, .marquee, .marquee-slow { animation: none !important; }
     .reveal { opacity: 1 !important; transform: none !important; }
+  }
+}
+
+/* iOS Safari auto-zooms the page when a focused input/select/textarea has a
+   font-size under 16px. We keep the compact 15px controls on desktop, but
+   guarantee at least 16px on phones so tapping a field never zooms the layout.
+   Left unlayered on purpose, so it wins over Tailwind's text-[15px] utility. */
+@media (max-width: 639.98px) {
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+  select,
+  textarea {
+    font-size: 16px;
   }
 }
