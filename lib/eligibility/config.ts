@@ -10,6 +10,8 @@
    user sees is a `Field` below.
 ============================================================================ */
 
+import { POLICY } from "./constants";
+
 export type PathId = "immigrate" | "work" | "sponsor" | "business" | "study";
 
 export type Option = { value: string; label: string; hint?: string };
@@ -98,6 +100,7 @@ const PROVINCE: Option[] = [
   { value: "SK", label: "Saskatchewan" },
   { value: "NT", label: "Northwest Territories" },
   { value: "YT", label: "Yukon" },
+  { value: "QC", label: "Quebec" },
   { value: "unsure", label: "Not sure yet (anywhere outside Quebec)" },
 ];
 
@@ -283,6 +286,13 @@ export const PATHS: PathDef[] = [
             { value: "abroad", label: "Outside Canada" },
           ] },
           { id: "socialAssistance", label: "Is the sponsor receiving social assistance (other than for a disability)?", type: "single", options: YESNO },
+          { id: "sponsorBars", label: "Do any of these currently apply to the sponsor?", help: "These can legally prevent someone from sponsoring even if they're a citizen or PR. Select any that apply, or none.", type: "multi", optional: true, options: [
+            { value: "default", label: "Defaulted on a previous sponsorship undertaking" },
+            { value: "loan", label: "Owes an overdue immigration loan or performance bond" },
+            { value: "bankruptcy", label: "Is an undischarged bankrupt" },
+            { value: "removal", label: "Is under a removal order" },
+            { value: "criminal", label: "Has a serious criminal conviction" },
+          ] },
         ],
       },
       {
@@ -375,7 +385,7 @@ export const PATHS: PathDef[] = [
             { value: "applied", label: "I've applied but not yet accepted" },
             { value: "no", label: "Not yet" },
           ] },
-          { id: "funds", label: "Can you show enough money for tuition plus living costs (at least about CAD 22,895 for living costs, plus tuition)?", type: "single", options: YESNOUNSURE },
+          { id: "funds", label: `Can you show enough money for tuition plus living costs (at least about CAD ${POLICY.studyLivingCostsCAD.toLocaleString()} for living costs, plus tuition)?`, type: "single", options: YESNOUNSURE },
           { id: "refused", label: "Have you ever been refused a Canadian study permit or visa?", type: "single", options: YESNO },
           { id: "intendLeave", label: "Can you show you'll have funds and ties to support a temporary stay?", help: "A study permit officer must be satisfied you'll respect its conditions.", type: "single", options: YESNOUNSURE },
         ],

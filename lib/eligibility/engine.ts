@@ -7,7 +7,8 @@
    changes often, the result wording points the user to a consultation rather
    than asserting certainty. Quebec is never recommended.
 ============================================================================ */
-import { type Answers, type PathId, val, PROVINCE_NAME } from "./config";
+import { type Answers, type PathId, val, arr, PROVINCE_NAME } from "./config";
+import { POLICY } from "./constants";
 
 export type Tier = "strong" | "possible" | "note";
 export type ResultItem = { key: string; title: string; tier: Tier; why: string; href?: string };
@@ -240,6 +241,9 @@ function evalSponsor(a: Answers): EvalResult {
   if (status === "pr" && val(a, "sponsorWhere") === "abroad") {
     flags.push("A permanent-resident sponsor must be living in Canada to sponsor. A Canadian citizen can sometimes sponsor a spouse or child from abroad if they will return.");
   }
+  if (arr(a, "sponsorBars").length) {
+    flags.push("One or more of your answers (a past sponsorship default, an overdue immigration loan or bond, undischarged bankruptcy, a removal order, or a serious criminal conviction) can legally prevent a sponsorship even for a citizen or PR. This must be reviewed carefully before relying on a sponsorship.");
+  }
 
   if (!blocked) {
     if (rel === "spouse") {
@@ -255,12 +259,24 @@ function evalSponsor(a: Answers): EvalResult {
         why: "A dependent child (generally under 22 and without a partner) can usually be sponsored.",
         href: "/family-sponsorship/dependent-children" });
     } else if (rel === "parent") {
-      g.add(FAM, { key: "supervisa", title: "Super Visa for parents & grandparents", tier: "strong",
-        why: "A Super Visa lets parents and grandparents visit for long stays (up to 5 years per entry), with income and medical-insurance requirements and no lottery. It's the realistic route right now.",
-        href: "/family-sponsorship/super-visa" });
-      g.add(FAM, { key: "pgp", title: "Parents & Grandparents Program (PGP)", tier: "note",
-        why: "Heads up: the PGP is closed to new applications for 2026, IRCC is only processing sponsors invited from earlier years. We'll flag you when it reopens; for now the Super Visa is the way to bring them.",
-        href: "/family-sponsorship/parents-grandparents" });
+      if (POLICY.pgpOpenToNewIntake) {
+        const income = val(a, "meetsIncome");
+        g.add(FAM, { key: "pgp", title: "Parents & Grandparents Program (PGP)", tier: income === "yes" ? "possible" : "note",
+          why: income === "yes"
+            ? "You indicated you meet the income test. PGP also depends on the annual intake, which we track."
+            : "PGP needs three years of minimum income and runs on a limited intake. We'll check whether it fits.",
+          href: "/family-sponsorship/parents-grandparents" });
+        g.add(FAM, { key: "supervisa", title: "Super Visa (alternative to PGP)", tier: "strong",
+          why: "A Super Visa lets parents and grandparents visit for long stays, with income and insurance requirements and no lottery.",
+          href: "/family-sponsorship/super-visa" });
+      } else {
+        g.add(FAM, { key: "supervisa", title: "Super Visa for parents & grandparents", tier: "strong",
+          why: "A Super Visa lets parents and grandparents visit for long stays (up to 5 years per entry), with income and medical-insurance requirements and no lottery. It's the realistic route right now.",
+          href: "/family-sponsorship/super-visa" });
+        g.add(FAM, { key: "pgp", title: "Parents & Grandparents Program (PGP)", tier: "note",
+          why: "Heads up: the PGP is closed to new applications for 2026, IRCC is only processing sponsors invited from earlier years. We'll flag you when it reopens; for now the Super Visa is the way to bring them.",
+          href: "/family-sponsorship/parents-grandparents" });
+      }
     } else if (rel === "other") {
       flags.push("Canada lets you sponsor only certain relatives. Other relatives are limited to narrow situations (for example, an orphaned sibling, niece or nephew under 18, or where you have no closer relative to sponsor). It's worth a quick check with us.");
     }
@@ -295,11 +311,18 @@ function evalBusiness(a: Answers): EvalResult {
   const wealthy = netWorth === "300-600k" || netWorth === "600k+";
 
   // Start-up Visa (closed to new applicants from the end of 2025; only holders of
-  // a 2025 letter of support can still apply, until 30 June 2026).
+  // a 2025 letter of support can still apply, until 30 June 2026). Flip the
+  // POLICY flag to restore the normal result if/when it reopens.
   if (bizType === "startup") {
-    g.add(BIZ, { key: "suv", title: "Start-up Visa", tier: "note",
-      why: "The Start-up Visa needs an innovative business backed by a designated Canadian organisation. Important: it closed to new applicants at the end of 2025, only those who already hold a 2025 letter of support can still apply (until 30 June 2026). A provincial entrepreneur stream is usually the route now.",
-      href: "/start-up-visa" });
+    if (POLICY.startUpVisaOpenToNewApplicants) {
+      g.add(BIZ, { key: "suv", title: "Start-up Visa", tier: hasMgmt ? "possible" : "note",
+        why: "If you can build an innovative business backed by a designated Canadian organisation, the Start-up Visa leads to PR. It needs language at CLB 5 and settlement funds.",
+        href: "/start-up-visa" });
+    } else {
+      g.add(BIZ, { key: "suv", title: "Start-up Visa", tier: "note",
+        why: "The Start-up Visa needs an innovative business backed by a designated Canadian organisation. Important: it closed to new applicants at the end of 2025, only those who already hold a 2025 letter of support can still apply (until 30 June 2026). A provincial entrepreneur stream is usually the route now.",
+        href: "/start-up-visa" });
+    }
   }
 
   // Provincial entrepreneur streams (province-level)
@@ -312,7 +335,9 @@ function evalBusiness(a: Answers): EvalResult {
   // Self-employed caveat
   if (bizType === "invest" || (role === "neither" && bizType !== "startup")) {
     g.add(BIZ, { key: "self-note", title: "A note on passive investment", tier: "note",
-      why: "Canada has no simple 'investor visa'. The federal Self-Employed Persons Program (cultural or athletic work) has been paused to new applications since 2024, so an active provincial business route is usually the answer.",
+      why: POLICY.selfEmployedOpenToNewApplicants
+        ? "Canada has no simple 'investor visa'. The federal Self-Employed Persons Program (cultural or athletic work) is narrow, so an active provincial business route is usually the answer."
+        : "Canada has no simple 'investor visa'. The federal Self-Employed Persons Program (cultural or athletic work) has been paused to new applications since 2024, so an active provincial business route is usually the answer.",
       href: "/self-employed-immigration" });
   }
 
@@ -396,8 +421,22 @@ function provincePnpNote(province: string): string {
   return `Based on settling in ${provinceLabel(province)}, that province's nominee program is the one to focus on. We confirm the exact stream and its current criteria in a consultation.`;
 }
 
+/* ===================================================================== Quebec off-ramp */
+function quebecOffRamp(): EvalResult {
+  return {
+    headline: "Quebec runs its own immigration system",
+    intro: "You chose Quebec as your destination. Quebec selects its own immigrants through a separate process (the CSQ and the Arrima portal), which is outside what we handle.",
+    groups: [],
+    flags: [
+      "We don't advise on Quebec-selected immigration. If you're set on Quebec, you'll need a representative who handles the Quebec system.",
+      "If you're open to settling anywhere else in Canada, start over and pick another province, we'd be glad to map your options.",
+    ],
+  };
+}
+
 /* ===================================================================== dispatch */
 export function evaluate(path: PathId, a: Answers): EvalResult {
+  if (val(a, "province") === "QC") return quebecOffRamp();
   switch (path) {
     case "work": return evalWork(a);
     case "sponsor": return evalSponsor(a);

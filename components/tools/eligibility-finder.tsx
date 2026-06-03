@@ -12,6 +12,7 @@ import {
   type PathId, type Field, type Answers,
 } from "@/lib/eligibility/config";
 import { evaluate, type EvalResult, type Tier } from "@/lib/eligibility/engine";
+import { POLICY, FRESHNESS_NOTE } from "@/lib/eligibility/constants";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -313,6 +314,7 @@ export function EligibilityFinder() {
               </div>
               <h2 className="mt-2 font-heading text-[1.5rem] font-semibold tracking-[-0.02em] text-ink sm:text-[1.95rem]">{result.headline}</h2>
               <p className="mt-2 text-[15px] leading-relaxed text-ink-soft">{result.intro}</p>
+              <p className="mt-3 rounded-lg bg-surface/70 px-3 py-2 text-[12.5px] leading-relaxed text-ink-soft">{FRESHNESS_NOTE}</p>
             </div>
 
             {/* flags / important notes */}
@@ -364,7 +366,7 @@ export function EligibilityFinder() {
                 </button>
               </div>
               <p className="relative mt-4 flex items-center gap-1.5 text-[12px] text-ink-faint">
-                <BadgeCheck className="size-3.5 text-brand" /> CICC-regulated RCIC · not affiliated with the Government of Canada · Quebec programs not covered.
+                <BadgeCheck className="size-3.5 text-brand" /> CICC-regulated RCIC · not affiliated with the Government of Canada · Quebec not covered · program details last verified {POLICY.lastVerified}.
               </p>
             </div>
           </motion.div>
