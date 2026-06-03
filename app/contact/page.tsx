@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Phone, MapPin, Clock, BadgeCheck } from "lucide-react";
+import { Phone, MapPin, BadgeCheck } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Faq, JsonLd, KeyTakeaways } from "@/components/content/blocks";
 import { ContactForm } from "@/components/contact-form";
@@ -12,7 +12,7 @@ export const metadata: Metadata = pageMeta({
   title: "Contact an Immigration Consultant",
   titleAbsolute: "Contact an Immigration Consultant | RCIC in Canmore",
   description:
-    "Contact an immigration consultant in Canmore, Alberta: a licensed RCIC. Send an enquiry and we reply within one business day. Serving all of Canada.",
+    "Contact an immigration consultant in Canmore, Alberta: a licensed RCIC. Send your enquiry online, serving all of Canada and worldwide.",
   path: PATH,
   keywords: ["contact immigration consultant", "immigration consultant canmore contact", "rcic alberta contact"],
 });
@@ -23,8 +23,8 @@ const faqs = [
     a: "We are based in Canmore, Alberta, and serve clients across the Bow Valley and Calgary online. As a service-area business we meet clients by video call and phone, and we represent clients right across Canada and internationally.",
   },
   {
-    q: "How soon will you respond?",
-    a: "We reply to phone and email enquiries within one business day. If you have an approaching deadline, mention it in your message and we will prioritise your enquiry.",
+    q: "What if my enquiry is time-sensitive?",
+    a: "If you have an approaching deadline, mention it in your message and we will prioritise your enquiry. We read every enquiry, but we cannot take on every case, so please share enough detail for us to point you in the right direction.",
   },
   {
     q: "How do I verify that you're a licensed consultant?",
@@ -55,7 +55,7 @@ export default function ContactPage() {
 
       <section className="relative overflow-hidden border-b border-line bg-linear-to-b from-brand-tint/50 via-white to-white">
         <Container className="py-12 lg:py-16">
-          <div id="form" className="grid scroll-mt-24 items-center gap-10 lg:grid-cols-[1fr_1.05fr] lg:gap-14">
+          <div id="form" className="grid scroll-mt-24 items-start gap-10 lg:grid-cols-[1fr_1.05fr] lg:gap-14">
             {/* Left: hero content */}
             <div>
               <span className="inline-flex items-center rounded-full bg-blush px-3 py-1 text-[11.5px] font-semibold uppercase tracking-[0.14em] text-brand">Contact</span>
@@ -64,7 +64,7 @@ export default function ContactPage() {
               </h1>
               <p className="mt-5 max-w-md text-lg leading-relaxed text-ink-soft">
                 Reach Wild Mountain Immigration, your licensed RCIC immigration consultant in Canmore, Alberta. Send
-                your enquiry and we&apos;ll reply within one business day, wherever you are in the world.
+                your enquiry online from anywhere in the world.
               </p>
               <div className="mt-7 flex flex-wrap items-center gap-3">
                 <a href={site.phoneHref} className="inline-flex h-12 items-center gap-2 rounded-xl bg-white px-5 text-[15px] font-medium text-ink shadow-soft ring-1 ring-line transition-colors hover:text-brand">
@@ -77,8 +77,6 @@ export default function ContactPage() {
               </div>
               <p className="mt-6 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[13.5px] text-ink-soft">
                 <span className="inline-flex items-center gap-1.5"><MapPin className="size-4 text-brand" /> {site.locality}, {site.regionCode}</span>
-                <span className="text-ink-faint">·</span>
-                <span className="inline-flex items-center gap-1.5"><Clock className="size-4 text-brand" /> Replies within one business day</span>
                 <span className="text-ink-faint">·</span>
                 <span>online across Canada &amp; worldwide</span>
               </p>
@@ -100,13 +98,13 @@ export default function ContactPage() {
                 To contact our immigration consultant, call the phone number{" "}
                 <a href={site.phoneHref} className="font-medium text-brand hover:underline">{site.phone}</a>, send an
                 email enquiry through the form on this page or request a quote. Wild Mountain Immigration is a licensed
-                RCIC in Canmore, Alberta, and replies within one business day.
+                RCIC in Canmore, Alberta.
               </>
             }
             items={[
               <>Phone number: <a href={site.phoneHref} className="font-medium text-brand hover:underline">{site.phone}</a>, with calls and video appointments by arrangement.</>,
               <>Email address: use the secure enquiry form above to message us directly so your details reach the right consultant.</>,
-              <>Business hours: enquiries answered Monday to Friday, with a reply within one business day.</>,
+              <>Business hours: we read enquiries Monday to Friday.</>,
               <>Service area: based in {site.locality}, {site.regionCode}, serving the Bow Valley, Cochrane and Calgary, and representing clients across Canada and worldwide online.</>,
             ]}
           />

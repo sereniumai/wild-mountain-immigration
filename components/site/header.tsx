@@ -103,7 +103,7 @@ export function Header() {
               onClick={() => setPanel((p) => (p?.label === "About" ? null : aboutSection))}
               aria-expanded={panel?.label === "About"}
               className={clsx(
-                "group relative flex items-center rounded-lg px-2.5 py-2 text-[15px] font-semibold transition-colors",
+                "group relative flex cursor-pointer items-center rounded-lg px-2.5 py-2 text-[15px] font-semibold transition-colors",
                 panel?.label === "About" ? "text-brand" : "text-ink hover:text-brand"
               )}
             >

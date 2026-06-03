@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Phone, Mail, Clock, CheckCircle2 } from "lucide-react";
+import { Phone, Mail, CheckCircle2 } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import {
   PageHero, Prose, KeyTakeaways, Faq, JsonLd, Section, FeatureGrid, FeatureCard,
@@ -23,7 +23,7 @@ export const metadata: Metadata = pageMeta({
 const faqs = [
   {
     q: "How do I book a consultation?",
-    a: "Send us a few details through the form on this page. We reply within one business day to arrange a time that suits you, online by video call or phone, wherever you are in the world. The more you tell us up front, the more useful our first conversation will be.",
+    a: "Send us a few details through the form on this page and we will arrange a time that suits you, online by video call or phone, wherever you are in the world. The more you tell us up front, the more useful our first conversation will be.",
   },
   {
     q: "What happens in an immigration consultation?",
@@ -42,8 +42,8 @@ const faqs = [
     a: "File Management is full service, we prepare and submit your entire application. File Review is a lower-cost option where you prepare your own application and Nicola reviews it for errors and missed opportunities before you submit. The consultation helps you choose the right fit.",
   },
   {
-    q: "How quickly will you reply?",
-    a: "We reply to enquiries within one business day. If your matter is time-sensitive, for example an approaching deadline, say so in your message and we will prioritise it.",
+    q: "What if my matter is time-sensitive?",
+    a: "If your matter is time-sensitive, for example an approaching deadline, say so in your message and we will prioritise it.",
   },
 ];
 
@@ -78,7 +78,7 @@ export default function ConsultationPage() {
             <div>
               <h2 className="text-[1.9rem] font-semibold tracking-[-0.02em] text-ink">Book your immigration consultation in Canada</h2>
               <p className="mt-3 max-w-xl text-ink-soft">
-                Share a few details and we&apos;ll come back within one business day to arrange your immigration
+                Share a few details and we&apos;ll be in touch to arrange your immigration
                 consultation as an online appointment by video call or phone. To prepare for a consultation, have
                 your passport, any past Canadian immigration history and a short note on your goals to hand. The
                 more you tell us, the more useful our first conversation will be.
@@ -92,7 +92,6 @@ export default function ConsultationPage() {
                 <ul className="mt-4 space-y-3 text-sm">
                   <li className="flex items-center gap-3"><Phone className="size-4 text-brand" /><a href={site.phoneHref} className="text-ink-soft hover:text-brand">{site.phone}</a></li>
                   <li className="flex items-center gap-3"><Mail className="size-4 text-brand" /><a href="/contact" className="text-ink-soft hover:text-brand">Send us a message</a></li>
-                  <li className="flex items-center gap-3"><Clock className="size-4 text-brand" /><span className="text-ink-soft">Replies within one business day</span></li>
                 </ul>
                 <p className="mt-4 border-t border-line pt-4 text-sm text-ink-soft">
                   A one-off consultation is <strong>$120</strong>, free for spousal sponsorship and waived when you

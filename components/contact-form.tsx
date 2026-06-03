@@ -7,9 +7,8 @@ import { AnimatePresence, motion } from "motion/react";
 import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import {
   Compass, Briefcase, GraduationCap, Heart, Plane, Award, Building2, HelpCircle,
-  ChevronLeft, ChevronRight, Send,
+  ChevronRight, Send,
 } from "lucide-react";
-import { site } from "@/lib/site";
 
 // Cloudflare Turnstile site key (public). When unset, the widget is hidden and
 // the form falls back to the honeypot only, so local dev works without keys.
@@ -144,15 +143,7 @@ export function ContactForm({ tone = "white" }: { tone?: "white" | "pink" }) {
           <motion.form key="details" onSubmit={handleSubmit} {...stepAnim}>
             {/* Honeypot: hidden from people, catches bots. */}
             <input type="text" name="company" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
-            <button
-              type="button"
-              onClick={() => setStep(0)}
-              className="inline-flex items-center gap-1 text-[14px] font-medium text-ink-soft transition-colors hover:text-brand"
-            >
-              <ChevronLeft className="size-4" /> Back
-            </button>
-
-            <h2 className="mt-4 font-heading text-[1.7rem] font-semibold tracking-[-0.02em] text-ink">
+            <h2 className="font-heading text-[1.7rem] font-semibold tracking-[-0.02em] text-ink">
               How can we reach you?
             </h2>
             <div className="mt-2.5 flex flex-wrap items-center gap-2 text-[14px] text-ink-soft">
@@ -173,10 +164,6 @@ export function ContactForm({ tone = "white" }: { tone?: "white" | "pink" }) {
               <label className="block">
                 <span className="block text-sm font-medium text-ink">Email address <span className="text-brand">*</span></span>
                 <input name="email" type="email" required autoComplete="email" inputMode="email" className={`mt-1.5 ${inputCls}`} placeholder="you@email.com" />
-              </label>
-              <label className="block">
-                <span className="block text-sm font-medium text-ink">Phone number</span>
-                <input name="phone" type="tel" autoComplete="tel" inputMode="tel" className={`mt-1.5 ${inputCls}`} placeholder="Optional" />
               </label>
               <label className="block">
                 <span className="block text-sm font-medium text-ink">Tell us about your situation</span>
@@ -223,12 +210,6 @@ export function ContactForm({ tone = "white" }: { tone?: "white" | "pink" }) {
                 <><Send className="size-4" /> Send enquiry</>
               )}
             </button>
-
-            <p className="mt-3 text-xs leading-relaxed text-ink-faint">
-              We send your enquiry straight to our team. Prefer to call?{" "}
-              <a href={site.phoneHref} className="font-medium text-brand hover:underline">{site.phone}</a>. We reply
-              within one business day where we can.
-            </p>
           </motion.form>
         )}
       </AnimatePresence>

@@ -132,7 +132,7 @@ export const HeroVideo = forwardRef<HeroVideoHandle, HeroVideoProps>(function He
       }
     };
 
-    loadYouTubeApi().then(() => {
+    const startVideo = () => loadYouTubeApi().then(() => {
       if (cancelled || !holderRef.current || !window.YT?.Player) return;
       playerRef.current = new window.YT.Player(holderRef.current, {
         videoId: id,
@@ -180,8 +180,22 @@ export const HeroVideo = forwardRef<HeroVideoHandle, HeroVideoProps>(function He
       });
     });
 
+    // Defer the heavy YouTube iframe API + player until the browser is idle, so
+    // it never competes with the LCP / initial paint (big Lighthouse win). The
+    // poster is the LCP and shows instantly; the film fades in once it loads.
+    const win = window as Window & {
+      requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => number;
+      cancelIdleCallback?: (id: number) => void;
+    };
+    let idleId: number | undefined;
+    let timerId: number | undefined;
+    if (win.requestIdleCallback) idleId = win.requestIdleCallback(startVideo, { timeout: 4000 });
+    else timerId = window.setTimeout(startVideo, 2000);
+
     return () => {
       cancelled = true;
+      if (idleId !== undefined) win.cancelIdleCallback?.(idleId);
+      if (timerId !== undefined) window.clearTimeout(timerId);
       if (tickRef.current) window.clearInterval(tickRef.current);
       try {
         playerRef.current?.destroy?.();

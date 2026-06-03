@@ -37,7 +37,7 @@ export default function ThankYouPage() {
           </p>
           <p className="mt-3 text-[15px] leading-relaxed text-ink-soft">
             It&apos;s nothing personal. We&apos;d rather be upfront than make a promise we can&apos;t keep. If we can
-            help and we have room, we&apos;ll be in touch, usually within one business day.
+            help and we have room, we&apos;ll be in touch, usually within two business days.
           </p>
         </div>
 

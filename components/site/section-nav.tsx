@@ -202,19 +202,6 @@ export function SectionTree({
           <NavItem key={node.href} node={node} pathname={pathname} depth={0} variant="sidebar" onNavigate={onNavigate} openKey={openKey} setOpenKey={setOpenKey} />
         ))}
       </ul>
-      {section.href !== "/immigrate" && (
-        <Link
-          href="/contact"
-          onClick={onNavigate}
-          className="group mt-5 block rounded-xl bg-brand p-4 text-white shadow-(--shadow-brand) ring-1 ring-inset ring-white/15 transition-transform hover:-translate-y-0.5"
-        >
-          <p className="font-heading text-[14px] font-semibold">Not sure where to start?</p>
-          <p className="mt-1 text-[12.5px] leading-snug text-white/85">Talk to a licensed RCIC about your case, with no obligation.</p>
-          <span className="mt-2.5 inline-flex items-center gap-1.5 text-[12.5px] font-semibold">
-            Contact us <ChevronRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
-          </span>
-        </Link>
-      )}
     </div>
   );
 }

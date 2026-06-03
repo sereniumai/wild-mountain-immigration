@@ -27,7 +27,7 @@ export function Hero() {
         ref={videoRef}
         onState={setSound}
         id="AJkWoQk6_E8"
-        poster="/brand/hero-poster.png"
+        poster="/brand/hero-poster.avif"
         posterAlt="People who moved to Canada with Wild Mountain Immigration"
         start={7}
         end={135}
