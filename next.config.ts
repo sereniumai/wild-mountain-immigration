@@ -189,6 +189,23 @@ const redirectPairs: [string, string][] = [
   ["/blog/best-time-to-move-to-canada", "/move-to-canada"],
   ["/blog/moving-to-canada-2024-election-guide", "/move-to-canada"],
   ["/blog/new-immigration-pathways-canada-2025", "/immigrate"],
+
+  // ---- blog: precise targets for the remainder (better than the /immigrate catch-all) ----
+  ["/blog/living-and-working-in-ontario", "/pnp/ontario"],
+  ["/blog/celebrating-permanent-residency", "/immigrate/permanent-residence"],
+  ["/blog/tr-to-pr-2022", "/immigrate/permanent-residence"],
+  ["/blog/canada-skilled-trades-crisis-economic-impact-solutions", "/express-entry/federal-skilled-trades"],
+  ["/blog/faster-judicial-review-refused-study-permits", "/study-permit"],
+  ["/blog/new-limits-temporary-workers-canada-2024", "/work-permits/temporary-foreign-worker-program"],
+  ["/blog/new-minimum-wage-rates-ontario-three-provinces-2024", "/work-permits"],
+  ["/blog/virtual-job-fair-for-bilingual-candidates-canada", "/work-permits"],
+  ["/blog/trump-impact-immigration-canada-trade-economic-relations", "/move-to-canada/from-the-usa"],
+  ["/blog/a-helpful-post-arrival-checklist-for-newcomers", "/move-to-canada"],
+  ["/blog/best-place-to-live-in-canada-for-software-engineers", "/move-to-canada"],
+  ["/blog/two-canadian-cities-in-top-livability-rankings", "/move-to-canada"],
+  ["/blog/canada-top-5-globally-work-life-balance-2024", "/move-to-canada"],
+  ["/blog/canada-ranks-7th-most-advanced-countries-2024", "/move-to-canada"],
+  ["/blog/how-do-immigrants-help-the-economy-in-canada", "/move-to-canada"],
   ["/blog", "/immigrate"],
 
   // ---- wildcard catch-alls (must come after specific rules) ----
