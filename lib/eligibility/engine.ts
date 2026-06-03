@@ -255,15 +255,12 @@ function evalSponsor(a: Answers): EvalResult {
         why: "A dependent child (generally under 22 and without a partner) can usually be sponsored.",
         href: "/family-sponsorship/dependent-children" });
     } else if (rel === "parent") {
-      const income = val(a, "meetsIncome");
-      g.add(FAM, { key: "pgp", title: "Parents & Grandparents Program (PGP)", tier: income === "yes" ? "possible" : "note",
-        why: income === "yes"
-          ? "You indicated you meet the income test. PGP also depends on the annual intake (often a lottery), which we track."
-          : "PGP needs three years of minimum income and runs on a limited intake. We'll check whether it fits.",
-        href: "/family-sponsorship/parents-grandparents" });
-      g.add(FAM, { key: "supervisa", title: "Super Visa (alternative to PGP)", tier: "strong",
-        why: "A Super Visa lets parents and grandparents visit for long stays without the PGP lottery, with income and insurance requirements.",
+      g.add(FAM, { key: "supervisa", title: "Super Visa for parents & grandparents", tier: "strong",
+        why: "A Super Visa lets parents and grandparents visit for long stays (up to 5 years per entry), with income and medical-insurance requirements and no lottery. It's the realistic route right now.",
         href: "/family-sponsorship/super-visa" });
+      g.add(FAM, { key: "pgp", title: "Parents & Grandparents Program (PGP)", tier: "note",
+        why: "Heads up: the PGP is closed to new applications for 2026, IRCC is only processing sponsors invited from earlier years. We'll flag you when it reopens; for now the Super Visa is the way to bring them.",
+        href: "/family-sponsorship/parents-grandparents" });
     } else if (rel === "other") {
       flags.push("Canada lets you sponsor only certain relatives. Other relatives are limited to narrow situations (for example, an orphaned sibling, niece or nephew under 18, or where you have no closer relative to sponsor). It's worth a quick check with us.");
     }
@@ -297,10 +294,11 @@ function evalBusiness(a: Answers): EvalResult {
   const bizType = val(a, "bizType");
   const wealthy = netWorth === "300-600k" || netWorth === "600k+";
 
-  // Start-up Visa
-  if (bizType === "startup" && (eng >= 4 || fr >= 4)) {
-    g.add(BIZ, { key: "suv", title: "Start-up Visa", tier: hasMgmt ? "possible" : "note",
-      why: "If you can build an innovative business backed by a designated Canadian organisation, the Start-up Visa leads to PR. It needs language at CLB 5 and settlement funds.",
+  // Start-up Visa (closed to new applicants from the end of 2025; only holders of
+  // a 2025 letter of support can still apply, until 30 June 2026).
+  if (bizType === "startup") {
+    g.add(BIZ, { key: "suv", title: "Start-up Visa", tier: "note",
+      why: "The Start-up Visa needs an innovative business backed by a designated Canadian organisation. Important: it closed to new applicants at the end of 2025, only those who already hold a 2025 letter of support can still apply (until 30 June 2026). A provincial entrepreneur stream is usually the route now.",
       href: "/start-up-visa" });
   }
 
@@ -314,7 +312,7 @@ function evalBusiness(a: Answers): EvalResult {
   // Self-employed caveat
   if (bizType === "invest" || (role === "neither" && bizType !== "startup")) {
     g.add(BIZ, { key: "self-note", title: "A note on passive investment", tier: "note",
-      why: "Canada has no simple 'investor visa'. The federal Self-Employed Persons Program is narrow (cultural or athletic) and its intake has been limited recently, so an active business route is usually the answer.",
+      why: "Canada has no simple 'investor visa'. The federal Self-Employed Persons Program (cultural or athletic work) has been paused to new applications since 2024, so an active provincial business route is usually the answer.",
       href: "/self-employed-immigration" });
   }
 
@@ -344,7 +342,7 @@ function evalStudy(a: Answers): EvalResult {
   if (acceptance === "yes") {
     if (fundsOk && intentOk) {
       g.add(STUDY, { key: "sp", title: "Study permit", tier: "strong",
-        why: "You have an acceptance and can show funds, the core of a study-permit application. You'll also need a Provincial Attestation Letter (PAL/TAL) in most cases.",
+        why: "You have an acceptance and can show funds, the core of a study-permit application. Most applicants also need a Provincial Attestation Letter (PAL); master's and doctoral students at public universities are now exempt.",
         href: "/study-permit" });
     } else {
       g.add(STUDY, { key: "sp", title: "Study permit", tier: "possible",
@@ -360,7 +358,7 @@ function evalStudy(a: Answers): EvalResult {
       flags.push("Your first step is a letter of acceptance from a DLI, then a Provincial Attestation Letter (PAL/TAL). After that we can prepare your study permit.");
     } else {
       g.add(STUDY, { key: "sp-pending", title: "Study permit (groundwork needed)", tier: "note",
-        why: "Before a study permit is realistic you'll need a DLI acceptance, a Provincial Attestation Letter, and clear proof of funds (tuition plus about CAD 20,635 in living costs).",
+        why: "Before a study permit is realistic you'll need a DLI acceptance, a Provincial Attestation Letter, and clear proof of funds (tuition plus about CAD 22,895 in living costs).",
         href: "/study-permit" });
       flags.push("Two things to line up first: a DLI acceptance (plus a Provincial Attestation Letter), and proof of funds for tuition and living costs.");
     }

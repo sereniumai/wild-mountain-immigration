@@ -375,7 +375,7 @@ export const PATHS: PathDef[] = [
             { value: "applied", label: "I've applied but not yet accepted" },
             { value: "no", label: "Not yet" },
           ] },
-          { id: "funds", label: "Can you show enough money for tuition plus living costs (at least about CAD 20,635 for living costs, plus tuition)?", type: "single", options: YESNOUNSURE },
+          { id: "funds", label: "Can you show enough money for tuition plus living costs (at least about CAD 22,895 for living costs, plus tuition)?", type: "single", options: YESNOUNSURE },
           { id: "refused", label: "Have you ever been refused a Canadian study permit or visa?", type: "single", options: YESNO },
           { id: "intendLeave", label: "Can you show you'll have funds and ties to support a temporary stay?", help: "A study permit officer must be satisfied you'll respect its conditions.", type: "single", options: YESNOUNSURE },
         ],
