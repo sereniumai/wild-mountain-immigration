@@ -246,7 +246,7 @@ function RockiesBand() {
   return (
     <section className="relative">
       <div className="relative h-135 overflow-hidden sm:h-125">
-        <Image src={img.rockies} alt="The Canadian Rockies near the Bow Valley, Alberta" fill sizes="100vw" className="object-cover" />
+        <Image src={img.rockies} alt="The Canadian Rockies near the Bow Valley, Alberta" fill quality={50} sizes="100vw" className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/65 to-ink/20" />
         <Container className="relative flex h-full items-center">
           <Reveal className="max-w-xl">

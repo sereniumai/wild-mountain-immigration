@@ -226,7 +226,7 @@ const redirectPairs: [string, string][] = [
 ];
 
 /* Content-Security-Policy. The site uses Google Tag Manager as a marketing hub
-   (it loads GA4, Google Ads conversion/remarketing, Hotjar and more, and new tags
+   (it loads GA4, Google Ads conversion/remarketing and more, and new tags
    are added without code changes), so a script/connect/img allow-list would
    silently break paid conversion tracking the moment a tag changes. We therefore
    apply only the directives that harden without fighting GTM: frame-ancestors and
@@ -258,12 +258,11 @@ const nextConfig: NextConfig = {
   images: {
     // Serve next-gen formats (smaller payloads, better LCP / Lighthouse).
     formats: ["image/avif", "image/webp"],
+    // Allow-list the quality levels we use. Next 16 defaults to [75] only, so
+    // decorative/overlaid images can drop to 50-60 to shed bytes on mobile.
+    qualities: [50, 60, 75],
     minimumCacheTTL: 2_592_000, // 30 days
-    // Unsplash placeholders until the client supplies real photography.
-    // Note: omit `search`, setting it to '' would forbid the ?w=&q= query strings.
-    remotePatterns: [
-      { protocol: "https", hostname: "images.unsplash.com", pathname: "/**" },
-    ],
+    // All images are self-hosted under /public, so no remotePatterns are needed.
   },
   async redirects() {
     // statusCode 301 (true "Moved Permanently") for clean backlink-equity transfer.

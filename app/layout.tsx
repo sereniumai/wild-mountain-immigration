@@ -72,11 +72,6 @@ export default function RootLayout({
       lang="en-CA"
       className={`${jost.variable} ${inter.variable} h-full`}
     >
-      <head>
-        {/* Speed up the LCP hero image (served from the image CDN) */}
-        <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="" />
-        <link rel="dns-prefetch" href="https://images.unsplash.com" />
-      </head>
       <GoogleTagManager gtmId="GTM-TWNKHJV" />
       <body className="min-h-full flex flex-col bg-white">
         <script

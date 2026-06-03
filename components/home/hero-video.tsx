@@ -76,9 +76,13 @@ export const HeroVideo = forwardRef<HeroVideoHandle, HeroVideoProps>(function He
   const [muted, setMuted] = useState(true);
 
   useEffect(() => {
-    // Respect reduced-motion; otherwise run on every screen size (mobile too).
+    // Respect reduced-motion, and only run the background film on larger screens.
+    // On phones/tablets we keep the static poster (which is the LCP), so mobile
+    // pays zero cost for the YouTube IFrame API, the iframe, or autoplay video.
+    // That is a large mobile-performance win (less JS, less network, lower TBT).
     const okMotion = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (!okMotion) return;
+    const bigScreen = window.matchMedia("(min-width: 1024px)").matches;
+    if (!okMotion || !bigScreen) return;
     setEnabled(true);
 
     let cancelled = false;
@@ -254,7 +258,8 @@ export const HeroVideo = forwardRef<HeroVideoHandle, HeroVideoProps>(function He
         src={poster}
         alt={posterAlt}
         fill
-        priority
+        loading="eager"
+        fetchPriority="high"
         sizes={cover ? "100vw" : "(max-width: 1024px) 90vw, 460px"}
         className={clsx(
           "object-cover transition-opacity duration-1000 ease-out",
