@@ -12,7 +12,7 @@ export const metadata: Metadata = pageMeta({
   title: "Canada Immigration Eligibility",
   titleAbsolute: "Canada Immigration Eligibility Checker (Free)",
   description:
-    "Free Canada immigration eligibility checker. Answer a few questions to see which permanent residence and work permit routes may fit you. No email needed.",
+    "Free Canada immigration eligibility checker. Answer a few questions across PR, work, family, business and study to see the Canadian programs you may qualify for.",
   path: PATH,
   keywords: [
     "canada immigration eligibility",
@@ -27,7 +27,7 @@ export const metadata: Metadata = pageMeta({
 const faqs = [
   {
     q: "How does the eligibility checker work?",
-    a: "You answer a short set of questions about your age, education, language, work experience, any Canadian job offer or family, and your current situation. This free immigration assessment then maps your answers to the permanent residence and work permit pathways you may qualify for, and flags which look like a strong match. It uses current public IRCC criteria, but it is a guide, not an official decision.",
+    a: "You pick what you'd like to do, immigrate, work, sponsor family, business or study, then answer questions about your age, education, language, work experience and ties to Canada. At the end you add your name and email to see your results: the permanent residence, work, family, business or study programs you may qualify for, including which provinces' nominee programs to explore. It is an AI-assisted guide using current public IRCC criteria, not an official decision.",
   },
   {
     q: "Is this an official Canadian government tool?",
@@ -35,11 +35,11 @@ const faqs = [
   },
   {
     q: "Which pathways does it check?",
-    a: "It covers the main routes we handle: Express Entry (Canadian Experience Class, Federal Skilled Worker and Federal Skilled Trades), Provincial Nominee Programs including the Alberta Advantage Immigration Program, family and spousal sponsorship, the Start-up Visa, and the major work permits, LMIA-based, LMIA-exempt transfers, the PGWP, International Experience Canada and open work permits. It does not cover Quebec-selected programs or refugee, appeal and inadmissibility matters.",
+    a: "All the routes we handle, across five paths. Permanent residence: Express Entry (Canadian Experience Class, Federal Skilled Worker and Federal Skilled Trades), Provincial Nominee Programs including the Alberta Advantage Immigration Program, and the Atlantic and rural pilots. Work: LMIA-based permits, LMIA-exempt transfers and treaty permits (CUSMA, CETA), Francophone Mobility, the PGWP, International Experience Canada and open work permits. Family sponsorship, business immigration (Start-up Visa and provincial entrepreneur streams) and study permits are covered too. It flags PNPs at the province level. It does not cover Quebec-selected programs or refugee, appeal and inadmissibility matters.",
   },
   {
     q: "Do I need to enter my email or pay anything?",
-    a: "No. The checker is completely free and ungated, with no email or sign-up required. You get your results instantly on the page.",
+    a: "It is completely free, there is nothing to pay. You do add your name and email at the final step to see your results, so we can send them to you and follow up if you'd like help. We keep your details private and only use them to assist with your enquiry.",
   },
   {
     q: "What should I do with my results?",
@@ -78,8 +78,8 @@ export default function EligibilityPage() {
         lede={
           <p>
             Answer a few quick questions and this free <strong>Canada immigration eligibility checker</strong> shows
-            you which <strong>permanent residence</strong> and <strong>work permit</strong> pathways you may qualify
-            for, with an honest read on what looks strong. No email, no sign-up.
+            you which <strong>permanent residence</strong>, work, family, business and study programs you may qualify
+            for, with an honest read on what looks strong. Add your details at the end to see your results.
           </p>
         }
         primaryCta={{ href: "#checker", label: "Start the checker" }}
@@ -96,12 +96,12 @@ export default function EligibilityPage() {
         <Container>
           <Prose className="max-w-3xl">
             <KeyTakeaways
-              summary="This free Canada immigration eligibility checker matches your profile to the permanent residence and work permit routes you may qualify for. It weighs your age, education, language, work experience and ties to Canada, then flags which pathways look strong in about two minutes. It uses current IRCC criteria as a guide, not an official decision, with no email or sign-up."
+              summary="This free Canada immigration eligibility checker matches your profile to the permanent residence, work, family, business and study programs you may qualify for, including which provinces' nominee programs to explore. It weighs your age, education, language, work experience and ties to Canada, then flags which pathways look strong. It is an AI-assisted guide using current IRCC criteria, not an official decision; you add your name and email at the end to see your results."
               items={[
                 <>A free <strong>Canada immigration eligibility</strong> tool that maps your profile to real pathways.</>,
-                <>The <strong>immigration eligibility checker</strong> covers Express Entry, PNPs, sponsorship, work permits and more.</>,
-                <>It is <strong>free and ungated</strong>, with no email or sign-up, and results show instantly.</>,
-                <>It is a guide using current <strong>IRCC criteria</strong>; only IRCC can decide your application.</>,
+                <>The <strong>immigration eligibility checker</strong> covers Express Entry, PNPs, sponsorship, business and study.</>,
+                <>It flags which <strong>provinces&apos; nominee programs</strong> may fit, then points you to a consultation.</>,
+                <>It is an AI-assisted guide using current <strong>IRCC criteria</strong>; only IRCC can decide your application.</>,
               ]}
             />
             <h2>Who is the Canada immigration eligibility checker for?</h2>
