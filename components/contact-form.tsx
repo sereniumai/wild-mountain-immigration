@@ -62,6 +62,7 @@ export function ContactForm({ tone = "white" }: { tone?: "white" | "pink" }) {
     const payload = {
       name: String(f.get("name") || "").trim(),
       email: String(f.get("email") || "").trim(),
+      age: String(f.get("age") || "").trim(),
       phone: String(f.get("phone") || "").trim(),
       service,
       message: String(f.get("message") || "").trim(),
@@ -164,6 +165,10 @@ export function ContactForm({ tone = "white" }: { tone?: "white" | "pink" }) {
               <label className="block">
                 <span className="block text-sm font-medium text-ink">Email address <span className="text-brand">*</span></span>
                 <input name="email" type="email" required autoComplete="email" inputMode="email" className={`mt-1.5 ${inputCls}`} placeholder="you@email.com" />
+              </label>
+              <label className="block">
+                <span className="block text-sm font-medium text-ink">Age</span>
+                <input name="age" type="number" inputMode="numeric" min={16} max={99} autoComplete="off" className={`mt-1.5 ${inputCls}`} placeholder="e.g. 32" />
               </label>
               <label className="block">
                 <span className="block text-sm font-medium text-ink">Tell us about your situation</span>

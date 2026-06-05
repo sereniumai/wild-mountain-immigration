@@ -4,6 +4,7 @@ import { site } from "@/lib/site";
 type Body = {
   name?: string;
   email?: string;
+  age?: string;
   phone?: string;
   service?: string;
   message?: string;
@@ -28,6 +29,7 @@ export async function POST(request: Request) {
 
   const name = (body.name ?? "").trim();
   const email = (body.email ?? "").trim();
+  const age = (body.age ?? "").trim().slice(0, 20);
   const phone = (body.phone ?? "").trim();
   const service = (body.service ?? "").trim() || "General enquiry";
   const message = (body.message ?? "").trim();
@@ -94,6 +96,7 @@ export async function POST(request: Request) {
   const text = [
     `Name: ${name}`,
     `Email: ${email}`,
+    `Age: ${age || "(not given)"}`,
     `Phone: ${phone || "(not given)"}`,
     `Pathway: ${service}`,
     "",
@@ -102,6 +105,7 @@ export async function POST(request: Request) {
   ].join("\n");
 
   const muted = '#9aa0a6';
+  const ageCell = esc(age) || `<span style="color:${muted}">Not provided</span>`;
   const phoneCell = esc(phone) || `<span style="color:${muted}">Not provided</span>`;
   const messageCell = esc(message) || `<span style="color:${muted}">No message provided</span>`;
   const font = "'Segoe UI',Roboto,Helvetica,Arial,sans-serif";
@@ -130,6 +134,10 @@ export async function POST(request: Request) {
             <tr><td style="padding:14px 18px;border-bottom:1px solid #f4ecea;">
               <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.6px;color:${muted};font-weight:600;">Email</div>
               <div style="font-size:15px;margin-top:3px;"><a href="mailto:${esc(email)}" style="color:#e00400;text-decoration:none;font-weight:600;">${esc(email)}</a></div>
+            </td></tr>
+            <tr><td style="padding:14px 18px;border-bottom:1px solid #f4ecea;">
+              <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.6px;color:${muted};font-weight:600;">Age</div>
+              <div style="font-size:15px;color:#32373c;margin-top:3px;">${ageCell}</div>
             </td></tr>
             <tr><td style="padding:14px 18px;border-bottom:1px solid #f4ecea;">
               <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.6px;color:${muted};font-weight:600;">Phone</div>
