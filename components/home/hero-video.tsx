@@ -258,6 +258,7 @@ export const HeroVideo = forwardRef<HeroVideoHandle, HeroVideoProps>(function He
         src={poster}
         alt={posterAlt}
         fill
+        quality={60}
         loading="eager"
         fetchPriority="high"
         sizes={cover ? "100vw" : "(max-width: 1024px) 90vw, 460px"}
