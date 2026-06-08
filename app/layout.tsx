@@ -7,7 +7,7 @@ import { AppShell } from "@/components/site/app-shell";
 import { ScrollToTop } from "@/components/site/scroll-to-top";
 import { EligibilityNudge } from "@/components/site/eligibility-nudge";
 import { Analytics } from "@/components/site/analytics";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { DeferredGtm } from "@/components/site/deferred-gtm";
 import { buildGraph } from "@/lib/schema";
 import { jsonLd } from "@/lib/jsonld";
 import { site } from "@/lib/site";
@@ -72,8 +72,8 @@ export default function RootLayout({
       lang="en-CA"
       className={`${jost.variable} ${inter.variable} h-full`}
     >
-      <GoogleTagManager gtmId="GTM-TWNKHJV" />
       <body className="min-h-full flex flex-col bg-white">
+        <DeferredGtm />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: jsonLd(buildGraph()) }}
