@@ -10,11 +10,13 @@ import { POLICY, FRESHNESS_NOTE } from "@/lib/eligibility/constants";
 type QA = { q: string; a: string };
 type Item = { title: string; tier: string; why: string };
 type Group = { heading: string; items: Item[] };
+type Snapshot = { passport?: string; residence?: string; province?: string };
 type Body = {
   path?: string;          // human label, e.g. "Immigrate permanently"
   name?: string;
   email?: string;
   consent?: boolean;
+  snapshot?: Snapshot;    // passport / inside-outside Canada / province, surfaced up top
   answers?: QA[];
   results?: { headline?: string; groups?: Group[]; flags?: string[]; provinceNote?: string };
   company?: string;       // honeypot
@@ -34,6 +36,11 @@ function clampBody(b: Body): Body {
     consent: b.consent === true,
     company: b.company,
     turnstileToken: b.turnstileToken,
+    snapshot: {
+      passport: cut(b.snapshot?.passport, 100),
+      residence: cut(b.snapshot?.residence, 80),
+      province: cut(b.snapshot?.province, 60),
+    },
     answers: (b.answers ?? []).slice(0, 60).map((qa) => ({ q: cut(qa?.q, 300), a: cut(qa?.a, 300) })),
     results: {
       headline: cut(r.headline, 400),
@@ -88,6 +95,26 @@ function renderFlags(flags: string[], heading = "Important notes"): string {
     </div>`;
 }
 
+/* The three intake facts the team asked to see on every email: passport held,
+   whether the person is inside/outside Canada, and (if inside) their province.
+   Empty fields are dropped, so non-Canada leads don't show a blank province. */
+function renderSnapshot(s: Snapshot | undefined): string {
+  const rows = ([
+    ["Passport held", s?.passport],
+    ["Currently resides", s?.residence],
+    ["Province of residence", s?.province],
+  ] as [string, string | undefined][]).filter(([, v]) => v && v.trim());
+  if (!rows.length) return "";
+  const cells = rows
+    .map(([k, v], i) => {
+      const border = i < rows.length - 1 ? "border-bottom:1px solid #f4ecea;" : "";
+      return `<tr><td style="padding:11px 16px;${border}font-size:13px;color:${muted};width:46%;">${esc(k)}</td><td style="padding:11px 16px;${border}font-size:14px;color:#32373c;font-weight:600;">${esc(v)}</td></tr>`;
+    })
+    .join("");
+  return `<div style="font-size:12px;text-transform:uppercase;letter-spacing:0.5px;color:${muted};font-weight:700;margin-bottom:8px;">Applicant snapshot</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #f0e6e4;border-radius:10px;">${cells}</table>`;
+}
+
 function buildHtml(b: Body): string {
   const rows = (b.answers ?? [])
     .map(
@@ -123,6 +150,7 @@ function buildHtml(b: Body): string {
         <tr><td style="padding:11px 16px;font-size:13px;color:${muted};">Path</td><td style="padding:11px 16px;font-size:14px;"><span style="display:inline-block;background:#fbe9e8;color:#e00400;font-size:13px;font-weight:600;padding:3px 12px;border-radius:999px;">${esc(b.path || "Eligibility")}</span></td></tr>
       </table>
     </td></tr>
+    ${renderSnapshot(b.snapshot) ? `<tr><td style="padding:16px 26px 0;">${renderSnapshot(b.snapshot)}</td></tr>` : ""}
     ${b.results?.headline ? `<tr><td style="padding:16px 26px 0;"><div style="font-size:14px;font-weight:700;color:#32373c;">Summary: ${esc(b.results.headline)}</div></td></tr>` : ""}
     ${groupsHtml ? `<tr><td style="padding:4px 26px 0;">${groupsHtml}</td></tr>` : ""}
     ${flagsHtml ? `<tr><td style="padding:4px 26px 0;">${flagsHtml}</td></tr>` : ""}
@@ -172,6 +200,7 @@ function buildUserHtml(b: Body): string {
         <div style="font-size:15px;font-weight:700;color:#32373c;margin-top:3px;">${esc(b.results.headline)}</div>
       </div>
     </td></tr>` : ""}
+    ${renderSnapshot(b.snapshot) ? `<tr><td style="padding:16px 26px 0;">${renderSnapshot(b.snapshot)}</td></tr>` : ""}
     ${groupsHtml ? `<tr><td style="padding:4px 26px 0;">${groupsHtml}</td></tr>` : ""}
     ${provinceNote ? `<tr><td style="padding:4px 26px 0;">${provinceNote}</td></tr>` : ""}
     ${flagsHtml ? `<tr><td style="padding:4px 26px 0;">${flagsHtml}</td></tr>` : ""}
@@ -255,10 +284,18 @@ export async function POST(request: Request) {
   const to = process.env.CONTACT_TO_EMAIL || site.email;
   const from = process.env.CONTACT_FROM_EMAIL || "Wild Mountain Immigration <onboarding@resend.dev>";
 
+  const snap = body.snapshot ?? {};
+  const snapText = [
+    snap.passport ? `Passport held: ${snap.passport}` : "",
+    snap.residence ? `Currently resides: ${snap.residence}` : "",
+    snap.province ? `Province of residence: ${snap.province}` : "",
+  ].filter(Boolean);
+
   const textLines = [
     `Path: ${body.path || "Eligibility"}`,
     `Name: ${name || "(not given)"}`,
     `Email: ${email}`,
+    ...snapText,
     "",
     body.results?.headline ? `Summary: ${body.results.headline}` : "",
     ...(body.results?.groups ?? []).flatMap((gr) => [`# ${gr.heading}`, ...gr.items.map((i) => `  [${i.tier}] ${i.title} - ${i.why}`)]),
@@ -289,6 +326,8 @@ export async function POST(request: Request) {
     "",
     "Thanks for using our eligibility checker. Here's an automated first read of the routes that may fit what you told us. It's a starting point, not a decision.",
     "",
+    ...snapText,
+    ...(snapText.length ? [""] : []),
     body.results?.headline ? `Summary: ${body.results.headline}` : "",
     ...(body.results?.groups ?? []).flatMap((gr) => [`# ${gr.heading}`, ...gr.items.map((i) => `  [${i.tier}] ${i.title} - ${i.why}`)]),
     ...(body.results?.flags?.length ? ["", "Important to know:", ...body.results.flags.map((f) => `  - ${f}`)] : []),

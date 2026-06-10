@@ -138,6 +138,15 @@ export function EligibilityFinder() {
 
   // Lead capture fires only on a completed, consented submission (see submit).
   async function sendLead(res: EvalResult) {
+    // Surface the three key intake facts at the top of every notification email.
+    // Matched off the (stable) question labels so the values already carry their
+    // human-readable form (country name, "Inside Canada", province name).
+    const find = (label: string) => qaPairs.find((p) => p.q === label)?.a ?? "";
+    const snapshot = {
+      passport: find("Which country's passport do you hold?"),
+      residence: find("Are you currently inside or outside Canada?") || find("What would you like to do?"),
+      province: find("Which province or territory are you in right now?"),
+    };
     try {
       await fetch("/api/eligibility-lead", {
         method: "POST",
@@ -146,6 +155,7 @@ export function EligibilityFinder() {
           path: path?.label,
           name, email, consent, company,
           turnstileToken: token,
+          snapshot,
           answers: qaPairs,
           results: { headline: res.headline, groups: res.groups, flags: res.flags, provinceNote: res.provinceNote },
         }),
