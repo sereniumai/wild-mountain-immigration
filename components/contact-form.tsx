@@ -7,7 +7,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import {
   Compass, Briefcase, GraduationCap, Heart, Plane, Award, Building2, HelpCircle,
-  ChevronRight, Send,
+  ChevronRight, ChevronDown, Send,
 } from "lucide-react";
 
 // Cloudflare Turnstile site key (public). When unset, the widget is hidden and
@@ -26,6 +26,13 @@ const options = [
   { label: "Not sure yet", icon: HelpCircle },
 ] as const;
 
+/** Canadian provinces and territories, shown only when the person is in Canada. */
+const provinces = [
+  "Alberta", "British Columbia", "Manitoba", "New Brunswick",
+  "Newfoundland and Labrador", "Northwest Territories", "Nova Scotia", "Nunavut",
+  "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan", "Yukon",
+] as const;
+
 const inputCls =
   "w-full rounded-xl border border-line bg-white px-3.5 py-2.5 text-[15px] text-ink shadow-soft outline-none transition-colors placeholder:text-ink-faint focus:border-brand focus:ring-2 focus:ring-brand/15";
 
@@ -41,6 +48,9 @@ export function ContactForm({ tone = "white" }: { tone?: "white" | "pink" }) {
   // 0 = choose a pathway, 1 = contact details
   const [step, setStep] = useState(0);
   const [service, setService] = useState("");
+  // Free-text residence answer; if it mentions Canada we reveal a province picker.
+  const [residencePassport, setResidencePassport] = useState("");
+  const inCanada = /canada/i.test(residencePassport);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
   const [token, setToken] = useState("");
@@ -63,6 +73,8 @@ export function ContactForm({ tone = "white" }: { tone?: "white" | "pink" }) {
       name: String(f.get("name") || "").trim(),
       email: String(f.get("email") || "").trim(),
       age: String(f.get("age") || "").trim(),
+      residencePassport: String(f.get("residencePassport") || "").trim(),
+      province: String(f.get("province") || "").trim(),
       phone: String(f.get("phone") || "").trim(),
       service,
       message: String(f.get("message") || "").trim(),
@@ -170,6 +182,42 @@ export function ContactForm({ tone = "white" }: { tone?: "white" | "pink" }) {
                 <span className="block text-sm font-medium text-ink">Age</span>
                 <input name="age" type="number" inputMode="numeric" min={16} max={99} autoComplete="off" className={`mt-1.5 ${inputCls}`} placeholder="e.g. 32" />
               </label>
+              <label className="block">
+                <span className="block text-sm font-medium text-ink">Which country do you currently reside in, and which passport do you hold?</span>
+                <input
+                  name="residencePassport"
+                  autoComplete="off"
+                  value={residencePassport}
+                  onChange={(e) => setResidencePassport(e.target.value)}
+                  className={`mt-1.5 ${inputCls}`}
+                  placeholder="e.g. Living in the UAE, hold a British passport"
+                />
+              </label>
+              <AnimatePresence initial={false}>
+                {inCanada && (
+                  <motion.div
+                    key="province"
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+                    className="overflow-hidden"
+                  >
+                    <label className="block">
+                      <span className="block text-sm font-medium text-ink">Which province or territory are you in?</span>
+                      <div className="relative mt-1.5">
+                        <select name="province" defaultValue="" className={`${inputCls} appearance-none pr-10`}>
+                          <option value="" disabled>Select a province or territory</option>
+                          {provinces.map((p) => (
+                            <option key={p} value={p}>{p}</option>
+                          ))}
+                        </select>
+                        <ChevronDown className="pointer-events-none absolute right-3.5 top-1/2 size-4 -translate-y-1/2 text-ink-faint" />
+                      </div>
+                    </label>
+                  </motion.div>
+                )}
+              </AnimatePresence>
               <label className="block">
                 <span className="block text-sm font-medium text-ink">Tell us about your situation</span>
                 <textarea name="message" rows={4} className={`mt-1.5 ${inputCls} resize-y`} placeholder="A few lines about your goals, timeline and any history with Canadian immigration." />

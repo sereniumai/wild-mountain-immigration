@@ -459,6 +459,8 @@ function evalStudy(a: Answers): EvalResult {
 
   if (refused) flags.push("A previous study-permit refusal must be addressed carefully, the reasons for the refusal shape the next application, and this is exactly where a review helps.");
 
+  if (val(a, "inCanada") === "inside") flags.push("You told us you're already in Canada. A study permit can usually only be applied for from inside Canada in specific situations (for example, if you, your spouse or your parent already hold a study or work permit). Otherwise it's applied for from outside Canada. We'll confirm which applies to you.");
+
   // PGWP -> PR note
   g.add(STUDY, { key: "study-pr", title: "Study can lead to permanent residence", tier: "note",
     why: "An eligible program can lead to a Post-Graduation Work Permit, then to PR through the Canadian Experience Class. We plan study with that finish line in mind.",

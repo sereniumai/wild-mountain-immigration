@@ -116,6 +116,25 @@ const PROVINCE: Option[] = [
 // province someone has a tie to.
 const PROVINCE_REAL: Option[] = PROVINCE.filter((p) => p.value !== "QC" && p.value !== "unsure");
 
+// Every province and territory, for asking where someone physically is right now
+// (distinct from where they'd settle). Quebec and Nunavut are valid answers here
+// because this captures a location fact, not a program choice.
+const PROVINCE_CURRENT: Option[] = [
+  { value: "AB", label: "Alberta" },
+  { value: "BC", label: "British Columbia" },
+  { value: "MB", label: "Manitoba" },
+  { value: "NB", label: "New Brunswick" },
+  { value: "NL", label: "Newfoundland and Labrador" },
+  { value: "NS", label: "Nova Scotia" },
+  { value: "NT", label: "Northwest Territories" },
+  { value: "NU", label: "Nunavut" },
+  { value: "ON", label: "Ontario" },
+  { value: "PE", label: "Prince Edward Island" },
+  { value: "QC", label: "Quebec" },
+  { value: "SK", label: "Saskatchewan" },
+  { value: "YT", label: "Yukon" },
+];
+
 const YESNO: Option[] = [
   { value: "yes", label: "Yes" },
   { value: "no", label: "No" },
@@ -128,6 +147,18 @@ const Q_EDU: Field = { id: "education", label: "What is your highest completed l
 const Q_ENGLISH: Field = { id: "english", label: "How strong is your English?", help: "Your best honest estimate; you don't need exact test scores yet.", type: "single", options: LANG("English") };
 const Q_FRENCH: Field = { id: "french", label: "How strong is your French?", help: "Skip or choose 'None' if you don't speak French.", type: "single", options: LANG("French") };
 const Q_PROVINCE: Field = { id: "province", label: "Where in Canada would you like to settle?", help: "We don't handle Quebec. This helps us flag the right provincial programs.", type: "single", options: PROVINCE };
+
+/* Asked on every path: which passport you hold, whether you're physically in
+   Canada, and (if you are) which province. "currentProvince" is shown whenever
+   any path signals the person is inside Canada, the binary "inCanada" question,
+   the work path's richer "status", or the sponsor path's "role". */
+const Q_PASSPORT: Field = { id: "citizenship", label: "Which country's passport do you hold?", help: "Your nationality. If you hold more than one, pick the one you'd most likely travel on.", type: "select", options: countryOptions };
+const Q_IN_CANADA: Field = { id: "inCanada", label: "Are you currently inside or outside Canada?", type: "single", options: [
+  { value: "inside", label: "Inside Canada" },
+  { value: "outside", label: "Outside Canada" },
+] };
+const Q_CURRENT_PROVINCE: Field = { id: "currentProvince", label: "Which province or territory are you in right now?", type: "select", options: PROVINCE_CURRENT,
+  showIf: (a) => val(a, "inCanada") === "inside" || ["visitor", "worker", "student", "graduate"].includes(val(a, "status")) || val(a, "role") === "sponsor" };
 
 /* ============================================================================
    PATHS
@@ -144,6 +175,9 @@ export const PATHS: PathDef[] = [
         title: "About you",
         fields: [
           Q_AGE,
+          Q_PASSPORT,
+          Q_IN_CANADA,
+          Q_CURRENT_PROVINCE,
           { id: "marital", label: "What is your marital status?", type: "single", options: [
             { value: "single", label: "Single" },
             { value: "married", label: "Married or common-law" },
@@ -219,16 +253,17 @@ export const PATHS: PathDef[] = [
         title: "About you",
         fields: [
           Q_AGE,
-          { id: "citizenship", label: "What country are you a citizen of?", help: "This decides treaty options like CUSMA, CETA and IEC youth mobility.", type: "select", options: countryOptions },
+          Q_PASSPORT,
           Q_PROVINCE,
-          { id: "status", label: "Where are you right now?", type: "single", options: [
+          { id: "status", label: "Are you currently inside or outside Canada?", help: "If you're in Canada, tell us your current status so we can match the right route.", type: "single", options: [
             { value: "outside", label: "Outside Canada" },
             { value: "visitor", label: "Visiting Canada" },
             { value: "worker", label: "Working in Canada" },
             { value: "student", label: "Studying in Canada" },
             { value: "graduate", label: "I recently graduated from a Canadian school" },
           ] },
-          { id: "currentCountry", label: "Which country are you currently in?", help: "Some IEC youth-mobility agreements require you to apply from your home country.", type: "select", options: countryOptions, showIf: (a) => ["outside", "visitor"].includes(val(a, "status")) },
+          Q_CURRENT_PROVINCE,
+          { id: "currentCountry", label: "Which country are you currently in?", help: "Some IEC youth-mobility agreements require you to apply from your home country.", type: "select", options: countryOptions, showIf: (a) => val(a, "status") === "outside" },
         ],
       },
       {
@@ -271,6 +306,8 @@ export const PATHS: PathDef[] = [
             { value: "sponsor", label: "I'm in Canada and want to sponsor a relative" },
             { value: "sponsored", label: "I'm abroad and want a relative in Canada to sponsor me" },
           ] },
+          Q_PASSPORT,
+          Q_CURRENT_PROVINCE,
           { id: "relationship", label: "Who is the relative you'd sponsor or be sponsored by?", help: "Spouse and common-law partner are the most common, and the most direct.", type: "single", options: [
             { value: "spouse", label: "Spouse or common-law partner" },
             { value: "conjugal", label: "Partner I can't live with or marry (conjugal)" },
@@ -331,6 +368,9 @@ export const PATHS: PathDef[] = [
         title: "About you",
         fields: [
           Q_AGE,
+          Q_PASSPORT,
+          Q_IN_CANADA,
+          Q_CURRENT_PROVINCE,
           Q_PROVINCE,
           Q_EDU,
           Q_ENGLISH,
@@ -387,6 +427,9 @@ export const PATHS: PathDef[] = [
         title: "About you",
         fields: [
           Q_AGE,
+          Q_PASSPORT,
+          Q_IN_CANADA,
+          Q_CURRENT_PROVINCE,
           Q_EDU,
           Q_PROVINCE,
           Q_ENGLISH,
