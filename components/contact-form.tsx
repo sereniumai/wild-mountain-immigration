@@ -48,9 +48,8 @@ export function ContactForm({ tone = "white" }: { tone?: "white" | "pink" }) {
   // 0 = choose a pathway, 1 = contact details
   const [step, setStep] = useState(0);
   const [service, setService] = useState("");
-  // Free-text residence answer; if it mentions Canada we reveal a province picker.
-  const [residencePassport, setResidencePassport] = useState("");
-  const inCanada = /canada/i.test(residencePassport);
+  // Residence drives the conditional province question: only "inside" reveals it.
+  const [residence, setResidence] = useState<"" | "inside" | "outside">("");
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
   const [token, setToken] = useState("");
@@ -73,8 +72,9 @@ export function ContactForm({ tone = "white" }: { tone?: "white" | "pink" }) {
       name: String(f.get("name") || "").trim(),
       email: String(f.get("email") || "").trim(),
       age: String(f.get("age") || "").trim(),
-      residencePassport: String(f.get("residencePassport") || "").trim(),
-      province: String(f.get("province") || "").trim(),
+      passport: String(f.get("passport") || "").trim(),
+      residence: residence === "inside" ? "Inside Canada" : residence === "outside" ? "Outside Canada" : "",
+      province: residence === "inside" ? String(f.get("province") || "").trim() : "",
       phone: String(f.get("phone") || "").trim(),
       service,
       message: String(f.get("message") || "").trim(),
@@ -183,18 +183,35 @@ export function ContactForm({ tone = "white" }: { tone?: "white" | "pink" }) {
                 <input name="age" type="number" inputMode="numeric" min={16} max={99} autoComplete="off" className={`mt-1.5 ${inputCls}`} placeholder="e.g. 32" />
               </label>
               <label className="block">
-                <span className="block text-sm font-medium text-ink">Which country do you currently reside in, and which passport do you hold?</span>
-                <input
-                  name="residencePassport"
-                  autoComplete="off"
-                  value={residencePassport}
-                  onChange={(e) => setResidencePassport(e.target.value)}
-                  className={`mt-1.5 ${inputCls}`}
-                  placeholder="e.g. Living in the UAE, hold a British passport"
-                />
+                <span className="block text-sm font-medium text-ink">Which passport do you currently hold?</span>
+                <input name="passport" autoComplete="off" className={`mt-1.5 ${inputCls}`} placeholder="e.g. British passport" />
               </label>
+              <div className="block">
+                <span className="block text-sm font-medium text-ink">Which country do you currently reside in?</span>
+                <div className="mt-1.5 grid grid-cols-2 gap-2.5">
+                  {([
+                    { v: "inside", label: "Inside Canada" },
+                    { v: "outside", label: "Outside Canada" },
+                  ] as const).map((o) => (
+                    <button
+                      key={o.v}
+                      type="button"
+                      onClick={() => setResidence(o.v)}
+                      aria-pressed={residence === o.v}
+                      className={clsx(
+                        "flex items-center justify-center rounded-xl border px-4 py-2.5 text-[15px] font-medium shadow-soft transition-all",
+                        residence === o.v
+                          ? "border-brand bg-brand-tint text-brand ring-2 ring-brand/20"
+                          : "border-line bg-white text-ink hover:-translate-y-0.5 hover:border-brand/40",
+                      )}
+                    >
+                      {o.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
               <AnimatePresence initial={false}>
-                {inCanada && (
+                {residence === "inside" && (
                   <motion.div
                     key="province"
                     initial={{ opacity: 0, height: 0 }}
@@ -204,7 +221,7 @@ export function ContactForm({ tone = "white" }: { tone?: "white" | "pink" }) {
                     className="overflow-hidden"
                   >
                     <label className="block">
-                      <span className="block text-sm font-medium text-ink">Which province or territory are you in?</span>
+                      <span className="block text-sm font-medium text-ink">Which province do you currently reside in?</span>
                       <div className="relative mt-1.5">
                         <select name="province" defaultValue="" className={`${inputCls} appearance-none pr-10`}>
                           <option value="" disabled>Select a province or territory</option>

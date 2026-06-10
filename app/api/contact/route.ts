@@ -5,7 +5,8 @@ type Body = {
   name?: string;
   email?: string;
   age?: string;
-  residencePassport?: string;
+  passport?: string;
+  residence?: string;
   province?: string;
   phone?: string;
   service?: string;
@@ -32,8 +33,10 @@ export async function POST(request: Request) {
   const name = (body.name ?? "").trim();
   const email = (body.email ?? "").trim();
   const age = (body.age ?? "").trim().slice(0, 20);
-  const residencePassport = (body.residencePassport ?? "").trim().slice(0, 200);
-  const province = (body.province ?? "").trim().slice(0, 60);
+  const passport = (body.passport ?? "").trim().slice(0, 100);
+  const residence = (body.residence ?? "").trim().slice(0, 40);
+  // Province is only meaningful when they reside inside Canada.
+  const province = residence === "Inside Canada" ? (body.province ?? "").trim().slice(0, 60) : "";
   const phone = (body.phone ?? "").trim();
   const service = (body.service ?? "").trim() || "General enquiry";
   const message = (body.message ?? "").trim();
@@ -101,8 +104,9 @@ export async function POST(request: Request) {
     `Name: ${name}`,
     `Email: ${email}`,
     `Age: ${age || "(not given)"}`,
-    `Country of residence & passport: ${residencePassport || "(not given)"}`,
-    ...(province ? [`Province/territory (in Canada): ${province}`] : []),
+    `Passport held: ${passport || "(not given)"}`,
+    `Currently resides: ${residence || "(not given)"}`,
+    ...(province ? [`Province of residence: ${province}`] : []),
     `Phone: ${phone || "(not given)"}`,
     `Pathway: ${service}`,
     "",
@@ -112,12 +116,13 @@ export async function POST(request: Request) {
 
   const muted = '#9aa0a6';
   const ageCell = esc(age) || `<span style="color:${muted}">Not provided</span>`;
-  const residencePassportCell = esc(residencePassport) || `<span style="color:${muted}">Not provided</span>`;
+  const passportCell = esc(passport) || `<span style="color:${muted}">Not provided</span>`;
+  const residenceCell = esc(residence) || `<span style="color:${muted}">Not provided</span>`;
   const phoneCell = esc(phone) || `<span style="color:${muted}">Not provided</span>`;
   // Province only applies to people residing in Canada, so the row is omitted otherwise.
   const provinceRow = province
     ? `<tr><td style="padding:14px 18px;border-bottom:1px solid #f4ecea;">
-              <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.6px;color:${muted};font-weight:600;">Province / territory (in Canada)</div>
+              <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.6px;color:${muted};font-weight:600;">Province of residence</div>
               <div style="font-size:15px;color:#32373c;margin-top:3px;">${esc(province)}</div>
             </td></tr>`
     : "";
@@ -154,8 +159,12 @@ export async function POST(request: Request) {
               <div style="font-size:15px;color:#32373c;margin-top:3px;">${ageCell}</div>
             </td></tr>
             <tr><td style="padding:14px 18px;border-bottom:1px solid #f4ecea;">
-              <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.6px;color:${muted};font-weight:600;">Country of residence &amp; passport</div>
-              <div style="font-size:15px;color:#32373c;margin-top:3px;">${residencePassportCell}</div>
+              <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.6px;color:${muted};font-weight:600;">Passport held</div>
+              <div style="font-size:15px;color:#32373c;margin-top:3px;">${passportCell}</div>
+            </td></tr>
+            <tr><td style="padding:14px 18px;border-bottom:1px solid #f4ecea;">
+              <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.6px;color:${muted};font-weight:600;">Currently resides</div>
+              <div style="font-size:15px;color:#32373c;margin-top:3px;">${residenceCell}</div>
             </td></tr>
             ${provinceRow}
             <tr><td style="padding:14px 18px;border-bottom:1px solid #f4ecea;">
