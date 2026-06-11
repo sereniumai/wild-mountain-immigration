@@ -90,7 +90,7 @@ function scoreCard(s: Score): string {
     </table>`;
 }
 
-function answersTable(answers: QA[]): string {
+function answersTable(answers: QA[], heading = "Their answers"): string {
   if (!answers.length) return "";
   const rows = answers
     .map(
@@ -98,7 +98,7 @@ function answersTable(answers: QA[]): string {
       <td style="padding:9px 16px;border-bottom:1px solid #f4ecea;font-size:13px;color:#32373c;font-weight:600;">${esc(qa.a)}</td></tr>`,
     )
     .join("");
-  return `<div style="font-size:12px;text-transform:uppercase;letter-spacing:0.5px;color:${muted};font-weight:700;margin:0 0 8px;">Their answers</div>
+  return `<div style="font-size:12px;text-transform:uppercase;letter-spacing:0.5px;color:${muted};font-weight:700;margin:0 0 8px;">${esc(heading)}</div>
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #f0e6e4;border-radius:10px;">${rows}</table>`;
 }
 
@@ -153,6 +153,7 @@ function buildUserHtml(b: Body): string {
       <p style="margin:0;font-size:13.5px;color:#6b7280;line-height:1.65;">Thanks for using our Express Entry CRS calculator. Here's your estimated score and how it breaks down. It's based on the current public CRS grid, the real next step is a review with our regulated consultant to confirm it and find ways to raise it.</p>
     </td></tr>
     <tr><td style="padding:16px 26px 0;">${scoreCard(b.score ?? {})}</td></tr>
+    ${answersTable(b.answers ?? [], "What you told us") ? `<tr><td style="padding:18px 26px 0;">${answersTable(b.answers ?? [], "What you told us")}</td></tr>` : ""}
     <tr><td style="padding:22px 26px 4px;">
       <div style="background:#32373c;border-radius:14px;padding:22px 22px 24px;text-align:center;">
         <div style="font-size:16px;font-weight:700;color:#ffffff;">Want to raise this score?</div>
@@ -267,6 +268,7 @@ export async function POST(request: Request) {
     "Thanks for using our Express Entry CRS calculator. Here's your estimated score and breakdown. It's an estimate from the public CRS grid, not an official decision.",
     "",
     ...scoreText(body.score ?? {}),
+    ...(body.answers?.length ? ["", "What you told us:", ...body.answers.map((qa) => `  ${qa.q}: ${qa.a}`)] : []),
     "",
     `Want to raise this score? Book a consultation: ${site.url}/contact`,
     "",
