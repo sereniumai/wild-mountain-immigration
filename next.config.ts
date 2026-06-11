@@ -53,8 +53,16 @@ const redirectPairs: [string, string][] = [
   ["/resources/express-entry-download", "/express-entry"],
   ["/resources/express-entry-ebook", "/express-entry"],
   ["/how-to-move-to-canada", "/move-to-canada"],
+  // Old country pages that now have a dedicated new page. Both the "move-to-canada-from-X"
+  // and "life-in-canada-vs-X" legacy slugs point at the matching country page. Countries
+  // without a dedicated page fall through to the /move-from/:slug* catch-all below.
   ["/move-from/move-to-canada-from-usa", "/move-to-canada/from-the-usa"],
+  ["/move-from/move-to-canada-from-uk", "/move-to-canada/from-the-uk"],
   ["/move-from/life-in-canada-vs-uk", "/move-to-canada/from-the-uk"],
+  ["/move-from/move-to-canada-from-australia", "/move-to-canada/from-australia"],
+  ["/move-from/life-in-canada-vs-australia-complete-expat-comparison", "/move-to-canada/from-australia"],
+  ["/move-from/move-to-canada-from-ireland", "/move-to-canada/from-ireland"],
+  ["/move-from/life-in-canada-vs-ireland-comparison", "/move-to-canada/from-ireland"],
 
   // ---- WordPress theme demo pages (no value) ----
   ["/portfolio-agency", "/"],
