@@ -1,7 +1,14 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { RotateCcw, Info } from "lucide-react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { RotateCcw, Info, Lock, Sparkles, Send, X, BadgeCheck } from "lucide-react";
+import { motion, AnimatePresence } from "motion/react";
+import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// Cloudflare Turnstile site key (public). When unset, the widget is hidden and
+// the gate still works, so it's safe to ship before keys are configured.
+const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
 
 /* ----------------------------------------------------------------------------
    CRS scoring grids, current official IRCC grid (~2026), per CALCULATOR-DATA.md.
@@ -217,10 +224,101 @@ function clbField(label: string, value: number, onChange: (v: number) => void) {
   );
 }
 
+/** Human-readable answers for the lead email (skips anything left unselected). */
+function summarize(s: State): { q: string; a: string }[] {
+  const out: { q: string; a: string }[] = [];
+  const push = (q: string, a: string) => { if (a) out.push({ q, a }); };
+  const eduLabel = (v: string) => EDU_LABELS.find(([val]) => val === v)?.[1] ?? "";
+  const yn = (v: string) => (v === "1" ? "Yes" : v === "0" ? "No" : "");
+  const years = (v: string) => (v === "" ? "" : v === "0" ? "None" : v === "5" ? "5+ years" : `${v} year${v === "1" ? "" : "s"}`);
+
+  push("Marital status", s.marital === "single" ? "Single / spouse is PR or citizen" : s.marital === "spouse" ? "Married / common-law (spouse coming)" : "");
+  push("Age", s.age === "" ? "" : Number(s.age) >= 45 ? "45 or older" : String(s.age));
+  push("Highest education", eduLabel(s.edu));
+  push("Skilled work experience in Canada", years(s.canExp));
+  push("Skilled work experience abroad", s.foreignExp === "" ? "" : s.foreignExp === "0" ? "None" : s.foreignExp === "1-2" ? "1–2 years" : "3+ years");
+  push("Certificate of qualification (trades)", yn(s.certificate));
+
+  const { listen, speak, read, write } = s.l1;
+  if (listen || speak || read || write) push("First language (CLB L/S/R/W)", `${listen || "–"} / ${speak || "–"} / ${read || "–"} / ${write || "–"}`);
+  const second: Record<number, string> = { 5: "CLB 5–6", 7: "CLB 7–8", 9: "CLB 9+" };
+  if (s.secondLang) push("Second official language", second[s.secondLang] ?? "");
+
+  if (s.marital === "spouse") {
+    push("Spouse education", eduLabel(s.spEdu));
+    if (s.spLang) push("Spouse language (lowest CLB)", `CLB ${s.spLang}`);
+    push("Spouse Canadian work experience", years(s.spExp));
+  }
+
+  push("Provincial nomination (PNP)", s.nomination === "1" ? "Yes, enhanced nomination" : s.nomination === "0" ? "No" : "");
+  push("Sibling in Canada (citizen/PR)", yn(s.siblingInCanada));
+  push("Canadian post-secondary study", s.canStudy === "none" ? "None" : s.canStudy === "1-2" ? "1–2 year credential" : s.canStudy === "3+" ? "3-year+ / master's" : "");
+  push("French proficiency bonus", s.frenchBonus === "none" ? "None" : s.frenchBonus === "nclc7-low-eng" ? "NCLC 7+ French, low English (+25)" : s.frenchBonus === "nclc7-eng5" ? "NCLC 7+ French & CLB 5+ English (+50)" : "");
+
+  return out;
+}
+
 export function CrsCalculator() {
   const [s, setS] = useState<State>(initial);
   const r = useMemo(() => compute(s), [s]);
   const set = <K extends keyof State>(k: K, v: State[K]) => setS((p) => ({ ...p, [k]: v }));
+
+  // The score stays blurred until the person submits their details (the gate).
+  const [revealed, setRevealed] = useState(false);
+  const [showGate, setShowGate] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [consent, setConsent] = useState(false);
+  const [company, setCompany] = useState(""); // honeypot
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
+  const [token, setToken] = useState("");
+  const turnstileRef = useRef<TurnstileInstance>(null);
+
+  // Close the gate modal on Escape.
+  useEffect(() => {
+    if (!showGate) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setShowGate(false); };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [showGate]);
+
+  async function submitGate(e: React.FormEvent) {
+    e.preventDefault();
+    if (submitting) return;
+    if (!name.trim() || !EMAIL_RE.test(email.trim()) || !consent) {
+      setError("Please add your name, a valid email, and agree to be contacted.");
+      return;
+    }
+    if (TURNSTILE_SITE_KEY && !token) {
+      setError("Please complete the human verification below.");
+      return;
+    }
+    setSubmitting(true);
+    setError("");
+    try {
+      const res = await fetch("/api/crs-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: name.trim(), email: email.trim(), consent, company,
+          turnstileToken: token,
+          score: { total: r.total, core: r.core, spouse: r.spouse, transfer: r.transfer, additional: r.additional, breakdown: r.breakdown },
+          answers: summarize(s),
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.ok) throw new Error(data.error || "Something went wrong. Please try again.");
+      setRevealed(true);
+      setShowGate(false);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+      turnstileRef.current?.reset();
+      setToken("");
+    } finally {
+      setSubmitting(false);
+    }
+  }
 
   const verdict =
     r.total === 0 ? { t: "Answer the questions", c: "text-ink-soft", note: "Select your details above and your estimated CRS score appears here instantly." }
@@ -329,22 +427,60 @@ export function CrsCalculator() {
         <div className="overflow-hidden rounded-2xl border border-brand/10 bg-white shadow-window">
           <div className="border-b border-line bg-blush p-6 text-center">
             <p className="text-xs font-medium uppercase tracking-wider text-ink-soft">Your estimated CRS score</p>
-            <p className={`mt-2 font-heading text-6xl font-semibold tracking-tight ${r.total === 0 ? "text-ink-faint/45" : "text-brand"}`}>{r.total}</p>
+            <p
+              className={`mt-2 font-heading text-6xl font-semibold tracking-tight transition ${
+                revealed ? (r.total === 0 ? "text-ink-faint/45" : "text-brand") : "select-none text-brand blur-[9px]"
+              }`}
+              aria-hidden={!revealed}
+            >
+              {r.total}
+            </p>
             <p className="text-xs text-ink-faint">out of 1,200</p>
-            <p className={`mt-3 inline-block rounded-full bg-white px-3 py-1 text-sm font-semibold shadow-soft ${verdict.c}`}>{verdict.t}</p>
+            {revealed ? (
+              <p className={`mt-3 inline-block rounded-full bg-white px-3 py-1 text-sm font-semibold shadow-soft ${verdict.c}`}>{verdict.t}</p>
+            ) : (
+              <p className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1 text-sm font-semibold text-ink-soft shadow-soft">
+                <Lock className="size-3.5" /> Calculated at the end
+              </p>
+            )}
           </div>
           <div className="p-5">
-            <p className="text-[13px] leading-relaxed text-ink-soft">{verdict.note}</p>
-            <dl className="mt-4 space-y-1.5 text-[13.5px]">
-              {[["Core human capital", r.core], ["Spouse factors", r.spouse], ["Skill transferability", r.transfer], ["Additional points", r.additional]].map(([k, v]) => (
-                <div key={k as string} className="flex justify-between border-b border-line-soft py-1.5">
-                  <dt className="text-ink-soft">{k}</dt><dd className="font-semibold text-ink">{v}</dd>
-                </div>
-              ))}
-            </dl>
-            <a href="/contact" className="mt-5 flex w-full items-center justify-center rounded-xl bg-gradient-to-b from-[#ee100c] to-brand px-5 py-3 font-heading text-[15px] font-medium text-white shadow-[var(--shadow-brand)] ring-1 ring-inset ring-white/15 transition-transform hover:-translate-y-0.5">
-              Get an expert review of my profile
-            </a>
+            {revealed ? (
+              <>
+                <p className="text-[13px] leading-relaxed text-ink-soft">{verdict.note}</p>
+                <dl className="mt-4 space-y-1.5 text-[13.5px]">
+                  {[["Core human capital", r.core], ["Spouse factors", r.spouse], ["Skill transferability", r.transfer], ["Additional points", r.additional]].map(([k, v]) => (
+                    <div key={k as string} className="flex justify-between border-b border-line-soft py-1.5">
+                      <dt className="text-ink-soft">{k}</dt><dd className="font-semibold text-ink">{v}</dd>
+                    </div>
+                  ))}
+                </dl>
+                <p className="mt-4 flex items-start gap-1.5 rounded-lg bg-brand-tint/60 px-3 py-2 text-[12.5px] leading-relaxed text-ink-soft">
+                  <BadgeCheck className="mt-0.5 size-3.5 shrink-0 text-brand" /> We&apos;ve emailed this breakdown to {email}.
+                </p>
+                <a href="/contact" className="mt-4 flex w-full items-center justify-center rounded-xl bg-linear-to-b from-[#ee100c] to-brand px-5 py-3 font-heading text-[15px] font-medium text-white shadow-(--shadow-brand) ring-1 ring-inset ring-white/15 transition-transform hover:-translate-y-0.5">
+                  Get an expert review of my profile
+                </a>
+              </>
+            ) : (
+              <>
+                <p className="text-[13px] leading-relaxed text-ink-soft">Your score updates as you answer. Add your details to reveal your final number and full breakdown, emailed to you and our team.</p>
+                <dl className="mt-4 select-none space-y-1.5 text-[13.5px] blur-[5px]" aria-hidden>
+                  {[["Core human capital", r.core], ["Spouse factors", r.spouse], ["Skill transferability", r.transfer], ["Additional points", r.additional]].map(([k, v]) => (
+                    <div key={k as string} className="flex justify-between border-b border-line-soft py-1.5">
+                      <dt className="text-ink-soft">{k}</dt><dd className="font-semibold text-ink">{v}</dd>
+                    </div>
+                  ))}
+                </dl>
+                <button
+                  type="button"
+                  onClick={() => { setShowGate(true); setError(""); }}
+                  className="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-linear-to-b from-[#ee100c] to-brand px-5 py-3 font-heading text-[15px] font-medium text-white shadow-(--shadow-brand) ring-1 ring-inset ring-white/15 transition-transform hover:-translate-y-0.5"
+                >
+                  <Lock className="size-4" /> Reveal my CRS score
+                </button>
+              </>
+            )}
             <p className="mt-3 flex items-start gap-1.5 text-[11.5px] leading-relaxed text-ink-faint">
               <Info className="mt-0.5 size-3.5 shrink-0" />
               Estimate only, based on the current public CRS grid. Your official score is calculated by IRCC. An RCIC review confirms it before you submit.
@@ -353,6 +489,66 @@ export function CrsCalculator() {
         </div>
       </div>
       </div>
+
+      {/* gate: collect contact details, then reveal the score and email the breakdown */}
+      <AnimatePresence>
+        {showGate && (
+          <motion.div
+            className="fixed inset-0 z-50 flex items-center justify-center p-4"
+            initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.18 }}
+          >
+            <button type="button" aria-label="Close" onClick={() => setShowGate(false)} className="absolute inset-0 bg-ink/50 backdrop-blur-sm" />
+            <motion.div
+              role="dialog" aria-modal="true"
+              initial={{ opacity: 0, scale: 0.96, y: 10 }} animate={{ opacity: 1, scale: 1, y: 0 }} exit={{ opacity: 0, scale: 0.97 }}
+              transition={{ duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
+              className="relative w-full max-w-md overflow-hidden rounded-2xl border border-line bg-white p-6 shadow-window sm:p-7"
+            >
+              <button type="button" onClick={() => setShowGate(false)} aria-label="Close" className="absolute right-4 top-4 text-ink-faint transition-colors hover:text-ink">
+                <X className="size-5" />
+              </button>
+              <form onSubmit={submitGate}>
+                <input type="text" name="company" tabIndex={-1} autoComplete="off" aria-hidden value={company} onChange={(e) => setCompany(e.target.value)} className="hidden" />
+                <span className="flex size-12 items-center justify-center rounded-full bg-brand-tint text-brand ring-1 ring-inset ring-brand/15">
+                  <Sparkles className="size-6" />
+                </span>
+                <h3 className="mt-4 font-heading text-[1.4rem] font-semibold tracking-[-0.02em] text-ink">Your CRS score is ready</h3>
+                <p className="mt-1.5 text-[14px] leading-relaxed text-ink-soft">Add your details to reveal your final score and full breakdown. We&apos;ll email a copy to you and our team so we can help you raise it.</p>
+
+                <div className="mt-5 space-y-4">
+                  <label className="block">
+                    <span className="block text-sm font-medium text-ink">Full name <span className="text-brand">*</span></span>
+                    <input autoFocus value={name} onChange={(e) => setName(e.target.value)} required autoComplete="name" placeholder="John Smith"
+                      className="mt-1.5 w-full rounded-xl border border-line bg-white px-3.5 py-2.5 text-ink shadow-soft outline-none transition-colors placeholder:text-ink-faint focus:border-brand focus:ring-2 focus:ring-brand/15" />
+                  </label>
+                  <label className="block">
+                    <span className="block text-sm font-medium text-ink">Email address <span className="text-brand">*</span></span>
+                    <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" required autoComplete="email" inputMode="email" placeholder="you@email.com"
+                      className="mt-1.5 w-full rounded-xl border border-line bg-white px-3.5 py-2.5 text-ink shadow-soft outline-none transition-colors placeholder:text-ink-faint focus:border-brand focus:ring-2 focus:ring-brand/15" />
+                  </label>
+                  <label className="flex items-start gap-2.5 text-[13px] leading-relaxed text-ink-soft">
+                    <input type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} required className="mt-0.5 size-4 shrink-0 rounded border-line accent-brand" />
+                    <span>I agree that Wild Mountain Immigration may contact me about my enquiry, and to the{" "}
+                      <a href="/privacy-policy" className="font-medium text-brand hover:underline">Privacy Policy</a> and{" "}
+                      <a href="/terms" className="font-medium text-brand hover:underline">Terms</a>.</span>
+                  </label>
+
+                  {TURNSTILE_SITE_KEY && (
+                    <Turnstile ref={turnstileRef} siteKey={TURNSTILE_SITE_KEY} onSuccess={setToken} onExpire={() => setToken("")} onError={() => setToken("")} options={{ theme: "light", size: "flexible" }} />
+                  )}
+
+                  {error && <p role="alert" className="rounded-lg bg-brand-soft/60 px-3.5 py-2.5 text-[13px] font-medium text-brand ring-1 ring-inset ring-brand/15">{error}</p>}
+
+                  <button type="submit" disabled={submitting || (!!TURNSTILE_SITE_KEY && !token)}
+                    className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-linear-to-b from-[#ee100c] to-brand px-6 font-heading text-[15px] font-medium text-white shadow-(--shadow-brand) ring-1 ring-inset ring-white/15 transition-transform hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:translate-y-0">
+                    {submitting ? (<><span className="size-4 animate-spin rounded-full border-2 border-white/40 border-t-white" aria-hidden /> Revealing…</>) : (<><Send className="size-4" /> Reveal my score</>)}
+                  </button>
+                </div>
+              </form>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
