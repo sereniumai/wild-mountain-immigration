@@ -52,6 +52,7 @@ const redirectPairs: [string, string][] = [
   // ---- resources / lead magnets / move-from ----
   ["/resources/express-entry-download", "/express-entry"],
   ["/resources/express-entry-ebook", "/express-entry"],
+  ["/resources/how-to-get-a-job-offer-in-canada-from-outside", "/work-permits"],
   ["/how-to-move-to-canada", "/move-to-canada"],
   // Old country pages that now have a dedicated new page. Both the "move-to-canada-from-X"
   // and "life-in-canada-vs-X" legacy slugs point at the matching country page. Countries
