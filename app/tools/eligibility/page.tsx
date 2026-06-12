@@ -55,7 +55,7 @@ export default function EligibilityPage() {
           articleLd({
             headline: "Canada Immigration Eligibility Checker",
             description:
-              "Free Canada immigration eligibility checker. Answer a few questions to see which permanent residence and work permit routes may fit you. No email needed.",
+              "Free Canada immigration eligibility checker. Answer a few questions to see which permanent residence and work permit routes may fit you.",
             path: PATH,
             dateModified: "2026-05-31",
           }),

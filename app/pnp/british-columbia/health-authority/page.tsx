@@ -107,7 +107,7 @@ export default function BcPnpHealthAuthorityPage() {
               <Calculator className="size-7 text-brand" />
               <h2 className="mt-3 font-heading text-lg font-semibold text-ink">Free CRS Calculator</h2>
               <p className="mt-1.5 text-sm text-ink-soft">
-                Heading down the Express Entry BC route? See your federal CRS score in two minutes, no email required.
+                Heading down the Express Entry BC route? See your federal CRS score in two minutes.
               </p>
               <Button href="/tools/crs-calculator" className="mt-4 w-full" withArrow>Calculate my CRS score</Button>
             </div>

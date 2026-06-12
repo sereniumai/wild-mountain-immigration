@@ -107,7 +107,7 @@ export default function LabourMarketPrioritiesPage() {
               <h2 className="mt-3 font-heading text-lg font-semibold text-ink">Free CRS Calculator</h2>
               <p className="mt-1.5 text-sm text-ink-soft">
                 Labour Market Priorities draws from Express Entry, see your Comprehensive Ranking System score in two
-                minutes, no email required.
+                minutes.
               </p>
               <Button href="/tools/crs-calculator" className="mt-4 w-full" withArrow>Calculate my CRS score</Button>
             </div>

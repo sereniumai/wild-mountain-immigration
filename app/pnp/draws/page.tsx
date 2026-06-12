@@ -284,7 +284,7 @@ export default function PnpDrawsPage() {
             <FeatureCard icon={Briefcase} title="British Columbia (BC PNP)" desc="Skilled worker, tech, health authority and international graduate streams." href="/pnp/british-columbia" />
             <FeatureCard icon={Map} title="Saskatchewan (SINP)" desc="International Skilled Worker and in-demand occupation routes to nomination." href="/pnp/saskatchewan" />
             <FeatureCard icon={Rocket} title="Express Entry" desc="Where an enhanced provincial nomination adds 600 CRS points." href="/express-entry" />
-            <FeatureCard icon={Calculator} title="Free CRS Calculator" desc="Estimate your federal score in two minutes, free, no email required." href="/tools/crs-calculator" />
+            <FeatureCard icon={Calculator} title="Free CRS Calculator" desc="Estimate your federal score in two minutes, free." href="/tools/crs-calculator" />
           </FeatureGrid>
         </div>
       </Section>

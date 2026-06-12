@@ -13,7 +13,7 @@ export const metadata: Metadata = pageMeta({
   title: "CRS Calculator 2026",
   titleAbsolute: "CRS Calculator 2026: Free Express Entry Calculator",
   description:
-    "Free CRS calculator and Express Entry points calculator. Estimate your Comprehensive Ranking System score for 2026 on the current IRCC grid. No email.",
+    "Free CRS calculator and Express Entry points calculator. Estimate your Comprehensive Ranking System score for 2026 on the current IRCC grid.",
   path: PATH,
   keywords: ["crs calculator", "crs calculator 2026", "express entry calculator", "express entry points calculator", "comprehensive ranking system", "what is my crs score"],
 });
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Is this CRS calculator free to use?",
-    a: "Yes. Our CRS calculator and Express Entry points calculator are completely free and ungated, with no email or sign-up required. You can run your score as many times as you like and model different scenarios, then get in touch only if you want an RCIC to review your profile.",
+    a: "Yes. Our CRS calculator and Express Entry points calculator are completely free to use. You can run your score as many times as you like and model different scenarios, then get in touch only if you want an RCIC to review your profile.",
   },
   {
     q: "How is the CRS score calculated?",
@@ -56,7 +56,7 @@ export default function CrsCalculatorPage() {
         data={[
           articleLd({
             headline: "CRS Calculator 2026, Express Entry Score Estimator",
-            description: "Free CRS calculator for Express Entry 2026. Estimate your Comprehensive Ranking System score in minutes using the current IRCC grid. No email required.",
+            description: "Free CRS calculator for Express Entry 2026. Estimate your Comprehensive Ranking System score in minutes using the current IRCC grid.",
             path: PATH,
             dateModified: "2026-05-31",
           }),
@@ -89,8 +89,8 @@ export default function CrsCalculatorPage() {
         lede={
           <p>
             This free <strong>CRS calculator</strong>, also an Express Entry points calculator, estimates your
-            Comprehensive Ranking System score in about two minutes using the current official IRCC points grid. No
-            email, no sign-up, just answer the questions and see where you stand for 2026 draws.
+            Comprehensive Ranking System score in about two minutes using the current official IRCC points grid. Just
+            answer the questions and see where you stand for 2026 draws.
           </p>
         }
         primaryCta={{ href: "#calculator", label: "Start calculating" }}
@@ -119,10 +119,10 @@ export default function CrsCalculatorPage() {
         <Container>
           <Prose className="max-w-3xl">
             <KeyTakeaways
-              summary="A CRS calculator estimates your Express Entry Comprehensive Ranking System (CRS) score out of 1,200 using IRCC's current points grid. This free CRS calculator scores your age, education, language, work experience and other factors in about two minutes, with no email or sign-up. A provincial nomination adds 600 points, the single biggest boost."
+              summary="A CRS calculator estimates your Express Entry Comprehensive Ranking System (CRS) score out of 1,200 using IRCC's current points grid. This free CRS calculator scores your age, education, language, work experience and other factors in about two minutes. A provincial nomination adds 600 points, the single biggest boost."
               items={[
                 <>A <strong>CRS calculator</strong> estimates your Express Entry score out of <strong>1,200</strong> points.</>,
-                <>This <strong>Express Entry calculator</strong> is free and ungated, with no email or sign-up.</>,
+                <>This <strong>Express Entry calculator</strong> is free to use, as often as you like.</>,
                 <>It uses IRCC&apos;s current 2026 grid, including the <strong>removal of job-offer points</strong> (March 2025).</>,
                 <>A <strong>provincial nomination adds 600 points</strong>, usually enough to clear the next draw cut-off.</>,
               ]}

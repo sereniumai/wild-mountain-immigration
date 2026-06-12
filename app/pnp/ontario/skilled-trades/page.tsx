@@ -106,7 +106,7 @@ export default function OntarioSkilledTradesPage() {
               <Calculator className="size-7 text-brand" />
               <h2 className="mt-3 font-heading text-lg font-semibold text-ink">Free CRS Calculator</h2>
               <p className="mt-1.5 text-sm text-ink-soft">
-                See your Express Entry score before the +600 OINP boost, two minutes, no email required.
+                See your Express Entry score before the +600 OINP boost, two minutes.
               </p>
               <Button href="/tools/crs-calculator" className="mt-4 w-full" withArrow>Calculate my CRS score</Button>
             </div>

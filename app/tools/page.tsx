@@ -13,7 +13,7 @@ export const metadata: Metadata = pageMeta({
   title: "Canada Immigration Tools",
   titleAbsolute: "Canada Immigration Tools: Free Calculators & Checker",
   description:
-    "Free Canada immigration tools from a licensed RCIC: check the pathways you qualify for and estimate your CRS and AAIP scores. Start now, no sign-up needed.",
+    "Free Canada immigration tools from a licensed RCIC: check the pathways you qualify for and estimate your CRS and AAIP scores. Start now.",
   path: PATH,
   keywords: ["canada immigration tools", "free immigration tools", "canadian immigration calculator", "canada eligibility checker", "crs calculator", "aaip points calculator"],
 });
@@ -21,7 +21,7 @@ export const metadata: Metadata = pageMeta({
 const faqs = [
   {
     q: "Are these immigration tools free?",
-    a: "Yes. The eligibility checker, the CRS calculator and the AAIP points calculator are all completely free and ungated, with no email or sign-up required. They give you an instant read so you can decide on your next step with confidence.",
+    a: "Yes. The eligibility checker, the CRS calculator and the AAIP points calculator are all completely free to use. They give you an instant read so you can decide on your next step with confidence.",
   },
   {
     q: "How accurate are the calculators?",
@@ -51,7 +51,7 @@ export default function ToolsPage() {
             Our free <strong>Canada immigration tools</strong> help you see which pathways you qualify for and
             estimate your Express Entry CRS and Alberta AAIP scores in minutes, using current official criteria. This
             free <strong>Canada immigration calculator</strong> suite, along with live processing times, lives in one
-            place. There is no email and no sign-up, so you can know where you stand before you spend a dollar.
+            place, so you can know where you stand before you spend a dollar.
           </p>
         }
         primaryCta={{ href: "/tools/eligibility", label: "Eligibility Checker" }}
@@ -88,11 +88,11 @@ export default function ToolsPage() {
         <Container>
           <Prose className="max-w-3xl">
             <KeyTakeaways
-              summary="Our free Canada immigration tools are a licensed RCIC's suite of online calculators and checkers. They show you which permanent residence and work permit pathways you qualify for, estimate your Express Entry CRS and Alberta AAIP scores, and let you review live processing times before you spend a dollar. Use the eligibility checker to find routes that may fit, the CRS calculator to estimate your Express Entry score out of 1,200, and the AAIP calculator for your Alberta points. All are ungated, with no email or sign-up."
+              summary="Our free Canada immigration tools are a licensed RCIC's suite of online calculators and checkers. They show you which permanent residence and work permit pathways you qualify for, estimate your Express Entry CRS and Alberta AAIP scores, and let you review live processing times before you spend a dollar. Use the eligibility checker to find routes that may fit, the CRS calculator to estimate your Express Entry score out of 1,200, and the AAIP calculator for your Alberta points."
               items={[
                 <>Use our free <strong>Canada immigration calculator</strong> suite: the <a href="/tools/crs-calculator">CRS score calculator</a>, the <a href="/tools/aaip-calculator">Alberta PNP points calculator</a> and an <a href="/tools/eligibility">eligibility checker</a>, all in one place.</>,
                 <>Check current <a href="/tools/processing-times">processing times</a> and recent Express Entry draw cut-offs so you can plan around realistic timelines.</>,
-                <>Every tool is <strong>free and ungated</strong>, with no email or sign-up required.</>,
+                <>Every tool is <strong>free to use</strong>.</>,
                 <>They use current official <strong>IRCC and Government of Alberta</strong> criteria for a close estimate.</>,
                 <>They are a starting point, not an official decision; only <strong>IRCC</strong> or the province can decide an application.</>,
               ]}

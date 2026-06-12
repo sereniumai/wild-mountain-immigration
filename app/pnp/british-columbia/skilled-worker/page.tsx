@@ -108,7 +108,7 @@ export default function SkilledWorkerPage() {
             <div className="rounded-2xl border border-brand/20 bg-brand-tint p-6">
               <Calculator className="size-7 text-brand" />
               <h2 className="mt-3 font-heading text-lg font-semibold text-ink">Heading to Express Entry BC?</h2>
-              <p className="mt-1.5 text-sm text-ink-soft">An enhanced BC nomination adds 600 CRS points. See where your federal score stands first, free, no email.</p>
+              <p className="mt-1.5 text-sm text-ink-soft">An enhanced BC nomination adds 600 CRS points. See where your federal score stands first, free.</p>
               <Button href="/tools/crs-calculator" className="mt-4 w-full" withArrow>Calculate my CRS score</Button>
             </div>
             <RelatedLinks

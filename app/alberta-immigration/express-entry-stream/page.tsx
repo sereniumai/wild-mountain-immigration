@@ -108,7 +108,7 @@ export default function AlbertaExpressEntryStreamPage() {
             <div className="rounded-2xl border border-brand/20 bg-brand-tint p-6">
               <Calculator className="size-7 text-brand" />
               <h2 className="mt-3 font-heading text-lg font-semibold text-ink">Free AAIP & CRS calculators</h2>
-              <p className="mt-1.5 text-sm text-ink-soft">Check your Alberta Worker EOI (out of 100) and your federal CRS, both matter for this stream. No email required.</p>
+              <p className="mt-1.5 text-sm text-ink-soft">Check your Alberta Worker EOI (out of 100) and your federal CRS, both matter for this stream.</p>
               <Button href="/tools/aaip-calculator" className="mt-4 w-full" withArrow>Score my AAIP EOI</Button>
               <Button href="/tools/crs-calculator" className="mt-3 w-full" variant="secondary">Calculate my CRS</Button>
             </div>

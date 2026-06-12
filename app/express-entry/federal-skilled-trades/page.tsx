@@ -109,7 +109,7 @@ export default function FederalSkilledTradesPage() {
             <div className="rounded-2xl border border-brand/20 bg-brand-tint p-6">
               <Calculator className="size-7 text-brand" />
               <h2 className="mt-3 font-heading text-lg font-semibold text-ink">Free CRS Calculator</h2>
-              <p className="mt-1.5 text-sm text-ink-soft">See your Express Entry score in two minutes, no email required.</p>
+              <p className="mt-1.5 text-sm text-ink-soft">See your Express Entry score in two minutes.</p>
               <Button href="/tools/crs-calculator" className="mt-4 w-full" withArrow>Calculate my score</Button>
             </div>
             <RelatedLinks

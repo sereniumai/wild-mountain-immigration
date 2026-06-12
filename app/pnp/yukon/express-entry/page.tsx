@@ -107,7 +107,7 @@ export default function YukonExpressEntryPage() {
               <h2 className="mt-3 font-heading text-lg font-semibold text-ink">Free CRS Calculator</h2>
               <p className="mt-1.5 text-sm text-ink-soft">
                 See where you stand before a Yukon nomination adds 600 points, estimate your Express Entry CRS in two
-                minutes, no email required.
+                minutes.
               </p>
               <Button href="/tools/crs-calculator" className="mt-4 w-full" withArrow>Calculate my CRS score</Button>
             </div>

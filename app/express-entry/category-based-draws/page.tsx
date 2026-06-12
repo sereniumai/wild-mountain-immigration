@@ -118,7 +118,7 @@ export default function CategoryBasedDrawsPage() {
                 { label: "Express Entry (overview)", href: "/express-entry", note: "The full 2026 pillar guide" },
                 { label: "Rounds of invitations", href: "/express-entry/draws", note: "Every 2026 draw, explained" },
                 { label: "Comprehensive Ranking System", href: "/express-entry/comprehensive-ranking-system", note: "How your CRS score is built" },
-                { label: "Free CRS calculator", href: "/tools/crs-calculator", note: "Two minutes, no email" },
+                { label: "Free CRS calculator", href: "/tools/crs-calculator", note: "Two minutes" },
               ]}
             />
           </>

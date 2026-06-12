@@ -107,7 +107,7 @@ export default function ExpressEntryBcPage() {
             <div className="rounded-2xl border border-brand/20 bg-brand-tint p-6">
               <Calculator className="size-7 text-brand" />
               <h2 className="mt-3 font-heading text-lg font-semibold text-ink">See where the +600 lands</h2>
-              <p className="mt-1.5 text-sm text-ink-soft">Express Entry BC only helps if you have a federal profile. Check your current CRS first, then see what a 600-point nomination does. No email required.</p>
+              <p className="mt-1.5 text-sm text-ink-soft">Express Entry BC only helps if you have a federal profile. Check your current CRS first, then see what a 600-point nomination does.</p>
               <Button href="/tools/crs-calculator" className="mt-4 w-full" withArrow>Calculate my CRS</Button>
               <Button href="/contact" className="mt-3 w-full" variant="secondary">Get started</Button>
             </div>

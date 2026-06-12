@@ -345,7 +345,7 @@ function Tools() {
               Know where you stand before you spend a dollar
             </h2>
             <p className="mt-4 max-w-md text-lg text-ink-soft">
-              Free and ungated, no email required. See what you qualify for and estimate your scores in minutes, then get started to build your plan.
+              Free to use. See what you qualify for and estimate your scores in minutes, then get started to build your plan.
             </p>
           </Reveal>
           <div className="space-y-4">
