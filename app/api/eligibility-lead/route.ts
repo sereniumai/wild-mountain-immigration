@@ -210,8 +210,8 @@ function buildUserHtml(b: Body): string {
     <tr><td style="padding:22px 26px 4px;">
       <div style="background:#32373c;border-radius:14px;padding:22px 22px 24px;text-align:center;">
         <div style="font-size:16px;font-weight:700;color:#ffffff;">Ready for a proper review?</div>
-        <p style="margin:8px 0 16px;font-size:13px;color:#cfd3d6;line-height:1.6;">A licensed RCIC (#R706497) will confirm which of these you genuinely qualify for and map your next steps, honestly, with no guarantees about outcomes only IRCC decides.</p>
-        <a href="${contactUrl}" style="display:inline-block;background:#e00400;color:#ffffff;font-size:14px;font-weight:700;text-decoration:none;padding:12px 26px;border-radius:10px;">Book a consultation</a>
+        <p style="margin:8px 0 16px;font-size:13px;color:#cfd3d6;line-height:1.6;">Your first call is free. A licensed RCIC (#R706497) will confirm which of these you genuinely qualify for and map your next steps, honestly, with no guarantees about outcomes only IRCC decides.</p>
+        <a href="${contactUrl}" style="display:inline-block;background:#e00400;color:#ffffff;font-size:14px;font-weight:700;text-decoration:none;padding:12px 26px;border-radius:10px;">Book a free consultation</a>
       </div>
     </td></tr>
     <tr><td style="padding:20px 26px 26px;">
@@ -335,7 +335,7 @@ export async function POST(request: Request) {
     "",
     FRESHNESS_NOTE,
     "",
-    `Ready for a proper review? Book a consultation: ${site.url}/contact`,
+    `Ready for a proper review? Your first call is free, book a consultation: ${site.url}/contact`,
     "",
     `${site.name} - CICC-regulated RCIC (#R706497). Not affiliated with the Government of Canada. Quebec not covered. Details last verified ${POLICY.lastVerified}.`,
   ].filter(Boolean);

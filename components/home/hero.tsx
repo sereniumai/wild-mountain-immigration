@@ -103,6 +103,10 @@ export function Hero() {
             </Link>
           </motion.div>
 
+          <motion.p {...fade(0.27)} className="mt-4 text-sm text-white/85">
+            Your first call is free, online across Canada and worldwide.
+          </motion.p>
+
           <motion.div {...fade(0.3)} className="mt-10 flex items-center gap-2.5">
             <span className="flex items-center gap-1">
               {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="size-4.5 fill-brand text-brand" />)}

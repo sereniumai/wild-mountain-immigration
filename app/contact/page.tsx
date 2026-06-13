@@ -19,6 +19,10 @@ export const metadata: Metadata = pageMeta({
 
 const faqs = [
   {
+    q: "Is the first call free?",
+    a: "Yes. When you contact us, your first call with a licensed RCIC is free, a short conversation to understand your situation and point you to the right next step. If you then want a full review with a written pathway plan, a comprehensive consultation is $120, free for spousal sponsorship cases and waived when you proceed with full File Management.",
+  },
+  {
     q: "Where is Wild Mountain Immigration based?",
     a: "We are based in Canmore, Alberta, and serve clients across the Bow Valley and Calgary online. As a service-area business we meet clients by video call and phone, and we represent clients right across Canada and internationally.",
   },
@@ -64,7 +68,8 @@ export default function ContactPage() {
               </h1>
               <p className="mt-5 max-w-md text-lg leading-relaxed text-ink-soft">
                 Reach Wild Mountain Immigration, your licensed RCIC immigration consultant in Canmore, Alberta. Send
-                your enquiry online from anywhere in the world.
+                your enquiry and we&apos;ll arrange a <strong>free first call</strong> with a licensed consultant, online
+                from anywhere in the world.
               </p>
               <div className="mt-7 flex flex-wrap items-center gap-3">
                 <a href={site.phoneHref} className="inline-flex h-12 items-center gap-2 rounded-xl bg-white px-5 text-[15px] font-medium text-ink shadow-soft ring-1 ring-line transition-colors hover:text-brand">

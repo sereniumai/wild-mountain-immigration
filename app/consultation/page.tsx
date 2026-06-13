@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: "How much does an immigration consultation in Canada cost?",
-    a: "A one-off consultation fee is $120. It is free for spousal sponsorship cases, and for every other service we waive the $120 entirely when you proceed with full File Management. To prepare for a consultation, have your passport, any past Canadian immigration history and a short note on your goals ready for your online appointment.",
+    a: "Your first call is free, a short conversation with a licensed RCIC to understand your situation and point you to the right next step. A full, in-depth consultation is $120. It is free for spousal sponsorship cases, and for every other service we waive the $120 entirely when you proceed with full File Management. To prepare, have your passport, any past Canadian immigration history and a short note on your goals ready for your online appointment.",
   },
   {
     q: "Do I have to live in Canmore to book?",
@@ -63,9 +63,9 @@ export default function ConsultationPage() {
         title={<>Book your immigration <span className="text-brand">consultation in Canada</span></>}
         lede={
           <p>
-            Book an <strong>immigration consultation in Canada</strong> with a licensed RCIC and get an honest, personal
-            read on your options. We give you straight advice and a clear plan in a focused online appointment, not
-            promises about outcomes only IRCC can decide.
+            Start with a <strong>free first call</strong> with a licensed RCIC and get an honest, personal read on your
+            options. We give you straight advice and a clear plan in a focused online appointment, not promises about
+            outcomes only IRCC can decide.
           </p>
         }
         primaryCta={{ href: "#book", label: "Send your enquiry" }}
@@ -94,8 +94,8 @@ export default function ConsultationPage() {
                   <li className="flex items-center gap-3"><Mail className="size-4 text-brand" /><a href="/contact" className="text-ink-soft hover:text-brand">Send us a message</a></li>
                 </ul>
                 <p className="mt-4 border-t border-line pt-4 text-sm text-ink-soft">
-                  A one-off consultation is <strong>$120</strong>, free for spousal sponsorship and waived when you
-                  proceed with full File Management.
+                  Your <strong>first call is free</strong>. A full consultation is <strong>$120</strong>, free for
+                  spousal sponsorship and waived when you proceed with full File Management.
                 </p>
               </div>
               <div className="rounded-2xl border border-brand/20 bg-brand-soft/60 p-6">
@@ -108,7 +108,7 @@ export default function ConsultationPage() {
               </div>
               <KeyTakeaways
                 title="What you'll leave with"
-                summary="An immigration consultation in Canada with Wild Mountain Immigration is a focused 30-minute to one-hour session with a licensed RCIC based in Canmore, Alberta. The flat fee is $120, free for spousal sponsorship and waived with full File Management. You receive an honest assessment of your realistic options, the best pathway for your goals and timeline, and clear next steps with transparent, fixed-scope fees. Sessions run online by video call and phone across Canada and worldwide."
+                summary="An immigration consultation in Canada with Wild Mountain Immigration starts with a free first call with a licensed RCIC based in Canmore, Alberta. A full, in-depth session is $120, free for spousal sponsorship and waived with full File Management. You receive an honest assessment of your realistic options, the best pathway for your goals and timeline, and clear next steps with transparent, fixed-scope fees. Sessions run online by video call and phone across Canada and worldwide."
                 items={[
                   "An honest assessment of your realistic options",
                   "The best pathway for your goals and timeline",
@@ -127,7 +127,7 @@ export default function ConsultationPage() {
         </div>
         <div className="mt-10">
           <FeatureGrid>
-            <FeatureCard icon={MessageSquare} title="1 · Consultation" desc="In a 30-minute to one-hour online session we learn your goals and history, then give you an honest assessment of your real options." />
+            <FeatureCard icon={MessageSquare} title="1 · Free first call" desc="We start with a free call to learn your goals and history, then give you an honest assessment of your real options." />
             <FeatureCard icon={ClipboardCheck} title="2 · Your strategy" desc="We map the best pathway and a clear, fixed-scope plan with transparent fees, File Management or File Review." />
             <FeatureCard icon={FileCheck2} title="3 · Application & support" desc="We prepare and submit your strongest case and stay with you through every milestone." />
           </FeatureGrid>

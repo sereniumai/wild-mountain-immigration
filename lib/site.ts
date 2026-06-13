@@ -414,9 +414,9 @@ export const services = [
   },
 ] as const;
 
-// Primary call to action. Every "Get started" button routes to the contact page.
-// We do not surface consultation pricing anywhere except spousal sponsorship pages,
-// which add their own free-consultation note inline.
+// Primary call to action. Every "Get started" button routes to the contact page,
+// where everyone gets a free first call with a licensed RCIC. The paid full
+// consultation pricing lives on /fees and /consultation only.
 export const consult = {
   href: "/contact",
   label: "Get started",

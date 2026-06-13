@@ -14,7 +14,7 @@ const UPDATED = "May 2026";
 /* Published professional fees (CAD). Government fees are separate. Ranges use an
    en dash. This single source feeds both the on-page tables and the JSON-LD. */
 type FeeRow = [string, string];
-const CONSULTATION: FeeRow = ["Consultation (video conference)", "$120"];
+const CONSULTATION: FeeRow = ["Full consultation (video call)", "$120"];
 
 const fileManagement: { group: string; rows: FeeRow[] }[] = [
   { group: "Permanent residence: Express Entry", rows: [
@@ -110,7 +110,7 @@ export const metadata: Metadata = pageMeta({
   title: "Immigration Consultant Cost",
   titleAbsolute: "Immigration Consultant Cost & Fees Canada | RCIC",
   description:
-    "What does an immigration consultant cost in Canada? See our RCIC fees by program, the $120 consultation (free for spousal sponsorship) and a fixed quote.",
+    "What does an immigration consultant cost in Canada? See our RCIC fees by program. Your first call is free; a full consultation is $120 (free for spousal sponsorship), then a fixed quote.",
   path: PATH,
   keywords: [
     "immigration consultant cost",
@@ -128,7 +128,7 @@ const faqs = [
   },
   {
     q: "How much is the consultation, and is it ever free?",
-    a: "Our one-off consultation is $120. It is free for spousal sponsorship cases, and for every other service we waive the $120 entirely when you proceed with full File Management. The consultation is where a licensed RCIC reviews your situation, maps your best pathway, and gives you a clear, written, fixed-scope quote, so you know the full cost before you commit.",
+    a: "Your first call is free, a short conversation with a licensed RCIC to understand your situation and point you to the right next step. A full, in-depth consultation is $120. It is free for spousal sponsorship cases, and for every other service we waive the $120 entirely when you proceed with full File Management. The full consultation is where a licensed RCIC reviews your situation, maps your best pathway, and gives you a clear, written, fixed-scope quote, so you know the full cost before you commit.",
   },
   {
     q: "How do I get a quote for my case?",
@@ -201,9 +201,9 @@ export default function FeesPage() {
           <p>
             <strong>An immigration consultant&rsquo;s cost in Canada typically runs from a few hundred to several thousand
             dollars</strong>, because professional fees scale with the program and the complexity of your case. Below we
-            explain what actually drives the immigration consultant cost, our $120 consultation (free for spousal
-            sponsorship), the two ways you can work with us, and how our professional fee differs from the separate
-            government disbursements set by IRCC and Alberta.
+            explain what actually drives the immigration consultant cost, your free first call and our $120 full
+            consultation (free for spousal sponsorship), the two ways you can work with us, and how our professional
+            fee differs from the separate government disbursements set by IRCC and Alberta.
           </p>
         }
         updated={UPDATED}
@@ -233,10 +233,10 @@ export default function FeesPage() {
       >
         <Prose>
           <KeyTakeaways
-            summary="The immigration consultant cost in Canada depends on the program you apply under and how complex your case is, so there is no single flat price. A Regulated Canadian Immigration Consultant&rsquo;s professional fees typically range from a few hundred to several thousand dollars. Wild Mountain Immigration charges a $120 consultation (free for spousal sponsorship, and waived with full File Management), then a fixed, written fee set out in a retainer agreement for full File Management or a lower-cost File Review. Professional fees are separate from government disbursements such as IRCC processing and the RPRF, and everything is handled online by a licensed RCIC."
+            summary="The immigration consultant cost in Canada depends on the program you apply under and how complex your case is, so there is no single flat price. A Regulated Canadian Immigration Consultant&rsquo;s professional fees typically range from a few hundred to several thousand dollars. Your first call with Wild Mountain Immigration is free; a full consultation is $120 (free for spousal sponsorship, and waived with full File Management), then a fixed, written fee set out in a retainer agreement for full File Management or a lower-cost File Review. Professional fees are separate from government disbursements such as IRCC processing and the RPRF, and everything is handled online by a licensed RCIC."
             items={[
               <>There is <strong>no single flat price</strong>, immigration consultant fees in Canada scale with the program and how complex your case is.</>,
-              <>The <strong>consultation is $120</strong>, free for spousal sponsorship and waived when you proceed with full File Management.</>,
+              <>Your <strong>first call is free</strong>. A full consultation is <strong>$120</strong>, free for spousal sponsorship and waived when you proceed with full File Management.</>,
               <>We work two ways: full <strong>File Management</strong> (we do everything) and lower-cost <strong>File Review</strong> (you prepare, our RCIC reviews).</>,
               <>Everything runs <strong>online</strong>, by video call and secure document sharing, so where you live makes no difference to your fee.</>,
               <>Our professional fee is <strong>separate from government fees</strong> (IRCC, biometrics, AAIP) and every fee is <strong>fixed-scope, agreed in writing</strong> up front.</>,
@@ -314,13 +314,14 @@ export default function FeesPage() {
           <DataTable
             headers={["Consultation", "Fee (CAD)"]}
             rows={[CONSULTATION]}
-            caption="A one-off consultation to map your best pathway with a licensed RCIC."
+            caption="Your first call is free. The full consultation below maps your best pathway with a licensed RCIC."
           />
           <Callout type="brand" title="Our consultation fee policy">
-            A one-off consultation is <strong>$120</strong>. It is <strong>free for spousal sponsorship</strong> cases,
-            and for every other service we <strong>waive the $120 entirely when you proceed with full File
-            Management</strong>. You always know the cost before you book, and the consultation is where we map your best
-            pathway and quote your fixed, written fee.
+            Your <strong>first call is free</strong>, a short conversation with a licensed RCIC to point you in the right
+            direction. A full, in-depth consultation is <strong>$120</strong>. It is <strong>free for spousal
+            sponsorship</strong> cases, and for every other service we <strong>waive the $120 entirely when you proceed
+            with full File Management</strong>. You always know the cost before you book, and the full consultation is
+            where we map your best pathway and quote your fixed, written fee.
           </Callout>
 
           <h3>File Management fees (full service)</h3>
